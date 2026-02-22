@@ -1,0 +1,4409 @@
+{
+  "chunks": [
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 0.0,
+      "end": 4.0,
+      "text": " Hello all my name is Krishna and welcome to my youtube channel."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 4.0,
+      "end": 8.0,
+      "text": " So guys this was the second tutorial, Logistic Regression."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 8.0,
+      "end": 12.0,
+      "text": " We will go to Maths Intuition and explain in Hindi."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 12.0,
+      "end": 16.0,
+      "text": " We have already seen the previous, if you are watching Machine Learning Playlist."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 16.0,
+      "end": 20.0,
+      "text": " In the Christian Act Hindi Channel, you will obviously learn regression."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 20.0,
+      "end": 23.0,
+      "text": " I have explained it in a very good way."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 23.0,
+      "end": 27.0,
+      "text": " Mathematically, our aim is basically what we do."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 27.0,
+      "end": 31.0,
+      "text": " If you have some data points in linear regression,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 31.0,
+      "end": 33.0,
+      "text": " you can also get some data points."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 33.0,
+      "end": 37.0,
+      "text": " Let's say that this is my age, this is my weight."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 37.0,
+      "end": 43.0,
+      "text": " Suppose we have to make a model where our model input takes age and outputs weight."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 43.0,
+      "end": 47.0,
+      "text": " So in that, I can make a best fit line."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 47.0,
+      "end": 49.0,
+      "text": " And this is the equation of best fit line."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 49.0,
+      "end": 55.0,
+      "text": " Let's give it h theta of x is equal to theta 0 plus theta 1 x1."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 55.0,
+      "end": 59.0,
+      "text": " So we can create a best fit line with this equation."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 59.0,
+      "end": 65.0,
+      "text": " And the most important thing is that we have to go to linear regression."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 65.0,
+      "end": 71.0,
+      "text": " So here we define the cost function of j of theta as theta 1."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 71.0,
+      "end": 78.0,
+      "text": " And we write this as 1 by 2m summation of i is equal to 1 to m."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 78.0,
+      "end": 86.0,
+      "text": " And here we write it as h theta of x of i minus y of i whole square."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 86.0,
+      "end": 89.0,
+      "text": " So this was the whole cost function of our whole."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 89.0,
+      "end": 92.0,
+      "text": " And we always remember that what we do here is gradient descent."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 92.0,
+      "end": 96.0,
+      "text": " This is a cost function basically gradient descent type of curve."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 96.0,
+      "end": 102.0,
+      "text": " And our main aim is to update our theta until we minimize it."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 102.0,
+      "end": 106.0,
+      "text": " When we get the minimum point when our global minimum point is meet."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 106.0,
+      "end": 112.0,
+      "text": " So all the things we saw were obviously in linear regression."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 112.0,
+      "end": 120.0,
+      "text": " And we solve the problem statement of linear regression."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 120.0,
+      "end": 126.0,
+      "text": " Now in today's video we will know that for the classification problem statement"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 126.0,
+      "end": 130.0,
+      "text": " I have the machine learning algorithm for logistic regression."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 130.0,
+      "end": 132.0,
+      "text": " So let's see."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 132.0,
+      "end": 134.0,
+      "text": " Now you can see here."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 134.0,
+      "end": 138.0,
+      "text": " First of all I write logistic regression again."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 138.0,
+      "end": 140.0,
+      "text": " Logistic regression."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 140.0,
+      "end": 144.0,
+      "text": " So our main aim is that if I have a data set,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 144.0,
+      "end": 148.0,
+      "text": " let's say this is my feature x1 and y,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 148.0,
+      "end": 152.0,
+      "text": " x and y. Let's say that I can write something here."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 152.0,
+      "end": 155.0,
+      "text": " I will write this in the past."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 155.0,
+      "end": 158.0,
+      "text": " Let's say that I have two features."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 158.0,
+      "end": 160.0,
+      "text": " I can write a feature in the past."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 160.0,
+      "end": 162.0,
+      "text": " Study hours."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 164.0,
+      "end": 166.0,
+      "text": " And here I can write a feature here."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 166.0,
+      "end": 168.0,
+      "text": " Pass or fail."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 168.0,
+      "end": 170.0,
+      "text": " Now let's go to output feature."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 170.0,
+      "end": 178.0,
+      "text": " And logistic regression we use is for classification problem statement."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 178.0,
+      "end": 181.0,
+      "text": " When I say classification problem statement,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 181.0,
+      "end": 184.0,
+      "text": " that basic limits, if I have a study hours 4,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 184.0,
+      "end": 188.0,
+      "text": " then the child passes and anybody will pass."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 188.0,
+      "end": 192.0,
+      "text": " If the study hours 2 is 2, then the child will fail."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 192.0,
+      "end": 194.0,
+      "text": " Let's say fail."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 194.0,
+      "end": 198.0,
+      "text": " If the study hour is 0, then the person will fail."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 198.0,
+      "end": 200.0,
+      "text": " If it is 1, it will fail."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 200.0,
+      "end": 202.0,
+      "text": " Okay."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 202.0,
+      "end": 206.0,
+      "text": " If it is 2.5, then the study hours pass."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 206.0,
+      "end": 208.0,
+      "text": " So this is my data set."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 208.0,
+      "end": 210.0,
+      "text": " I have just taken an example of data set."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 210.0,
+      "end": 212.0,
+      "text": " You can take anything."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 212.0,
+      "end": 218.0,
+      "text": " But remember that my output feature is a classification problem."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 218.0,
+      "end": 220.0,
+      "text": " Because I have two outputs."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 220.0,
+      "end": 224.0,
+      "text": " And specifically, I will say this in binary classification."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 224.0,
+      "end": 228.0,
+      "text": " So here I will write binary classification."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 228.0,
+      "end": 232.0,
+      "text": " Now I will solve this problem."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 232.0,
+      "end": 235.0,
+      "text": " Consider my access to study hours."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 235.0,
+      "end": 238.0,
+      "text": " And I know my output is 2."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 238.0,
+      "end": 242.0,
+      "text": " So I can indicate 0 and 1 in this file."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 242.0,
+      "end": 246.0,
+      "text": " And this is my y value."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 246.0,
+      "end": 250.0,
+      "text": " Now I will study my study hours."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 250.0,
+      "end": 254.0,
+      "text": " Let's say that I make my points in this study hours."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 254.0,
+      "end": 258.0,
+      "text": " When my study hours are 0, then obviously it is fail."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 258.0,
+      "end": 262.0,
+      "text": " If it is 1, it is 2, it is 2.5, then it is 5."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 262.0,
+      "end": 266.0,
+      "text": " So I will show you 5."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 266.0,
+      "end": 270.0,
+      "text": " I will add my second feature in this study hours."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 270.0,
+      "end": 272.0,
+      "text": " And this is the study hours."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 272.0,
+      "end": 274.0,
+      "text": " And this will continue."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 274.0,
+      "end": 278.0,
+      "text": " Now I understand this problem is a classification problem."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 278.0,
+      "end": 281.0,
+      "text": " So first we need to understand this."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 281.0,
+      "end": 285.0,
+      "text": " Can we solve this problem with linear regression?"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 285.0,
+      "end": 288.0,
+      "text": " So if we need to solve this with linear regression."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 288.0,
+      "end": 290.0,
+      "text": " First of all, we will make a best fit line."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 290.0,
+      "end": 292.0,
+      "text": " Let's say that this is my best fit line."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 292.0,
+      "end": 294.0,
+      "text": " Let's make this here."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 294.0,
+      "end": 296.0,
+      "text": " So this is my best fit line."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 296.0,
+      "end": 300.0,
+      "text": " Obviously this best fit line, you know how we denote it."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 300.0,
+      "end": 304.0,
+      "text": " h theta of x is equal to theta 0 plus theta 1 x1."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 304.0,
+      "end": 307.0,
+      "text": " Obviously we have discussed this in linear regression."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 307.0,
+      "end": 309.0,
+      "text": " Now let's see what is a problem here."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 309.0,
+      "end": 313.0,
+      "text": " When this value is probably from here."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 313.0,
+      "end": 316.0,
+      "text": " If I see its central element here."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 316.0,
+      "end": 318.0,
+      "text": " This value is 0.5."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 318.0,
+      "end": 321.0,
+      "text": " So here we can definitely see two things."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 321.0,
+      "end": 324.0,
+      "text": " If I use linear regression."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 324.0,
+      "end": 327.0,
+      "text": " So here you can see one thing in linear regression."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 327.0,
+      "end": 329.0,
+      "text": " We have to create straight line here."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 329.0,
+      "end": 333.0,
+      "text": " And I will definitely say that if I have a point."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 333.0,
+      "end": 337.0,
+      "text": " I have to check this point value."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 337.0,
+      "end": 339.0,
+      "text": " So this point will be from this."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 339.0,
+      "end": 342.0,
+      "text": " And here we have got 0.7."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 342.0,
+      "end": 345.0,
+      "text": " Now we know that two conditions."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 345.0,
+      "end": 348.0,
+      "text": " Look at this point greater than 0.5."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 348.0,
+      "end": 350.0,
+      "text": " So we can definitely say this is 1."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 350.0,
+      "end": 353.0,
+      "text": " So if I have a point here."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 353.0,
+      "end": 356.0,
+      "text": " I can say that this one is a steady hour."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 356.0,
+      "end": 357.0,
+      "text": " This one is a fail."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 357.0,
+      "end": 359.0,
+      "text": " Because my less than 0.5 is coming."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 359.0,
+      "end": 362.0,
+      "text": " So here we have 0.1."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 362.0,
+      "end": 363.0,
+      "text": " So this is less than 0.5."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 363.0,
+      "end": 366.0,
+      "text": " So I can definitely say that this is a fail."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 366.0,
+      "end": 369.0,
+      "text": " I can say that this is a pass."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 369.0,
+      "end": 373.0,
+      "text": " But there are two problems."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 373.0,
+      "end": 379.0,
+      "text": " One problem is that if I add my outlier here."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 379.0,
+      "end": 382.0,
+      "text": " Let's say that my outlier is added here."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 382.0,
+      "end": 385.0,
+      "text": " So I will add an outlier here."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 385.0,
+      "end": 388.0,
+      "text": " If this outlier is added in my training data set."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 388.0,
+      "end": 390.0,
+      "text": " This is a steady hour."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 390.0,
+      "end": 392.0,
+      "text": " So what will happen?"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 392.0,
+      "end": 394.0,
+      "text": " This best fit line will change again."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 394.0,
+      "end": 397.0,
+      "text": " Now my new best fit line will probably be like this."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 397.0,
+      "end": 398.0,
+      "text": " Okay?"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 398.0,
+      "end": 399.0,
+      "text": " It will be like this."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 399.0,
+      "end": 401.0,
+      "text": " So I can change it a little bit more."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 401.0,
+      "end": 403.0,
+      "text": " I will create it like this."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 403.0,
+      "end": 406.0,
+      "text": " So let's see what is happening in linear regression."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 406.0,
+      "end": 410.0,
+      "text": " So I can say that my best fit line will change once."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 410.0,
+      "end": 411.0,
+      "text": " Okay?"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 411.0,
+      "end": 414.0,
+      "text": " So here you can see that if I add a new point,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 414.0,
+      "end": 417.0,
+      "text": " the green point that I was not able to get the output."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 417.0,
+      "end": 420.0,
+      "text": " If I go and point it, then this is less than 0.5."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 420.0,
+      "end": 423.0,
+      "text": " So even though the steady hour is good."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 423.0,
+      "end": 425.0,
+      "text": " So there is also the output result of this."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 425.0,
+      "end": 426.0,
+      "text": " That is a fail."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 426.0,
+      "end": 427.0,
+      "text": " Okay?"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 427.0,
+      "end": 430.0,
+      "text": " So here is a major problem in linear regression."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 430.0,
+      "end": 431.0,
+      "text": " Okay?"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 431.0,
+      "end": 435.0,
+      "text": " From linear regression, you can definitely not solve a classification problem."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 435.0,
+      "end": 436.0,
+      "text": " You cannot solve."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 436.0,
+      "end": 437.0,
+      "text": " You cannot solve."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 437.0,
+      "end": 438.0,
+      "text": " Okay?"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 438.0,
+      "end": 439.0,
+      "text": " Very simple."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 439.0,
+      "end": 440.0,
+      "text": " I am saying this."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 440.0,
+      "end": 444.0,
+      "text": " If you think that we can solve it by using linear regression, then answer is no."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 444.0,
+      "end": 446.0,
+      "text": " Now the second problem."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 446.0,
+      "end": 447.0,
+      "text": " The first problem is the output."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 447.0,
+      "end": 450.0,
+      "text": " If the output is coming out, my best fit line will change completely."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 450.0,
+      "end": 451.0,
+      "text": " Let's go ahead."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 451.0,
+      "end": 453.0,
+      "text": " This will be a big problem."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 453.0,
+      "end": 457.0,
+      "text": " Because now, you can see that the old points are definitely not visible."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 457.0,
+      "end": 461.0,
+      "text": " But the new points, the green points,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 461.0,
+      "end": 464.0,
+      "text": " the first value of the green point was not coming out."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 464.0,
+      "end": 466.0,
+      "text": " Now its value is less than 0.5."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 466.0,
+      "end": 469.0,
+      "text": " If it is less than 0.5, then definitely I will say 0."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 469.0,
+      "end": 470.0,
+      "text": " This is the first reason."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 470.0,
+      "end": 473.0,
+      "text": " Now the second reason is that now we will see here."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 473.0,
+      "end": 476.0,
+      "text": " We have always said that this is binary classification."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 476.0,
+      "end": 478.0,
+      "text": " So either your answer should be 0 or 1."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 478.0,
+      "end": 481.0,
+      "text": " But now in some scenarios, if I explain here, then I will make a point."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 481.0,
+      "end": 485.0,
+      "text": " So if I plot here, then this is greater than 1."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 485.0,
+      "end": 487.0,
+      "text": " This is greater than 1."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 487.0,
+      "end": 490.0,
+      "text": " Obviously, we can say that greater than 1 means 1 is 1."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 490.0,
+      "end": 491.0,
+      "text": " Okay?"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 491.0,
+      "end": 493.0,
+      "text": " And this negative value can also come."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 493.0,
+      "end": 495.0,
+      "text": " That is less than 0."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 495.0,
+      "end": 498.0,
+      "text": " But we always say that value is 0 to 1."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 498.0,
+      "end": 502.0,
+      "text": " So we will say this to make this thing a squash."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 502.0,
+      "end": 504.0,
+      "text": " We have to squash this."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 504.0,
+      "end": 507.0,
+      "text": " And this squash is not linear regression."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 507.0,
+      "end": 510.0,
+      "text": " So we will use logistic regression."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 510.0,
+      "end": 515.0,
+      "text": " So in the second reason, I will say the output is greater than 1."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 515.0,
+      "end": 518.0,
+      "text": " And less than 1 also in this specific case."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 518.0,
+      "end": 519.0,
+      "text": " Sorry."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 519.0,
+      "end": 520.0,
+      "text": " Less than 0."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 520.0,
+      "end": 525.0,
+      "text": " So we will say that this is not linear regression suitable for us."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 525.0,
+      "end": 527.0,
+      "text": " So let's see what happens in logistic case."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 527.0,
+      "end": 530.0,
+      "text": " Logistic case is made of such type of line."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 530.0,
+      "end": 533.0,
+      "text": " Squash is also made of such type of line."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 533.0,
+      "end": 536.0,
+      "text": " And output is also made of such type of line."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 536.0,
+      "end": 539.0,
+      "text": " So we will do logistic regression to overcome that."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 539.0,
+      "end": 541.0,
+      "text": " Now in logistic regression, it is very simple."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 541.0,
+      "end": 542.0,
+      "text": " Look at two things."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 542.0,
+      "end": 545.0,
+      "text": " Obviously, you have to take your best fit line."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 545.0,
+      "end": 547.0,
+      "text": " But you have to take it as a street of x."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 548.0,
+      "end": 551.0,
+      "text": " Where we will write theta 0 plus theta 1 x1."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 551.0,
+      "end": 555.0,
+      "text": " So we can do this squashing."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 555.0,
+      "end": 557.0,
+      "text": " This squashing is very important."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 557.0,
+      "end": 560.0,
+      "text": " And this squashing we will do best fit line."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 560.0,
+      "end": 564.0,
+      "text": " So we will use this as a sigmoid function."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 564.0,
+      "end": 569.0,
+      "text": " Now sigmoid function is its equation 1 e to the power of minus x."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 569.0,
+      "end": 572.0,
+      "text": " So how we will do these two combinations in the moment."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 573.0,
+      "end": 577.0,
+      "text": " So I have written the value of z."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 577.0,
+      "end": 585.0,
+      "text": " Before we write how we write h theta of x is equal to theta 0 plus theta 1 x1."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 585.0,
+      "end": 587.0,
+      "text": " Now I will write this."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 587.0,
+      "end": 591.0,
+      "text": " I will say that I know h theta of x."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 591.0,
+      "end": 594.0,
+      "text": " I know that I have to make a sigmoid activation function."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 594.0,
+      "end": 595.0,
+      "text": " Okay, look."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 595.0,
+      "end": 599.0,
+      "text": " First of all, this equation is to make sigmoid activation function above it."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 600.0,
+      "end": 604.0,
+      "text": " So let's say that I have written the function as g as a sigmoid activation function."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 604.0,
+      "end": 608.0,
+      "text": " And here I will write theta 0 plus theta 1 multiplied by x."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 608.0,
+      "end": 612.0,
+      "text": " That basically means this equation will be made straight line."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 612.0,
+      "end": 616.0,
+      "text": " And I will do this to squash it."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 616.0,
+      "end": 617.0,
+      "text": " I will do this to squash it."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 617.0,
+      "end": 619.0,
+      "text": " This will be the function of g activation."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 619.0,
+      "end": 623.0,
+      "text": " And we will call this g function as sigmoid function."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 623.0,
+      "end": 625.0,
+      "text": " This is the equation of this equation."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 625.0,
+      "end": 628.0,
+      "text": " 1 power e to the power of minus z."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 629.0,
+      "end": 635.0,
+      "text": " Where z is nothing but z is theta 0 plus theta 1 multiplied by x."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 635.0,
+      "end": 641.0,
+      "text": " So in short, if I tell you that entire equation should be this way,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 641.0,
+      "end": 648.0,
+      "text": " I can write h theta of x is equal to 1 plus 1 e to the power of minus z."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 648.0,
+      "end": 651.0,
+      "text": " So this z is basically replaced."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 651.0,
+      "end": 654.0,
+      "text": " Theta 0 plus theta 1 multiplied by x."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 655.0,
+      "end": 658.0,
+      "text": " So in short, my entire equation will be this way."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 658.0,
+      "end": 663.0,
+      "text": " 1 plus e to the power of minus theta 0 plus theta 1 x1."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 663.0,
+      "end": 667.0,
+      "text": " So this is our hypothesis in the logistic regression case."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 667.0,
+      "end": 668.0,
+      "text": " It is very simple."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 668.0,
+      "end": 670.0,
+      "text": " First I have done what I have done."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 670.0,
+      "end": 675.0,
+      "text": " First I have said that the value of g is 1 plus e to the power of minus z."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 675.0,
+      "end": 677.0,
+      "text": " This z is nothing but this value."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 677.0,
+      "end": 680.0,
+      "text": " I am indicating z as a whole."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 680.0,
+      "end": 682.0,
+      "text": " And after that I am replacing g."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 683.0,
+      "end": 685.0,
+      "text": " Finally you can see that I am replacing it."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 685.0,
+      "end": 688.0,
+      "text": " And this is my entire hypothesis logistic."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 689.0,
+      "end": 692.0,
+      "text": " This is my hypothesis function logistic."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 692.0,
+      "end": 694.0,
+      "text": " Very simple."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 694.0,
+      "end": 695.0,
+      "text": " How do you understand?"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 695.0,
+      "end": 696.0,
+      "text": " How was linear?"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 696.0,
+      "end": 697.0,
+      "text": " It was like this in linear."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 697.0,
+      "end": 700.0,
+      "text": " Theta 0 plus theta 1 into x1."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 700.0,
+      "end": 702.0,
+      "text": " Now look at the difference between linear and logistic."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 702.0,
+      "end": 703.0,
+      "text": " We are applying this."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 703.0,
+      "end": 706.0,
+      "text": " But we are adding sigma to this."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 706.0,
+      "end": 709.0,
+      "text": " Now I am writing sigma activation function."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 709.0,
+      "end": 710.0,
+      "text": " What is the feature of this?"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 710.0,
+      "end": 712.0,
+      "text": " This is the function of sigma activation function."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 713.0,
+      "end": 716.0,
+      "text": " This function of sigma function is made like this."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 716.0,
+      "end": 717.0,
+      "text": " Let me write it again."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 717.0,
+      "end": 718.0,
+      "text": " Sigma."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 720.0,
+      "end": 725.0,
+      "text": " So g is equal to 1 plus e to the power of minus z."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 725.0,
+      "end": 728.0,
+      "text": " Now this is the function of sigma activation function."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 728.0,
+      "end": 730.0,
+      "text": " This is what is made like this."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 732.0,
+      "end": 733.0,
+      "text": " I will make it like this."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 733.0,
+      "end": 735.0,
+      "text": " So this is the function of this graph."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 735.0,
+      "end": 736.0,
+      "text": " How will it be made like this?"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 736.0,
+      "end": 737.0,
+      "text": " Okay."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 737.0,
+      "end": 742.0,
+      "text": " If this is my z value and this is my sigma which is g value."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 742.0,
+      "end": 745.0,
+      "text": " And here you will be confused."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 745.0,
+      "end": 748.0,
+      "text": " This is the g I am specifying and sigma which is the function."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 748.0,
+      "end": 749.0,
+      "text": " Okay."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 749.0,
+      "end": 751.0,
+      "text": " h z will be here."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 751.0,
+      "end": 754.0,
+      "text": " So when we do not assign this to us,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 754.0,
+      "end": 757.0,
+      "text": " we will be able to make this function."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 757.0,
+      "end": 759.0,
+      "text": " So what happens here?"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 759.0,
+      "end": 762.0,
+      "text": " Here the value is 0 and 1 and this is the b of the point 5."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 762.0,
+      "end": 764.0,
+      "text": " So remember that there are two things."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 764.0,
+      "end": 766.0,
+      "text": " If z is greater than or equal to 0,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 766.0,
+      "end": 769.0,
+      "text": " then your sigma activation function which you value"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 769.0,
+      "end": 772.0,
+      "text": " is always greater than or equal to 0."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 772.0,
+      "end": 773.0,
+      "text": " Okay."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 773.0,
+      "end": 774.0,
+      "text": " So here I have written,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 774.0,
+      "end": 776.0,
+      "text": " it is always greater than or equal to 0."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 776.0,
+      "end": 779.0,
+      "text": " In the case of greater than or equal to 0."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 779.0,
+      "end": 780.0,
+      "text": " Okay."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 780.0,
+      "end": 781.0,
+      "text": " Or it is always not near to 1."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 781.0,
+      "end": 783.0,
+      "text": " It is always not near to 0."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 783.0,
+      "end": 784.0,
+      "text": " Okay."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 784.0,
+      "end": 785.0,
+      "text": " The maximum is 0 to 1."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 785.0,
+      "end": 787.0,
+      "text": " This is the value of this thing."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 787.0,
+      "end": 789.0,
+      "text": " If z is less than or equal to 0,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 789.0,
+      "end": 792.0,
+      "text": " so g of z is always less than or equal to 0.5."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 792.0,
+      "end": 794.0,
+      "text": " This is also you always have to remember."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 794.0,
+      "end": 796.0,
+      "text": " So these two conditions,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 796.0,
+      "end": 798.0,
+      "text": " I will write it again."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 798.0,
+      "end": 801.0,
+      "text": " Here I will put one more condition here that"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 801.0,
+      "end": 804.0,
+      "text": " if your z value is less than or equal to 0,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 804.0,
+      "end": 807.0,
+      "text": " then g of z will always be less than or equal to 0.5."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 807.0,
+      "end": 809.0,
+      "text": " This is very important."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 809.0,
+      "end": 810.0,
+      "text": " Okay."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 810.0,
+      "end": 814.0,
+      "text": " I will do this less than or equal to 0.5."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 814.0,
+      "end": 815.0,
+      "text": " Okay."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 815.0,
+      "end": 816.0,
+      "text": " So until here you have come,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 816.0,
+      "end": 817.0,
+      "text": " I hope you have understood."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 817.0,
+      "end": 820.0,
+      "text": " Let's go and write it again in the entire problem statement."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 820.0,
+      "end": 822.0,
+      "text": " Usually I write everything in the book,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 822.0,
+      "end": 824.0,
+      "text": " I will write it here."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 824.0,
+      "end": 826.0,
+      "text": " So I will write it again and again."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 826.0,
+      "end": 828.0,
+      "text": " How can I write it in the entire problem statement?"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 828.0,
+      "end": 830.0,
+      "text": " Let's see the problem statement."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 830.0,
+      "end": 832.0,
+      "text": " So I hope that"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 832.0,
+      "end": 834.0,
+      "text": " I have understood everything so far."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 834.0,
+      "end": 836.0,
+      "text": " I have understood that why we cannot use linear regression."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 836.0,
+      "end": 838.0,
+      "text": " And for the logistic regression,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 838.0,
+      "end": 840.0,
+      "text": " we have a theta z,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 840.0,
+      "end": 842.0,
+      "text": " such as a hypothesis,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 842.0,
+      "end": 844.0,
+      "text": " where we have to put a signoid function on top of it."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 844.0,
+      "end": 846.0,
+      "text": " I always remember that"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 846.0,
+      "end": 848.0,
+      "text": " we will have to write a best fit."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 848.0,
+      "end": 850.0,
+      "text": " This will be our signoid curve,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 850.0,
+      "end": 852.0,
+      "text": " which will be the squashing plus outlier."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 852.0,
+      "end": 854.0,
+      "text": " We will handle this."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 854.0,
+      "end": 855.0,
+      "text": " Okay."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 855.0,
+      "end": 857.0,
+      "text": " Now I will discuss it here."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 857.0,
+      "end": 860.0,
+      "text": " Let's consider that this is my training set."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 860.0,
+      "end": 863.0,
+      "text": " The training set is this."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 863.0,
+      "end": 865.0,
+      "text": " And I will write the data set here."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 865.0,
+      "end": 867.0,
+      "text": " X1 Y1."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 867.0,
+      "end": 870.0,
+      "text": " Okay."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 870.0,
+      "end": 873.0,
+      "text": " Let's see."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 873.0,
+      "end": 875.0,
+      "text": " I will write it in a good way."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 875.0,
+      "end": 879.0,
+      "text": " And then I have X2."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 880.0,
+      "end": 884.0,
+      "text": " X2 Y2."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 884.0,
+      "end": 886.0,
+      "text": " Okay."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 886.0,
+      "end": 889.0,
+      "text": " And I can write a different training set."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 889.0,
+      "end": 891.0,
+      "text": " I will finally get XM YM."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 891.0,
+      "end": 892.0,
+      "text": " Okay."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 892.0,
+      "end": 894.0,
+      "text": " This is my training data set."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 894.0,
+      "end": 898.0,
+      "text": " And remember that the X that will be"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 898.0,
+      "end": 901.0,
+      "text": " belongs to X0 X1 X2 like this."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 901.0,
+      "end": 904.0,
+      "text": " Up till XM."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 904.0,
+      "end": 905.0,
+      "text": " Okay."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 905.0,
+      "end": 908.0,
+      "text": " And the Y value will always be 0 and 1."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 908.0,
+      "end": 911.0,
+      "text": " So this will be 0 to 1."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 911.0,
+      "end": 914.0,
+      "text": " And finally, the X that I am making here"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 914.0,
+      "end": 918.0,
+      "text": " will be basically 1 minus..."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 918.0,
+      "end": 920.0,
+      "text": " Sorry, 1 plus e to the power of minus"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 920.0,
+      "end": 923.0,
+      "text": " theta 0 plus theta 1 X1."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 923.0,
+      "end": 924.0,
+      "text": " Okay."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 924.0,
+      "end": 926.0,
+      "text": " We always remember that when we write,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 926.0,
+      "end": 927.0,
+      "text": " okay."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 927.0,
+      "end": 929.0,
+      "text": " And I have a function as Z,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 929.0,
+      "end": 931.0,
+      "text": " which we write as Z."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 931.0,
+      "end": 935.0,
+      "text": " Theta 0 plus theta 1 X."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 935.0,
+      "end": 936.0,
+      "text": " Right."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 936.0,
+      "end": 937.0,
+      "text": " In the particular case,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 937.0,
+      "end": 939.0,
+      "text": " X1 will not be X."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 939.0,
+      "end": 940.0,
+      "text": " In this particular case,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 940.0,
+      "end": 942.0,
+      "text": " I can write this equation as well."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 942.0,
+      "end": 944.0,
+      "text": " Theta transpose X."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 944.0,
+      "end": 945.0,
+      "text": " Okay."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 945.0,
+      "end": 947.0,
+      "text": " So I will make it shorter."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 947.0,
+      "end": 950.0,
+      "text": " 1 plus e to the power of minus theta transpose X."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 950.0,
+      "end": 952.0,
+      "text": " So this is your H theta of X."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 952.0,
+      "end": 954.0,
+      "text": " So this is clear."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 954.0,
+      "end": 956.0,
+      "text": " This is my hypothesis."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 956.0,
+      "end": 958.0,
+      "text": " Hypothesis for logistic regression."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 958.0,
+      "end": 960.0,
+      "text": " At the end of the day,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 960.0,
+      "end": 963.0,
+      "text": " all my data points will be passed here."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 963.0,
+      "end": 965.0,
+      "text": " This is the equation."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 965.0,
+      "end": 966.0,
+      "text": " We always remember that"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 966.0,
+      "end": 968.0,
+      "text": " we go to linear regression again."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 968.0,
+      "end": 970.0,
+      "text": " Because what we do in linear regression."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 970.0,
+      "end": 971.0,
+      "text": " First of all,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 971.0,
+      "end": 973.0,
+      "text": " we test hypothesis,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 973.0,
+      "end": 975.0,
+      "text": " and then we get a cost function."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 975.0,
+      "end": 976.0,
+      "text": " And you know,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 976.0,
+      "end": 978.0,
+      "text": " what is the cost function of linear regression."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 978.0,
+      "end": 979.0,
+      "text": " I have written it here too."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 979.0,
+      "end": 980.0,
+      "text": " I will write it again."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 980.0,
+      "end": 982.0,
+      "text": " And you also write it because it is good."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 982.0,
+      "end": 983.0,
+      "text": " You should write it."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 983.0,
+      "end": 984.0,
+      "text": " Okay."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 984.0,
+      "end": 986.0,
+      "text": " So here I write the cost function as well."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 986.0,
+      "end": 987.0,
+      "text": " 1 by 2M."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 987.0,
+      "end": 989.0,
+      "text": " summation of i is equal to 1 to M."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 989.0,
+      "end": 994.0,
+      "text": " H theta of X of i minus y of i."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 994.0,
+      "end": 1003.0,
+      "text": " I will change the cost function of logistic regression."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1003.0,
+      "end": 1007.0,
+      "text": " See, what will change in the cost function of logistic regression?"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1007.0,
+      "end": 1010.0,
+      "text": " If I write J of theta 0,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1010.0,
+      "end": 1012.0,
+      "text": " comma theta 1,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1012.0,
+      "end": 1014.0,
+      "text": " and here I will write 1 by M."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1014.0,
+      "end": 1016.0,
+      "text": " If you know the linear regression,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1016.0,
+      "end": 1018.0,
+      "text": " and here I will write 1 by 2M."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1018.0,
+      "end": 1021.0,
+      "text": " I will write summation of i is equal to 1 to M."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1021.0,
+      "end": 1023.0,
+      "text": " I will write another color."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1023.0,
+      "end": 1025.0,
+      "text": " So that you can distinguish it."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1025.0,
+      "end": 1026.0,
+      "text": " Okay."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1026.0,
+      "end": 1028.0,
+      "text": " I will write it again."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1028.0,
+      "end": 1030.0,
+      "text": " So I am writing it here."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1030.0,
+      "end": 1033.0,
+      "text": " I will write J of theta 0,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1033.0,
+      "end": 1034.0,
+      "text": " comma theta 1,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1034.0,
+      "end": 1036.0,
+      "text": " 1 by 2M."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1036.0,
+      "end": 1037.0,
+      "text": " Okay."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1037.0,
+      "end": 1039.0,
+      "text": " summation of i is equal to 1 to M."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1039.0,
+      "end": 1041.0,
+      "text": " Cost function is the same."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1041.0,
+      "end": 1046.0,
+      "text": " This is the cost function y of i whole square."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1046.0,
+      "end": 1047.0,
+      "text": " Okay."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1047.0,
+      "end": 1048.0,
+      "text": " i whole square."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1048.0,
+      "end": 1050.0,
+      "text": " Now I have written it."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1050.0,
+      "end": 1052.0,
+      "text": " Remember, in logistic regression,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1052.0,
+      "end": 1054.0,
+      "text": " what is the H theta of X?"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1054.0,
+      "end": 1056.0,
+      "text": " So in logistic regression,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1056.0,
+      "end": 1058.0,
+      "text": " if I specify this here,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1058.0,
+      "end": 1060.0,
+      "text": " here, okay."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1060.0,
+      "end": 1067.0,
+      "text": " H theta of X is nothing but 1 by 1 plus e to the power of minus theta transpose X."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1067.0,
+      "end": 1068.0,
+      "text": " You know,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1068.0,
+      "end": 1069.0,
+      "text": " you know,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1069.0,
+      "end": 1071.0,
+      "text": " at the end of the day,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1071.0,
+      "end": 1072.0,
+      "text": " here,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1072.0,
+      "end": 1073.0,
+      "text": " the linear regression,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1073.0,
+      "end": 1075.0,
+      "text": " what was the H theta of X?"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1075.0,
+      "end": 1078.0,
+      "text": " H theta of X is equal to theta transpose X."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1078.0,
+      "end": 1079.0,
+      "text": " Right."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1079.0,
+      "end": 1082.0,
+      "text": " We can write this as theta 0 plus theta 1 X."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1082.0,
+      "end": 1083.0,
+      "text": " Okay."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1083.0,
+      "end": 1084.0,
+      "text": " Both are the same."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1084.0,
+      "end": 1085.0,
+      "text": " Here, this is the place of the H."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1085.0,
+      "end": 1086.0,
+      "text": " Now, here,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1086.0,
+      "end": 1087.0,
+      "text": " this is the place of the H."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1087.0,
+      "end": 1088.0,
+      "text": " Okay."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1088.0,
+      "end": 1089.0,
+      "text": " Here, this is the place of the H."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1089.0,
+      "end": 1090.0,
+      "text": " Okay."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1090.0,
+      "end": 1091.0,
+      "text": " Now,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1091.0,
+      "end": 1093.0,
+      "text": " this is the cost function entirely,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1093.0,
+      "end": 1095.0,
+      "text": " the logistic regression,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1095.0,
+      "end": 1096.0,
+      "text": " and the linear regression,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1096.0,
+      "end": 1098.0,
+      "text": " I have written in the different function."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1098.0,
+      "end": 1099.0,
+      "text": " Almost the same."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1099.0,
+      "end": 1100.0,
+      "text": " Okay."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1100.0,
+      "end": 1101.0,
+      "text": " But in this cost function,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1101.0,
+      "end": 1103.0,
+      "text": " where we have to use"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1103.0,
+      "end": 1107.0,
+      "text": " 1 divided by 1 plus e to the power of minus theta transpose X."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1107.0,
+      "end": 1111.0,
+      "text": " We can say this as a non-convict function."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1111.0,
+      "end": 1114.0,
+      "text": " I will explain it as a non-convict function."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1114.0,
+      "end": 1117.0,
+      "text": " Now, you must understand that it is a non-convict function."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1117.0,
+      "end": 1120.0,
+      "text": " Always remember that in linear regression,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1120.0,
+      "end": 1123.0,
+      "text": " I write here non-convicts,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1123.0,
+      "end": 1126.0,
+      "text": " and here I write here non-convicts function."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1126.0,
+      "end": 1127.0,
+      "text": " Okay."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1127.0,
+      "end": 1128.0,
+      "text": " We understand this."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1128.0,
+      "end": 1132.0,
+      "text": " Always remember that the non-convict function,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1132.0,
+      "end": 1135.0,
+      "text": " we have obviously seen that in linear regression,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1135.0,
+      "end": 1138.0,
+      "text": " our cost function was made,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1138.0,
+      "end": 1139.0,
+      "text": " how it was made,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1139.0,
+      "end": 1141.0,
+      "text": " gradient descent type,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1141.0,
+      "end": 1143.0,
+      "text": " with this curve."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1143.0,
+      "end": 1145.0,
+      "text": " If you haven't watched the previous video,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1145.0,
+      "end": 1147.0,
+      "text": " then you won't understand."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1147.0,
+      "end": 1148.0,
+      "text": " We always remember that,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1148.0,
+      "end": 1150.0,
+      "text": " for the linear regression,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1150.0,
+      "end": 1151.0,
+      "text": " for the linear regression,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1151.0,
+      "end": 1153.0,
+      "text": " we use this cost function."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1153.0,
+      "end": 1156.0,
+      "text": " It used to create always a convex function."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1156.0,
+      "end": 1158.0,
+      "text": " That is,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1158.0,
+      "end": 1161.0,
+      "text": " this was always a convex function."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1161.0,
+      "end": 1163.0,
+      "text": " In a convex function,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1163.0,
+      "end": 1164.0,
+      "text": " this is a slope of 1."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1164.0,
+      "end": 1166.0,
+      "text": " And your main motto is,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1166.0,
+      "end": 1167.0,
+      "text": " the one here is,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1167.0,
+      "end": 1169.0,
+      "text": " your global minima."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1169.0,
+      "end": 1171.0,
+      "text": " Global minima."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1171.0,
+      "end": 1173.0,
+      "text": " This is a very important thing."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1173.0,
+      "end": 1175.0,
+      "text": " As a part of a convex function,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1175.0,
+      "end": 1178.0,
+      "text": " you should be coming towards this global minima."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1178.0,
+      "end": 1179.0,
+      "text": " But,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1179.0,
+      "end": 1181.0,
+      "text": " now I am saying that,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1181.0,
+      "end": 1183.0,
+      "text": " this is a non-convict function."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1183.0,
+      "end": 1184.0,
+      "text": " First reason,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1184.0,
+      "end": 1186.0,
+      "text": " we are applying the curve activation curve."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1186.0,
+      "end": 1189.0,
+      "text": " We call it a sigma curve function."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1189.0,
+      "end": 1192.0,
+      "text": " This non-convict curve function is called,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1192.0,
+      "end": 1194.0,
+      "text": " your graph,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1194.0,
+      "end": 1195.0,
+      "text": " your graph,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1195.0,
+      "end": 1197.0,
+      "text": " is always the same."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1200.0,
+      "end": 1202.0,
+      "text": " So many curves."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1202.0,
+      "end": 1204.0,
+      "text": " And what is the problem in this curve?"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1204.0,
+      "end": 1206.0,
+      "text": " See, your global minima is here."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1206.0,
+      "end": 1209.0,
+      "text": " This is a global minima."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1210.0,
+      "end": 1212.0,
+      "text": " And this point,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1212.0,
+      "end": 1213.0,
+      "text": " this point,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1213.0,
+      "end": 1214.0,
+      "text": " this point,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1214.0,
+      "end": 1216.0,
+      "text": " we call it a local minima."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1216.0,
+      "end": 1218.0,
+      "text": " Local minima."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1218.0,
+      "end": 1219.0,
+      "text": " And we always remember,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1219.0,
+      "end": 1221.0,
+      "text": " when a gradient descent comes to a global minima,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1221.0,
+      "end": 1224.0,
+      "text": " like you are updating the value of theta."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1224.0,
+      "end": 1226.0,
+      "text": " When a day of theta is updated,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1226.0,
+      "end": 1228.0,
+      "text": " if a value is updated,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1228.0,
+      "end": 1230.0,
+      "text": " then it will be the same."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1230.0,
+      "end": 1232.0,
+      "text": " Because the slope here is always 0."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1232.0,
+      "end": 1234.0,
+      "text": " And when the slope is 0,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1234.0,
+      "end": 1236.0,
+      "text": " then your theta value will never be updated."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1236.0,
+      "end": 1239.0,
+      "text": " And you will not be able to get this point."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1239.0,
+      "end": 1241.0,
+      "text": " If your point is also here,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1241.0,
+      "end": 1242.0,
+      "text": " if it is here,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1242.0,
+      "end": 1243.0,
+      "text": " then it is here."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1243.0,
+      "end": 1245.0,
+      "text": " All these points are called local minima."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1245.0,
+      "end": 1248.0,
+      "text": " This is called global minima."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1248.0,
+      "end": 1249.0,
+      "text": " Whereas,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1249.0,
+      "end": 1251.0,
+      "text": " in the case of convex function,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1251.0,
+      "end": 1253.0,
+      "text": " we always remember that"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1253.0,
+      "end": 1255.0,
+      "text": " where no local minima will be."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1255.0,
+      "end": 1257.0,
+      "text": " No local minima."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1257.0,
+      "end": 1259.0,
+      "text": " Only global minima will be."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1259.0,
+      "end": 1260.0,
+      "text": " Okay?"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1260.0,
+      "end": 1261.0,
+      "text": " So, in this case,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1261.0,
+      "end": 1262.0,
+      "text": " what we do is,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1262.0,
+      "end": 1265.0,
+      "text": " the logic regression is a different type of cost function."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1265.0,
+      "end": 1266.0,
+      "text": " We say that."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1266.0,
+      "end": 1269.0,
+      "text": " So guys, I hope you guys have found out this cost function."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1269.0,
+      "end": 1271.0,
+      "text": " And what we are trying to do."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1271.0,
+      "end": 1273.0,
+      "text": " And you also have found out the non-convex function."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1273.0,
+      "end": 1277.0,
+      "text": " So, let's go and find out the logic regression cost function."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1277.0,
+      "end": 1278.0,
+      "text": " And this time,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1278.0,
+      "end": 1281.0,
+      "text": " we will write a different representation format."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1281.0,
+      "end": 1284.0,
+      "text": " And before that, I will write the same cost function here."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1284.0,
+      "end": 1285.0,
+      "text": " So, let's see."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1285.0,
+      "end": 1286.0,
+      "text": " So, logistic cost function."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1286.0,
+      "end": 1288.0,
+      "text": " If I write here in green color,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1288.0,
+      "end": 1289.0,
+      "text": " j theta,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1289.0,
+      "end": 1292.0,
+      "text": " 0 theta 1 is equal to 1 by 2m."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1292.0,
+      "end": 1295.0,
+      "text": " Submission of i is equal to 1 to m."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1295.0,
+      "end": 1296.0,
+      "text": " And here,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1296.0,
+      "end": 1302.0,
+      "text": " our i was h theta of x minus y of i of i whole square."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1302.0,
+      "end": 1303.0,
+      "text": " Okay?"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1303.0,
+      "end": 1305.0,
+      "text": " Now, let's do one thing."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1305.0,
+      "end": 1307.0,
+      "text": " Let's represent this."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1307.0,
+      "end": 1312.0,
+      "text": " Let's, let's, if we want to represent this cost function."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1312.0,
+      "end": 1321.0,
+      "text": " So, let's represent this cost of h theta of x of i minus y."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1321.0,
+      "end": 1322.0,
+      "text": " Okay?"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1322.0,
+      "end": 1324.0,
+      "text": " Sorry, let's do comma y."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1324.0,
+      "end": 1326.0,
+      "text": " Because I am representing this."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1326.0,
+      "end": 1328.0,
+      "text": " Okay?"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1328.0,
+      "end": 1331.0,
+      "text": " comma y."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1331.0,
+      "end": 1332.0,
+      "text": " Okay?"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1332.0,
+      "end": 1334.0,
+      "text": " Let's say that we represent this cost."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1334.0,
+      "end": 1335.0,
+      "text": " Now, let's see,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1335.0,
+      "end": 1337.0,
+      "text": " h theta of x, you know what is it?"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1337.0,
+      "end": 1338.0,
+      "text": " h theta of x of i,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1338.0,
+      "end": 1339.0,
+      "text": " you know what?"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1339.0,
+      "end": 1340.0,
+      "text": " 1 plus,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1340.0,
+      "end": 1342.0,
+      "text": " 1 plus e to the power of minus z."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1342.0,
+      "end": 1343.0,
+      "text": " Now, z is the z,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1343.0,
+      "end": 1346.0,
+      "text": " theta 0 plus theta 1 x."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1346.0,
+      "end": 1349.0,
+      "text": " So, we will basically replace this thing here."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1349.0,
+      "end": 1353.0,
+      "text": " Now, we will write this cost function in a different way."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1353.0,
+      "end": 1355.0,
+      "text": " Because we have a issue,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1355.0,
+      "end": 1357.0,
+      "text": " that is the non-convex one."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1357.0,
+      "end": 1359.0,
+      "text": " We have to make it convex."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1359.0,
+      "end": 1361.0,
+      "text": " So, this thing,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1361.0,
+      "end": 1363.0,
+      "text": " I can write it in two representations."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1363.0,
+      "end": 1366.0,
+      "text": " I can write it in two different types of cost functions."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1366.0,
+      "end": 1368.0,
+      "text": " 1 is minus log,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1368.0,
+      "end": 1370.0,
+      "text": " h theta of x,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1370.0,
+      "end": 1374.0,
+      "text": " if y is equal to 1."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1374.0,
+      "end": 1378.0,
+      "text": " And here we will write minus log of 1 minus,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1378.0,
+      "end": 1380.0,
+      "text": " h theta of x,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1380.0,
+      "end": 1383.0,
+      "text": " if y is equal to 0."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1383.0,
+      "end": 1384.0,
+      "text": " Okay?"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1384.0,
+      "end": 1387.0,
+      "text": " So, if we use this cost function,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1387.0,
+      "end": 1389.0,
+      "text": " and we represent here,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1389.0,
+      "end": 1391.0,
+      "text": " then we will see that,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1391.0,
+      "end": 1395.0,
+      "text": " the gradient descent curve will come from this type of curve."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1395.0,
+      "end": 1397.0,
+      "text": " It will not bring a non-convex curve."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1397.0,
+      "end": 1399.0,
+      "text": " It will bring a convex curve."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1399.0,
+      "end": 1400.0,
+      "text": " That is why,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1400.0,
+      "end": 1402.0,
+      "text": " this cost theta of x"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1402.0,
+      "end": 1404.0,
+      "text": " is now used by the cost function."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1404.0,
+      "end": 1406.0,
+      "text": " This is very difficult."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1406.0,
+      "end": 1408.0,
+      "text": " I will now prove it."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1408.0,
+      "end": 1411.0,
+      "text": " But if you take this value and plot it,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1411.0,
+      "end": 1413.0,
+      "text": " then you will see that,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1413.0,
+      "end": 1415.0,
+      "text": " a gradient descent curve is created."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1415.0,
+      "end": 1417.0,
+      "text": " Then, I will show you."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1417.0,
+      "end": 1418.0,
+      "text": " Here,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1418.0,
+      "end": 1420.0,
+      "text": " if our value is y is equal to 1."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1420.0,
+      "end": 1421.0,
+      "text": " And here,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1421.0,
+      "end": 1423.0,
+      "text": " we have two conditions here."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1423.0,
+      "end": 1425.0,
+      "text": " y is equal to 1 and y is equal to 0."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1425.0,
+      "end": 1426.0,
+      "text": " Let us say that,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1426.0,
+      "end": 1428.0,
+      "text": " we have to take y is equal to 1."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1428.0,
+      "end": 1429.0,
+      "text": " And in our x-axis,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1429.0,
+      "end": 1431.0,
+      "text": " your h theta of x"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1431.0,
+      "end": 1433.0,
+      "text": " will have a value between 0 to 1."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1433.0,
+      "end": 1434.0,
+      "text": " And here,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1434.0,
+      "end": 1436.0,
+      "text": " the y-axis that I am plotting here,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1436.0,
+      "end": 1438.0,
+      "text": " is minus log of h theta of x."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1438.0,
+      "end": 1439.0,
+      "text": " So, here,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1439.0,
+      "end": 1440.0,
+      "text": " if I plot here,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1440.0,
+      "end": 1442.0,
+      "text": " minus log of h theta of x,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1442.0,
+      "end": 1445.0,
+      "text": " then the curve that you are considering,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1445.0,
+      "end": 1448.0,
+      "text": " will have some such a rate."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1449.0,
+      "end": 1451.0,
+      "text": " That curve will have some such a rate."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1451.0,
+      "end": 1452.0,
+      "text": " This means,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1452.0,
+      "end": 1454.0,
+      "text": " you can clearly see here,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1454.0,
+      "end": 1456.0,
+      "text": " that this is your cost."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1456.0,
+      "end": 1457.0,
+      "text": " This is your cost."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1457.0,
+      "end": 1460.0,
+      "text": " Your if y is equal to 1."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1460.0,
+      "end": 1462.0,
+      "text": " And,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1462.0,
+      "end": 1465.0,
+      "text": " h theta of x is equal to 1."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1465.0,
+      "end": 1467.0,
+      "text": " Then your cost is 0."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1467.0,
+      "end": 1470.0,
+      "text": " This is a representation of the curve."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1470.0,
+      "end": 1473.0,
+      "text": " Whatever you will create from this value,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1473.0,
+      "end": 1474.0,
+      "text": " this will be all the things."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1474.0,
+      "end": 1475.0,
+      "text": " Whenever y is equal to 1,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1475.0,
+      "end": 1477.0,
+      "text": " h theta of x is equal to 1."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1477.0,
+      "end": 1478.0,
+      "text": " So, your cost,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1478.0,
+      "end": 1480.0,
+      "text": " this cost will be the whole value of the whole."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1480.0,
+      "end": 1481.0,
+      "text": " Now,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1481.0,
+      "end": 1483.0,
+      "text": " if y is equal to 0,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1483.0,
+      "end": 1485.0,
+      "text": " then how will the curve be created?"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1485.0,
+      "end": 1487.0,
+      "text": " Let's say that I have another curve here."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1487.0,
+      "end": 1489.0,
+      "text": " If my y is equal to 0,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1489.0,
+      "end": 1490.0,
+      "text": " if y is equal to 0,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1490.0,
+      "end": 1492.0,
+      "text": " then the curve of h theta of x"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1492.0,
+      "end": 1494.0,
+      "text": " will look like this."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1495.0,
+      "end": 1496.0,
+      "text": " Okay, here,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1496.0,
+      "end": 1497.0,
+      "text": " I will write here,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1497.0,
+      "end": 1499.0,
+      "text": " minus log of 1 minus h theta of x,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1499.0,
+      "end": 1500.0,
+      "text": " which is nothing but cost."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1500.0,
+      "end": 1502.0,
+      "text": " If I see its curve,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1502.0,
+      "end": 1503.0,
+      "text": " then basically,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1503.0,
+      "end": 1505.0,
+      "text": " its curve will look like this."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1505.0,
+      "end": 1506.0,
+      "text": " Okay."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1506.0,
+      "end": 1507.0,
+      "text": " In this curve,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1507.0,
+      "end": 1509.0,
+      "text": " what we can prove that if y is equal to 0,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1509.0,
+      "end": 1511.0,
+      "text": " and h theta of x is equal to 0,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1511.0,
+      "end": 1513.0,
+      "text": " your cost function is going to be 0."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1513.0,
+      "end": 1514.0,
+      "text": " Okay."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1514.0,
+      "end": 1517.0,
+      "text": " So, these three things we can prove in this."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1517.0,
+      "end": 1518.0,
+      "text": " Okay."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1518.0,
+      "end": 1519.0,
+      "text": " Considering this cost,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1519.0,
+      "end": 1521.0,
+      "text": " we will do this cost function."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1521.0,
+      "end": 1522.0,
+      "text": " What we will do?"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1522.0,
+      "end": 1525.0,
+      "text": " We will use this as a cost function."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1525.0,
+      "end": 1526.0,
+      "text": " And,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1526.0,
+      "end": 1528.0,
+      "text": " this will include where j of theta is."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1528.0,
+      "end": 1529.0,
+      "text": " Because,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1529.0,
+      "end": 1531.0,
+      "text": " here, we will replace this equation."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1531.0,
+      "end": 1534.0,
+      "text": " Let's see another representation."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1534.0,
+      "end": 1537.0,
+      "text": " Now, you will see that we can write cost of x as well."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1537.0,
+      "end": 1538.0,
+      "text": " In other words,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1538.0,
+      "end": 1540.0,
+      "text": " I have to write mathematically."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1540.0,
+      "end": 1542.0,
+      "text": " So, I will go like this."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1542.0,
+      "end": 1545.0,
+      "text": " Cost h theta of x, y is equal to"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1545.0,
+      "end": 1547.0,
+      "text": " minus y log"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1548.0,
+      "end": 1550.0,
+      "text": " minus y log"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1550.0,
+      "end": 1552.0,
+      "text": " s theta of x"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1552.0,
+      "end": 1555.0,
+      "text": " minus 1 minus y log"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1555.0,
+      "end": 1558.0,
+      "text": " this is my log h theta of x"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1558.0,
+      "end": 1562.0,
+      "text": " minus 1 minus y log of 1 minus h theta of x."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1563.0,
+      "end": 1565.0,
+      "text": " Now, what you are thinking about is, what is this?"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1565.0,
+      "end": 1568.0,
+      "text": " Guys, this is the equation,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1568.0,
+      "end": 1569.0,
+      "text": " this cost function,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1569.0,
+      "end": 1571.0,
+      "text": " this is the second representation of this."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1571.0,
+      "end": 1572.0,
+      "text": " Why am I saying that?"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1572.0,
+      "end": 1573.0,
+      "text": " Because, see,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1573.0,
+      "end": 1575.0,
+      "text": " if y is equal to 1 value,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1575.0,
+      "end": 1577.0,
+      "text": " if y is equal to 1 value,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1577.0,
+      "end": 1579.0,
+      "text": " then this whole whole will be 0."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1579.0,
+      "end": 1581.0,
+      "text": " And, you will have a safe log h theta of x."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1581.0,
+      "end": 1583.0,
+      "text": " If, look,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1583.0,
+      "end": 1584.0,
+      "text": " I will write here,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1584.0,
+      "end": 1585.0,
+      "text": " if y is equal to 1,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1585.0,
+      "end": 1588.0,
+      "text": " then your equation will be minus y."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1588.0,
+      "end": 1589.0,
+      "text": " Sorry,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1589.0,
+      "end": 1590.0,
+      "text": " minus log"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1590.0,
+      "end": 1591.0,
+      "text": " h theta of x."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1592.0,
+      "end": 1594.0,
+      "text": " Because, here y is equal to 1."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1595.0,
+      "end": 1598.0,
+      "text": " And, if your value is equal to 0."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1599.0,
+      "end": 1601.0,
+      "text": " So, what will be your value here?"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1601.0,
+      "end": 1602.0,
+      "text": " But, 0,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1602.0,
+      "end": 1604.0,
+      "text": " this whole term is 0."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1604.0,
+      "end": 1605.0,
+      "text": " 1 minus 0."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1605.0,
+      "end": 1607.0,
+      "text": " And, your value will be minus log"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1607.0,
+      "end": 1609.0,
+      "text": " 1 minus h theta of x."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1609.0,
+      "end": 1612.0,
+      "text": " These are the same things, right?"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1612.0,
+      "end": 1614.0,
+      "text": " The cost function we have discussed,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1614.0,
+      "end": 1615.0,
+      "text": " is the same."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1615.0,
+      "end": 1616.0,
+      "text": " So,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1616.0,
+      "end": 1618.0,
+      "text": " we can also do such representation,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1618.0,
+      "end": 1620.0,
+      "text": " which is our cost function."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1620.0,
+      "end": 1623.0,
+      "text": " So, finally, we will replace the whole whole term,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1623.0,
+      "end": 1625.0,
+      "text": " in this equation,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1625.0,
+      "end": 1628.0,
+      "text": " j theta of 0,1."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1628.0,
+      "end": 1629.0,
+      "text": " So, here,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1629.0,
+      "end": 1630.0,
+      "text": " finally, we can write,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1630.0,
+      "end": 1636.0,
+      "text": " j theta of 0,1 is equal to 1 by 2m."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1638.0,
+      "end": 1640.0,
+      "text": " Summation of i is equal to 1 to m."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1640.0,
+      "end": 1642.0,
+      "text": " And, here, we will write,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1642.0,
+      "end": 1645.0,
+      "text": " y of i log"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1645.0,
+      "end": 1649.0,
+      "text": " h theta of x of i minus,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1649.0,
+      "end": 1651.0,
+      "text": " per plus."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1651.0,
+      "end": 1653.0,
+      "text": " Let's say, plus,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1653.0,
+      "end": 1654.0,
+      "text": " here, minus will be,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1654.0,
+      "end": 1656.0,
+      "text": " plus,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1656.0,
+      "end": 1660.0,
+      "text": " 1 minus y of i log of,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1660.0,
+      "end": 1665.0,
+      "text": " 1 minus h theta of x of i."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1665.0,
+      "end": 1667.0,
+      "text": " Look, this is the whole thing, right?"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1667.0,
+      "end": 1670.0,
+      "text": " I have replaced the whole cost function here."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1670.0,
+      "end": 1672.0,
+      "text": " First, my such value,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1672.0,
+      "end": 1674.0,
+      "text": " now, I have replaced it,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1674.0,
+      "end": 1675.0,
+      "text": " and added this one."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1675.0,
+      "end": 1677.0,
+      "text": " I have taken the minus,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1677.0,
+      "end": 1679.0,
+      "text": " so, here, it is plus,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1679.0,
+      "end": 1681.0,
+      "text": " here, minus will be, right?"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1681.0,
+      "end": 1683.0,
+      "text": " And, how long do I have to repeat?"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1683.0,
+      "end": 1685.0,
+      "text": " How long do I have to repeat?"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1685.0,
+      "end": 1687.0,
+      "text": " This is my cost function,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1687.0,
+      "end": 1689.0,
+      "text": " this is my cost function."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1689.0,
+      "end": 1691.0,
+      "text": " And, my convergence will have to be written,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1691.0,
+      "end": 1693.0,
+      "text": " which is convergence theorem."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1693.0,
+      "end": 1695.0,
+      "text": " Here, I have to update,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1695.0,
+      "end": 1696.0,
+      "text": " which value,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1696.0,
+      "end": 1698.0,
+      "text": " convergence, repeat."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1698.0,
+      "end": 1700.0,
+      "text": " Let me write,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1700.0,
+      "end": 1703.0,
+      "text": " here, my values will be,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1703.0,
+      "end": 1704.0,
+      "text": " repeat,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1704.0,
+      "end": 1706.0,
+      "text": " theta of j,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1707.0,
+      "end": 1709.0,
+      "text": " equal to theta of j,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1709.0,
+      "end": 1712.0,
+      "text": " minus learning rate, derivative of theta j."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1712.0,
+      "end": 1715.0,
+      "text": " And, here, my theta of j of theta 0 is theta 1."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1715.0,
+      "end": 1718.0,
+      "text": " So, this is my convergence algorithm,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1718.0,
+      "end": 1720.0,
+      "text": " which will tell you,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1720.0,
+      "end": 1722.0,
+      "text": " when will we reach your global minimum point?"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1722.0,
+      "end": 1724.0,
+      "text": " Okay?"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1724.0,
+      "end": 1726.0,
+      "text": " When will we reach the global minimum point?"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1726.0,
+      "end": 1728.0,
+      "text": " So, this is the whole,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1728.0,
+      "end": 1730.0,
+      "text": " math, intuition, logistic regression."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1730.0,
+      "end": 1732.0,
+      "text": " Very important thing,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1732.0,
+      "end": 1734.0,
+      "text": " you have to know,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1734.0,
+      "end": 1736.0,
+      "text": " what is the optimizer?"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1736.0,
+      "end": 1738.0,
+      "text": " Finally, you will be optimizer,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1738.0,
+      "end": 1740.0,
+      "text": " you will have to minimize the cost function,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1740.0,
+      "end": 1742.0,
+      "text": " you will have to minimize all the values,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1742.0,
+      "end": 1744.0,
+      "text": " and how to minimize it,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1744.0,
+      "end": 1746.0,
+      "text": " until you get this theta of j,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1746.0,
+      "end": 1748.0,
+      "text": " you will have to update the global minimum point,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1748.0,
+      "end": 1750.0,
+      "text": " until you get this update."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1750.0,
+      "end": 1752.0,
+      "text": " And, I read all these things in linear regression."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1752.0,
+      "end": 1754.0,
+      "text": " So, I hope you liked this video."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1754.0,
+      "end": 1756.0,
+      "text": " It is a complete, complete, math,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1756.0,
+      "end": 1758.0,
+      "text": " intuition, guys, I know,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1758.0,
+      "end": 1760.0,
+      "text": " sometimes it is difficult,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1760.0,
+      "end": 1762.0,
+      "text": " but I hope you have understood it."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1762.0,
+      "end": 1764.0,
+      "text": " If you are still confused,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1764.0,
+      "end": 1766.0,
+      "text": " watch my English, English,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1766.0,
+      "end": 1768.0,
+      "text": " Hindi, whatever you like,"
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1768.0,
+      "end": 1770.0,
+      "text": " learn more."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1770.0,
+      "end": 1772.0,
+      "text": " Thank you, one doll, I will see you all in the next video."
+    },
+    {
+      "title": "Logistic Regression Indepth Maths Intuition",
+      "start": 1772.0,
+      "end": 1774.0,
+      "text": " Bye-bye."
+    }
+  ],
+  "text": " Hello all my name is Krishna and welcome to my youtube channel. So guys this was the second tutorial, Logistic Regression. We will go to Maths Intuition and explain in Hindi. We have already seen the previous, if you are watching Machine Learning Playlist. In the Christian Act Hindi Channel, you will obviously learn regression. I have explained it in a very good way. Mathematically, our aim is basically what we do. If you have some data points in linear regression, you can also get some data points. Let's say that this is my age, this is my weight. Suppose we have to make a model where our model input takes age and outputs weight. So in that, I can make a best fit line. And this is the equation of best fit line. Let's give it h theta of x is equal to theta 0 plus theta 1 x1. So we can create a best fit line with this equation. And the most important thing is that we have to go to linear regression. So here we define the cost function of j of theta as theta 1. And we write this as 1 by 2m summation of i is equal to 1 to m. And here we write it as h theta of x of i minus y of i whole square. So this was the whole cost function of our whole. And we always remember that what we do here is gradient descent. This is a cost function basically gradient descent type of curve. And our main aim is to update our theta until we minimize it. When we get the minimum point when our global minimum point is meet. So all the things we saw were obviously in linear regression. And we solve the problem statement of linear regression. Now in today's video we will know that for the classification problem statement I have the machine learning algorithm for logistic regression. So let's see. Now you can see here. First of all I write logistic regression again. Logistic regression. So our main aim is that if I have a data set, let's say this is my feature x1 and y, x and y. Let's say that I can write something here. I will write this in the past. Let's say that I have two features. I can write a feature in the past. Study hours. And here I can write a feature here. Pass or fail. Now let's go to output feature. And logistic regression we use is for classification problem statement. When I say classification problem statement, that basic limits, if I have a study hours 4, then the child passes and anybody will pass. If the study hours 2 is 2, then the child will fail. Let's say fail. If the study hour is 0, then the person will fail. If it is 1, it will fail. Okay. If it is 2.5, then the study hours pass. So this is my data set. I have just taken an example of data set. You can take anything. But remember that my output feature is a classification problem. Because I have two outputs. And specifically, I will say this in binary classification. So here I will write binary classification. Now I will solve this problem. Consider my access to study hours. And I know my output is 2. So I can indicate 0 and 1 in this file. And this is my y value. Now I will study my study hours. Let's say that I make my points in this study hours. When my study hours are 0, then obviously it is fail. If it is 1, it is 2, it is 2.5, then it is 5. So I will show you 5. I will add my second feature in this study hours. And this is the study hours. And this will continue. Now I understand this problem is a classification problem. So first we need to understand this. Can we solve this problem with linear regression? So if we need to solve this with linear regression. First of all, we will make a best fit line. Let's say that this is my best fit line. Let's make this here. So this is my best fit line. Obviously this best fit line, you know how we denote it. h theta of x is equal to theta 0 plus theta 1 x1. Obviously we have discussed this in linear regression. Now let's see what is a problem here. When this value is probably from here. If I see its central element here. This value is 0.5. So here we can definitely see two things. If I use linear regression. So here you can see one thing in linear regression. We have to create straight line here. And I will definitely say that if I have a point. I have to check this point value. So this point will be from this. And here we have got 0.7. Now we know that two conditions. Look at this point greater than 0.5. So we can definitely say this is 1. So if I have a point here. I can say that this one is a steady hour. This one is a fail. Because my less than 0.5 is coming. So here we have 0.1. So this is less than 0.5. So I can definitely say that this is a fail. I can say that this is a pass. But there are two problems. One problem is that if I add my outlier here. Let's say that my outlier is added here. So I will add an outlier here. If this outlier is added in my training data set. This is a steady hour. So what will happen? This best fit line will change again. Now my new best fit line will probably be like this. Okay? It will be like this. So I can change it a little bit more. I will create it like this. So let's see what is happening in linear regression. So I can say that my best fit line will change once. Okay? So here you can see that if I add a new point, the green point that I was not able to get the output. If I go and point it, then this is less than 0.5. So even though the steady hour is good. So there is also the output result of this. That is a fail. Okay? So here is a major problem in linear regression. Okay? From linear regression, you can definitely not solve a classification problem. You cannot solve. You cannot solve. Okay? Very simple. I am saying this. If you think that we can solve it by using linear regression, then answer is no. Now the second problem. The first problem is the output. If the output is coming out, my best fit line will change completely. Let's go ahead. This will be a big problem. Because now, you can see that the old points are definitely not visible. But the new points, the green points, the first value of the green point was not coming out. Now its value is less than 0.5. If it is less than 0.5, then definitely I will say 0. This is the first reason. Now the second reason is that now we will see here. We have always said that this is binary classification. So either your answer should be 0 or 1. But now in some scenarios, if I explain here, then I will make a point. So if I plot here, then this is greater than 1. This is greater than 1. Obviously, we can say that greater than 1 means 1 is 1. Okay? And this negative value can also come. That is less than 0. But we always say that value is 0 to 1. So we will say this to make this thing a squash. We have to squash this. And this squash is not linear regression. So we will use logistic regression. So in the second reason, I will say the output is greater than 1. And less than 1 also in this specific case. Sorry. Less than 0. So we will say that this is not linear regression suitable for us. So let's see what happens in logistic case. Logistic case is made of such type of line. Squash is also made of such type of line. And output is also made of such type of line. So we will do logistic regression to overcome that. Now in logistic regression, it is very simple. Look at two things. Obviously, you have to take your best fit line. But you have to take it as a street of x. Where we will write theta 0 plus theta 1 x1. So we can do this squashing. This squashing is very important. And this squashing we will do best fit line. So we will use this as a sigmoid function. Now sigmoid function is its equation 1 e to the power of minus x. So how we will do these two combinations in the moment. So I have written the value of z. Before we write how we write h theta of x is equal to theta 0 plus theta 1 x1. Now I will write this. I will say that I know h theta of x. I know that I have to make a sigmoid activation function. Okay, look. First of all, this equation is to make sigmoid activation function above it. So let's say that I have written the function as g as a sigmoid activation function. And here I will write theta 0 plus theta 1 multiplied by x. That basically means this equation will be made straight line. And I will do this to squash it. I will do this to squash it. This will be the function of g activation. And we will call this g function as sigmoid function. This is the equation of this equation. 1 power e to the power of minus z. Where z is nothing but z is theta 0 plus theta 1 multiplied by x. So in short, if I tell you that entire equation should be this way, I can write h theta of x is equal to 1 plus 1 e to the power of minus z. So this z is basically replaced. Theta 0 plus theta 1 multiplied by x. So in short, my entire equation will be this way. 1 plus e to the power of minus theta 0 plus theta 1 x1. So this is our hypothesis in the logistic regression case. It is very simple. First I have done what I have done. First I have said that the value of g is 1 plus e to the power of minus z. This z is nothing but this value. I am indicating z as a whole. And after that I am replacing g. Finally you can see that I am replacing it. And this is my entire hypothesis logistic. This is my hypothesis function logistic. Very simple. How do you understand? How was linear? It was like this in linear. Theta 0 plus theta 1 into x1. Now look at the difference between linear and logistic. We are applying this. But we are adding sigma to this. Now I am writing sigma activation function. What is the feature of this? This is the function of sigma activation function. This function of sigma function is made like this. Let me write it again. Sigma. So g is equal to 1 plus e to the power of minus z. Now this is the function of sigma activation function. This is what is made like this. I will make it like this. So this is the function of this graph. How will it be made like this? Okay. If this is my z value and this is my sigma which is g value. And here you will be confused. This is the g I am specifying and sigma which is the function. Okay. h z will be here. So when we do not assign this to us, we will be able to make this function. So what happens here? Here the value is 0 and 1 and this is the b of the point 5. So remember that there are two things. If z is greater than or equal to 0, then your sigma activation function which you value is always greater than or equal to 0. Okay. So here I have written, it is always greater than or equal to 0. In the case of greater than or equal to 0. Okay. Or it is always not near to 1. It is always not near to 0. Okay. The maximum is 0 to 1. This is the value of this thing. If z is less than or equal to 0, so g of z is always less than or equal to 0.5. This is also you always have to remember. So these two conditions, I will write it again. Here I will put one more condition here that if your z value is less than or equal to 0, then g of z will always be less than or equal to 0.5. This is very important. Okay. I will do this less than or equal to 0.5. Okay. So until here you have come, I hope you have understood. Let's go and write it again in the entire problem statement. Usually I write everything in the book, I will write it here. So I will write it again and again. How can I write it in the entire problem statement? Let's see the problem statement. So I hope that I have understood everything so far. I have understood that why we cannot use linear regression. And for the logistic regression, we have a theta z, such as a hypothesis, where we have to put a signoid function on top of it. I always remember that we will have to write a best fit. This will be our signoid curve, which will be the squashing plus outlier. We will handle this. Okay. Now I will discuss it here. Let's consider that this is my training set. The training set is this. And I will write the data set here. X1 Y1. Okay. Let's see. I will write it in a good way. And then I have X2. X2 Y2. Okay. And I can write a different training set. I will finally get XM YM. Okay. This is my training data set. And remember that the X that will be belongs to X0 X1 X2 like this. Up till XM. Okay. And the Y value will always be 0 and 1. So this will be 0 to 1. And finally, the X that I am making here will be basically 1 minus... Sorry, 1 plus e to the power of minus theta 0 plus theta 1 X1. Okay. We always remember that when we write, okay. And I have a function as Z, which we write as Z. Theta 0 plus theta 1 X. Right. In the particular case, X1 will not be X. In this particular case, I can write this equation as well. Theta transpose X. Okay. So I will make it shorter. 1 plus e to the power of minus theta transpose X. So this is your H theta of X. So this is clear. This is my hypothesis. Hypothesis for logistic regression. At the end of the day, all my data points will be passed here. This is the equation. We always remember that we go to linear regression again. Because what we do in linear regression. First of all, we test hypothesis, and then we get a cost function. And you know, what is the cost function of linear regression. I have written it here too. I will write it again. And you also write it because it is good. You should write it. Okay. So here I write the cost function as well. 1 by 2M. summation of i is equal to 1 to M. H theta of X of i minus y of i. I will change the cost function of logistic regression. See, what will change in the cost function of logistic regression? If I write J of theta 0, comma theta 1, and here I will write 1 by M. If you know the linear regression, and here I will write 1 by 2M. I will write summation of i is equal to 1 to M. I will write another color. So that you can distinguish it. Okay. I will write it again. So I am writing it here. I will write J of theta 0, comma theta 1, 1 by 2M. Okay. summation of i is equal to 1 to M. Cost function is the same. This is the cost function y of i whole square. Okay. i whole square. Now I have written it. Remember, in logistic regression, what is the H theta of X? So in logistic regression, if I specify this here, here, okay. H theta of X is nothing but 1 by 1 plus e to the power of minus theta transpose X. You know, you know, at the end of the day, here, the linear regression, what was the H theta of X? H theta of X is equal to theta transpose X. Right. We can write this as theta 0 plus theta 1 X. Okay. Both are the same. Here, this is the place of the H. Now, here, this is the place of the H. Okay. Here, this is the place of the H. Okay. Now, this is the cost function entirely, the logistic regression, and the linear regression, I have written in the different function. Almost the same. Okay. But in this cost function, where we have to use 1 divided by 1 plus e to the power of minus theta transpose X. We can say this as a non-convict function. I will explain it as a non-convict function. Now, you must understand that it is a non-convict function. Always remember that in linear regression, I write here non-convicts, and here I write here non-convicts function. Okay. We understand this. Always remember that the non-convict function, we have obviously seen that in linear regression, our cost function was made, how it was made, gradient descent type, with this curve. If you haven't watched the previous video, then you won't understand. We always remember that, for the linear regression, for the linear regression, we use this cost function. It used to create always a convex function. That is, this was always a convex function. In a convex function, this is a slope of 1. And your main motto is, the one here is, your global minima. Global minima. This is a very important thing. As a part of a convex function, you should be coming towards this global minima. But, now I am saying that, this is a non-convict function. First reason, we are applying the curve activation curve. We call it a sigma curve function. This non-convict curve function is called, your graph, your graph, is always the same. So many curves. And what is the problem in this curve? See, your global minima is here. This is a global minima. And this point, this point, this point, we call it a local minima. Local minima. And we always remember, when a gradient descent comes to a global minima, like you are updating the value of theta. When a day of theta is updated, if a value is updated, then it will be the same. Because the slope here is always 0. And when the slope is 0, then your theta value will never be updated. And you will not be able to get this point. If your point is also here, if it is here, then it is here. All these points are called local minima. This is called global minima. Whereas, in the case of convex function, we always remember that where no local minima will be. No local minima. Only global minima will be. Okay? So, in this case, what we do is, the logic regression is a different type of cost function. We say that. So guys, I hope you guys have found out this cost function. And what we are trying to do. And you also have found out the non-convex function. So, let's go and find out the logic regression cost function. And this time, we will write a different representation format. And before that, I will write the same cost function here. So, let's see. So, logistic cost function. If I write here in green color, j theta, 0 theta 1 is equal to 1 by 2m. Submission of i is equal to 1 to m. And here, our i was h theta of x minus y of i of i whole square. Okay? Now, let's do one thing. Let's represent this. Let's, let's, if we want to represent this cost function. So, let's represent this cost of h theta of x of i minus y. Okay? Sorry, let's do comma y. Because I am representing this. Okay? comma y. Okay? Let's say that we represent this cost. Now, let's see, h theta of x, you know what is it? h theta of x of i, you know what? 1 plus, 1 plus e to the power of minus z. Now, z is the z, theta 0 plus theta 1 x. So, we will basically replace this thing here. Now, we will write this cost function in a different way. Because we have a issue, that is the non-convex one. We have to make it convex. So, this thing, I can write it in two representations. I can write it in two different types of cost functions. 1 is minus log, h theta of x, if y is equal to 1. And here we will write minus log of 1 minus, h theta of x, if y is equal to 0. Okay? So, if we use this cost function, and we represent here, then we will see that, the gradient descent curve will come from this type of curve. It will not bring a non-convex curve. It will bring a convex curve. That is why, this cost theta of x is now used by the cost function. This is very difficult. I will now prove it. But if you take this value and plot it, then you will see that, a gradient descent curve is created. Then, I will show you. Here, if our value is y is equal to 1. And here, we have two conditions here. y is equal to 1 and y is equal to 0. Let us say that, we have to take y is equal to 1. And in our x-axis, your h theta of x will have a value between 0 to 1. And here, the y-axis that I am plotting here, is minus log of h theta of x. So, here, if I plot here, minus log of h theta of x, then the curve that you are considering, will have some such a rate. That curve will have some such a rate. This means, you can clearly see here, that this is your cost. This is your cost. Your if y is equal to 1. And, h theta of x is equal to 1. Then your cost is 0. This is a representation of the curve. Whatever you will create from this value, this will be all the things. Whenever y is equal to 1, h theta of x is equal to 1. So, your cost, this cost will be the whole value of the whole. Now, if y is equal to 0, then how will the curve be created? Let's say that I have another curve here. If my y is equal to 0, if y is equal to 0, then the curve of h theta of x will look like this. Okay, here, I will write here, minus log of 1 minus h theta of x, which is nothing but cost. If I see its curve, then basically, its curve will look like this. Okay. In this curve, what we can prove that if y is equal to 0, and h theta of x is equal to 0, your cost function is going to be 0. Okay. So, these three things we can prove in this. Okay. Considering this cost, we will do this cost function. What we will do? We will use this as a cost function. And, this will include where j of theta is. Because, here, we will replace this equation. Let's see another representation. Now, you will see that we can write cost of x as well. In other words, I have to write mathematically. So, I will go like this. Cost h theta of x, y is equal to minus y log minus y log s theta of x minus 1 minus y log this is my log h theta of x minus 1 minus y log of 1 minus h theta of x. Now, what you are thinking about is, what is this? Guys, this is the equation, this cost function, this is the second representation of this. Why am I saying that? Because, see, if y is equal to 1 value, if y is equal to 1 value, then this whole whole will be 0. And, you will have a safe log h theta of x. If, look, I will write here, if y is equal to 1, then your equation will be minus y. Sorry, minus log h theta of x. Because, here y is equal to 1. And, if your value is equal to 0. So, what will be your value here? But, 0, this whole term is 0. 1 minus 0. And, your value will be minus log 1 minus h theta of x. These are the same things, right? The cost function we have discussed, is the same. So, we can also do such representation, which is our cost function. So, finally, we will replace the whole whole term, in this equation, j theta of 0,1. So, here, finally, we can write, j theta of 0,1 is equal to 1 by 2m. Summation of i is equal to 1 to m. And, here, we will write, y of i log h theta of x of i minus, per plus. Let's say, plus, here, minus will be, plus, 1 minus y of i log of, 1 minus h theta of x of i. Look, this is the whole thing, right? I have replaced the whole cost function here. First, my such value, now, I have replaced it, and added this one. I have taken the minus, so, here, it is plus, here, minus will be, right? And, how long do I have to repeat? How long do I have to repeat? This is my cost function, this is my cost function. And, my convergence will have to be written, which is convergence theorem. Here, I have to update, which value, convergence, repeat. Let me write, here, my values will be, repeat, theta of j, equal to theta of j, minus learning rate, derivative of theta j. And, here, my theta of j of theta 0 is theta 1. So, this is my convergence algorithm, which will tell you, when will we reach your global minimum point? Okay? When will we reach the global minimum point? So, this is the whole, math, intuition, logistic regression. Very important thing, you have to know, what is the optimizer? Finally, you will be optimizer, you will have to minimize the cost function, you will have to minimize all the values, and how to minimize it, until you get this theta of j, you will have to update the global minimum point, until you get this update. And, I read all these things in linear regression. So, I hope you liked this video. It is a complete, complete, math, intuition, guys, I know, sometimes it is difficult, but I hope you have understood it. If you are still confused, watch my English, English, Hindi, whatever you like, learn more. Thank you, one doll, I will see you all in the next video. Bye-bye."
+}
