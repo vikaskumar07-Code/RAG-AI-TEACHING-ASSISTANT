@@ -1,0 +1,8 @@
+audios/
+videos/
+*.mp3
+*.mp4
+*.wav
+*.mkv
+*.json
+models/
