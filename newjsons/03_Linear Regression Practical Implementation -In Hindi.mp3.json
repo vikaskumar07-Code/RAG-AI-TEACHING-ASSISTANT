@@ -1,0 +1,599 @@
+{
+    "chunks": [
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 0.0,
+            "end": 25.0,
+            "text": " Hello all my name is Krishna and welcome to my youtube channel.  So guys we will continue the playlist of Machine Learning.  And in today's video we will see the practical implementation of linear regression.  Now whatever I will do in implementation, I will ensure that the linear regression parameters of SK Learn can be played with it.  And you can efficiently make a good model."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 25.0,
+            "end": 46.0,
+            "text": " Now whatever I will do in the dataset, we will do a little more ED and feature engineering.  Because I am a separate playlist of ED and feature engineering in Krishna's channel.  Because it is a different detailed process.  So I will try to simplify the projects here.  But as soon as we go ahead and discuss more complex projects and end to end projects."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 46.0,
+            "end": 75.0,
+            "text": " So let's go without wasting any time and we will implement some linear regression.  One thing, guys please make sure you subscribe to the channel, press the bell notification icon and watch the whole video till the end.  All these videos will definitely help you in cracking the interview.  So guys we will see the practical implementation of linear regression.  We will explain in detail the details, the linear regression parameters, and how we implement it."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 75.0,
+            "end": 100.0,
+            "text": " We will discuss all the things about hyper-pand, and how we implement it.  For this problem statement, I will take a dataset, which we call as the Boston House Pricing dataset.  So if you want to import it, then probably we can use SK Learn from SK Learn.  Dot datasets import load under Boston.  So what is load under Boston?"
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 100.0,
+            "end": 130.0,
+            "text": " Here you will get a dataset that specifies the Boston House Pricing dataset.  So what we will do with this dataset?  We will see what is in this dataset.  So let's go quickly and import some libraries, like import numpy as np, import pandas as pd,  and import matplotlib dotpyplot as pnt."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 130.0,
+            "end": 149.0,
+            "text": " So all these libraries are going to import and all these are basic libraries.  So what we will do is we will use it.  Next thing is the dataset that we will need to load.  I have already used the word load Boston for dataset.  So if I add load under Boston, and if I call it here,"
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 149.0,
+            "end": 164.0,
+            "text": " you will see that we will get three things from the key value pairs.  One is the data, and the other is the data key.  And the value is here.  The target is here, and the value is here.  And if you see the feature names and the value is here."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 164.0,
+            "end": 178.0,
+            "text": " So here you can see all the data and the visible clear information.  Now I will move ahead.  What are the features and the information?  The features are the names.  So you will get information from that."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 178.0,
+            "end": 198.0,
+            "text": " But the capital is basically crime.  JN, proportion of residential land zone for lots over 25,000 square feet.  There are many parameters.  But remember that our output features are basically my target.  And what is this target specifying?"
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 198.0,
+            "end": 218.0,
+            "text": " You basically specify how much you need to pay.  So this is my output features, this is my independent features.  And if you want to know the name of my independent features, this is your feature name.  So what we will do with this is, we will try to construct a data frame.  So here I want to make a data frame."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 218.0,
+            "end": 232.0,
+            "text": " I will write pd.data frame.  And here I will write df.data.  So when I write this, what is the error?  Data frame has no attribute.  Okay, no problem."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 232.0,
+            "end": 248.0,
+            "text": " I will save it in df.  So if I write df.data, now we know that if I execute the df,  then I have three keys.  Data is done, target is done.  And this is your feature name."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 248.0,
+            "end": 260.0,
+            "text": " So if I write df.data, then this will be my data frame.  Okay?  I hope you understand it easily.  So this is my data set.  So here I will save it in data set."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 260.0,
+            "end": 276.0,
+            "text": " Okay?  Now if this is my final data set, then you can see all the features here.  Okay?  Now the main thing is, if I want to set the data set.  If I want to set the column, then I will do dot columns."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 276.0,
+            "end": 285.0,
+            "text": " I will specifically give it df.featureNames.  Okay?  So where is the df.featureNames coming from?  What will all of these features become?  My column will be named."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 285.0,
+            "end": 296.0,
+            "text": " Okay?  So this is my featureNames.  So I have executed it here.  Now I will go and see my data set.head.  So all these independent features will be displayed here."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 296.0,
+            "end": 309.0,
+            "text": " So this is my crimjzn, this, this, this, this, this.  BL starts everything.  Okay?  So this is my data set specifically.  Now you need to remember one thing that I have not taken the target feature yet."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 309.0,
+            "end": 323.0,
+            "text": " So I am using an independent and dependent features in some different variable.  So here my independent features and dependent features.  And dependent features.  Okay?  I will keep this in a different variable."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 323.0,
+            "end": 337.0,
+            "text": " I will talk about x.  I will talk about all the independent features that are my data set.  And I will talk about y.  Here if I write df.target, then basically my y variable will be turned on.  So if I execute it and I see y, then this is my complete price."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 337.0,
+            "end": 344.0,
+            "text": " Okay?  Price of the house.  So here it is very clear.  I have not done anything here.  Independent and dependent features."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 344.0,
+            "end": 360.0,
+            "text": " Basically we have divided the data.  Now after this step, we will write train test split.  Obviously our data set is done with all the training tests.  Okay?  So what I will do here for the training test split."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 360.0,
+            "end": 379.0,
+            "text": " I will search here.  Scale and train test split.  If you do not remember anything, then you can see the documentation from here.  So from scale and dot model selection, train test split.  So I will write here quickly from scale and dot model selection."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 379.0,
+            "end": 387.0,
+            "text": " Import train test split.  Okay?  Now it is a train test split.  Now I will move ahead.  I will paste this thing copy."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 387.0,
+            "end": 396.0,
+            "text": " I will paste the x train y train.  Because I will write the same thing here.  I will reduce the size of the data set.  I will do the data set.  I am 30%."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 396.0,
+            "end": 413.0,
+            "text": " The size of my test.  Now see here my x train, x test, y train and y test.  We will use x train and y train basically to train the model.  To train the model, we will use x test and y test.  To test the model, we will use x test and y test."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 413.0,
+            "end": 426.0,
+            "text": " So finally I have executed this.  Now I will show you the x train values.  So this is my full value.  Okay?  And x train this, y train this, y test this."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 426.0,
+            "end": 434.0,
+            "text": " All of you are getting specifically.  Okay?  So this is all done.  Okay?  Now what I am going to do next step."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 434.0,
+            "end": 448.0,
+            "text": " I am going to implement linear regression.  Now to implement linear regression.  This is my x train.  Okay?  Now to implement linear regression, first of all, I will have to import linear regression."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 448.0,
+            "end": 459.0,
+            "text": " Now where will the linear regression import?  This is basically a model in the library.  We call it linear model.  It is in the scale.  And what is linear regression?"
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 459.0,
+            "end": 477.0,
+            "text": " It is fit intercept, true, normalized, deprecated, and so on.  Now let us understand each and every parameter.  Fit intercept is called, whether to calculate the intercept for this model.  If set to false, no intercept will be used in calculation.  But we will obviously have to take an intercept."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 477.0,
+            "end": 498.0,
+            "text": " Intercepts have a big importance.  So fit intercept is called by default, which is true.  Now normalize bool default is equal to false.  This parameter is ignored when fit intercept is set to false.  If it is true, the regressor will get the independent feature will get normalized before regression by subtracting the mean and dividing by L2 norms."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 498.0,
+            "end": 519.0,
+            "text": " So if I want to normalize standardized, then I will try to prove this value.  Now for the default value, it is false.  So what we will do here, we will try to prove it.  To prove this, it can come a good result.  So definitely if you wish to standardize, please use standard scalar before calling fit on the estimator with normalized equal to false."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 520.0,
+            "end": 549.0,
+            "text": " See, there are two ways.  First, we have to standardize the data and normalize the data.  And remember, we have to standardize the linear regression.  Now what we have to do is to standardize the data.  So what we will do is to normalize the value of the normalize."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 549.0,
+            "end": 566.0,
+            "text": " But if you wish to standardize, then we will standardize the data.  So to standardize, we will use standard scalar.  Now what is standard scalar?  We will apply this formula.  We have studied in statistics."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 566.0,
+            "end": 595.0,
+            "text": " So let's first standardize the fit and fit and then we will just standardize the fit and fit.  And we should not always use the output feature.  So here I write the standardization process, standardizing the data set.  And this is very important because your output model will be very good.  So first we will see where this is basically in processing."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 595.0,
+            "end": 615.0,
+            "text": " So I will write from skln.pre processing import standard scalar.  Now what happens in the next step is, we always see documentation.  This process is understood.  So here I will initialize the standard scalar.  So I will write here scalar is equal to standard scalar."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 615.0,
+            "end": 636.0,
+            "text": " So I have initialized it here.  After initializing, all I have to do is write scalar.fit underscore transform.  So first I will execute it.  Then I will write scalar.fit underscore transform.  Fit underscore transform."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 636.0,
+            "end": 655.0,
+            "text": " And here I will transform and write x train.  Now when I write fit underscore transform is equal to x train,  then the entire x train data set will be transformed in this formula.  So here you can also write fit data.  Then you can also write transform."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 655.0,
+            "end": 664.0,
+            "text": " But here I have directly done what I have done.  I have done it.  Now I have executed it.  So you see this output is here.  So I will do this thing."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 664.0,
+            "end": 676.0,
+            "text": " I will put here in x train.  So this is the step.  Now I will have to do x test.  So what I will do in x test.  I will write scalar.transform."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 676.0,
+            "end": 691.0,
+            "text": " Now you will tell me why I had done fit transform.  And here I had transformed.  I have made videos like this in my English channel.  But this answer will definitely give you your comment section.  So this is my x train and x test."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 691.0,
+            "end": 706.0,
+            "text": " I have transformed it.  I have done it.  I have standardized it.  If you want to do this thing,  we will see in x train this value."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 706.0,
+            "end": 718.0,
+            "text": " Earlier it was a value.  So if you want to do it inverse,  then how will you do it inverse?  So you don't want to do anything.  You have to write scalar dot inverse transform."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 718.0,
+            "end": 731.0,
+            "text": " And here you can put x train.  So you will get all the values that you have.  Earlier all these values.  So you can do it inverse transform.  I hope it was so clear."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 731.0,
+            "end": 746.0,
+            "text": " Okay. I have standardized it.  Now I will put next step from sql.model selection.  Sorry.  Dot linear model.  And here I have to import linear regression."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 746.0,
+            "end": 758.0,
+            "text": " Because this algorithm I have to apply.  And here we have multiple input features.  So this will basically be multi linear regression problem.  Okay.  So here I will do linear regression."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 758.0,
+            "end": 769.0,
+            "text": " Now linear regression applies time too.  If you see parameters here,  there are two parameters.  And there is no more parameter.  So how can we do hyper parameter tune?"
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 769.0,
+            "end": 782.0,
+            "text": " Okay.  In a way, I will directly use ridge and lasso.  Or I will use elastic net.  If I have already explained this in my machine learning playlist.  But we will use cross validation here."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 782.0,
+            "end": 796.0,
+            "text": " What is cross validation?  What is cross validation basically?  We have internally our training data.  We will divide it a lot.  Basically we divide it in multiple train test."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 796.0,
+            "end": 809.0,
+            "text": " And we will do cross validation.  And the difference in cross validation is different accuracy.  And we will combine it and finally find the meaning.  And then we will find our final output.  So how do we apply cross validation here?"
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 809.0,
+            "end": 824.0,
+            "text": " Let me write here cross validation.  For cross validation, we will use a library.  Which we call cross-valscore.  So here I will write from scale.modelselection.  Import cross-valscore."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 827.0,
+            "end": 843.0,
+            "text": " So cross-valscore we will use specifically.  Now for cross-valscore, we will see how to use it.  First of all, I will create a regression object by using linear regression.  So this is my regression object.  Now let me see how I use cross-valscore."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 843.0,
+            "end": 853.0,
+            "text": " Cross-valscore.  And cross-valscore's first parameter will be this estimator.  Which I have made regression.  So here I will write regression.  Comma."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 853.0,
+            "end": 867.0,
+            "text": " Then my training data set.  And my test data set.  So here I will write y underscore train.  So I will do this in both the data sets.  Here the score parameter used."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 867.0,
+            "end": 882.0,
+            "text": " We saw it.  We saw it in performance metrics.  We saw it in the regression.  We also defined the loss functions of linear regression.  Means square error, mean absolute error."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 882.0,
+            "end": 896.0,
+            "text": " So if I see cross-valscore in the scoring parameter.  So if I open the confusion here.  I will open cross-valscore.  Cross-valscore.  S-K-Learn."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 896.0,
+            "end": 907.0,
+            "text": " When will I see documentation.  This will give you more proper understanding.  So here your first parameter estimator is going to go.  Now x and y is going.  Then your cross validation is going to go."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 907.0,
+            "end": 918.0,
+            "text": " So at the same time, it will validate the cross.  Different different accuracy check.  And here the scoring.  The parameter of this is the accuracy parameter.  In the regression case, I will use the loss function."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 918.0,
+            "end": 931.0,
+            "text": " Means square error, mean absolute error.  And if you know how different different types of scoring parameters are.  So here one more thing.  If you go to this page where you will go to modelevaluation.html.  In this scale."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 931.0,
+            "end": 942.0,
+            "text": " Here you will see.  We use the accuracy of classification.  We use balance accuracy.  Top accuracy f1, f1, micro, micro, weighted.  We use many examples."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 942.0,
+            "end": 953.0,
+            "text": " Similarly in the regression case, we use many.  Negative mean absolute error.  You use mean squared error.  I will use specific things.  We call them negative mean squared error."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 953.0,
+            "end": 966.0,
+            "text": " So you can definitely see from here.  And I will copy the same thing here.  So this is my negative mean squared error.  So this is my scoring parameter.  This is not a regression problem statement."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 966.0,
+            "end": 979.0,
+            "text": " So I will write this.  Then I will cross validation.  5 times.  If it is cross validation.  This means my 5 different models will not be created."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 979.0,
+            "end": 991.0,
+            "text": " But with different data, the same model will be trained.  So 5 different types of accuracy will be achieved.  So this is the whole value of my entire.  What I do?  If I execute this."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 991.0,
+            "end": 1003.0,
+            "text": " So see, my first model was with the first cross validation.  The mean squared error.  Then it came.  Third, fourth, fifth, fifth.  If I do cross validation 10 times."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 1003.0,
+            "end": 1016.0,
+            "text": " I have 10 cross validation.  This is my first, second, third, fourth, fifth, sixth.  So I will say this.  The mean squared error is my list.  And after that, if I have to calculate the mean."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 1016.0,
+            "end": 1030.0,
+            "text": " Then I will write np.me of ms.  So this is my final output.  So this is my final ms.  Means, after the cross validation.  The ms that is coming is very good."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 1030.0,
+            "end": 1042.0,
+            "text": " And remember, this should be less.  Because what is the mean squared error?  What is the predicted and true value difference?  So we should reduce it.  Okay?"
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 1042.0,
+            "end": 1050.0,
+            "text": " Now we have done it.  Now what should be the next step?  What will be the next step?  We will do the prediction.  Now we will do the prediction."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 1050.0,
+            "end": 1058.0,
+            "text": " Our test data.  Okay?  So I will write specifically here.  Regression.  Reddit."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 1058.0,
+            "end": 1066.0,
+            "text": " Okay?  Regression.  Reddit.  And remember always.  Whenever we are verifying things."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 1066.0,
+            "end": 1077.0,
+            "text": " We will focus on every parameter very well.  Okay?  So I will write specifically here.  I will write X test.  And this is my RIG."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 1077.0,
+            "end": 1085.0,
+            "text": " Reddit.  Okay?  And this is my.  Let's see what will be the output.  We are going to predict."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 1085.0,
+            "end": 1094.0,
+            "text": " And we have not called fit.  Fine.  So now what I will do in the next step.  We have missed one thing here.  To fit."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 1094.0,
+            "end": 1106.0,
+            "text": " So, I have a value minus 25 from cross validation.  But we have to fit.  Okay?  So regression.fit on X comma Y.  Okay?"
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 1106.0,
+            "end": 1116.0,
+            "text": " So I will do this thing.  So this is my linear regression.  Okay?  And I checked with cross validation.  And I will not give X Y."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 1116.0,
+            "end": 1122.0,
+            "text": " I will give X train.  Okay?  X train.  And Y train.  Okay?"
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 1122.0,
+            "end": 1130.0,
+            "text": " Y train.  Always remember.  I have verified that how much I have come here.  Negative means squared.  Okay?"
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 1130.0,
+            "end": 1140.0,
+            "text": " So this is it.  Now I will just execute it.  This is my execution.  RIG underscore red.  And I will execute it."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 1140.0,
+            "end": 1150.0,
+            "text": " So see all my predictions and values are here.  Now this prediction is correct.  No, this is not the prediction.  If we want to see it, what we will do?  We will compare it specifically."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 1150.0,
+            "end": 1159.0,
+            "text": " We will compare it with our truth value.  Where is the truth value?  Our truth value is Y test.  Right?  So how will we do it?"
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 1159.0,
+            "end": 1171.0,
+            "text": " I will do it here.  I will import a C bond.  Now I will basically see it in a visualized way.  Here I will use Sns dot dist plot.  Dist plot means distance plot."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 1171.0,
+            "end": 1191.0,
+            "text": " And here in the list, my prediction values.  What is this RIG underscore red?  Coma Y underscore test.  And if I basically subtract these two predictions.  I am comparing it to regression problem statement."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 1191.0,
+            "end": 1199.0,
+            "text": " If I subtract it and see it, it is coming like this.  Okay?  What is coming?  Something is coming.  What is coming?"
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 1199.0,
+            "end": 1212.0,
+            "text": " Something is coming.  Now let's say I will use another parameter here.  Where I will write KDE.  KDE is a good parameter in this plot.  We call it KDE."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 1212.0,
+            "end": 1226.0,
+            "text": " I guess it has been removed.  It has been removed.  We basically use KDE plot.  KDE is equal to KDE.  So I will write KDE."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 1226.0,
+            "end": 1243.0,
+            "text": " So you can see here, this is the graph creator.  This is the difference between the prediction and the test.  It is good.  Its variance is less.  Plus 10 and minus 10 are the same."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 1243.0,
+            "end": 1258.0,
+            "text": " There are many points.  And the remaining outliers have the difference.  But the difference in the rest is within minus 10 to plus 10.  So we get this assumption that my dataset is good.  Now we can do another thing."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 1258.0,
+            "end": 1276.0,
+            "text": " When we are predicting this thing.  We always remember that the extra and extra is what we did.  We have standardized it and did it.  If we will also do it inverse, then the graph will shift to the left side.  So we always remember that variance is less."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 1276.0,
+            "end": 1291.0,
+            "text": " Minus 10 to plus 10.  So this is a good thing.  This means my model has predicted it.  You can use it as scale and matrix.  Import R square."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 1291.0,
+            "end": 1307.0,
+            "text": " So R square is R2 score.  You can use R2 score.  I will write here.  I will call R2 score.  And this will be my prediction."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 1307.0,
+            "end": 1323.0,
+            "text": " And my RG-Pregd comma Y- underscore test.  So if I look at both of these and see score values.  This is my R2 score.  Okay.  For the R2 score, there is no default function."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 1323.0,
+            "end": 1338.0,
+            "text": " So you have to apply the formula.  I will hope you all understood this.  I have come to the end to end practical implementation.  And I have applied cross validation.  I have got this specific thing."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 1338.0,
+            "end": 1353.0,
+            "text": " I have applied this same regression algorithm.  And remember that I will have to fit this.  I will tell you one more technique.  In the later stages, we can do it with GritsRcv.  We can also do it with GritsRcv."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 1353.0,
+            "end": 1368.0,
+            "text": " I will apply this algorithm as it is less in linear regression.  Which you can use for hyper parameter.  This is not a high or low, you have seen in documentation.  So I have done this fit.  So first step, we have done it with a data set."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 1368.0,
+            "end": 1380.0,
+            "text": " Cleaning meaning EDA, standardize it.  And this difference, it was used with a transform and transform.  Okay.  I applied linear regression.  I applied cross validation."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 1380.0,
+            "end": 1392.0,
+            "text": " And then I have finally got this output.  This difference was a little less, minus 10 to plus 10.  And I am calculating R2.  I am getting 66%.  And obviously, what is the needy regression?"
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 1392.0,
+            "end": 1404.0,
+            "text": " So this error rate is a little high.  But we will see that different techniques will increase.  Okay.  So I hope you all liked this video.  This was it from my side."
+        },
+        {
+            "title": "Linear Regression Practical Implementation",
+            "start": 1404.0,
+            "end": 1409.0,
+            "text": " Please make sure that you subscribe to the channel.  I will see you in the next video.  Have a great day.  Thank you."
+        }
+    ],
+    "text": " Hello all my name is Krishna and welcome to my youtube channel. So guys we will continue the playlist of Machine Learning. And in today's video we will see the practical implementation of linear regression. Now whatever I will do in implementation, I will ensure that the linear regression parameters of SK Learn can be played with it. And you can efficiently make a good model. Now whatever I will do in the dataset, we will do a little more ED and feature engineering. Because I am a separate playlist of ED and feature engineering in Krishna's channel. Because it is a different detailed process. So I will try to simplify the projects here. But as soon as we go ahead and discuss more complex projects and end to end projects. So let's go without wasting any time and we will implement some linear regression. One thing, guys please make sure you subscribe to the channel, press the bell notification icon and watch the whole video till the end. All these videos will definitely help you in cracking the interview. So guys we will see the practical implementation of linear regression. We will explain in detail the details, the linear regression parameters, and how we implement it. We will discuss all the things about hyper-pand, and how we implement it. For this problem statement, I will take a dataset, which we call as the Boston House Pricing dataset. So if you want to import it, then probably we can use SK Learn from SK Learn. Dot datasets import load under Boston. So what is load under Boston? Here you will get a dataset that specifies the Boston House Pricing dataset. So what we will do with this dataset? We will see what is in this dataset. So let's go quickly and import some libraries, like import numpy as np, import pandas as pd, and import matplotlib dotpyplot as pnt. So all these libraries are going to import and all these are basic libraries. So what we will do is we will use it. Next thing is the dataset that we will need to load. I have already used the word load Boston for dataset. So if I add load under Boston, and if I call it here, you will see that we will get three things from the key value pairs. One is the data, and the other is the data key. And the value is here. The target is here, and the value is here. And if you see the feature names and the value is here. So here you can see all the data and the visible clear information. Now I will move ahead. What are the features and the information? The features are the names. So you will get information from that. But the capital is basically crime. JN, proportion of residential land zone for lots over 25,000 square feet. There are many parameters. But remember that our output features are basically my target. And what is this target specifying? You basically specify how much you need to pay. So this is my output features, this is my independent features. And if you want to know the name of my independent features, this is your feature name. So what we will do with this is, we will try to construct a data frame. So here I want to make a data frame. I will write pd.data frame. And here I will write df.data. So when I write this, what is the error? Data frame has no attribute. Okay, no problem. I will save it in df. So if I write df.data, now we know that if I execute the df, then I have three keys. Data is done, target is done. And this is your feature name. So if I write df.data, then this will be my data frame. Okay? I hope you understand it easily. So this is my data set. So here I will save it in data set. Okay? Now if this is my final data set, then you can see all the features here. Okay? Now the main thing is, if I want to set the data set. If I want to set the column, then I will do dot columns. I will specifically give it df.featureNames. Okay? So where is the df.featureNames coming from? What will all of these features become? My column will be named. Okay? So this is my featureNames. So I have executed it here. Now I will go and see my data set.head. So all these independent features will be displayed here. So this is my crimjzn, this, this, this, this, this. BL starts everything. Okay? So this is my data set specifically. Now you need to remember one thing that I have not taken the target feature yet. So I am using an independent and dependent features in some different variable. So here my independent features and dependent features. And dependent features. Okay? I will keep this in a different variable. I will talk about x. I will talk about all the independent features that are my data set. And I will talk about y. Here if I write df.target, then basically my y variable will be turned on. So if I execute it and I see y, then this is my complete price. Okay? Price of the house. So here it is very clear. I have not done anything here. Independent and dependent features. Basically we have divided the data. Now after this step, we will write train test split. Obviously our data set is done with all the training tests. Okay? So what I will do here for the training test split. I will search here. Scale and train test split. If you do not remember anything, then you can see the documentation from here. So from scale and dot model selection, train test split. So I will write here quickly from scale and dot model selection. Import train test split. Okay? Now it is a train test split. Now I will move ahead. I will paste this thing copy. I will paste the x train y train. Because I will write the same thing here. I will reduce the size of the data set. I will do the data set. I am 30%. The size of my test. Now see here my x train, x test, y train and y test. We will use x train and y train basically to train the model. To train the model, we will use x test and y test. To test the model, we will use x test and y test. So finally I have executed this. Now I will show you the x train values. So this is my full value. Okay? And x train this, y train this, y test this. All of you are getting specifically. Okay? So this is all done. Okay? Now what I am going to do next step. I am going to implement linear regression. Now to implement linear regression. This is my x train. Okay? Now to implement linear regression, first of all, I will have to import linear regression. Now where will the linear regression import? This is basically a model in the library. We call it linear model. It is in the scale. And what is linear regression? It is fit intercept, true, normalized, deprecated, and so on. Now let us understand each and every parameter. Fit intercept is called, whether to calculate the intercept for this model. If set to false, no intercept will be used in calculation. But we will obviously have to take an intercept. Intercepts have a big importance. So fit intercept is called by default, which is true. Now normalize bool default is equal to false. This parameter is ignored when fit intercept is set to false. If it is true, the regressor will get the independent feature will get normalized before regression by subtracting the mean and dividing by L2 norms. So if I want to normalize standardized, then I will try to prove this value. Now for the default value, it is false. So what we will do here, we will try to prove it. To prove this, it can come a good result. So definitely if you wish to standardize, please use standard scalar before calling fit on the estimator with normalized equal to false. See, there are two ways. First, we have to standardize the data and normalize the data. And remember, we have to standardize the linear regression. Now what we have to do is to standardize the data. So what we will do is to normalize the value of the normalize. But if you wish to standardize, then we will standardize the data. So to standardize, we will use standard scalar. Now what is standard scalar? We will apply this formula. We have studied in statistics. So let's first standardize the fit and fit and then we will just standardize the fit and fit. And we should not always use the output feature. So here I write the standardization process, standardizing the data set. And this is very important because your output model will be very good. So first we will see where this is basically in processing. So I will write from skln.pre processing import standard scalar. Now what happens in the next step is, we always see documentation. This process is understood. So here I will initialize the standard scalar. So I will write here scalar is equal to standard scalar. So I have initialized it here. After initializing, all I have to do is write scalar.fit underscore transform. So first I will execute it. Then I will write scalar.fit underscore transform. Fit underscore transform. And here I will transform and write x train. Now when I write fit underscore transform is equal to x train, then the entire x train data set will be transformed in this formula. So here you can also write fit data. Then you can also write transform. But here I have directly done what I have done. I have done it. Now I have executed it. So you see this output is here. So I will do this thing. I will put here in x train. So this is the step. Now I will have to do x test. So what I will do in x test. I will write scalar.transform. Now you will tell me why I had done fit transform. And here I had transformed. I have made videos like this in my English channel. But this answer will definitely give you your comment section. So this is my x train and x test. I have transformed it. I have done it. I have standardized it. If you want to do this thing, we will see in x train this value. Earlier it was a value. So if you want to do it inverse, then how will you do it inverse? So you don't want to do anything. You have to write scalar dot inverse transform. And here you can put x train. So you will get all the values that you have. Earlier all these values. So you can do it inverse transform. I hope it was so clear. Okay. I have standardized it. Now I will put next step from sql.model selection. Sorry. Dot linear model. And here I have to import linear regression. Because this algorithm I have to apply. And here we have multiple input features. So this will basically be multi linear regression problem. Okay. So here I will do linear regression. Now linear regression applies time too. If you see parameters here, there are two parameters. And there is no more parameter. So how can we do hyper parameter tune? Okay. In a way, I will directly use ridge and lasso. Or I will use elastic net. If I have already explained this in my machine learning playlist. But we will use cross validation here. What is cross validation? What is cross validation basically? We have internally our training data. We will divide it a lot. Basically we divide it in multiple train test. And we will do cross validation. And the difference in cross validation is different accuracy. And we will combine it and finally find the meaning. And then we will find our final output. So how do we apply cross validation here? Let me write here cross validation. For cross validation, we will use a library. Which we call cross-valscore. So here I will write from scale.modelselection. Import cross-valscore. So cross-valscore we will use specifically. Now for cross-valscore, we will see how to use it. First of all, I will create a regression object by using linear regression. So this is my regression object. Now let me see how I use cross-valscore. Cross-valscore. And cross-valscore's first parameter will be this estimator. Which I have made regression. So here I will write regression. Comma. Then my training data set. And my test data set. So here I will write y underscore train. So I will do this in both the data sets. Here the score parameter used. We saw it. We saw it in performance metrics. We saw it in the regression. We also defined the loss functions of linear regression. Means square error, mean absolute error. So if I see cross-valscore in the scoring parameter. So if I open the confusion here. I will open cross-valscore. Cross-valscore. S-K-Learn. When will I see documentation. This will give you more proper understanding. So here your first parameter estimator is going to go. Now x and y is going. Then your cross validation is going to go. So at the same time, it will validate the cross. Different different accuracy check. And here the scoring. The parameter of this is the accuracy parameter. In the regression case, I will use the loss function. Means square error, mean absolute error. And if you know how different different types of scoring parameters are. So here one more thing. If you go to this page where you will go to modelevaluation.html. In this scale. Here you will see. We use the accuracy of classification. We use balance accuracy. Top accuracy f1, f1, micro, micro, weighted. We use many examples. Similarly in the regression case, we use many. Negative mean absolute error. You use mean squared error. I will use specific things. We call them negative mean squared error. So you can definitely see from here. And I will copy the same thing here. So this is my negative mean squared error. So this is my scoring parameter. This is not a regression problem statement. So I will write this. Then I will cross validation. 5 times. If it is cross validation. This means my 5 different models will not be created. But with different data, the same model will be trained. So 5 different types of accuracy will be achieved. So this is the whole value of my entire. What I do? If I execute this. So see, my first model was with the first cross validation. The mean squared error. Then it came. Third, fourth, fifth, fifth. If I do cross validation 10 times. I have 10 cross validation. This is my first, second, third, fourth, fifth, sixth. So I will say this. The mean squared error is my list. And after that, if I have to calculate the mean. Then I will write np.me of ms. So this is my final output. So this is my final ms. Means, after the cross validation. The ms that is coming is very good. And remember, this should be less. Because what is the mean squared error? What is the predicted and true value difference? So we should reduce it. Okay? Now we have done it. Now what should be the next step? What will be the next step? We will do the prediction. Now we will do the prediction. Our test data. Okay? So I will write specifically here. Regression. Reddit. Okay? Regression. Reddit. And remember always. Whenever we are verifying things. We will focus on every parameter very well. Okay? So I will write specifically here. I will write X test. And this is my RIG. Reddit. Okay? And this is my. Let's see what will be the output. We are going to predict. And we have not called fit. Fine. So now what I will do in the next step. We have missed one thing here. To fit. So, I have a value minus 25 from cross validation. But we have to fit. Okay? So regression.fit on X comma Y. Okay? So I will do this thing. So this is my linear regression. Okay? And I checked with cross validation. And I will not give X Y. I will give X train. Okay? X train. And Y train. Okay? Y train. Always remember. I have verified that how much I have come here. Negative means squared. Okay? So this is it. Now I will just execute it. This is my execution. RIG underscore red. And I will execute it. So see all my predictions and values are here. Now this prediction is correct. No, this is not the prediction. If we want to see it, what we will do? We will compare it specifically. We will compare it with our truth value. Where is the truth value? Our truth value is Y test. Right? So how will we do it? I will do it here. I will import a C bond. Now I will basically see it in a visualized way. Here I will use Sns dot dist plot. Dist plot means distance plot. And here in the list, my prediction values. What is this RIG underscore red? Coma Y underscore test. And if I basically subtract these two predictions. I am comparing it to regression problem statement. If I subtract it and see it, it is coming like this. Okay? What is coming? Something is coming. What is coming? Something is coming. Now let's say I will use another parameter here. Where I will write KDE. KDE is a good parameter in this plot. We call it KDE. I guess it has been removed. It has been removed. We basically use KDE plot. KDE is equal to KDE. So I will write KDE. So you can see here, this is the graph creator. This is the difference between the prediction and the test. It is good. Its variance is less. Plus 10 and minus 10 are the same. There are many points. And the remaining outliers have the difference. But the difference in the rest is within minus 10 to plus 10. So we get this assumption that my dataset is good. Now we can do another thing. When we are predicting this thing. We always remember that the extra and extra is what we did. We have standardized it and did it. If we will also do it inverse, then the graph will shift to the left side. So we always remember that variance is less. Minus 10 to plus 10. So this is a good thing. This means my model has predicted it. You can use it as scale and matrix. Import R square. So R square is R2 score. You can use R2 score. I will write here. I will call R2 score. And this will be my prediction. And my RG-Pregd comma Y- underscore test. So if I look at both of these and see score values. This is my R2 score. Okay. For the R2 score, there is no default function. So you have to apply the formula. I will hope you all understood this. I have come to the end to end practical implementation. And I have applied cross validation. I have got this specific thing. I have applied this same regression algorithm. And remember that I will have to fit this. I will tell you one more technique. In the later stages, we can do it with GritsRcv. We can also do it with GritsRcv. I will apply this algorithm as it is less in linear regression. Which you can use for hyper parameter. This is not a high or low, you have seen in documentation. So I have done this fit. So first step, we have done it with a data set. Cleaning meaning EDA, standardize it. And this difference, it was used with a transform and transform. Okay. I applied linear regression. I applied cross validation. And then I have finally got this output. This difference was a little less, minus 10 to plus 10. And I am calculating R2. I am getting 66%. And obviously, what is the needy regression? So this error rate is a little high. But we will see that different techniques will increase. Okay. So I hope you all liked this video. This was it from my side. Please make sure that you subscribe to the channel. I will see you in the next video. Have a great day. Thank you."
+}

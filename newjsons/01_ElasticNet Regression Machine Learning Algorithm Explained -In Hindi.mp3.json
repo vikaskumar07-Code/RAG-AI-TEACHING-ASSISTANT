@@ -1,0 +1,497 @@
+{
+    "chunks": [
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 0.0,
+            "end": 18.0,
+            "text": " Hello all my name is Krishna and I am welcome to my YouTube channel.  So guys in today's video we are going to discuss the new machine learning algorithm.  We call it the elastic net regression.  Now to know the elastic net regression,  you already know the simple linear regression, multiple linear regression,"
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 18.0,
+            "end": 37.0,
+            "text": " the region and the last regression are very important.  If you know all the things, then we basically combine the region and the last and the last.  But if you do not know the entire depth,  I will give you a quick advice from the last and the last.  We will try to read the elastic net."
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 37.0,
+            "end": 59.0,
+            "text": " So let me share my blackboard because I always write here.  Please make sure to watch the entire video till the end.  It will look very good.  And make sure to subscribe to the bell notification.  I will press the button because I am making the entire depth of the data science in my Hindi channel."
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 59.0,
+            "end": 71.0,
+            "text": " Okay?  So let's go to the elastic net.  But before that, we will go to the linear regression.  What is our aim in linear regression?  If I have independent features like this,"
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 71.0,
+            "end": 88.0,
+            "text": " this is my size of the house and price of the house.  If there is a scenario in the problem state,  then I have to make a model that is the price detector of the house.  So our main aim is to find the best fit line.  So we will call this best fit line."
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 88.0,
+            "end": 107.0,
+            "text": " We can say that we have different equations from the best fit line.  Y is equal to MX plus C, Y is equal to beta 0 plus beta 1 multiplied by X1.  And we use the cost function specifically in this.  1 by 2N multiplied by summation of i is equal to 1 to N,  yi minus y hat whole square."
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 107.0,
+            "end": 124.0,
+            "text": " Basically, y hat is the predicted point of the best fit line.  And if we have to call this cost function as mean squared error,  then we can call this cost function as mean absolute error.  We call this as loss function as well.  Now this is the linear regression."
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 124.0,
+            "end": 141.0,
+            "text": " And you will also know that if we have a right side,  if the slope is the slope,  here, it is specifically the slope of beta 0 plus beta 1.  We can write this as well as the slope.  We can write this equation as well."
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 141.0,
+            "end": 157.0,
+            "text": " Y is equal to theta 0 plus theta 1 multiplied by X.  So here, theta 0, theta 1 is the slope.  Theta 0 is the intercept.  So we call this as intercept.  And we call this as coefficient or slope."
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 157.0,
+            "end": 172.0,
+            "text": " So if I plot this slope here,  from loss function or cost function,  then we get the gradient descent of the case type.  So we get an inverted bulk curve.  So we call this as gradient descent."
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 172.0,
+            "end": 186.0,
+            "text": " And our aim is always that the slope is at a global minimum point.  So when we come here,  basically, this means that our best fit line is constructed.  Or we have this region.  So this is the linear regression."
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 186.0,
+            "end": 198.0,
+            "text": " Now, the rigid regression,  which we also call as L2 regularization.  What is its main aim?  We basically use this to reduce overfitting.  And to reduce overfitting, we use rigid regression."
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 198.0,
+            "end": 207.0,
+            "text": " Now, let's say that in my training data set,  there are two points.  Okay, these two points.  If I make this best fit line,  then it can be like this,"
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 207.0,
+            "end": 218.0,
+            "text": " that if my new test points are here,  in this way,  then how?  So you know that the training error is obviously less.  But if I think of the test data point,"
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 218.0,
+            "end": 228.0,
+            "text": " then here you will see that the error is quite high.  So what does this mean?  I have a training data set,  which is high.  So I will specifically say that this is an overfitting condition."
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 228.0,
+            "end": 242.0,
+            "text": " It is overfitting.  Because my test data point is usually very high.  So what can I do to fix this?  To fix this,  we should construct a best fit line."
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 242.0,
+            "end": 251.0,
+            "text": " Instead, we should experiment like this,  that there is a line,  or a line,  so that training and test data points are properly catered.  Okay?"
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 251.0,
+            "end": 261.0,
+            "text": " So what do we do for this?  Cost function will be like this,  we defined it as an overfitting.  Cost function will be like linear regression.  The same cost function will be used here."
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 261.0,
+            "end": 272.0,
+            "text": " But with this, we add an additional thing.  One is lambda.  Okay, this is lambda.  And in this video,  I will also tell you that lambda and slope is a care relationship."
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 272.0,
+            "end": 279.0,
+            "text": " And here specifically,  how the overfitting is less?  Now, I have lambda here.  Summation of i is equal to 1 to 1  and slope is square."
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 279.0,
+            "end": 288.0,
+            "text": " Okay?  So, with this multiply,  what will happen?  This best fit line will not be the best fit line.  Some other lines will also be created,"
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 288.0,
+            "end": 304.0,
+            "text": " which will match the training and test data set properly.  Now, let's look at an example here.  If I consider this best fit line,  I will consider this best fit line,  obviously, my value will be zero."
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 304.0,
+            "end": 316.0,
+            "text": " Okay?  Because if I consider the best fit line,  obviously, this is the error of zero.  Now, when my best fit line is zero,  then I will not be here."
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 316.0,
+            "end": 326.0,
+            "text": " What will I do here?  I will add a lambda multiplied by slope square.  Okay?  And this slope square is always  the same as the whole coefficient."
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 326.0,
+            "end": 340.0,
+            "text": " If I have this equation,  I will write here,  y hat is equal to theta zero plus theta one x one plus theta two x two plus theta one x one.  plus theta three x three.  Let's say that I have three coefficient."
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 340.0,
+            "end": 351.0,
+            "text": " So, this will be the right.  We will write this as this.  Theta one square plus theta two square plus theta three square.  Okay?  So, we will add slope in this way."
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 351.0,
+            "end": 362.0,
+            "text": " Now, what will happen in this way?  Whenever we write this way,  our loss zero, our cost function will not be zero.  Some values will definitely come here.  Let's say that my lambda value has been initialized."
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 362.0,
+            "end": 370.0,
+            "text": " And what is lambda?  It is hyper parameter.  Here, lambda is hyper parameter.  Okay?  Lambda is hyper parameter."
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 370.0,
+            "end": 380.0,
+            "text": " We will try to do some experiments with Grits and CVs with this.  What is lambda value?  It is perfect for this.  Okay?  So, my lambda value has come here."
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 380.0,
+            "end": 387.0,
+            "text": " Okay?  Then, the slope value will come here.  What will happen to this?  Our value will come here.  Plus positive value will come, negative value will come."
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 387.0,
+            "end": 400.0,
+            "text": " But, we always have to consider that we have to reduce this value again.  So, the cost function will not stop here.  My training process will not stop here when the best fit line comes.  It will continue.  Okay?"
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 400.0,
+            "end": 413.0,
+            "text": " So, I am saying that I have made all the videos detailed.  In my channel, you will definitely see.  So, I am revisiting here.  Now, you know the most important thing.  And this is a very important interview."
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 413.0,
+            "end": 422.0,
+            "text": " That, what is the relation between lambda and slope here?  It is a regular relation.  And how is this overfitting?  Now, see guys.  We have seen here."
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 422.0,
+            "end": 439.0,
+            "text": " Right?  We are obviously getting a welcome here.  So, if I have a theta here, which is my slope, and the cost function,  If I add some values in this consider,  So, my value will come here from 0 to 0."
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 439.0,
+            "end": 460.0,
+            "text": " After that, 0.2, 0.4, 0.6, 0.8, and 1.0.  Let's say that this is my coefficient value.  In this related, I plot the cost function.  So, let's say that if my lambda value is 0,  What does it mean that the value of lambda is 0?"
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 460.0,
+            "end": 479.0,
+            "text": " We are not taking a linear regression.  Because 0 multiplied by this will be 0.  So, if my lambda value is 0, then I will plot here.  The equation, which is my gradient descent plot, is something like that.  Let's say that my lambda is equal to 0, and this is something like that."
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 479.0,
+            "end": 490.0,
+            "text": " So, I write here, this is my lambda equal to 0.  This is my equation.  So, this is my specific linear regression.  Right?  It is my simple linear regression."
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 490.0,
+            "end": 503.0,
+            "text": " Okay?  Yes, lambda is equal to 0.  If I increase the value of lambda,  So, if I increase the value of lambda, and plot again,  Then you will see, my line will become like this."
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 503.0,
+            "end": 518.0,
+            "text": " And if my lambda is equal to 10, then my line will become like this.  And gradient descent will be slightly above me.  So, this is my lambda equal to 10.  So, here this line and this line are very different.  Look guys, if I am multiplying this lambda from slope square,"
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 518.0,
+            "end": 530.0,
+            "text": " So obviously, if you plot here,  If you plot one point, then plot here.  And if you plot here, lambda is equal to 10, and slope square.  Okay?  So, slope square is the same, or the other slope."
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 530.0,
+            "end": 546.0,
+            "text": " And when you plot that point, then the theta and cos function,  You will see, your gradient descent will be at the moment.  Okay?  So, if I do this, and if I construct lambda equal to 20, and 40,  Then you will see, this pattern will be drawn."
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 546.0,
+            "end": 558.0,
+            "text": " So, if I consider lambda equal to 40,  So, my pattern will be drawn up like this.  But remember, this value is not 0.  It will be near 0.  Okay?"
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 558.0,
+            "end": 580.0,
+            "text": " Now, how are you doing the previous overfitting?  Let's say, my equation initially was something like this.  Let's say, my equation is h theta of x.  This is my value, let's say, theta 0 plus theta 1 x1 plus theta 2 x2 plus theta 3 x3.  Here, I am thinking that I have a 3 independent feature."
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 580.0,
+            "end": 604.0,
+            "text": " If I focus on theta 1 or theta 1 theta 2 in theta 3.  If you think, my theta 1 initially is linear regression.  When lambda is equal to 0, let's say, let's say,  Let's say, let me take an example in this case.  Let me say, I am saying, 0.36x1 plus 0.48x2 plus 0.4.59x3."
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 604.0,
+            "end": 615.0,
+            "text": " Let's take this.  My theta 1 is so much, my theta 2 is so much, my theta 3 is so much.  Let's consider.  Okay?  If I put lambda here, what will happen?"
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 615.0,
+            "end": 631.0,
+            "text": " The value of coefficient of this is reduced a little.  The value of coefficient of this is reduced a little bit, but this is never 0.  Okay?  When this is reduced, we will see that the highly correlated coefficient is this.  What does this value mean?"
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 631.0,
+            "end": 653.0,
+            "text": " 1 unit movement of x2 will involve in the point 4 rate movement in the y axis.  This is specifically said.  The most important movement of this is reduced a little bit.  That point 2 point will be passed.  This will reduce."
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 653.0,
+            "end": 669.0,
+            "text": " But this will never be 0.  If it is 0, it will be the feature delity.  And we will always remember that when I apply the regularization of the region,  my global minima, which is shifting from point 1 to the left,  is shifting from a lesser number to the lesser number."
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 669.0,
+            "end": 682.0,
+            "text": " But it will never be 0.  And the main aim of this is to select a lambda value of such a kind.  Okay?  The one that we will not be able to get the same line as the one we will not be able to get.  Okay?"
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 682.0,
+            "end": 693.0,
+            "text": " And reduce overfitting.  So here we will play with lambda and will play with slope square.  So here you are very important interviewer.  You always need to remember this.  The lambda value is increasing."
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 693.0,
+            "end": 702.0,
+            "text": " So you will see the cost function.  This slope value.  You will see the slope value.  You will be reduced.  So this is a very important relation."
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 702.0,
+            "end": 716.0,
+            "text": " If I talk about the ridge,  then my third one will be my last one.  In last one, what we do in last one regression.  We use the specificly consa regularization.  Here we call it L1 regularization."
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 716.0,
+            "end": 729.0,
+            "text": " Now L1 regularization is all the same.  So we use this purpose specifically in the feature selection.  Okay?  How to choose the feature selection?  So what is the cost function?"
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 729.0,
+            "end": 748.0,
+            "text": " Cost function is very easy.  Same is the same.  So here I will write 1 by 2N summation of i is equal to 1 to N.  y of i minus y of hat whole square plus lambda multiplied by absolute value.  Here I will write summation of i is equal to 1 to N."
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 748.0,
+            "end": 764.0,
+            "text": " absolute value of slope.  Now how to help in the feature selection?  See, it is very important.  If I construct here the same type of graph,  which will be my theta and cost function."
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 764.0,
+            "end": 788.0,
+            "text": " When my lambda is equal to 0,  then obviously I will get a bell curve.  So let's say this is my 0.  This is my 0, this is my 0.2, this is my 0.4, this is my 0.6, this is my 0.8, this is 1.0.  Now we have to come here."
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 788.0,
+            "end": 804.0,
+            "text": " Now you will see that whenever I make the value of lambda,  then what will be my next lambda value?  If I make lambda equal to 10, then what will be the curve?  This is my lambda equal to 10.  Now you can see that the global minima is shifting."
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 804.0,
+            "end": 820.0,
+            "text": " But that will be the same shift.  The correlated variables will be 0 to the value of theta.  In the case of the regression,  if I put 4,5 such a curve,  then I will show you."
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 820.0,
+            "end": 834.0,
+            "text": " If my lambda is equal to 10,  then my next line will be like this.  And this is how I draw.  I thought I have taken lambda equal to 20.  Now what will happen in lambda equal to 20?"
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 834.0,
+            "end": 854.0,
+            "text": " I will go down, then I will make this line from here.  And I thought lambda is equal to 40.  So my next line will be like this.  Now it will be restricted in 0 and it will be increasing.  Now you understand why this is 0."
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 854.0,
+            "end": 870.0,
+            "text": " Because in the last 100, we take absolute value of slope.  And we construct theta and cost function value.  So what will happen?  Definitely, we will reduce some coefficients.  But some coefficients that are not at all correlated,"
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 870.0,
+            "end": 882.0,
+            "text": " will definitely increase their value.  In this case, when I am taking lambda equal to 20,  what will be the slope that I have done?  He has done 0.  Okay?"
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 882.0,
+            "end": 894.0,
+            "text": " And when this is 0, what will happen?  If I have a question here,  I will write here in such values.  0.02 x1,  0.48 x2,"
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 894.0,
+            "end": 908.0,
+            "text": " plus 0.96 x3,  plus beta 0.45.  Now what will happen here?  When we apply this last regression,  then this will be the point 0.02 of x1."
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 908.0,
+            "end": 918.0,
+            "text": " We will make this 0.  Why?  Because this is not highly correlated.  Under this slope, this is specifically 0.  The value of this is highly correlated."
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 918.0,
+            "end": 928.0,
+            "text": " This value will be reduced.  Let's say 0.35 x2.  This will be 0.67 x3.  I am telling you the example.  Now, as soon as it is done,"
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 928.0,
+            "end": 940.0,
+            "text": " this feature will be deleted.  It was not really related.  It was not correlated.  It was less correlation.  See, correlation was less in this."
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 940.0,
+            "end": 950.0,
+            "text": " Why?  The two-thousand correlation.  What will happen here?  Your values,  your features,"
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 950.0,
+            "end": 960.0,
+            "text": " which are not highly correlated,  are basically the process of the future selection.  The whole feature is deleted.  What happens in this?  I will use x2 and x3."
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 960.0,
+            "end": 970.0,
+            "text": " And we will call this as L1.  Always remember,  this graph is very important.  The Theta and Cost function.  Always remember,"
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 970.0,
+            "end": 982.0,
+            "text": " we will make some values the same.  But, the features that are restricted are 0.  In this case, they will not be restricted.  They will be nearer to 0.  But never 0."
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 982.0,
+            "end": 992.0,
+            "text": " So, we call this as a religious regression.  It reduces overfitting.  Last regression,  it reduces feature selection.  Now, in the next one,"
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 992.0,
+            "end": 1002.0,
+            "text": " the topic of today's topic,  which was the last of the five-minute topic,  is ElasticNet.  We will do two things here.  One is Reduce."
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 1002.0,
+            "end": 1020.0,
+            "text": " We will do two tasks here.  One is Reduce Overfitting.  And the other is the feature selection of the features.  So, we will do these two tasks in this.  This is very simple."
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 1020.0,
+            "end": 1029.0,
+            "text": " If we write the Cost function directly,  then you will understand.  What will be the Cost function?  1 by 2n.  h theta of x,"
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 1029.0,
+            "end": 1047.0,
+            "text": " y of i minus y of i hat whole square plus lambda 1.  Okay?  Summation of i is equal to 1 to n.  Slope square plus lambda 2.  Summation of i is equal to 1 to n."
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 1047.0,
+            "end": 1059.0,
+            "text": " Slope magnitude or slope or absolute value of slope.  Now, what we are doing here?  We are combining these two.  How to do this?  What will be my specific?"
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 1059.0,
+            "end": 1071.0,
+            "text": " This is my Prevents Overfitting.  Okay?  And what is this?  Prevents.  It actually performs feature selection."
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 1073.0,
+            "end": 1085.0,
+            "text": " Okay?  So, I hope you all understood.  So, this is actually feature selection.  So, when we combine these two,  we can make a short,"
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 1085.0,
+            "end": 1095.0,
+            "text": " elastic net.  We know how to do this overfitting.  And we also know that in the last regression,  feature selection is done.  Okay?"
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 1095.0,
+            "end": 1105.0,
+            "text": " We will always remember that we will make this slope  for gradient descent.  Basically, we will make this from the cost function.  Okay?  So, I hope you all liked this video."
+        },
+        {
+            "title": "ElasticNet Regression Machine Learning Algorithm Explained",
+            "start": 1105.0,
+            "end": 1115.0,
+            "text": " Please make sure that you subscribe to the channel  and you will definitely be asking queries.  I will be here to answer.  This was it for my side. Thank you one doll.  Bye bye."
+        }
+    ],
+    "text": " Hello all my name is Krishna and I am welcome to my YouTube channel. So guys in today's video we are going to discuss the new machine learning algorithm. We call it the elastic net regression. Now to know the elastic net regression, you already know the simple linear regression, multiple linear regression, the region and the last regression are very important. If you know all the things, then we basically combine the region and the last and the last. But if you do not know the entire depth, I will give you a quick advice from the last and the last. We will try to read the elastic net. So let me share my blackboard because I always write here. Please make sure to watch the entire video till the end. It will look very good. And make sure to subscribe to the bell notification. I will press the button because I am making the entire depth of the data science in my Hindi channel. Okay? So let's go to the elastic net. But before that, we will go to the linear regression. What is our aim in linear regression? If I have independent features like this, this is my size of the house and price of the house. If there is a scenario in the problem state, then I have to make a model that is the price detector of the house. So our main aim is to find the best fit line. So we will call this best fit line. We can say that we have different equations from the best fit line. Y is equal to MX plus C, Y is equal to beta 0 plus beta 1 multiplied by X1. And we use the cost function specifically in this. 1 by 2N multiplied by summation of i is equal to 1 to N, yi minus y hat whole square. Basically, y hat is the predicted point of the best fit line. And if we have to call this cost function as mean squared error, then we can call this cost function as mean absolute error. We call this as loss function as well. Now this is the linear regression. And you will also know that if we have a right side, if the slope is the slope, here, it is specifically the slope of beta 0 plus beta 1. We can write this as well as the slope. We can write this equation as well. Y is equal to theta 0 plus theta 1 multiplied by X. So here, theta 0, theta 1 is the slope. Theta 0 is the intercept. So we call this as intercept. And we call this as coefficient or slope. So if I plot this slope here, from loss function or cost function, then we get the gradient descent of the case type. So we get an inverted bulk curve. So we call this as gradient descent. And our aim is always that the slope is at a global minimum point. So when we come here, basically, this means that our best fit line is constructed. Or we have this region. So this is the linear regression. Now, the rigid regression, which we also call as L2 regularization. What is its main aim? We basically use this to reduce overfitting. And to reduce overfitting, we use rigid regression. Now, let's say that in my training data set, there are two points. Okay, these two points. If I make this best fit line, then it can be like this, that if my new test points are here, in this way, then how? So you know that the training error is obviously less. But if I think of the test data point, then here you will see that the error is quite high. So what does this mean? I have a training data set, which is high. So I will specifically say that this is an overfitting condition. It is overfitting. Because my test data point is usually very high. So what can I do to fix this? To fix this, we should construct a best fit line. Instead, we should experiment like this, that there is a line, or a line, so that training and test data points are properly catered. Okay? So what do we do for this? Cost function will be like this, we defined it as an overfitting. Cost function will be like linear regression. The same cost function will be used here. But with this, we add an additional thing. One is lambda. Okay, this is lambda. And in this video, I will also tell you that lambda and slope is a care relationship. And here specifically, how the overfitting is less? Now, I have lambda here. Summation of i is equal to 1 to 1 and slope is square. Okay? So, with this multiply, what will happen? This best fit line will not be the best fit line. Some other lines will also be created, which will match the training and test data set properly. Now, let's look at an example here. If I consider this best fit line, I will consider this best fit line, obviously, my value will be zero. Okay? Because if I consider the best fit line, obviously, this is the error of zero. Now, when my best fit line is zero, then I will not be here. What will I do here? I will add a lambda multiplied by slope square. Okay? And this slope square is always the same as the whole coefficient. If I have this equation, I will write here, y hat is equal to theta zero plus theta one x one plus theta two x two plus theta one x one. plus theta three x three. Let's say that I have three coefficient. So, this will be the right. We will write this as this. Theta one square plus theta two square plus theta three square. Okay? So, we will add slope in this way. Now, what will happen in this way? Whenever we write this way, our loss zero, our cost function will not be zero. Some values will definitely come here. Let's say that my lambda value has been initialized. And what is lambda? It is hyper parameter. Here, lambda is hyper parameter. Okay? Lambda is hyper parameter. We will try to do some experiments with Grits and CVs with this. What is lambda value? It is perfect for this. Okay? So, my lambda value has come here. Okay? Then, the slope value will come here. What will happen to this? Our value will come here. Plus positive value will come, negative value will come. But, we always have to consider that we have to reduce this value again. So, the cost function will not stop here. My training process will not stop here when the best fit line comes. It will continue. Okay? So, I am saying that I have made all the videos detailed. In my channel, you will definitely see. So, I am revisiting here. Now, you know the most important thing. And this is a very important interview. That, what is the relation between lambda and slope here? It is a regular relation. And how is this overfitting? Now, see guys. We have seen here. Right? We are obviously getting a welcome here. So, if I have a theta here, which is my slope, and the cost function, If I add some values in this consider, So, my value will come here from 0 to 0. After that, 0.2, 0.4, 0.6, 0.8, and 1.0. Let's say that this is my coefficient value. In this related, I plot the cost function. So, let's say that if my lambda value is 0, What does it mean that the value of lambda is 0? We are not taking a linear regression. Because 0 multiplied by this will be 0. So, if my lambda value is 0, then I will plot here. The equation, which is my gradient descent plot, is something like that. Let's say that my lambda is equal to 0, and this is something like that. So, I write here, this is my lambda equal to 0. This is my equation. So, this is my specific linear regression. Right? It is my simple linear regression. Okay? Yes, lambda is equal to 0. If I increase the value of lambda, So, if I increase the value of lambda, and plot again, Then you will see, my line will become like this. And if my lambda is equal to 10, then my line will become like this. And gradient descent will be slightly above me. So, this is my lambda equal to 10. So, here this line and this line are very different. Look guys, if I am multiplying this lambda from slope square, So obviously, if you plot here, If you plot one point, then plot here. And if you plot here, lambda is equal to 10, and slope square. Okay? So, slope square is the same, or the other slope. And when you plot that point, then the theta and cos function, You will see, your gradient descent will be at the moment. Okay? So, if I do this, and if I construct lambda equal to 20, and 40, Then you will see, this pattern will be drawn. So, if I consider lambda equal to 40, So, my pattern will be drawn up like this. But remember, this value is not 0. It will be near 0. Okay? Now, how are you doing the previous overfitting? Let's say, my equation initially was something like this. Let's say, my equation is h theta of x. This is my value, let's say, theta 0 plus theta 1 x1 plus theta 2 x2 plus theta 3 x3. Here, I am thinking that I have a 3 independent feature. If I focus on theta 1 or theta 1 theta 2 in theta 3. If you think, my theta 1 initially is linear regression. When lambda is equal to 0, let's say, let's say, Let's say, let me take an example in this case. Let me say, I am saying, 0.36x1 plus 0.48x2 plus 0.4.59x3. Let's take this. My theta 1 is so much, my theta 2 is so much, my theta 3 is so much. Let's consider. Okay? If I put lambda here, what will happen? The value of coefficient of this is reduced a little. The value of coefficient of this is reduced a little bit, but this is never 0. Okay? When this is reduced, we will see that the highly correlated coefficient is this. What does this value mean? 1 unit movement of x2 will involve in the point 4 rate movement in the y axis. This is specifically said. The most important movement of this is reduced a little bit. That point 2 point will be passed. This will reduce. But this will never be 0. If it is 0, it will be the feature delity. And we will always remember that when I apply the regularization of the region, my global minima, which is shifting from point 1 to the left, is shifting from a lesser number to the lesser number. But it will never be 0. And the main aim of this is to select a lambda value of such a kind. Okay? The one that we will not be able to get the same line as the one we will not be able to get. Okay? And reduce overfitting. So here we will play with lambda and will play with slope square. So here you are very important interviewer. You always need to remember this. The lambda value is increasing. So you will see the cost function. This slope value. You will see the slope value. You will be reduced. So this is a very important relation. If I talk about the ridge, then my third one will be my last one. In last one, what we do in last one regression. We use the specificly consa regularization. Here we call it L1 regularization. Now L1 regularization is all the same. So we use this purpose specifically in the feature selection. Okay? How to choose the feature selection? So what is the cost function? Cost function is very easy. Same is the same. So here I will write 1 by 2N summation of i is equal to 1 to N. y of i minus y of hat whole square plus lambda multiplied by absolute value. Here I will write summation of i is equal to 1 to N. absolute value of slope. Now how to help in the feature selection? See, it is very important. If I construct here the same type of graph, which will be my theta and cost function. When my lambda is equal to 0, then obviously I will get a bell curve. So let's say this is my 0. This is my 0, this is my 0.2, this is my 0.4, this is my 0.6, this is my 0.8, this is 1.0. Now we have to come here. Now you will see that whenever I make the value of lambda, then what will be my next lambda value? If I make lambda equal to 10, then what will be the curve? This is my lambda equal to 10. Now you can see that the global minima is shifting. But that will be the same shift. The correlated variables will be 0 to the value of theta. In the case of the regression, if I put 4,5 such a curve, then I will show you. If my lambda is equal to 10, then my next line will be like this. And this is how I draw. I thought I have taken lambda equal to 20. Now what will happen in lambda equal to 20? I will go down, then I will make this line from here. And I thought lambda is equal to 40. So my next line will be like this. Now it will be restricted in 0 and it will be increasing. Now you understand why this is 0. Because in the last 100, we take absolute value of slope. And we construct theta and cost function value. So what will happen? Definitely, we will reduce some coefficients. But some coefficients that are not at all correlated, will definitely increase their value. In this case, when I am taking lambda equal to 20, what will be the slope that I have done? He has done 0. Okay? And when this is 0, what will happen? If I have a question here, I will write here in such values. 0.02 x1, 0.48 x2, plus 0.96 x3, plus beta 0.45. Now what will happen here? When we apply this last regression, then this will be the point 0.02 of x1. We will make this 0. Why? Because this is not highly correlated. Under this slope, this is specifically 0. The value of this is highly correlated. This value will be reduced. Let's say 0.35 x2. This will be 0.67 x3. I am telling you the example. Now, as soon as it is done, this feature will be deleted. It was not really related. It was not correlated. It was less correlation. See, correlation was less in this. Why? The two-thousand correlation. What will happen here? Your values, your features, which are not highly correlated, are basically the process of the future selection. The whole feature is deleted. What happens in this? I will use x2 and x3. And we will call this as L1. Always remember, this graph is very important. The Theta and Cost function. Always remember, we will make some values the same. But, the features that are restricted are 0. In this case, they will not be restricted. They will be nearer to 0. But never 0. So, we call this as a religious regression. It reduces overfitting. Last regression, it reduces feature selection. Now, in the next one, the topic of today's topic, which was the last of the five-minute topic, is ElasticNet. We will do two things here. One is Reduce. We will do two tasks here. One is Reduce Overfitting. And the other is the feature selection of the features. So, we will do these two tasks in this. This is very simple. If we write the Cost function directly, then you will understand. What will be the Cost function? 1 by 2n. h theta of x, y of i minus y of i hat whole square plus lambda 1. Okay? Summation of i is equal to 1 to n. Slope square plus lambda 2. Summation of i is equal to 1 to n. Slope magnitude or slope or absolute value of slope. Now, what we are doing here? We are combining these two. How to do this? What will be my specific? This is my Prevents Overfitting. Okay? And what is this? Prevents. It actually performs feature selection. Okay? So, I hope you all understood. So, this is actually feature selection. So, when we combine these two, we can make a short, elastic net. We know how to do this overfitting. And we also know that in the last regression, feature selection is done. Okay? We will always remember that we will make this slope for gradient descent. Basically, we will make this from the cost function. Okay? So, I hope you all liked this video. Please make sure that you subscribe to the channel and you will definitely be asking queries. I will be here to answer. This was it for my side. Thank you one doll. Bye bye."
+}

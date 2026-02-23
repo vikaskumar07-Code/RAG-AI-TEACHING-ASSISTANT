@@ -1,0 +1,1637 @@
+{
+    "chunks": [
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 0.0,
+            "end": 22.240000000000002,
+            "text": " Hello guys, my name is Krishna and welcome to my YouTube channel.  So guys, in today's video, we are going to discuss this first machine learning algorithm in India,  which is the linear regression machine learning algorithm.  Now, I will definitely explain you the whole detail,  where you will first understand what problem we are trying to solve."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 22.240000000000002,
+            "end": 40.0,
+            "text": " And I will include the entire maths in this.  And one thing, I want to thank you all.  Many people asked me to make a video in India before,  and make a video in the middle of the day.  I always thought that I will make it in India,"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 40.0,
+            "end": 52.84,
+            "text": " usually it will take time for it.  Because I am learning it in India for the first time.  Basically, I usually take classes in India, but I don't.  But thank you.  Now, my skills of learning India are also going well."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 52.96,
+            "end": 74.2,
+            "text": " And finally, I will definitely work on one of the entire machine learning algorithms,  the entire deep learning algorithms, NLP,  all these things in India, I will also upload them.  In addition, we will solve the new practical problems.  But let's focus on linear regression machine learning algorithm."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 74.2,
+            "end": 96.0,
+            "text": " If you want to become a data scientist,  then this will always be a first algorithm to study.  Which we call linear regression.  Now, this algorithm is very popular.  And if you want to understand the maths today,"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 96.0,
+            "end": 109.8,
+            "text": " then you will understand that you will be able to cover the basics of deep learning.  From all these topics, which I am going to discuss today.  So, what will be the agenda?  Let's discuss the agenda.  What is the problem we are solving?"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 109.8,
+            "end": 123.8,
+            "text": " What problem?  What problem we are solving?  Which problem we solve with linear regression?  We are solving.  And we will go to the second understanding of geometric intuition."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 123.8,
+            "end": 141.8,
+            "text": " I mean, I will show you the figures and diagrams.  What we are solving.  And finally, in the third, we will go to mathematical intuition.  Mathematical intuition.  You may remember that any machine learning algorithm"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 141.8,
+            "end": 158.8,
+            "text": " is learning with this fund.  If you learn from this fund, that is pretty much amazing.  You will be able to get any machine learning algorithm in a very popular way.  Okay.  Let's solve the first problem."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 158.8,
+            "end": 177.8,
+            "text": " What problem are we solving?  I have already made a video about the machine learning algorithm  that I have already made.  We have already discussed the two types of machine learning.  One is supervised and the other is unsupervised."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 177.8,
+            "end": 192.8,
+            "text": " Okay.  Supervised and unsupervised.  Now, what we usually do in supervised and unsupervised.  Here, we solve two specific problems.  Regression problem and the other is classification problem."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 192.8,
+            "end": 204.8,
+            "text": " Okay.  And if I talk about regression,  whenever your output feature is,  if it is continuous value,  I will show you a lot of examples."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 204.8,
+            "end": 215.8,
+            "text": " If it is continuous value,  it means you need to solve regression problem statements.  Okay.  So, today's algorithm,  which is linear regression,"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 215.8,
+            "end": 229.8,
+            "text": " it is a regression problem statement.  And don't worry guys,  I will put this whole material in the GitHub,  now definitely use it.  Very, very, all the materials I will make,"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 229.8,
+            "end": 239.8,
+            "text": " I will share all these materials in the GitHub.  Okay.  Now, let's go to the linear regression.  What problem are we solving?  So, I will write here,"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 239.8,
+            "end": 253.8,
+            "text": " linear regression.  You can solve the linear regression from your Excel sheet.  Okay.  You can solve the point of view of statistics.  We call it ordinary least square."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 253.8,
+            "end": 266.8,
+            "text": " But as a data scientist,  you must understand this mathematical intuition.  Because when you are making your model,  with the help of Python programming language,  then how does that model work?"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 266.8,
+            "end": 277.8,
+            "text": " You must understand this mathematical intuition.  Okay.  And this mathematical intuition is a very important thing,  to make a model,  it is called hyperparameter tuning."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 277.8,
+            "end": 287.8,
+            "text": " You will definitely do this.  Okay.  So, let's start.  We are solving the linear regression.  Let's take a data set."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 287.8,
+            "end": 297.8,
+            "text": " This will be a data set.  Let's say, age.  I will not say age, I will say weight.  It is a feature of my weight.  It is a feature of my height."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 297.8,
+            "end": 307.8,
+            "text": " Okay.  Let me write it down.  And tell me,  do you want to see my face in the video?  Or not?"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 307.8,
+            "end": 318.8,
+            "text": " I can also close my face,  so that you do not have any disturbance.  So, this is your age and height.  Okay.  Not age."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 318.8,
+            "end": 325.8,
+            "text": " Sorry, weight.  Okay.  Let me write it down.  And tell me,  do you want to see my face in the video?"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 325.8,
+            "end": 332.8,
+            "text": " Or not?  I can also close my face,  okay.  I will write it down again.  Weight and height."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 332.8,
+            "end": 343.8,
+            "text": " Now, we will understand the problem statement.  How are the problems of the type of statement?  We usually solve the linear regression.  Now, we have values of 73.  We will calculate the height in centimeters."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 343.8,
+            "end": 357.8,
+            "text": " We will calculate this in KG.  Suppose, I say 73 kg is a person.  His height is probably 150 cm.  63 kg height is the height of his height 155 cm.  78 kg is a person."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 357.8,
+            "end": 369.8,
+            "text": " His height is 170 cm.  I will say 82 kg is a person.  And he is a person.  And basically,  I am speaking with my love."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 369.8,
+            "end": 379.8,
+            "text": " In English,  I can say a person or a person.  So, we will calculate 82 kg.  165 kg.  So, all these information."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 379.8,
+            "end": 395.8,
+            "text": " Now, my main name is  I usually call this data set as train data set.  Okay.  I am making a model of this train data set.  I am making a model of this train data set."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 395.8,
+            "end": 409.8,
+            "text": " First of all, I am making this model of this train data set.  Then, I am making a hypothesis of this model.  Where, this hypothesis will have the main work.  This will take new data.  This will be the weight."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 409.8,
+            "end": 428.8,
+            "text": " And this will predict the height.  So, this model will predict the height of this train data set.  So, I will write it in green color so that you will know that my output is height.  Okay.  This is my output."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 428.8,
+            "end": 440.8,
+            "text": " This is my input.  So, I have to make a model of this train data set.  Which will predict the height by taking input as weight.  Okay.  So, this is the entire information."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 440.8,
+            "end": 453.8,
+            "text": " And this problem statement.  We can see that the output feature is continuous value.  Right?  It can be 150 or 150.5 or 150.1.  I will write the whole number here."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 453.8,
+            "end": 464.8,
+            "text": " But it can be decimals.  0.3.4.5.  So, I have plotted all these points here.  Let's say, it won't be accurately.  But I am plotting the point."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 464.8,
+            "end": 477.8,
+            "text": " Okay.  Now, let's see how we make this model.  Okay.  And for the first model we will try to make,  we will use linear regression."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 477.8,
+            "end": 494.8,
+            "text": " And the working is very simple.  The working is that this will make a straight line in this data point.  We will call it best fit line.  Best fit line.  Okay."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 494.8,
+            "end": 511.8,
+            "text": " We will definitely call this line best fit line.  Because, you have made a new weight.  Once you have made this best fit line on this data point,  we call it best fit line.  And we will also call this line as a model."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 511.8,
+            "end": 525.8,
+            "text": " Which we can call it hypothesis.  Now, we have come to the point of new weight.  So, according to this weight,  how much my output height should come?  If this is my new data,"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 525.8,
+            "end": 535.8,
+            "text": " how will I predict this?  I will just add this here.  Here, from here,  okay.  And from here, I will add this here,"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 535.8,
+            "end": 545.8,
+            "text": " this will be my output.  This weight is 45.  So, what should be my output?  What should be my output?  Let's say 120."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 545.8,
+            "end": 555.8,
+            "text": " Okay.  So, in this way, we will predict.  There will be no new data point.  Basically, this line will be on the line and  will be output from this."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 555.8,
+            "end": 567.8,
+            "text": " Now, here, very important thing is,  training point of view.  The training data is on the weight and height.  This is the point plot.  Now, when I make straight line,"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 567.8,
+            "end": 577.8,
+            "text": " okay.  So, this point, which you are looking at,  this point is your actual value.  This is your actual value.  This point, because if I look at this,"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 577.8,
+            "end": 591.8,
+            "text": " that weight should come here.  So, we will predict this value.  We will predict this value.  Now, what is our main aim?  I have to create a best fit line,"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 591.8,
+            "end": 602.8,
+            "text": " wherein the distance,  its distance, its distance, its distance,  its distance, its distance,  its distance, its distance, its distance,  if I do this summation of all the distances,"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 602.8,
+            "end": 611.8,
+            "text": " and we call this distance,  residual error.  Receive deal error.  I will use many terminologies.  But this is the residual error."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 611.8,
+            "end": 620.8,
+            "text": " The difference between the actual point  and the predicted point.  This is the predicted point of green color.  My model has predicted here,  because here,"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 620.8,
+            "end": 631.8,
+            "text": " that is the best fit line.  Okay.  So, if I do summation of all these distances,  then its summation is very,  and its error is very less."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 631.8,
+            "end": 640.8,
+            "text": " We should be able to say that,  that is the best fit line.  If I have one more line,  let us say that I have one more line,  its a bit like this."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 640.8,
+            "end": 648.8,
+            "text": " Okay.  I will say that this is my best fit line.  So, how do we identify these two?  This is the best fit line,  this is the best fit line."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 648.8,
+            "end": 658.8,
+            "text": " We will identify this way.  We will sum up all the residual error,  and see who is less,  and who is less.  So, the aim is to,"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 659.8,
+            "end": 672.8,
+            "text": " the aim is to find best fit line,  best fit line,  best fit line,  with minimal error.  Okay."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 672.8,
+            "end": 679.8,
+            "text": " Minimal error.  Obviously, it is not zero.  If it is zero,  then we will call it an over-fitting condition.  Okay."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 679.8,
+            "end": 686.8,
+            "text": " Zero will not always be there.  Okay.  So, you understand that  we have to make the best fit line  like this."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 686.8,
+            "end": 701.8,
+            "text": " But this distance is less and less.  So, this is our problem statement.  Very simple.  Now, we will see how we make this best fit line.  Now, we are trying to understand the maths."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 701.8,
+            "end": 714.8,
+            "text": " So, here our maths includes.  Some basic maths you should know for this.  Okay.  If you understand, I have such data points already.  Okay."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 714.8,
+            "end": 728.8,
+            "text": " I have made such data points.  Let's say, I have made such a many data points.  Now, here we will make the best fit line.  Now, this best fit line is shown.  We can identify it with different equations."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 728.8,
+            "end": 742.8,
+            "text": " We can see it with different equations.  Basically, we can write this line with different equations.  One equation, you will be very commonly asked.  The one which says Y is equal to MX plus C.  Okay."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 742.8,
+            "end": 753.8,
+            "text": " This Y is the Y.  I will hack it with Y.  This Y hat is basically predicted point.  Okay.  All these predicted points will be there."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 753.8,
+            "end": 765.8,
+            "text": " And what is M here?  M is your own.  I will write this clearly.  M is equal to slope.  Slope or coefficient?"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 765.8,
+            "end": 778.8,
+            "text": " Now, what is slope and coefficient?  slope and coefficient is a very important information.  Let's say, here, one unit of X axis is here.  One unit of Y axis is here.  Okay."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 778.8,
+            "end": 791.8,
+            "text": " Let me write here.  So, slope tells me that  one unit increase in X  is how much the slope is increasing in Y.  So, if I go to make a slope here,"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 791.8,
+            "end": 804.8,
+            "text": " then I will make this in this way.  I will make this in this way.  And basically, I will find out  that one unit increase in X leads to  how many unit increase in Y."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 804.8,
+            "end": 812.8,
+            "text": " So, I will make these points.  This is basically slope.  Okay.  Slope or coefficient?  At the end of the day,"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 812.8,
+            "end": 823.8,
+            "text": " the most important thing to change is this.  Everything else is very easy.  Okay.  Let's go to the second term.  C."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 823.8,
+            "end": 831.8,
+            "text": " Here, you can see C.  What is C?  C basically, we call it intercept.  This is intercept.  When your X value is 0,"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 831.8,
+            "end": 845.8,
+            "text": " which point is Y?  So, this value is your C point.  C intercept.  That basically, if I say in English,  when your value of X is 0,"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 845.8,
+            "end": 855.8,
+            "text": " where is the best fit line intercepting Y?  That is C.  Okay.  So, M is your slope or coefficient?  C is your intercept."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 855.8,
+            "end": 866.8,
+            "text": " Y hat is your predicted output.  Very simple and very easy.  Okay.  Let's go to the second term.  There is a different notation in the search paper."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 866.8,
+            "end": 881.8,
+            "text": " We write the simple maths in this notation.  I will tell you that we have to make  specifically hypothesis here.  So, the hypothesis point of view  is that my Guru is an online Guru."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 881.8,
+            "end": 892.8,
+            "text": " That is Andrew N.  Okay.  So, that Andrew N.  When he studies, he studies from a different notation.  And we can write from that notation very easily."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 892.8,
+            "end": 900.8,
+            "text": " And if you learn from that notation,  your deep learning is also very easy.  Okay.  So, here I write in that notation,  which Andrew N."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 900.8,
+            "end": 911.8,
+            "text": " specifically writes.  The hypothesis considering hypothesis is mine.  So, if I say hypothesis,  I can write hypothesis in H theta of X.  It is equal to same notation."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 911.8,
+            "end": 923.8,
+            "text": " In H theta 0,  plus theta 1 multiplied by X.  Now, what is this X?  This X is nothing but data points.  Okay."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 923.8,
+            "end": 932.8,
+            "text": " I can also write X of I here.  This is all data points.  Okay.  If I say this,  I will leave this off I."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 933.8,
+            "end": 946.8,
+            "text": " We can also have X.  X means, how many inputs and features can be used.  So, here I write,  H theta of X is equal to theta 0 plus theta 1 multiplied by X1.  X1 is basically the first feature."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 946.8,
+            "end": 956.8,
+            "text": " If I have many multiple features,  like I have age,  then I have probably salary.  Probably 2nd or 2nd,  then we have to predict something from them."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 956.8,
+            "end": 968.8,
+            "text": " Okay.  So, that notation can be written like this.  Theta 0 plus theta 1 X1 plus theta 2 X2.  Let's consider that we have,  X2 and XN."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 968.8,
+            "end": 986.8,
+            "text": " So, X2 and XN.  So, how many inputs and features can we identify that straight line?  I have created a line in two dimensional.  So, I am going to see.  Obviously, we can see a point of usage straight line plane."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 986.8,
+            "end": 997.8,
+            "text": " But if I see in 4-dimensional, 5-dimensional, 10-dimensional,  then it is not possible.  We cannot see.  Human beings are above 3-dimensional.  We can see 4-dimensional too."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 997.8,
+            "end": 1007.8,
+            "text": " We cannot see.  If someone sees, then he says,  I definitely want to say,  and how he is taking it.  So, here, the first statement is,"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1007.8,
+            "end": 1020.8,
+            "text": " that my hypothesis is,  my hypothesis is,  that is, H theta of X.  And I am taking only one feature since I am using the fieldwork.  Let's make it."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1020.8,
+            "end": 1033.8,
+            "text": " Theta 0 plus theta 1.  Theta 1 X1.  So, this is where my hypothesis is,  which will make this best-fit line.  Very simple."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1033.8,
+            "end": 1041.8,
+            "text": " Okay?  Now, let's solve one problem.  We always remember that,  whatever is our data points,  obviously, you know,"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1041.8,
+            "end": 1050.8,
+            "text": " this is an independent feature.  This is an independent feature.  Okay?  So, here, when I make Y and X,  we can also say that,"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1050.8,
+            "end": 1061.8,
+            "text": " Y is a linear function of X.  Okay? In this case,  linear function of X.  Okay?  Let's solve some examples."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1061.8,
+            "end": 1070.8,
+            "text": " Let's say that,  if this is my line,  okay?  And suppose,  I am using this hypothesis here."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1070.8,
+            "end": 1080.8,
+            "text": " I am also looking at my notebook.  And this is my blue notebook, guys.  Where I have written the whole map.  And I keep referring to this map.  So, I am very excited."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1080.8,
+            "end": 1089.8,
+            "text": " I have become a college student.  Where I am continuously looking at the map.  Okay?  Let's first talk about this.  If, let's say,"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1089.8,
+            "end": 1097.8,
+            "text": " this is my values 1,  2, 3.  And this is my values 1,  2, 3.  Okay?"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1097.8,
+            "end": 1106.8,
+            "text": " If you understand,  I am saying that,  my Theta,  let's say,  that is my Theta 0,"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1106.8,
+            "end": 1113.8,
+            "text": " Theta 1 is equal to 0.  So, in this particular case,  what will happen?  What will happen?  My Htheta of X,"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1113.8,
+            "end": 1120.8,
+            "text": " remember that,  Htheta of X,  what will happen in this particular scenario?  So, I will write here 1.5.  Right?"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1120.8,
+            "end": 1128.8,
+            "text": " Here, 1.5 will write here,  this will be 0.  So, when I will make a straight line,  then,  you will make something like this."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1128.8,
+            "end": 1135.8,
+            "text": " Sorry.  I will make it in 1.5.  So, this is your Theta.  Okay?  So, this is basically 1.5."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1135.8,
+            "end": 1145.8,
+            "text": " Now, my Theta 0,  Theta 1 value case is the first.  Let's make another line.  If I have made another line here,  okay?"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1145.8,
+            "end": 1154.8,
+            "text": " Here, I will write here,  Theta 0 is equal to 0.  And Theta 1 is equal to 0.5.  Okay?  So, in this particular case,"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1154.8,
+            "end": 1162.8,
+            "text": " if I write 1,  2, 3.  And here,  I write 1,  2, 3."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1162.8,
+            "end": 1171.8,
+            "text": " Okay?  And in this particular case,  if my Theta is,  then, if I write this value in this hypothesis,  then, how will I write the equation?"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1171.8,
+            "end": 1179.8,
+            "text": " See,  if I have x1,  x1 is 1, okay?  When x1 is 1,  then, I will write 0.5 into 1."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1179.8,
+            "end": 1188.8,
+            "text": " So, where will our first point come?  Our first point will come here.  See, 0.5 into 1,  the first point will come here.  Okay?"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1188.8,
+            "end": 1199.8,
+            "text": " I am equating here.  If I equate here,  then, what will be my value?  Theta 0 is equal to 0.  multiplied by 0.5 into 1."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1199.8,
+            "end": 1207.8,
+            "text": " So, 0 multiplied by 0.5 into 2.  What is the value of x1?  1, 2, 3.  Okay?  So, this is my value."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1207.8,
+            "end": 1213.8,
+            "text": " 1, this is my value.  0.5.  Sorry.  This is my value.  0.5,"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1213.8,
+            "end": 1218.8,
+            "text": " this is my value.  1.  So, 1 is my next point.  Here,  create."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1218.8,
+            "end": 1226.8,
+            "text": " So, I have pointed here.  So, what will be the third point?  0.5 multiplied by 3.  1.5.  So, I will do it here."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1226.8,
+            "end": 1236.8,
+            "text": " Now, when I make an x-trade line in jubbi,  then, see,  I will not point correctly.  What is correct?  I need it."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1236.8,
+            "end": 1247.8,
+            "text": " So, this is my,  this is my,  this is my,  okay?  Always remember that when your intercept"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1247.8,
+            "end": 1253.8,
+            "text": " is near here,  then, your intercept value will be 0.  Okay?  Because, what is the theta 0?  Intercept is,"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1253.8,
+            "end": 1263.8,
+            "text": " this is coefficient.  Right?  This is intercept.  This is coefficient.  Okay?"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1263.8,
+            "end": 1269.8,
+            "text": " Very simple.  Okay?  Let's draw one more line.  Okay?  So, you can add multiple equations"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1269.8,
+            "end": 1277.8,
+            "text": " to theta 0, theta 1.  Okay?  So, you have understood basically  well,  when we are using this equation,"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1277.8,
+            "end": 1285.8,
+            "text": " we are coming to a straight line.  This is clear.  And that was the main reason to tell you.  Now,  let's go to what we have to do."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1285.8,
+            "end": 1293.8,
+            "text": " Again,  we understand that  aim is to find best fit line with minimal error.  Minimal error means  these two differences"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1293.8,
+            "end": 1299.8,
+            "text": " should be less,  when I complete the submission.  So,  for this,  we obviously"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1299.8,
+            "end": 1306.8,
+            "text": " cannot make multiple lines.  Right?  If you will say,  we will do this.  We will make a line like this,"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1306.8,
+            "end": 1314.8,
+            "text": " okay?  And I will make many points here.  Okay?  What we will do randomly?  We will give a best fit line."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1314.8,
+            "end": 1319.8,
+            "text": " Like this.  Take it.  Let's calculate its distance.  Let's do this.  We have given one more line."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1319.8,
+            "end": 1327.8,
+            "text": " Next one is the best.  Now, let's calculate its distance.  And after getting one more line,  calculate it from here.  Let's do this."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1327.8,
+            "end": 1337.8,
+            "text": " Now, we will give distance.  But how will you determine  which line is best?  Because you will not go in such a way,  you will not go in such a way."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1337.8,
+            "end": 1345.8,
+            "text": " You will have to do a theta 0 theta 1 value  just initialize and make a line.  And we will see the error.  The error is not less.  No."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1345.8,
+            "end": 1354.8,
+            "text": " It should be like,  you start from a point,  make a straight line somewhere.  After that we will adjust the straight line  and make the best fit line."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1354.8,
+            "end": 1363.8,
+            "text": " Okay?  So, here, you have to do a random theta 0 theta 1 value  not always initialize.  Okay?  Its technique is different."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1363.8,
+            "end": 1377.8,
+            "text": " But before that,  we will define a cost function.  Because our aim is always to make a best fit line.  In such a way, the error should be less.  So, here, we are solving specifically."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1377.8,
+            "end": 1396.8,
+            "text": " And we will write it in the root of the cost function.  So, here, I will write a cost function.  So, you see, my task is  minimize theta 0 theta 1.  And remember,"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1396.8,
+            "end": 1408.8,
+            "text": " first of all, I will give you the minimization.  First of all, what I will say?  First of all, we have to make the best fit line.  With the error, the error is the predicted point  and the actual point difference."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1408.8,
+            "end": 1419.8,
+            "text": " The difference is to reduce it.  So, we know where our predicted point comes from.  Our predicted point comes from h theta of x.  Okay?  I will write here,"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1419.8,
+            "end": 1429.8,
+            "text": " because we are talking about every data point.  y of i.  And y of i is my output.  My actual value.  This is the predicted value."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1429.8,
+            "end": 1439.8,
+            "text": " Because the line we are writing,  is written as h theta of x.  This is the value of h theta of x.  And this is the point of the line,  which is the value of h theta of x of i."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1439.8,
+            "end": 1449.8,
+            "text": " Okay?  If I am in the middle of this point,  I am calculating the distance of this point.  So, what will happen in this case?  This will be my h theta of x of i."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1449.8,
+            "end": 1459.8,
+            "text": " And this value will be my y.  So, here, this difference,  we have to reduce it.  We have to minimize it.  So, what can happen now?"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1459.8,
+            "end": 1468.8,
+            "text": " That h theta of x is also small.  If h theta of x is too big,  then this value will be negative.  So, what will we do?  We will square it now."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1468.8,
+            "end": 1475.8,
+            "text": " Okay?  I will square first.  I will say,  why we will square it specifically.  First of all, we have to make the negative value positive."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1475.8,
+            "end": 1483.8,
+            "text": " Okay?  This is a good purpose.  This is my cost function.  But I will add more components in this.  How to calculate the components?"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1483.8,
+            "end": 1494.8,
+            "text": " So, first component is,  I will basically do this.  This is obviously summation of i is equal to 1 to m.  What happens to m?  m is nothing but number of data points."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1494.8,
+            "end": 1506.8,
+            "text": " As much as we calculate the distance of data points.  This is very important.  If you understand this,  how will the artificial neural networks understand?  Okay?"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1506.8,
+            "end": 1522.8,
+            "text": " So, what is the components now?  I have added a summation because I have to see the difference between predicted and actual value.  Now, I will divide it by 1 by m.  Now, see, why I am doing this in 1 by m?  Okay?"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1522.8,
+            "end": 1537.8,
+            "text": " We always remember that the difference here is looking for.  I am doing the summation.  The whole is full of 1 to m values.  So, I am doing the average find out of this.  I have to find the average of all the errors."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1537.8,
+            "end": 1548.8,
+            "text": " So, I have used this m component.  Now, I will add another value in this.  Now, why I have added 2?  Do you understand?  There is a concept in differentiation."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1548.8,
+            "end": 1561.8,
+            "text": " If I have x square,  if I want to do this with respect to x square,  then basically this will be 2x2-1,  which is nothing but 2 multiplied by x.  Okay?"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1561.8,
+            "end": 1574.8,
+            "text": " 2 multiplied by x.  So, this is the difference of this value.  Now, why do we do differentiation?  We use differentiation because we find the slope of the slope.  Okay?"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1574.8,
+            "end": 1590.8,
+            "text": " So, this mathematical equation becomes a little easy.  When we will change our value of theta,  and we have to find the slope at that time.  Activity is the mathematical point of view.  So, to make that calculation a little easy,"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1590.8,
+            "end": 1601.8,
+            "text": " we have to write 1 by 2.  Okay?  Because if I take out the differentiation of this,  2 will be coming forward, so 2 or 2 will be cancelled.  So, to simplify that,"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1601.8,
+            "end": 1615.8,
+            "text": " this is basically used.  And we call this cost function.  This cost function is very important.  When we use slope derivative,  and when we change theta value,"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1615.8,
+            "end": 1625.8,
+            "text": " I mean, we will change theta value.  And here is my cost function.  And what we are doing here is,  we have to minimize this.  How to minimize this?"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1625.8,
+            "end": 1636.8,
+            "text": " Theta 0 and theta 1.  Theta 1 has changed.  Okay?  Theta 1 has changed.  Theta 0 and theta 1 have changed"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1636.8,
+            "end": 1647.8,
+            "text": " and have to minimize this value.  Okay?  So, that is why we call it cost function.  We call it cost function specifically.  And this is my task."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1647.8,
+            "end": 1658.8,
+            "text": " I will change theta 1 in this way.  Such that, my cost function value is less.  In a very simple way,  you can understand,  what we are doing here."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1658.8,
+            "end": 1675.8,
+            "text": " We are doing this with the main aim.  Okay? We will give some notation to this.  I will write the cost function J of theta 0.  theta 0 theta 1 is equal to 1 by 2m.  summation of i is equal to 1 to m."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1675.8,
+            "end": 1694.8,
+            "text": " Then, our Htheta of x of i is equal to minus y of i whole square.  So, this is my entire cost function.  This cost function is to minimize us.  Our main target is,  we have to minimize this anyhow."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1694.8,
+            "end": 1708.8,
+            "text": " Now, I can do something to minimize.  Okay?  If you have a new technique,  that is to minimize it efficiently,  you can use your name on your research paper."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1708.8,
+            "end": 1722.8,
+            "text": " Next, we focus on this.  We call this as a square error function.  This term is very important.  We call it a square error function.  Okay?"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1722.8,
+            "end": 1734.8,
+            "text": " Now, you know two things.  What is it?  You know cost function.  And you know high-bottoms.  Let me write it again."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1734.8,
+            "end": 1751.8,
+            "text": " I will write here specifically.  First thing about hypothesis.  And here I will write here specifically about cost function.  Now, you will understand everything.  I will change the value of theta 0 and theta 1."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1751.8,
+            "end": 1768.8,
+            "text": " Now, let us write our hypothesis testing.  Here, we know that Htheta of x is equal to theta 0 plus theta 1 x1.  Now, I have written here,  J of theta 0 comma theta 1.  You will know here,"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1768.8,
+            "end": 1781.8,
+            "text": " 1 by 2m summation of i is equal to 1 2m.  See, I am writing it like this.  You have to practice it like this.  When you will practice it like this,  it will become very good perfectionist."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1781.8,
+            "end": 1790.8,
+            "text": " Amir Khan, I am saying it as a perfectionist.  Why?  Because when there is nothing perfect,  it works.  You have to do it like this."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1790.8,
+            "end": 1804.8,
+            "text": " Now, let us do this.  Let me take an assumption.  Let us consider theta 0 equal to 0.  What does this mean?  This means that the line is passing from the intercept."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1804.8,
+            "end": 1816.8,
+            "text": " Now, for this,  I want to show you two-dimensional dimension.  Let us consider theta 0 equal to 0.  So, what will be the equation of Htheta of x?  This will be very simple."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1816.8,
+            "end": 1828.8,
+            "text": " This is theta 1 of x.  This is theta 1 x1.  This is my word theta 1 x1.  This is my equation.  Now, I will give you some assumptions here."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1830.8,
+            "end": 1843.8,
+            "text": " So, my condition will be the first one.  Let us consider theta.  Now, we will understand the value of theta.  How we will change it?  How we will change the theta value?"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1843.8,
+            "end": 1863.8,
+            "text": " We will change the value of theta 1.  We will also understand that this is the hypothesis testing.  And what is the relationship between the cost function?  Why we are using the cost function specifically?  And what is the relationship between these two?"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1863.8,
+            "end": 1875.8,
+            "text": " Let us talk about hypothesis testing.  If I talk about this,  my value is x1 2 3.  This is my x.  This is my y."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1875.8,
+            "end": 1889.8,
+            "text": " Let us consider that this is my data points.  How this is? 1.1 2.2 3.3.  This is my data points.  This is my feature 1 and feature 2.  This is my data points."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1889.8,
+            "end": 1903.8,
+            "text": " Obviously, I know y is my output feature.  Now, let us consider.  Let us initialize.  When theta 1 is equal to 1.  When theta 1 is equal to 1."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1903.8,
+            "end": 1921.8,
+            "text": " Let us say that this is the point.  I will plot this point here.  1.1 2.2 3.3.  I hope straight line is in this.  If not, then 3.3 will be in this."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1921.8,
+            "end": 1933.8,
+            "text": " This is my 3 points.  1.1 2.2 3.3.  This is my training data.  Example here.  I will do some more phase."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1933.8,
+            "end": 1949.8,
+            "text": " So that you can see it better.  Now, if my theta 1 value is 1.  If my theta 1 value is 1.  Then what will happen?  Let us see how the line will be."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1949.8,
+            "end": 1960.8,
+            "text": " When my theta 1 value is 1.  Then x1 will be 1.  So what will happen?  Obviously, it will be x1.  When my x2 is 2."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1960.8,
+            "end": 1975.8,
+            "text": " My h theta of x is 2.  Because theta 1 is 1.  I can calculate here.  h theta of x is equal to 1 multiplied by 1.  h theta of x is equal to 1 multiplied by 2."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1975.8,
+            "end": 1988.8,
+            "text": " Because when x is 2.  I will write h theta of x here.  1 multiplied by 3.  Because when my x value is 3.  Obviously, h theta of x is equal to 1."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 1988.8,
+            "end": 2000.8,
+            "text": " So, 1 multiplied by 3.  So, I will think of this point.  So, my straight line will be like this.  So, this is my straight line that is passing through the intercept.  Because theta is 0."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2000.8,
+            "end": 2019.8,
+            "text": " I hope you have understood it.  Now, how do we find our cost function?  I will put a graph here before looking for the cost function.  Because I want to show you what is the relationship between the hypothesis and the cost function.  And when I am initializing theta 1."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2019.8,
+            "end": 2033.8,
+            "text": " I can see the value of the correct theta 1.  Which is my coefficient.  So, this is my theta 1.  And this is my z of theta 1.  Because I am looking for the cost function."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2033.8,
+            "end": 2054.8,
+            "text": " Now, let me write here.  I will write some values here.  0.5, 1.0, 1.5, 2.5.  Okay, this is the point.  Now, let's calculate the cost function of my j of theta 1."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2054.8,
+            "end": 2070.8,
+            "text": " So, I will write j of theta 1 here.  j of theta 1.  So, what is my equation? 1 by 2m.  summation of i is equal to 1 to m.  h theta of x of i minus y of i whole square."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2070.8,
+            "end": 2081.8,
+            "text": " Okay?  Now, how many points of m are there?  See, 1 by 2, 3.  So, here I will write 1 by 6.  summation of i is equal to 1 to m."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2081.8,
+            "end": 2089.8,
+            "text": " Now, let's see the difference between these two.  What difference?  Let's do the summation.  So, we will do the summation.  So, we will discuss about every data points."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2089.8,
+            "end": 2103.8,
+            "text": " So, if I find this summation, what will be the point of the summation?  Let's do the first summation.  What is the difference between this point and this point?  The red point that you are showing is your predicted point.  The real point of the green point is your actual point."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2103.8,
+            "end": 2113.8,
+            "text": " So, obviously, there is no difference between them.  So, I will obviously do the 0 square.  Okay?  I have got the 0 square here.  Because, look, there is the same value."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2113.8,
+            "end": 2130.8,
+            "text": " Then, here is 0 square.  So, the total you will see is the cost function j of theta 1 when theta 1 is equal to 1 is nothing but 0.  Okay?  Now, the same point is applied.  We have got j of theta 1 when theta 1 is equal to 1."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2130.8,
+            "end": 2135.8,
+            "text": " Here, we will plot here.  So, theta 1 is 1.  Okay?  1 is 1.  1 is 1."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2135.8,
+            "end": 2142.8,
+            "text": " And j of theta 1 is so much 0.  So, 0 is here.  Right?  So, I will mark this point.  Okay?"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2142.8,
+            "end": 2152.8,
+            "text": " Our first point is here.  Now, let us consider here.  When theta 1 is equal to 0.5,  I have taken another theta 1.  0.5."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2152.8,
+            "end": 2164.8,
+            "text": " Let us see how the line is formed.  So, you will see,  I will write h theta 1 in theta 1 here.  Multiply by 1 when x1 is equal to 1.  So, here, it will be 0.5 here."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2164.8,
+            "end": 2173.8,
+            "text": " Okay?  This one is here.  Then, when x is equal to 2,  so, it will have to be 0.5 multiplied by 2.  If it is 1, then 2 will be 0."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2173.8,
+            "end": 2181.8,
+            "text": " So, it will be 0.  Okay?  Now, when x is equal to 3,  3 into 0.5 is 1.5,  so, this is my third point."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2181.8,
+            "end": 2190.8,
+            "text": " Here.  Okay?  Now, let us make a line here.  So, this is my second line.  Okay?"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2190.8,
+            "end": 2199.8,
+            "text": " The second best fit line.  When theta 1 is equal to 0.5.  Now, my real point is green point.  Okay?  Now, let us look for the cost function."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2199.8,
+            "end": 2209.8,
+            "text": " Now, what will happen in the cost function?  Let me write here.  I will write j of theta 1 in equation.  1 by 6.  Let us put it in the middle."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2209.8,
+            "end": 2217.8,
+            "text": " This value is 0.1.  Right?  1 minus 0.5.  This is 0.5.  So, what do I write here?"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2217.8,
+            "end": 2229.8,
+            "text": " Here, I write 0.5 minus 1 whole square.  Because, what is h theta of x of i?  My 0.5 is minus 1 whole square.  Then, I will add it in this.  Next, what is the next point?"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2229.8,
+            "end": 2241.8,
+            "text": " 1 minus 1 minus 2 whole square.  1 minus 2 whole square.  Plus 1 plus 1.5 minus 2.5 whole square.  And 3.  So, 1.5 minus 3 whole square."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2241.8,
+            "end": 2251.8,
+            "text": " So, here, 1.5 minus 3 whole square.  Let me see your notes.  All right?  Now, I am calculating j of theta of 1.  Where?"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2251.8,
+            "end": 2265.8,
+            "text": " Theta 1 is equal to 0.5.  So, finally, you will see 1 by 6.  And this will be multiplied by 3.5.  You will calculate.  And approximately, I will give 0.5."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2265.8,
+            "end": 2276.8,
+            "text": " So, here, my j theta 1 is value.  You can definitely calculate.  Now, I will go up.  Okay?  When my theta 1 is theta 1.5."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2276.8,
+            "end": 2287.8,
+            "text": " So, j of theta 1, let's say that j of theta 1  I write here like this.  1, 2, 3, 4, 5.  Fine?  Okay?"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2287.8,
+            "end": 2301.8,
+            "text": " So, when my point of theta 1 is going to answer me,  0.58, where will the j of theta of 0.58 come from?  Here, it will come from here, right?  This is the point of 0.58, I understand.  So, my point of 0.58 will come from here."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2301.8,
+            "end": 2314.8,
+            "text": " Okay?  So, this is basically the best fit line.  When theta 1 is equal to 0.58,  with respect to this data point, my best fit line is here.  Actually, let's take another condition."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2314.8,
+            "end": 2328.8,
+            "text": " Then, theta 1 is equal to 0.0.  0 is the line of the line of the line.  It will be very simple.  We will make this line in this way.  Let's take some other data point."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2328.8,
+            "end": 2337.8,
+            "text": " Okay?  Let's take this.  So, this is my next point.  And my next line will be like this.  Why?"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2337.8,
+            "end": 2347.8,
+            "text": " Because 0 is 0 multiplied by 1 is 0.  0 multiplied by 2 is 0.  0 multiplied by 3 is 0.  Okay?  If I calculate the Z theta of 1,"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2347.8,
+            "end": 2358.8,
+            "text": " now I will see the difference.  I was looking at the difference between these two.  Now, I will see the difference between these two.  Okay?  I will see the difference between these two."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2358.8,
+            "end": 2366.8,
+            "text": " I will see the difference between these two.  Okay?  So, let's go and calculate.  Let's do this again.  J of theta 1 is very simple."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2366.8,
+            "end": 2387.8,
+            "text": " 1 by 6 multiplied by.  So, the first point of 0 is 0.  It is minus the first point of x.  So, 0 is the second whole square plus 0 minus 2 whole square plus 0 minus 3 whole square.  Obviously, this is the same thing."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2387.8,
+            "end": 2398.8,
+            "text": " It is very simple.  If you multiply this, then this is 14 by 6.  And the next is the value of this.  2.3.  Now, when this 2.3 is coming,"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2398.8,
+            "end": 2412.8,
+            "text": " then what is my theta 1 value?  And this is my 2.3 value here.  Now, if I do this,  I will take a lot of different x1 value.  So, you will see that I do this,"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2412.8,
+            "end": 2422.8,
+            "text": " what happens?  What happens?  Okay?  If I combine this curve,  I combine this curve,"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2422.8,
+            "end": 2436.8,
+            "text": " I tell this curve,  gradient descent.  And we also say this optimizer.  If you are studying deep learning,  then you should know that we also say this optimizer."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2436.8,
+            "end": 2453.8,
+            "text": " Gradient descent.  This gradient descent is a very important concept.  Because this definitely will do one thing  that your theta 1 value will automatically change.  Now, let's observe in every point."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2453.8,
+            "end": 2465.8,
+            "text": " Which is the best point in all these points?  That is this point.  Because in this point,  you will see that the difference between the predicted or actual point,  which is the red line,"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2465.8,
+            "end": 2482.8,
+            "text": " was the lowest, almost zero.  So, we will say this point at a global level.  And this point is a very important point.  Because we know,  Brother, where do you have to train?"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2482.8,
+            "end": 2502.8,
+            "text": " You have to train to the point that you have to pass.  Basically, you will not reach the level of global minimum  that you will not reach the level of theta 1 value.  And this is the focus of the entire linear regression.  I hope you all understood this very well."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2502.8,
+            "end": 2518.8,
+            "text": " So, we will say this global minimum.  I am very good at explaining you all the equations  and I am going to explain them in detail.  If you do not understand that, you should also revise them.  Let's take gradient descent."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2518.8,
+            "end": 2531.8,
+            "text": " And why does this gradient descent work?  I have not told you yet.  If I am initializing my theta 1 value,  I will initialize it so many times.  And I will know how I am going to pass the level of global minimum."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2531.8,
+            "end": 2544.8,
+            "text": " Let's take an example.  Let's say that this is my gradient descent.  Let's say this is my theta 1 value,  this is my J of theta.  Theta 1 is right."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2544.8,
+            "end": 2557.8,
+            "text": " Let's say that my first point is here,  from here to here, from here to here.  But our aim is to come here.  How will I come here automatically?  And how will the value of theta 1 be updated?"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2557.8,
+            "end": 2576.8,
+            "text": " Do you understand?  So, we use this with a repeat convergence algorithm.  Because, how many times do I initialize the theta 1 here?  I am initializing the theta 1 here.  I said that I will initialize the theta 1,"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2576.8,
+            "end": 2593.8,
+            "text": " 0, 0, 0, 0, 0, 0.  But, till now, we should have done this in a way that we initialize it.  And you can reduce it to a level of global minimum.  So, for this, we use this convergence theorem.  This is a repeat convergence theorem."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2593.8,
+            "end": 2603.8,
+            "text": " Now, what happens here?  Let me explain it very simply.  Do you understand?  This is your first point of theta 1 here.  Okay?"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2603.8,
+            "end": 2623.8,
+            "text": " Now, I told you that we have to update the theta 1 value.  So, what will we do here?  We will apply, we will have to find out the derivative.  We have to update, first we will find out the derivative.  So, let's find out the derivative and slope."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2623.8,
+            "end": 2637.8,
+            "text": " How to find the slope?  We will make a best fit line.  So, we will make a line in the case of slope.  Then, just assume that this slope is positive or negative?  It is very simple."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2637.8,
+            "end": 2651.8,
+            "text": " If you look at this slope,  this slope usually becomes positive slope.  Why?  Because, when your x value is increasing,  y value is also increasing."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2651.8,
+            "end": 2661.8,
+            "text": " Okay? We will call this as positive slope.  If your x value is increasing,  y value is decreasing, we will call it as negative slope.  Okay?  A unit movement of x"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2661.8,
+            "end": 2673.8,
+            "text": " will, if it leads to the unit movement or any movement of y  in the positive direction,  it is basically a positive slope.  So, this is the example of positive slope.  But now, I didn't say that,"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2673.8,
+            "end": 2683.8,
+            "text": " because my brother is here,  this is my global minima.  How do I come here?  Now, my theta 1 is here,  how do I come here?"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2683.8,
+            "end": 2693.8,
+            "text": " So, this convergence is an important thing.  In convergence, we say that  theta j is  theta j  minus"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2693.8,
+            "end": 2704.8,
+            "text": " a parameter,  we call it alpha,  we call it specifically learning rate.  Let me tell you what is the importance of learning rate.  So, this is my learning rate."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2704.8,
+            "end": 2719.8,
+            "text": " Okay? This is my learning rate.  Next, we will write another equation,  which we call as derivative of theta j  and here we will write j of theta 1.  Okay?"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2719.8,
+            "end": 2730.8,
+            "text": " Now, derivative of j of theta 1 means  derivative of the cost function.  The cost function we will write,  we will find its derivative.  And this is the slope."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2730.8,
+            "end": 2741.8,
+            "text": " This is the slope.  The whole term we are using,  derivative of,  derivative to derivative of theta of j,  j of theta 1,"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2741.8,
+            "end": 2751.8,
+            "text": " this is called as slope.  We will specifically call it slope.  I showed you this line,  and said that it is positive slope.  Okay? Now, let's apply the first thing here."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2751.8,
+            "end": 2763.8,
+            "text": " Now, I have to update the value of theta 1 here.  So, I will write in the equation.  theta 1,  theta 1 minus learning rate.  Learning rate is,"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2763.8,
+            "end": 2774.8,
+            "text": " now I will say what is there?  Now, tell us, what is the slope value?  Positive or positive?  So, theta 1 minus any positive value,  then its value will obviously be decrease."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2774.8,
+            "end": 2783.8,
+            "text": " Obviously, it will be decrease.  And how long we will do this process?  This is the continuous repeated.  Okay?  Then, what I will do with theta 1?"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2783.8,
+            "end": 2793.8,
+            "text": " I will find the slope again.  I will come here again.  I will find the slope again.  I will do it here.  Now, the speed is decided to be less."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2793.8,
+            "end": 2802.8,
+            "text": " Okay? Now,  your initial point,  theta 1,  is here. So, what will happen in this case?  If you will find the slope,"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2802.8,
+            "end": 2810.8,
+            "text": " then we will call it negative slope.  Because the value of x is increasing,  and y is decreasing.  Now, in this case,  if I say negative slope,"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2810.8,
+            "end": 2821.8,
+            "text": " then how will I show my equation?  theta 1 equal to theta 1  minus alpha minus negative value.  This is negative slope, right?  This is slope negative."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2821.8,
+            "end": 2831.8,
+            "text": " So, minus negative,  minus into minus is positive.  So, theta value will be plus value.  That basically means theta 1 is getting incremented.  And obviously,"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2831.8,
+            "end": 2843.8,
+            "text": " it will have to be incremented.  Because if my theta 1 value is here,  which is telling me from this point,  I have to go in this direction.  So, this continuous convergence algorithm,"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2843.8,
+            "end": 2852.8,
+            "text": " we will call it,  and this process will go,  until we have not come in this position.  Obviously, we cannot come here exactly,  because the slope will be 0 there."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2852.8,
+            "end": 2864.8,
+            "text": " But, we can use the error rate  to get it to the error rate.  And we can usually do the error rate.  So, here, your increment is increasing,  here, your decrease is increasing."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2864.8,
+            "end": 2873.8,
+            "text": " So, these two things,  this convergence,  repeat convergence,  we solve them.  Now, we will come to the learning rate."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2873.8,
+            "end": 2881.8,
+            "text": " What is the use of learning rate?  Why are you doing this?  What is the use of learning rate?  This learning rate is decided.  If you consider the value of learning rate"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2881.8,
+            "end": 2888.8,
+            "text": " is very small,  I will take 0.01.  So, what will happen?  This will be the slope movement.  This will be the slope movement."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2888.8,
+            "end": 2896.8,
+            "text": " The iteration will be more,  but this will be the slope movement.  Right?  The slope will be the slope movement.  If I consider the value of alpha,"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2896.8,
+            "end": 2903.8,
+            "text": " I will take 1000.  So, what will happen?  Will the jump get hit?  First,  because if I am doing this decrement,"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2903.8,
+            "end": 2909.8,
+            "text": " then I will jump from here.  Then, I will jump from here.  Here, jump from here.  Here, jump from here.  Here, jump from here."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2909.8,
+            "end": 2917.8,
+            "text": " Here, jump from here.  Here, jump from here.  It can happen that  that the slope will never reach the global minimum.  So, this is the problem of learning rate."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2917.8,
+            "end": 2926.8,
+            "text": " We need to use a small value  to get the learning rate.  Okay?  If we use a small value,  then definitely learning rate."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2926.8,
+            "end": 2933.8,
+            "text": " You will get the slope slowly,  slowly, slowly,  at the global minimum point.  So, I hope you are understanding this.  Cost function."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2933.8,
+            "end": 2940.8,
+            "text": " Now, here, you see,  you are going to initialize here.  Let's say that my  initialization here is initialized.  So, what will happen?"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2940.8,
+            "end": 2946.8,
+            "text": " It will be a process  that we will have to  decrymit and get it in the optimal way.  Or, where is it?  Here,"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2946.8,
+            "end": 2958.8,
+            "text": " then we will decrymit and get it in the global minimum.  Now, you don't have to initialize here.  It will be initialized  only after the first time your theta 1 value will be initialized.  Then, you will be the straight line"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2958.8,
+            "end": 2967.8,
+            "text": " which we will call specifically.  Best straight line.  Okay?  So, I hope you are understanding this video.  How is it going to be?"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2967.8,
+            "end": 2976.8,
+            "text": " So, I will write here.  Okay?  Outline.  Which we call specifically outline.  I will write here in outline."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2976.8,
+            "end": 2989.8,
+            "text": " What is in our task outline?  Start with  start with some theta 0 and theta 1.  Now, we have initialized the theta 0  and made it 0."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2989.8,
+            "end": 2999.8,
+            "text": " If we consider theta 0,  then we have created this gradient descent  in three-dimensional.  So, this type of counter-plot will be created.  So, theta 0 will be here,"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 2999.8,
+            "end": 3009.8,
+            "text": " theta 1 will be here,  but these two are the aim of the global minimum.  Okay?  If there is an additional feature here  then it will reach here at the global minimum."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 3009.8,
+            "end": 3019.8,
+            "text": " Okay?  So, start with some theta 0 and theta 1.  After that, what is the second point?  In outline, keep changing.  Keep changing."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 3020.8,
+            "end": 3030.8,
+            "text": " Theta 0, theta 1 to  reduce  J of theta 0, theta 1.  Okay?  Yes."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 3030.8,
+            "end": 3042.8,
+            "text": " Until we reach.  Until we reach  and hopefully reach near  global minimum.  Global minimum."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 3042.8,
+            "end": 3056.8,
+            "text": " Okay?  The third point we will say is  whatever we say is convergence theorem.  Convergence theorem, if I write,  then this convergence theorem will be like this."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 3056.8,
+            "end": 3068.8,
+            "text": " Theta of J  theta of J  minus alpha, which is my learning rate,  derivative of theta J.  And here I will write Jtheta of 0,"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 3068.8,
+            "end": 3080.8,
+            "text": " come on one.  And this J is equal to 0 and 1.  If there are many features,  then 1, 2, 3 can be added.  So, I hope you all have understood this."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 3080.8,
+            "end": 3093.8,
+            "text": " I have come to understand this whole whole regression algorithm.  I have understood it very well.  I have understood that you have understood it.  And you have liked this video.  In Hindi, it is obviously a little difficult"
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 3093.8,
+            "end": 3102.8,
+            "text": " because many terminologies,  many maths use.  Which is called  Ghanid, which is also  difficult to understand."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 3102.8,
+            "end": 3112.8,
+            "text": " And definitely in a medium,  and you could have told  you very sparse language.  And to confuse you without  making any mistakes."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 3112.8,
+            "end": 3123.8,
+            "text": " So, I hope you all have understood this.  And you all have understood this.  But remember this.  You are watching this.  If you are watching this, then you will not understand."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 3123.8,
+            "end": 3133.8,
+            "text": " But second, third time,  you will definitely understand it.  So, this is the whole linear regression.  Don't worry.  Daily, this is an amazing algorithm."
+        },
+        {
+            "title": "Simple Linear Regression Algorithm Indepth Maths Intuition",
+            "start": 3133.8,
+            "end": 3140.8,
+            "text": " In my YouTube channel.  So, this was Alcyol in the next video.  Have a great day.  Thank you, one doll.  Bye bye."
+        }
+    ],
+    "text": " Hello guys, my name is Krishna and welcome to my YouTube channel. So guys, in today's video, we are going to discuss this first machine learning algorithm in India, which is the linear regression machine learning algorithm. Now, I will definitely explain you the whole detail, where you will first understand what problem we are trying to solve. And I will include the entire maths in this. And one thing, I want to thank you all. Many people asked me to make a video in India before, and make a video in the middle of the day. I always thought that I will make it in India, usually it will take time for it. Because I am learning it in India for the first time. Basically, I usually take classes in India, but I don't. But thank you. Now, my skills of learning India are also going well. And finally, I will definitely work on one of the entire machine learning algorithms, the entire deep learning algorithms, NLP, all these things in India, I will also upload them. In addition, we will solve the new practical problems. But let's focus on linear regression machine learning algorithm. If you want to become a data scientist, then this will always be a first algorithm to study. Which we call linear regression. Now, this algorithm is very popular. And if you want to understand the maths today, then you will understand that you will be able to cover the basics of deep learning. From all these topics, which I am going to discuss today. So, what will be the agenda? Let's discuss the agenda. What is the problem we are solving? What problem? What problem we are solving? Which problem we solve with linear regression? We are solving. And we will go to the second understanding of geometric intuition. I mean, I will show you the figures and diagrams. What we are solving. And finally, in the third, we will go to mathematical intuition. Mathematical intuition. You may remember that any machine learning algorithm is learning with this fund. If you learn from this fund, that is pretty much amazing. You will be able to get any machine learning algorithm in a very popular way. Okay. Let's solve the first problem. What problem are we solving? I have already made a video about the machine learning algorithm that I have already made. We have already discussed the two types of machine learning. One is supervised and the other is unsupervised. Okay. Supervised and unsupervised. Now, what we usually do in supervised and unsupervised. Here, we solve two specific problems. Regression problem and the other is classification problem. Okay. And if I talk about regression, whenever your output feature is, if it is continuous value, I will show you a lot of examples. If it is continuous value, it means you need to solve regression problem statements. Okay. So, today's algorithm, which is linear regression, it is a regression problem statement. And don't worry guys, I will put this whole material in the GitHub, now definitely use it. Very, very, all the materials I will make, I will share all these materials in the GitHub. Okay. Now, let's go to the linear regression. What problem are we solving? So, I will write here, linear regression. You can solve the linear regression from your Excel sheet. Okay. You can solve the point of view of statistics. We call it ordinary least square. But as a data scientist, you must understand this mathematical intuition. Because when you are making your model, with the help of Python programming language, then how does that model work? You must understand this mathematical intuition. Okay. And this mathematical intuition is a very important thing, to make a model, it is called hyperparameter tuning. You will definitely do this. Okay. So, let's start. We are solving the linear regression. Let's take a data set. This will be a data set. Let's say, age. I will not say age, I will say weight. It is a feature of my weight. It is a feature of my height. Okay. Let me write it down. And tell me, do you want to see my face in the video? Or not? I can also close my face, so that you do not have any disturbance. So, this is your age and height. Okay. Not age. Sorry, weight. Okay. Let me write it down. And tell me, do you want to see my face in the video? Or not? I can also close my face, okay. I will write it down again. Weight and height. Now, we will understand the problem statement. How are the problems of the type of statement? We usually solve the linear regression. Now, we have values of 73. We will calculate the height in centimeters. We will calculate this in KG. Suppose, I say 73 kg is a person. His height is probably 150 cm. 63 kg height is the height of his height 155 cm. 78 kg is a person. His height is 170 cm. I will say 82 kg is a person. And he is a person. And basically, I am speaking with my love. In English, I can say a person or a person. So, we will calculate 82 kg. 165 kg. So, all these information. Now, my main name is I usually call this data set as train data set. Okay. I am making a model of this train data set. I am making a model of this train data set. First of all, I am making this model of this train data set. Then, I am making a hypothesis of this model. Where, this hypothesis will have the main work. This will take new data. This will be the weight. And this will predict the height. So, this model will predict the height of this train data set. So, I will write it in green color so that you will know that my output is height. Okay. This is my output. This is my input. So, I have to make a model of this train data set. Which will predict the height by taking input as weight. Okay. So, this is the entire information. And this problem statement. We can see that the output feature is continuous value. Right? It can be 150 or 150.5 or 150.1. I will write the whole number here. But it can be decimals. 0.3.4.5. So, I have plotted all these points here. Let's say, it won't be accurately. But I am plotting the point. Okay. Now, let's see how we make this model. Okay. And for the first model we will try to make, we will use linear regression. And the working is very simple. The working is that this will make a straight line in this data point. We will call it best fit line. Best fit line. Okay. We will definitely call this line best fit line. Because, you have made a new weight. Once you have made this best fit line on this data point, we call it best fit line. And we will also call this line as a model. Which we can call it hypothesis. Now, we have come to the point of new weight. So, according to this weight, how much my output height should come? If this is my new data, how will I predict this? I will just add this here. Here, from here, okay. And from here, I will add this here, this will be my output. This weight is 45. So, what should be my output? What should be my output? Let's say 120. Okay. So, in this way, we will predict. There will be no new data point. Basically, this line will be on the line and will be output from this. Now, here, very important thing is, training point of view. The training data is on the weight and height. This is the point plot. Now, when I make straight line, okay. So, this point, which you are looking at, this point is your actual value. This is your actual value. This point, because if I look at this, that weight should come here. So, we will predict this value. We will predict this value. Now, what is our main aim? I have to create a best fit line, wherein the distance, its distance, its distance, its distance, its distance, its distance, its distance, its distance, its distance, if I do this summation of all the distances, and we call this distance, residual error. Receive deal error. I will use many terminologies. But this is the residual error. The difference between the actual point and the predicted point. This is the predicted point of green color. My model has predicted here, because here, that is the best fit line. Okay. So, if I do summation of all these distances, then its summation is very, and its error is very less. We should be able to say that, that is the best fit line. If I have one more line, let us say that I have one more line, its a bit like this. Okay. I will say that this is my best fit line. So, how do we identify these two? This is the best fit line, this is the best fit line. We will identify this way. We will sum up all the residual error, and see who is less, and who is less. So, the aim is to, the aim is to find best fit line, best fit line, best fit line, with minimal error. Okay. Minimal error. Obviously, it is not zero. If it is zero, then we will call it an over-fitting condition. Okay. Zero will not always be there. Okay. So, you understand that we have to make the best fit line like this. But this distance is less and less. So, this is our problem statement. Very simple. Now, we will see how we make this best fit line. Now, we are trying to understand the maths. So, here our maths includes. Some basic maths you should know for this. Okay. If you understand, I have such data points already. Okay. I have made such data points. Let's say, I have made such a many data points. Now, here we will make the best fit line. Now, this best fit line is shown. We can identify it with different equations. We can see it with different equations. Basically, we can write this line with different equations. One equation, you will be very commonly asked. The one which says Y is equal to MX plus C. Okay. This Y is the Y. I will hack it with Y. This Y hat is basically predicted point. Okay. All these predicted points will be there. And what is M here? M is your own. I will write this clearly. M is equal to slope. Slope or coefficient? Now, what is slope and coefficient? slope and coefficient is a very important information. Let's say, here, one unit of X axis is here. One unit of Y axis is here. Okay. Let me write here. So, slope tells me that one unit increase in X is how much the slope is increasing in Y. So, if I go to make a slope here, then I will make this in this way. I will make this in this way. And basically, I will find out that one unit increase in X leads to how many unit increase in Y. So, I will make these points. This is basically slope. Okay. Slope or coefficient? At the end of the day, the most important thing to change is this. Everything else is very easy. Okay. Let's go to the second term. C. Here, you can see C. What is C? C basically, we call it intercept. This is intercept. When your X value is 0, which point is Y? So, this value is your C point. C intercept. That basically, if I say in English, when your value of X is 0, where is the best fit line intercepting Y? That is C. Okay. So, M is your slope or coefficient? C is your intercept. Y hat is your predicted output. Very simple and very easy. Okay. Let's go to the second term. There is a different notation in the search paper. We write the simple maths in this notation. I will tell you that we have to make specifically hypothesis here. So, the hypothesis point of view is that my Guru is an online Guru. That is Andrew N. Okay. So, that Andrew N. When he studies, he studies from a different notation. And we can write from that notation very easily. And if you learn from that notation, your deep learning is also very easy. Okay. So, here I write in that notation, which Andrew N. specifically writes. The hypothesis considering hypothesis is mine. So, if I say hypothesis, I can write hypothesis in H theta of X. It is equal to same notation. In H theta 0, plus theta 1 multiplied by X. Now, what is this X? This X is nothing but data points. Okay. I can also write X of I here. This is all data points. Okay. If I say this, I will leave this off I. We can also have X. X means, how many inputs and features can be used. So, here I write, H theta of X is equal to theta 0 plus theta 1 multiplied by X1. X1 is basically the first feature. If I have many multiple features, like I have age, then I have probably salary. Probably 2nd or 2nd, then we have to predict something from them. Okay. So, that notation can be written like this. Theta 0 plus theta 1 X1 plus theta 2 X2. Let's consider that we have, X2 and XN. So, X2 and XN. So, how many inputs and features can we identify that straight line? I have created a line in two dimensional. So, I am going to see. Obviously, we can see a point of usage straight line plane. But if I see in 4-dimensional, 5-dimensional, 10-dimensional, then it is not possible. We cannot see. Human beings are above 3-dimensional. We can see 4-dimensional too. We cannot see. If someone sees, then he says, I definitely want to say, and how he is taking it. So, here, the first statement is, that my hypothesis is, my hypothesis is, that is, H theta of X. And I am taking only one feature since I am using the fieldwork. Let's make it. Theta 0 plus theta 1. Theta 1 X1. So, this is where my hypothesis is, which will make this best-fit line. Very simple. Okay? Now, let's solve one problem. We always remember that, whatever is our data points, obviously, you know, this is an independent feature. This is an independent feature. Okay? So, here, when I make Y and X, we can also say that, Y is a linear function of X. Okay? In this case, linear function of X. Okay? Let's solve some examples. Let's say that, if this is my line, okay? And suppose, I am using this hypothesis here. I am also looking at my notebook. And this is my blue notebook, guys. Where I have written the whole map. And I keep referring to this map. So, I am very excited. I have become a college student. Where I am continuously looking at the map. Okay? Let's first talk about this. If, let's say, this is my values 1, 2, 3. And this is my values 1, 2, 3. Okay? If you understand, I am saying that, my Theta, let's say, that is my Theta 0, Theta 1 is equal to 0. So, in this particular case, what will happen? What will happen? My Htheta of X, remember that, Htheta of X, what will happen in this particular scenario? So, I will write here 1.5. Right? Here, 1.5 will write here, this will be 0. So, when I will make a straight line, then, you will make something like this. Sorry. I will make it in 1.5. So, this is your Theta. Okay? So, this is basically 1.5. Now, my Theta 0, Theta 1 value case is the first. Let's make another line. If I have made another line here, okay? Here, I will write here, Theta 0 is equal to 0. And Theta 1 is equal to 0.5. Okay? So, in this particular case, if I write 1, 2, 3. And here, I write 1, 2, 3. Okay? And in this particular case, if my Theta is, then, if I write this value in this hypothesis, then, how will I write the equation? See, if I have x1, x1 is 1, okay? When x1 is 1, then, I will write 0.5 into 1. So, where will our first point come? Our first point will come here. See, 0.5 into 1, the first point will come here. Okay? I am equating here. If I equate here, then, what will be my value? Theta 0 is equal to 0. multiplied by 0.5 into 1. So, 0 multiplied by 0.5 into 2. What is the value of x1? 1, 2, 3. Okay? So, this is my value. 1, this is my value. 0.5. Sorry. This is my value. 0.5, this is my value. 1. So, 1 is my next point. Here, create. So, I have pointed here. So, what will be the third point? 0.5 multiplied by 3. 1.5. So, I will do it here. Now, when I make an x-trade line in jubbi, then, see, I will not point correctly. What is correct? I need it. So, this is my, this is my, this is my, okay? Always remember that when your intercept is near here, then, your intercept value will be 0. Okay? Because, what is the theta 0? Intercept is, this is coefficient. Right? This is intercept. This is coefficient. Okay? Very simple. Okay? Let's draw one more line. Okay? So, you can add multiple equations to theta 0, theta 1. Okay? So, you have understood basically well, when we are using this equation, we are coming to a straight line. This is clear. And that was the main reason to tell you. Now, let's go to what we have to do. Again, we understand that aim is to find best fit line with minimal error. Minimal error means these two differences should be less, when I complete the submission. So, for this, we obviously cannot make multiple lines. Right? If you will say, we will do this. We will make a line like this, okay? And I will make many points here. Okay? What we will do randomly? We will give a best fit line. Like this. Take it. Let's calculate its distance. Let's do this. We have given one more line. Next one is the best. Now, let's calculate its distance. And after getting one more line, calculate it from here. Let's do this. Now, we will give distance. But how will you determine which line is best? Because you will not go in such a way, you will not go in such a way. You will have to do a theta 0 theta 1 value just initialize and make a line. And we will see the error. The error is not less. No. It should be like, you start from a point, make a straight line somewhere. After that we will adjust the straight line and make the best fit line. Okay? So, here, you have to do a random theta 0 theta 1 value not always initialize. Okay? Its technique is different. But before that, we will define a cost function. Because our aim is always to make a best fit line. In such a way, the error should be less. So, here, we are solving specifically. And we will write it in the root of the cost function. So, here, I will write a cost function. So, you see, my task is minimize theta 0 theta 1. And remember, first of all, I will give you the minimization. First of all, what I will say? First of all, we have to make the best fit line. With the error, the error is the predicted point and the actual point difference. The difference is to reduce it. So, we know where our predicted point comes from. Our predicted point comes from h theta of x. Okay? I will write here, because we are talking about every data point. y of i. And y of i is my output. My actual value. This is the predicted value. Because the line we are writing, is written as h theta of x. This is the value of h theta of x. And this is the point of the line, which is the value of h theta of x of i. Okay? If I am in the middle of this point, I am calculating the distance of this point. So, what will happen in this case? This will be my h theta of x of i. And this value will be my y. So, here, this difference, we have to reduce it. We have to minimize it. So, what can happen now? That h theta of x is also small. If h theta of x is too big, then this value will be negative. So, what will we do? We will square it now. Okay? I will square first. I will say, why we will square it specifically. First of all, we have to make the negative value positive. Okay? This is a good purpose. This is my cost function. But I will add more components in this. How to calculate the components? So, first component is, I will basically do this. This is obviously summation of i is equal to 1 to m. What happens to m? m is nothing but number of data points. As much as we calculate the distance of data points. This is very important. If you understand this, how will the artificial neural networks understand? Okay? So, what is the components now? I have added a summation because I have to see the difference between predicted and actual value. Now, I will divide it by 1 by m. Now, see, why I am doing this in 1 by m? Okay? We always remember that the difference here is looking for. I am doing the summation. The whole is full of 1 to m values. So, I am doing the average find out of this. I have to find the average of all the errors. So, I have used this m component. Now, I will add another value in this. Now, why I have added 2? Do you understand? There is a concept in differentiation. If I have x square, if I want to do this with respect to x square, then basically this will be 2x2-1, which is nothing but 2 multiplied by x. Okay? 2 multiplied by x. So, this is the difference of this value. Now, why do we do differentiation? We use differentiation because we find the slope of the slope. Okay? So, this mathematical equation becomes a little easy. When we will change our value of theta, and we have to find the slope at that time. Activity is the mathematical point of view. So, to make that calculation a little easy, we have to write 1 by 2. Okay? Because if I take out the differentiation of this, 2 will be coming forward, so 2 or 2 will be cancelled. So, to simplify that, this is basically used. And we call this cost function. This cost function is very important. When we use slope derivative, and when we change theta value, I mean, we will change theta value. And here is my cost function. And what we are doing here is, we have to minimize this. How to minimize this? Theta 0 and theta 1. Theta 1 has changed. Okay? Theta 1 has changed. Theta 0 and theta 1 have changed and have to minimize this value. Okay? So, that is why we call it cost function. We call it cost function specifically. And this is my task. I will change theta 1 in this way. Such that, my cost function value is less. In a very simple way, you can understand, what we are doing here. We are doing this with the main aim. Okay? We will give some notation to this. I will write the cost function J of theta 0. theta 0 theta 1 is equal to 1 by 2m. summation of i is equal to 1 to m. Then, our Htheta of x of i is equal to minus y of i whole square. So, this is my entire cost function. This cost function is to minimize us. Our main target is, we have to minimize this anyhow. Now, I can do something to minimize. Okay? If you have a new technique, that is to minimize it efficiently, you can use your name on your research paper. Next, we focus on this. We call this as a square error function. This term is very important. We call it a square error function. Okay? Now, you know two things. What is it? You know cost function. And you know high-bottoms. Let me write it again. I will write here specifically. First thing about hypothesis. And here I will write here specifically about cost function. Now, you will understand everything. I will change the value of theta 0 and theta 1. Now, let us write our hypothesis testing. Here, we know that Htheta of x is equal to theta 0 plus theta 1 x1. Now, I have written here, J of theta 0 comma theta 1. You will know here, 1 by 2m summation of i is equal to 1 2m. See, I am writing it like this. You have to practice it like this. When you will practice it like this, it will become very good perfectionist. Amir Khan, I am saying it as a perfectionist. Why? Because when there is nothing perfect, it works. You have to do it like this. Now, let us do this. Let me take an assumption. Let us consider theta 0 equal to 0. What does this mean? This means that the line is passing from the intercept. Now, for this, I want to show you two-dimensional dimension. Let us consider theta 0 equal to 0. So, what will be the equation of Htheta of x? This will be very simple. This is theta 1 of x. This is theta 1 x1. This is my word theta 1 x1. This is my equation. Now, I will give you some assumptions here. So, my condition will be the first one. Let us consider theta. Now, we will understand the value of theta. How we will change it? How we will change the theta value? We will change the value of theta 1. We will also understand that this is the hypothesis testing. And what is the relationship between the cost function? Why we are using the cost function specifically? And what is the relationship between these two? Let us talk about hypothesis testing. If I talk about this, my value is x1 2 3. This is my x. This is my y. Let us consider that this is my data points. How this is? 1.1 2.2 3.3. This is my data points. This is my feature 1 and feature 2. This is my data points. Obviously, I know y is my output feature. Now, let us consider. Let us initialize. When theta 1 is equal to 1. When theta 1 is equal to 1. Let us say that this is the point. I will plot this point here. 1.1 2.2 3.3. I hope straight line is in this. If not, then 3.3 will be in this. This is my 3 points. 1.1 2.2 3.3. This is my training data. Example here. I will do some more phase. So that you can see it better. Now, if my theta 1 value is 1. If my theta 1 value is 1. Then what will happen? Let us see how the line will be. When my theta 1 value is 1. Then x1 will be 1. So what will happen? Obviously, it will be x1. When my x2 is 2. My h theta of x is 2. Because theta 1 is 1. I can calculate here. h theta of x is equal to 1 multiplied by 1. h theta of x is equal to 1 multiplied by 2. Because when x is 2. I will write h theta of x here. 1 multiplied by 3. Because when my x value is 3. Obviously, h theta of x is equal to 1. So, 1 multiplied by 3. So, I will think of this point. So, my straight line will be like this. So, this is my straight line that is passing through the intercept. Because theta is 0. I hope you have understood it. Now, how do we find our cost function? I will put a graph here before looking for the cost function. Because I want to show you what is the relationship between the hypothesis and the cost function. And when I am initializing theta 1. I can see the value of the correct theta 1. Which is my coefficient. So, this is my theta 1. And this is my z of theta 1. Because I am looking for the cost function. Now, let me write here. I will write some values here. 0.5, 1.0, 1.5, 2.5. Okay, this is the point. Now, let's calculate the cost function of my j of theta 1. So, I will write j of theta 1 here. j of theta 1. So, what is my equation? 1 by 2m. summation of i is equal to 1 to m. h theta of x of i minus y of i whole square. Okay? Now, how many points of m are there? See, 1 by 2, 3. So, here I will write 1 by 6. summation of i is equal to 1 to m. Now, let's see the difference between these two. What difference? Let's do the summation. So, we will do the summation. So, we will discuss about every data points. So, if I find this summation, what will be the point of the summation? Let's do the first summation. What is the difference between this point and this point? The red point that you are showing is your predicted point. The real point of the green point is your actual point. So, obviously, there is no difference between them. So, I will obviously do the 0 square. Okay? I have got the 0 square here. Because, look, there is the same value. Then, here is 0 square. So, the total you will see is the cost function j of theta 1 when theta 1 is equal to 1 is nothing but 0. Okay? Now, the same point is applied. We have got j of theta 1 when theta 1 is equal to 1. Here, we will plot here. So, theta 1 is 1. Okay? 1 is 1. 1 is 1. And j of theta 1 is so much 0. So, 0 is here. Right? So, I will mark this point. Okay? Our first point is here. Now, let us consider here. When theta 1 is equal to 0.5, I have taken another theta 1. 0.5. Let us see how the line is formed. So, you will see, I will write h theta 1 in theta 1 here. Multiply by 1 when x1 is equal to 1. So, here, it will be 0.5 here. Okay? This one is here. Then, when x is equal to 2, so, it will have to be 0.5 multiplied by 2. If it is 1, then 2 will be 0. So, it will be 0. Okay? Now, when x is equal to 3, 3 into 0.5 is 1.5, so, this is my third point. Here. Okay? Now, let us make a line here. So, this is my second line. Okay? The second best fit line. When theta 1 is equal to 0.5. Now, my real point is green point. Okay? Now, let us look for the cost function. Now, what will happen in the cost function? Let me write here. I will write j of theta 1 in equation. 1 by 6. Let us put it in the middle. This value is 0.1. Right? 1 minus 0.5. This is 0.5. So, what do I write here? Here, I write 0.5 minus 1 whole square. Because, what is h theta of x of i? My 0.5 is minus 1 whole square. Then, I will add it in this. Next, what is the next point? 1 minus 1 minus 2 whole square. 1 minus 2 whole square. Plus 1 plus 1.5 minus 2.5 whole square. And 3. So, 1.5 minus 3 whole square. So, here, 1.5 minus 3 whole square. Let me see your notes. All right? Now, I am calculating j of theta of 1. Where? Theta 1 is equal to 0.5. So, finally, you will see 1 by 6. And this will be multiplied by 3.5. You will calculate. And approximately, I will give 0.5. So, here, my j theta 1 is value. You can definitely calculate. Now, I will go up. Okay? When my theta 1 is theta 1.5. So, j of theta 1, let's say that j of theta 1 I write here like this. 1, 2, 3, 4, 5. Fine? Okay? So, when my point of theta 1 is going to answer me, 0.58, where will the j of theta of 0.58 come from? Here, it will come from here, right? This is the point of 0.58, I understand. So, my point of 0.58 will come from here. Okay? So, this is basically the best fit line. When theta 1 is equal to 0.58, with respect to this data point, my best fit line is here. Actually, let's take another condition. Then, theta 1 is equal to 0.0. 0 is the line of the line of the line. It will be very simple. We will make this line in this way. Let's take some other data point. Okay? Let's take this. So, this is my next point. And my next line will be like this. Why? Because 0 is 0 multiplied by 1 is 0. 0 multiplied by 2 is 0. 0 multiplied by 3 is 0. Okay? If I calculate the Z theta of 1, now I will see the difference. I was looking at the difference between these two. Now, I will see the difference between these two. Okay? I will see the difference between these two. I will see the difference between these two. Okay? So, let's go and calculate. Let's do this again. J of theta 1 is very simple. 1 by 6 multiplied by. So, the first point of 0 is 0. It is minus the first point of x. So, 0 is the second whole square plus 0 minus 2 whole square plus 0 minus 3 whole square. Obviously, this is the same thing. It is very simple. If you multiply this, then this is 14 by 6. And the next is the value of this. 2.3. Now, when this 2.3 is coming, then what is my theta 1 value? And this is my 2.3 value here. Now, if I do this, I will take a lot of different x1 value. So, you will see that I do this, what happens? What happens? Okay? If I combine this curve, I combine this curve, I tell this curve, gradient descent. And we also say this optimizer. If you are studying deep learning, then you should know that we also say this optimizer. Gradient descent. This gradient descent is a very important concept. Because this definitely will do one thing that your theta 1 value will automatically change. Now, let's observe in every point. Which is the best point in all these points? That is this point. Because in this point, you will see that the difference between the predicted or actual point, which is the red line, was the lowest, almost zero. So, we will say this point at a global level. And this point is a very important point. Because we know, Brother, where do you have to train? You have to train to the point that you have to pass. Basically, you will not reach the level of global minimum that you will not reach the level of theta 1 value. And this is the focus of the entire linear regression. I hope you all understood this very well. So, we will say this global minimum. I am very good at explaining you all the equations and I am going to explain them in detail. If you do not understand that, you should also revise them. Let's take gradient descent. And why does this gradient descent work? I have not told you yet. If I am initializing my theta 1 value, I will initialize it so many times. And I will know how I am going to pass the level of global minimum. Let's take an example. Let's say that this is my gradient descent. Let's say this is my theta 1 value, this is my J of theta. Theta 1 is right. Let's say that my first point is here, from here to here, from here to here. But our aim is to come here. How will I come here automatically? And how will the value of theta 1 be updated? Do you understand? So, we use this with a repeat convergence algorithm. Because, how many times do I initialize the theta 1 here? I am initializing the theta 1 here. I said that I will initialize the theta 1, 0, 0, 0, 0, 0, 0. But, till now, we should have done this in a way that we initialize it. And you can reduce it to a level of global minimum. So, for this, we use this convergence theorem. This is a repeat convergence theorem. Now, what happens here? Let me explain it very simply. Do you understand? This is your first point of theta 1 here. Okay? Now, I told you that we have to update the theta 1 value. So, what will we do here? We will apply, we will have to find out the derivative. We have to update, first we will find out the derivative. So, let's find out the derivative and slope. How to find the slope? We will make a best fit line. So, we will make a line in the case of slope. Then, just assume that this slope is positive or negative? It is very simple. If you look at this slope, this slope usually becomes positive slope. Why? Because, when your x value is increasing, y value is also increasing. Okay? We will call this as positive slope. If your x value is increasing, y value is decreasing, we will call it as negative slope. Okay? A unit movement of x will, if it leads to the unit movement or any movement of y in the positive direction, it is basically a positive slope. So, this is the example of positive slope. But now, I didn't say that, because my brother is here, this is my global minima. How do I come here? Now, my theta 1 is here, how do I come here? So, this convergence is an important thing. In convergence, we say that theta j is theta j minus a parameter, we call it alpha, we call it specifically learning rate. Let me tell you what is the importance of learning rate. So, this is my learning rate. Okay? This is my learning rate. Next, we will write another equation, which we call as derivative of theta j and here we will write j of theta 1. Okay? Now, derivative of j of theta 1 means derivative of the cost function. The cost function we will write, we will find its derivative. And this is the slope. This is the slope. The whole term we are using, derivative of, derivative to derivative of theta of j, j of theta 1, this is called as slope. We will specifically call it slope. I showed you this line, and said that it is positive slope. Okay? Now, let's apply the first thing here. Now, I have to update the value of theta 1 here. So, I will write in the equation. theta 1, theta 1 minus learning rate. Learning rate is, now I will say what is there? Now, tell us, what is the slope value? Positive or positive? So, theta 1 minus any positive value, then its value will obviously be decrease. Obviously, it will be decrease. And how long we will do this process? This is the continuous repeated. Okay? Then, what I will do with theta 1? I will find the slope again. I will come here again. I will find the slope again. I will do it here. Now, the speed is decided to be less. Okay? Now, your initial point, theta 1, is here. So, what will happen in this case? If you will find the slope, then we will call it negative slope. Because the value of x is increasing, and y is decreasing. Now, in this case, if I say negative slope, then how will I show my equation? theta 1 equal to theta 1 minus alpha minus negative value. This is negative slope, right? This is slope negative. So, minus negative, minus into minus is positive. So, theta value will be plus value. That basically means theta 1 is getting incremented. And obviously, it will have to be incremented. Because if my theta 1 value is here, which is telling me from this point, I have to go in this direction. So, this continuous convergence algorithm, we will call it, and this process will go, until we have not come in this position. Obviously, we cannot come here exactly, because the slope will be 0 there. But, we can use the error rate to get it to the error rate. And we can usually do the error rate. So, here, your increment is increasing, here, your decrease is increasing. So, these two things, this convergence, repeat convergence, we solve them. Now, we will come to the learning rate. What is the use of learning rate? Why are you doing this? What is the use of learning rate? This learning rate is decided. If you consider the value of learning rate is very small, I will take 0.01. So, what will happen? This will be the slope movement. This will be the slope movement. The iteration will be more, but this will be the slope movement. Right? The slope will be the slope movement. If I consider the value of alpha, I will take 1000. So, what will happen? Will the jump get hit? First, because if I am doing this decrement, then I will jump from here. Then, I will jump from here. Here, jump from here. Here, jump from here. Here, jump from here. Here, jump from here. Here, jump from here. It can happen that that the slope will never reach the global minimum. So, this is the problem of learning rate. We need to use a small value to get the learning rate. Okay? If we use a small value, then definitely learning rate. You will get the slope slowly, slowly, slowly, at the global minimum point. So, I hope you are understanding this. Cost function. Now, here, you see, you are going to initialize here. Let's say that my initialization here is initialized. So, what will happen? It will be a process that we will have to decrymit and get it in the optimal way. Or, where is it? Here, then we will decrymit and get it in the global minimum. Now, you don't have to initialize here. It will be initialized only after the first time your theta 1 value will be initialized. Then, you will be the straight line which we will call specifically. Best straight line. Okay? So, I hope you are understanding this video. How is it going to be? So, I will write here. Okay? Outline. Which we call specifically outline. I will write here in outline. What is in our task outline? Start with start with some theta 0 and theta 1. Now, we have initialized the theta 0 and made it 0. If we consider theta 0, then we have created this gradient descent in three-dimensional. So, this type of counter-plot will be created. So, theta 0 will be here, theta 1 will be here, but these two are the aim of the global minimum. Okay? If there is an additional feature here then it will reach here at the global minimum. Okay? So, start with some theta 0 and theta 1. After that, what is the second point? In outline, keep changing. Keep changing. Theta 0, theta 1 to reduce J of theta 0, theta 1. Okay? Yes. Until we reach. Until we reach and hopefully reach near global minimum. Global minimum. Okay? The third point we will say is whatever we say is convergence theorem. Convergence theorem, if I write, then this convergence theorem will be like this. Theta of J theta of J minus alpha, which is my learning rate, derivative of theta J. And here I will write Jtheta of 0, come on one. And this J is equal to 0 and 1. If there are many features, then 1, 2, 3 can be added. So, I hope you all have understood this. I have come to understand this whole whole regression algorithm. I have understood it very well. I have understood that you have understood it. And you have liked this video. In Hindi, it is obviously a little difficult because many terminologies, many maths use. Which is called Ghanid, which is also difficult to understand. And definitely in a medium, and you could have told you very sparse language. And to confuse you without making any mistakes. So, I hope you all have understood this. And you all have understood this. But remember this. You are watching this. If you are watching this, then you will not understand. But second, third time, you will definitely understand it. So, this is the whole linear regression. Don't worry. Daily, this is an amazing algorithm. In my YouTube channel. So, this was Alcyol in the next video. Have a great day. Thank you, one doll. Bye bye."
+}

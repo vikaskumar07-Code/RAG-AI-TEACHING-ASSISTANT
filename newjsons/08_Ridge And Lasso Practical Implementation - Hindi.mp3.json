@@ -1,0 +1,425 @@
+{
+    "chunks": [
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 0.0,
+            "end": 16.0,
+            "text": " Hello all my name is Krishna and welcome to my youtube channel.  So guys we will continue the playlist of Machine Learning.  We saw in the last video a simple linear regression,  multiple linear regression, practical implementation of practical regression.  With this scale, I discussed about cross validation."
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 16.0,
+            "end": 38.0,
+            "text": " In today's video we will take the next algorithm and will take practical implementation.  And today's algorithm will be Rich Regression.  You can see here that this is my complete machine learning playlist.  Simple linear regression, practical implementation of linear regression.  I have already put the theoretical math intuition, Rich and Lasso."
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 38.0,
+            "end": 60.0,
+            "text": " If you don't know the theory, please make sure that you will see it in this.  Rich and Lasso regression.  And after this video, I will put in the right order practical implementation.  If you haven't seen the old videos, please make sure that you will see it.  You will know the implementation properly."
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 60.0,
+            "end": 80.0,
+            "text": " And here I will focus on how we will use the Rich Regression.  And we will solve any problem statement.  We always remember why we use the Rich Regression.  If we ask any interview question, we have to say that you have to handle the overfitting condition.  There are two additional parameters."
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 80.0,
+            "end": 99.0,
+            "text": " Means square error with one lambda.  And the one we multiply, summation of i is equal to 1 to n slope square.  So Rich Regression usually happens.  So, we have seen in previous problem statement that  We had loaded Boston data set, this is the house pricing data set."
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 99.0,
+            "end": 116.0,
+            "text": " Completely, everything has been given in the material.  And this is the entire data set of Rahab Kapura.  And we basically have to predict the target variable house price.  And we solved the linear regression.  So, we had to solve the curve score point 6.6."
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 116.0,
+            "end": 132.0,
+            "text": " Now let's look at the Rich Regression.  If we do it, we can see how much accuracy we have.  And, I have told you in the first video.  Please make sure to subscribe to the channel,  press the bell notification icon and watch the whole video till the end."
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 133.0,
+            "end": 149.0,
+            "text": " Now, what I am going to do here, I am going to write here,  Scale on Rich Regression.  And, I always wonder why I always go to this step,  Because in this scale, you should see all the parameters.  What are all the parameters?"
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 149.0,
+            "end": 161.0,
+            "text": " Now, in the Regression, I had told you two important parameters.  One is lambda and one is slope square.  Which we multiply.  So that we solve the overfitting condition.  The linear regression overfitting condition."
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 161.0,
+            "end": 173.0,
+            "text": " Now, here, we use the value of lambda.  So, what is the alpha?  Constant that multiplies the L2 term,  Controlling Regularization Strength.  Alpha is a non-negative float number."
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 173.0,
+            "end": 187.0,
+            "text": " It means that we should always be 0 and 0 greater than alpha.  Alpha is 0, which means that the linear regression is done.  Problem statement.  If alpha is greater than 0,  Then we will basically multiply the regression."
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 187.0,
+            "end": 198.0,
+            "text": " So, here, I am looking at the only parameter,  Which we can do hyper parameter tuning.  The other is solver.  We will keep solver auto.  We will not be able to do it with 6."
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 198.0,
+            "end": 209.0,
+            "text": " So, let's do this.  Now, we solve the problem statement.  Through this, you have seen here that we have made extra tests.  We have made extra tests.  We have also made standardization."
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 209.0,
+            "end": 227.0,
+            "text": " Now, to apply the Regression, you do not have to do anything.  We will use two things here.  First, we will import the scale from scale.  From scale.linear underscore model,  Import.Rage."
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 227.0,
+            "end": 239.0,
+            "text": " Where did I get this?  Here, scale.linear model is here.  So, we will import from here.  Now, we will import the next thing that we will import.  It is grid sir cv."
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 239.0,
+            "end": 251.0,
+            "text": " Now, we will basically do cross validation of grid sir cv.  And here, we are also doing hyper parameter tuning.  Which is my alpha value.  Equal to lambda.  So, what different values?"
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 251.0,
+            "end": 266.0,
+            "text": " Which values perfectly suit this problem statement?  We will have to play with this.  So, what I will do here?  We will click from scale.model selection.  We will import model selection."
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 266.0,
+            "end": 277.0,
+            "text": " Basically, grid sir cv.  Now, these two models,  we will use model specifically.  I will also open a notebook for you.  So, that notebook is also open."
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 277.0,
+            "end": 290.0,
+            "text": " So, in the Regression,  we will say, first step, why is the Regression used?  Regression basically solves overfitting problems to remove.  Right? Overfitting.  To remove overfitting problems."
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 290.0,
+            "end": 301.0,
+            "text": " Because in linear regression, we always try to see the best fit line.  And there is no hyper parameter.  Now, in the Regression, we will do hyper parameter tuning.  Lambda.  But in this, its value is alpha."
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 301.0,
+            "end": 313.0,
+            "text": " So, alpha.  We will use hyper parameter tuning with alpha.  Which we will select as perfect parameter.  And for this, the method used is grid sir cv.  How to implement grid sir cv?"
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 313.0,
+            "end": 323.0,
+            "text": " I will tell you now.  Now, what we are doing?  Here, the grid sir cv is taken.  And then, I will initialize the grid.  Regression."
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 323.0,
+            "end": 335.0,
+            "text": " This will be my object.  Regression.  This is equal to ridge.  So, this is my ridge.  And here you can see, if I write the ridge regressor here,"
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 335.0,
+            "end": 352.0,
+            "text": " then this is basically my ridge regressor object.  Now, in ridge, you know, the first parameter used here is alpha.  By default, alpha 1.0.  Now, the value of alpha is suitable for this problem statement.  To find out this, we will make a parameter variable."
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 352.0,
+            "end": 366.0,
+            "text": " Now, this parameter variable will always be in key value pairs.  First, what is the name of key?  Alpha.  And where does this name get me?  If I go to shift tab, you can see, alpha value is here."
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 366.0,
+            "end": 384.0,
+            "text": " Now, what is the value of alpha?  I can write colon.  And here, all the possible values you have to test.  Like, I have to test it.  1, 2, 5, 10, 20, 30, 40, 50, 60."
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 384.0,
+            "end": 397.0,
+            "text": " Because, what value can be performed well?  80, 90.  Let's say, I have to test all the values.  What value?  What parameter perfectly suits this problem statement?"
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 397.0,
+            "end": 409.0,
+            "text": " After that, I will write parameters here.  What I am going to do?  How much is it simple?  I will write here, Ridge CV.  Because I have to cross validation."
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 409.0,
+            "end": 423.0,
+            "text": " And this Ridge CV basically, we will use the Gritser CV object here.  So, here we will write Gritser CV.  And here Gritser CV is always the first parameter, estimator.  estimator means model.  Which model we want to use."
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 423.0,
+            "end": 438.0,
+            "text": " So, we will obviously use Ridge Regressor.  So, here I write Ridge Regressor.  So, this is my first parameter.  And since this problem statement is in this way.  See, what is the second parameter here?"
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 438.0,
+            "end": 450.0,
+            "text": " So, the second parameter is my, it is the param grade.  So, what is param grade?  Param grade is nothing.  Whatever parameters you are taking.  If you want to use parametric with 2-3 parameters,"
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 450.0,
+            "end": 461.0,
+            "text": " then select the value of the key here.  The second key is continuously written here.  So, my second parameter is my parameters.  I will write parameters.  Okay?"
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 461.0,
+            "end": 471.0,
+            "text": " Parameters.  Perfect.  And the third parameter, which is my, is the scoring parameter.  Scoring is in the parameters of the packet.  We will specifically take the negative means squared error."
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 471.0,
+            "end": 487.0,
+            "text": " I hope you have seen in the previous video, what is the reason?  So, negative means squared error.  And then I will write here cross validation is equal to 5.  Okay?  And after this much, I will write Ridge."
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 487.0,
+            "end": 502.0,
+            "text": " Ridge cv dot fit on extrins and vitrins.  X train comma vitrins.  So, this is my extrins vitrins.  So, what is this?  Internally, 5 cross validation will do."
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 502.0,
+            "end": 516.0,
+            "text": " With this parameter, so that the right parameter will select.  And whatever parameter is right, we will answer it.  So, from here I will execute it.  Let's say, this is my complete fit.  Everything is also known."
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 516.0,
+            "end": 525.0,
+            "text": " Now I have to know the right output.  What is my parameter selected?  What is the best parameter?  Okay?  So, I will write here print."
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 525.0,
+            "end": 540.0,
+            "text": " Okay?  Ridge cv dot best params.  If I execute it, then see, my problem statement,  which is the best alpha value selected, is 10.  Okay?"
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 540.0,
+            "end": 549.0,
+            "text": " So, here I have to use alpha equal to 10.  Okay?  So, it is very simple.  And if I write print.  Ridge."
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 549.0,
+            "end": 564.0,
+            "text": " So, Ridge cv is such a regression model,  where alpha value is 10.  So, if I write dot score here,  dot best score is also written.  Best score basically, my best means square error will be given."
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 564.0,
+            "end": 573.0,
+            "text": " Minus 25.  Now, see, the time we had come, how much was it?  If I see this in the previous problem statement,  this was minus 25.55.  Okay?"
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 573.0,
+            "end": 588.0,
+            "text": " Cross validation.  Here, there is a little more, but it is not too worry.  Because, see, this problem statement is very less than its data set.  But at least we are able to see that,  we have better output using this hyperparameter."
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 588.0,
+            "end": 602.0,
+            "text": " So, I want to definitely do one thing.  I want to predict it.  I will use predict in Ridge cv dot predict.  And I will do predict in my x test data set.  Okay?"
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 602.0,
+            "end": 614.0,
+            "text": " And when I execute, this is my output.  So, I save this, my Ridge cv is in the spread.  Okay?  And I have executed this.  Now, I will make this graph here."
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 614.0,
+            "end": 624.0,
+            "text": " Okay?  I will make this graph here.  And I will see the size of the graph's variance,  so I will write here Ridge cv is in the spread.  Spread,"
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 624.0,
+            "end": 636.0,
+            "text": " spread, minus y test.  Okay?  So, these two are subtracted.  So, now, see, your value here,  the difference is minus 10 to plus 10."
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 636.0,
+            "end": 646.0,
+            "text": " So, this variance is already very less.  Okay?  So, this means, my model is very well performing.  Okay?  Very simple, in any case, I can tell you here."
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 646.0,
+            "end": 657.0,
+            "text": " Apart from that, if you want to play with R score,  you can copy this thing here.  I have already imported it.  And we will paste this thing here.  Okay?"
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 657.0,
+            "end": 668.0,
+            "text": " And here, I will write here,  Ridge red y test.  And this is my score.  And here, I see my score is 0.64.  Okay?"
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 668.0,
+            "end": 681.0,
+            "text": " So, in this way, you basically,  with Ridge regression, along with Gritzer cv,  how can you play with parameters,  how to tune the model hyperparameter,  properly fit properly,"
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 681.0,
+            "end": 690.0,
+            "text": " considering low bias and low variance.  Okay?  I remember that over fitting and under fitting  I have already taught you,  what is the bias and variance here."
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 690.0,
+            "end": 699.0,
+            "text": " And here, our moment is always the aim,  that we have to bring low bias and low variance.  And finally, from my graph,  and R score, I see it from R score.  Okay?"
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 699.0,
+            "end": 711.0,
+            "text": " So, this is the example Ridge regression.  Now, in the next example, I will show you,  how to do in Lasso.  And in Lasso, there will be no changes in the changes.  Only we have to change it."
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 711.0,
+            "end": 719.0,
+            "text": " Okay?  I will show you in this video.  Okay?  We will not extend it.  And I will show you, copy and paste here."
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 719.0,
+            "end": 733.0,
+            "text": " So, altogether,  if we want to implement Lasso,  if we want to implement Lasso regression,  then I will write from hiscalon.  Linear model,"
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 733.0,
+            "end": 744.0,
+            "text": " import Lasso.  Now, why is Lasso used?  For automatic feature selection.  We also take lambda, but absolute value.  Summation of absolute value of slope."
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 744.0,
+            "end": 754.0,
+            "text": " We take slope square.  And I have already read in the theory,  what is the importance of Lasso.  Okay?  So, these things, we will import here."
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 754.0,
+            "end": 768.0,
+            "text": " Our grid is also done.  So, here we will write Lasso.  It is equal to Lasso.  And, the rest of the things are the same.  All we have to do is paste this three lines."
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 768.0,
+            "end": 781.0,
+            "text": " Different, different alpha value.  Because if I select Lasso as scale,  then here is my model.  Also, there is a parameter called alpha.  And we can select it with this."
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 781.0,
+            "end": 794.0,
+            "text": " It has a formula change,  where we take absolute value of slope with lambda.  Lambda and alpha are the same.  And here I will write an extra in my train.  And here I will change this."
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 794.0,
+            "end": 803.0,
+            "text": " I will write Lasso here.  And this will be my Lasso CV.  Okay?  Lasso CV.  Okay?"
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 803.0,
+            "end": 814.0,
+            "text": " And here I have fitted this with an extra in my train.  Okay?  So, let me execute this.  This is my execution.  I will print this."
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 814.0,
+            "end": 831.0,
+            "text": " Two things.  Print Lasso CV.  Dot best params.  And print Lasso CV.  Best score."
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 831.0,
+            "end": 842.0,
+            "text": " If you both execute this, then my value is alpha.  And my best score is minus 31.  Okay?  So, you can decide from this.  Which algorithm to use."
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 842.0,
+            "end": 852.0,
+            "text": " Of course, you have to choose the future.  So, you should do this task ahead.  Because I have to predict it.  And then I have to plot this.  I write two things in the same."
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 852.0,
+            "end": 864.0,
+            "text": " And here I will write the same.  Here I will write Lasso CV.  And this is my Lasso prediction.  Okay?  This is the prediction."
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 864.0,
+            "end": 877.0,
+            "text": " I have to paste a copy here.  I will make this in the same diagram in the import C.  And you can see all the steps of the rest.  And this is my thing.  So, here you can see that this is in the middle of minus 10 to plus 10."
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 877.0,
+            "end": 888.0,
+            "text": " And this is the difference between all these models.  But when you work with a big dataset,  you will get to know the exact difference.  Okay?  So, I hope you all liked this video."
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 888.0,
+            "end": 900.0,
+            "text": " Where I have been able to implement Lasso Regaration Practical Implementation.  Please, if you are new to this channel,  make sure that you subscribe to the channel.  Press the bell notification icon.  And yes, share with all your friends."
+        },
+        {
+            "title": "Ridge And Lasso Practical Implementation",
+            "start": 900.0,
+            "end": 905.0,
+            "text": " I will see you all in the next video.  Have a great day.  Thank you and all.  Bye-bye."
+        }
+    ],
+    "text": " Hello all my name is Krishna and welcome to my youtube channel. So guys we will continue the playlist of Machine Learning. We saw in the last video a simple linear regression, multiple linear regression, practical implementation of practical regression. With this scale, I discussed about cross validation. In today's video we will take the next algorithm and will take practical implementation. And today's algorithm will be Rich Regression. You can see here that this is my complete machine learning playlist. Simple linear regression, practical implementation of linear regression. I have already put the theoretical math intuition, Rich and Lasso. If you don't know the theory, please make sure that you will see it in this. Rich and Lasso regression. And after this video, I will put in the right order practical implementation. If you haven't seen the old videos, please make sure that you will see it. You will know the implementation properly. And here I will focus on how we will use the Rich Regression. And we will solve any problem statement. We always remember why we use the Rich Regression. If we ask any interview question, we have to say that you have to handle the overfitting condition. There are two additional parameters. Means square error with one lambda. And the one we multiply, summation of i is equal to 1 to n slope square. So Rich Regression usually happens. So, we have seen in previous problem statement that We had loaded Boston data set, this is the house pricing data set. Completely, everything has been given in the material. And this is the entire data set of Rahab Kapura. And we basically have to predict the target variable house price. And we solved the linear regression. So, we had to solve the curve score point 6.6. Now let's look at the Rich Regression. If we do it, we can see how much accuracy we have. And, I have told you in the first video. Please make sure to subscribe to the channel, press the bell notification icon and watch the whole video till the end. Now, what I am going to do here, I am going to write here, Scale on Rich Regression. And, I always wonder why I always go to this step, Because in this scale, you should see all the parameters. What are all the parameters? Now, in the Regression, I had told you two important parameters. One is lambda and one is slope square. Which we multiply. So that we solve the overfitting condition. The linear regression overfitting condition. Now, here, we use the value of lambda. So, what is the alpha? Constant that multiplies the L2 term, Controlling Regularization Strength. Alpha is a non-negative float number. It means that we should always be 0 and 0 greater than alpha. Alpha is 0, which means that the linear regression is done. Problem statement. If alpha is greater than 0, Then we will basically multiply the regression. So, here, I am looking at the only parameter, Which we can do hyper parameter tuning. The other is solver. We will keep solver auto. We will not be able to do it with 6. So, let's do this. Now, we solve the problem statement. Through this, you have seen here that we have made extra tests. We have made extra tests. We have also made standardization. Now, to apply the Regression, you do not have to do anything. We will use two things here. First, we will import the scale from scale. From scale.linear underscore model, Import.Rage. Where did I get this? Here, scale.linear model is here. So, we will import from here. Now, we will import the next thing that we will import. It is grid sir cv. Now, we will basically do cross validation of grid sir cv. And here, we are also doing hyper parameter tuning. Which is my alpha value. Equal to lambda. So, what different values? Which values perfectly suit this problem statement? We will have to play with this. So, what I will do here? We will click from scale.model selection. We will import model selection. Basically, grid sir cv. Now, these two models, we will use model specifically. I will also open a notebook for you. So, that notebook is also open. So, in the Regression, we will say, first step, why is the Regression used? Regression basically solves overfitting problems to remove. Right? Overfitting. To remove overfitting problems. Because in linear regression, we always try to see the best fit line. And there is no hyper parameter. Now, in the Regression, we will do hyper parameter tuning. Lambda. But in this, its value is alpha. So, alpha. We will use hyper parameter tuning with alpha. Which we will select as perfect parameter. And for this, the method used is grid sir cv. How to implement grid sir cv? I will tell you now. Now, what we are doing? Here, the grid sir cv is taken. And then, I will initialize the grid. Regression. This will be my object. Regression. This is equal to ridge. So, this is my ridge. And here you can see, if I write the ridge regressor here, then this is basically my ridge regressor object. Now, in ridge, you know, the first parameter used here is alpha. By default, alpha 1.0. Now, the value of alpha is suitable for this problem statement. To find out this, we will make a parameter variable. Now, this parameter variable will always be in key value pairs. First, what is the name of key? Alpha. And where does this name get me? If I go to shift tab, you can see, alpha value is here. Now, what is the value of alpha? I can write colon. And here, all the possible values you have to test. Like, I have to test it. 1, 2, 5, 10, 20, 30, 40, 50, 60. Because, what value can be performed well? 80, 90. Let's say, I have to test all the values. What value? What parameter perfectly suits this problem statement? After that, I will write parameters here. What I am going to do? How much is it simple? I will write here, Ridge CV. Because I have to cross validation. And this Ridge CV basically, we will use the Gritser CV object here. So, here we will write Gritser CV. And here Gritser CV is always the first parameter, estimator. estimator means model. Which model we want to use. So, we will obviously use Ridge Regressor. So, here I write Ridge Regressor. So, this is my first parameter. And since this problem statement is in this way. See, what is the second parameter here? So, the second parameter is my, it is the param grade. So, what is param grade? Param grade is nothing. Whatever parameters you are taking. If you want to use parametric with 2-3 parameters, then select the value of the key here. The second key is continuously written here. So, my second parameter is my parameters. I will write parameters. Okay? Parameters. Perfect. And the third parameter, which is my, is the scoring parameter. Scoring is in the parameters of the packet. We will specifically take the negative means squared error. I hope you have seen in the previous video, what is the reason? So, negative means squared error. And then I will write here cross validation is equal to 5. Okay? And after this much, I will write Ridge. Ridge cv dot fit on extrins and vitrins. X train comma vitrins. So, this is my extrins vitrins. So, what is this? Internally, 5 cross validation will do. With this parameter, so that the right parameter will select. And whatever parameter is right, we will answer it. So, from here I will execute it. Let's say, this is my complete fit. Everything is also known. Now I have to know the right output. What is my parameter selected? What is the best parameter? Okay? So, I will write here print. Okay? Ridge cv dot best params. If I execute it, then see, my problem statement, which is the best alpha value selected, is 10. Okay? So, here I have to use alpha equal to 10. Okay? So, it is very simple. And if I write print. Ridge. So, Ridge cv is such a regression model, where alpha value is 10. So, if I write dot score here, dot best score is also written. Best score basically, my best means square error will be given. Minus 25. Now, see, the time we had come, how much was it? If I see this in the previous problem statement, this was minus 25.55. Okay? Cross validation. Here, there is a little more, but it is not too worry. Because, see, this problem statement is very less than its data set. But at least we are able to see that, we have better output using this hyperparameter. So, I want to definitely do one thing. I want to predict it. I will use predict in Ridge cv dot predict. And I will do predict in my x test data set. Okay? And when I execute, this is my output. So, I save this, my Ridge cv is in the spread. Okay? And I have executed this. Now, I will make this graph here. Okay? I will make this graph here. And I will see the size of the graph's variance, so I will write here Ridge cv is in the spread. Spread, spread, minus y test. Okay? So, these two are subtracted. So, now, see, your value here, the difference is minus 10 to plus 10. So, this variance is already very less. Okay? So, this means, my model is very well performing. Okay? Very simple, in any case, I can tell you here. Apart from that, if you want to play with R score, you can copy this thing here. I have already imported it. And we will paste this thing here. Okay? And here, I will write here, Ridge red y test. And this is my score. And here, I see my score is 0.64. Okay? So, in this way, you basically, with Ridge regression, along with Gritzer cv, how can you play with parameters, how to tune the model hyperparameter, properly fit properly, considering low bias and low variance. Okay? I remember that over fitting and under fitting I have already taught you, what is the bias and variance here. And here, our moment is always the aim, that we have to bring low bias and low variance. And finally, from my graph, and R score, I see it from R score. Okay? So, this is the example Ridge regression. Now, in the next example, I will show you, how to do in Lasso. And in Lasso, there will be no changes in the changes. Only we have to change it. Okay? I will show you in this video. Okay? We will not extend it. And I will show you, copy and paste here. So, altogether, if we want to implement Lasso, if we want to implement Lasso regression, then I will write from hiscalon. Linear model, import Lasso. Now, why is Lasso used? For automatic feature selection. We also take lambda, but absolute value. Summation of absolute value of slope. We take slope square. And I have already read in the theory, what is the importance of Lasso. Okay? So, these things, we will import here. Our grid is also done. So, here we will write Lasso. It is equal to Lasso. And, the rest of the things are the same. All we have to do is paste this three lines. Different, different alpha value. Because if I select Lasso as scale, then here is my model. Also, there is a parameter called alpha. And we can select it with this. It has a formula change, where we take absolute value of slope with lambda. Lambda and alpha are the same. And here I will write an extra in my train. And here I will change this. I will write Lasso here. And this will be my Lasso CV. Okay? Lasso CV. Okay? And here I have fitted this with an extra in my train. Okay? So, let me execute this. This is my execution. I will print this. Two things. Print Lasso CV. Dot best params. And print Lasso CV. Best score. If you both execute this, then my value is alpha. And my best score is minus 31. Okay? So, you can decide from this. Which algorithm to use. Of course, you have to choose the future. So, you should do this task ahead. Because I have to predict it. And then I have to plot this. I write two things in the same. And here I will write the same. Here I will write Lasso CV. And this is my Lasso prediction. Okay? This is the prediction. I have to paste a copy here. I will make this in the same diagram in the import C. And you can see all the steps of the rest. And this is my thing. So, here you can see that this is in the middle of minus 10 to plus 10. And this is the difference between all these models. But when you work with a big dataset, you will get to know the exact difference. Okay? So, I hope you all liked this video. Where I have been able to implement Lasso Regaration Practical Implementation. Please, if you are new to this channel, make sure that you subscribe to the channel. Press the bell notification icon. And yes, share with all your friends. I will see you all in the next video. Have a great day. Thank you and all. Bye-bye."
+}

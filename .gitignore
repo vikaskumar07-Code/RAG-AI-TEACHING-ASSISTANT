@@ -1,8 +1,6 @@
-audios/
 Videos/
+audios/
 *.mp3
 *.mp4
-*.wav
-*.mkv
-*.json
-models/
+__pycache__/
+embeddings.joblib

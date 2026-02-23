@@ -1,0 +1,515 @@
+{
+    "chunks": [
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 0.0,
+            "end": 28.0,
+            "text": " Hello all my name is Krishna and welcome to my youtube channel.  So guys we will continue the playlist of Machine Learning and today's video will be about the logistic regression practical implementation.  Now keep in mind one thing that is the best practices like hyperparameter tuning,  you should focus more on it, you would have to implement some algorithm.  So in this video I will cover all the points, please make sure to do it till the end."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 28.0,
+            "end": 51.0,
+            "text": " Subscribe to the channel, press bell notification icon and share more with people.  Because I am making the Hindi videos of Updata Science.  So let me share screen here.  I will write the whole line by line code and explain how we implement it.  Guys I am not taking a big dataset now because we will see in the future that"
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 51.0,
+            "end": 72.0,
+            "text": " if you want to do a feature engineering, you have to do it.  So it is a very long process.  So here I will focus on the logistic regression.  So how do we do hyperparameter tuning?  And that tuning process is very important and you should do it in every algorithm."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 72.0,
+            "end": 94.0,
+            "text": " So let's start without wasting any time.  First step we should do is import all the libraries.  So first I will import C-Born, which is a visualization library.  Then I will import Pandas, which we will use for data frames.  And for any transformation we will use the specific things for the library."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 94.0,
+            "end": 110.0,
+            "text": " Then we will use Nampai.  So here I have executed.  Just to start with, I will take a basic problem statement.  Then you can sign with any problem statement.  So this is my data frame and the dataset we are going to take."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 110.0,
+            "end": 121.0,
+            "text": " There are many famous datasets.  We will call them as Iris dataset.  So they are going to take.  If you want to load them, then this library is available.  SNS is the C-Born library."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 121.0,
+            "end": 135.0,
+            "text": " So I will write C-Born.load dataset.  So here I will write load dataset.  And here I will write Iris.  Okay.  And we will put this in Df.head."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 135.0,
+            "end": 145.0,
+            "text": " So this is my dataset.  Here there are a lot of simple datasets.  You have features.  You have independent features.  You have Zeppelin, Zeppelwitz, Petalwitz and Petalwitz."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 145.0,
+            "end": 155.0,
+            "text": " We will predict these features by using the specific column.  Now how many types of species are there?  So if I show you.  You have to see.  So what will you do?"
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 155.0,
+            "end": 171.0,
+            "text": " Here we will write species.  Dot unique.  When you write this, then basically you have unique categories.  You have setter, saw, varsikolor and varsiknika.  Now the output of the species is either one of these three."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 171.0,
+            "end": 181.0,
+            "text": " Okay.  So you have to remember this.  Now we have to focus on this.  You can also remember.  Let's take some dataset."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 181.0,
+            "end": 192.0,
+            "text": " First, no null values.  Now what can you do to find out what null values are?  Basically, df.isnull.  It can call it dot sum.  And you can call it null."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 192.0,
+            "end": 204.0,
+            "text": " Whether any missing values are there or not.  We will see in the next problem statement.  If we will see missing values, then how we solve them.  There are many different ways.  But we will keep on doing this."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 204.0,
+            "end": 224.0,
+            "text": " And we will understand it better.  Now the second thing is that when we solve the logistic regression problem statement.  So logistic regression uses it in binary classification.  But here our number of outputs is three categories.  So three categories are multi-class classification."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 224.0,
+            "end": 238.0,
+            "text": " We will focus on binary classification.  So what I do is that I give the dataset a set of outputs.  Okay.  So if I have to remove the category of set of outputs from the dataset.  Then I will write it in a very simple way."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 238.0,
+            "end": 253.0,
+            "text": " df of species.  Which is my species category.  Is not equal to set of.  So if I write this set of outputs, then I will have to write it.  So if I write this, then you will get false or true value."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 253.0,
+            "end": 267.0,
+            "text": " False or true value basically means that where your set of outputs are not.  All your outputs will be true.  And where they will be your false.  If I have to remove this, then I can write it like this.  Okay."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 267.0,
+            "end": 281.0,
+            "text": " So if there is a true, then basically you will give the category of set of outputs.  But here I have to focus on the set of outputs.  I will do other doves from the category.  That is the versical and the vergi.  Now I have to remove all the data points from this."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 281.0,
+            "end": 297.0,
+            "text": " Now I am just knowing about some fake column.  So if I write this df, where my true column will be the same.  So in short, you will see a versical and a vergi.  Other columns, no.  Other rows and where species are set, then you will not see that."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 297.0,
+            "end": 311.0,
+            "text": " Okay.  So this is my dataset.  And since I am solving binary classification, then I will use it.  So if I go to df.head, then I will get all these things.  Now the next step will be a lot of important."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 311.0,
+            "end": 320.0,
+            "text": " Okay.  And in the next step, we will try one thing.  First of all, these are versical and vergi.  There are two categories.  We cannot give it this model."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 320.0,
+            "end": 331.0,
+            "text": " We have to convert it into a numerical format.  We can assign labels like 0 and 1.  So to do this, you have a lot of different ways.  I will tell you a simple way.  We call it map."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 331.0,
+            "end": 354.0,
+            "text": " So here I will write df of species.map.  And here I will write in the map, what is the versical and what is vergi.  So here I will write versical, colon, zero.  I am saying, versical, where you are going, you will assign 0 to the label.  And where is vergi."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 354.0,
+            "end": 368.0,
+            "text": " You will assign it to one.  Okay.  So I hope you all are understanding.  And keep this in the numerical format, you will not be able to keep it in 0 and 1.  Otherwise, you will not see anything."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 368.0,
+            "end": 383.0,
+            "text": " Now when I execute this, you will see the df of species,  the first versical and vergi, it was 0 and 1.  Okay.  Now we will assign this in df of species.  So this is my step."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 383.0,
+            "end": 400.0,
+            "text": " It is a very good step.  We have to give it an invalid syntax because I have given it a pipe.  Now if I see df.head, you will basically be 0 and 1.  So this is my whole 0 value.  Now what will be the next step?"
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 400.0,
+            "end": 425.0,
+            "text": " We will divide it into independent and dependent features.  So here in split, I will do independent split my data set into independent and dependent features.  Okay.  So I hope you all are understanding this.  Now for this, the independent features, like the separate length,"
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 425.0,
+            "end": 441.0,
+            "text": " separate width, petal length, petal width, are independent features.  I will put all this in a variable.  So for that I will use iLoc.  So here I will write df.iLoc.  And here I will write colon, comma colon minus 1."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 441.0,
+            "end": 455.0,
+            "text": " Okay.  This means just leave all the columns and leave the last column.  And in y, I will put dependent features.  Depending on the output feature.  So here I will write colon, comma minus 1."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 455.0,
+            "end": 468.0,
+            "text": " Minus 1 means only the last feature.  Okay.  And here is my x and y.  Now we have to step into the next step.  So this is my x and this is my y."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 468.0,
+            "end": 480.0,
+            "text": " So you have to see here 0 and 1.  Okay.  Now in the next step, we will basically use train test split.  Now for train test split, we will remember how to do it.  Now just search for the SK learn train test."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 480.0,
+            "end": 491.0,
+            "text": " You will get it here.  And you will also find out where this specific model is.  And from which library is this model.  So from SK learn.model selection, I will import 10 train test split.  Okay."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 491.0,
+            "end": 504.0,
+            "text": " So here I will write from  SK learn.model selection.  Import train test split.  Okay.  This is it."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 504.0,
+            "end": 518.0,
+            "text": " Now for the next train test, you can write code here.  So this is my train test split code.  So here I have copied it.  Here I have got dot dot dot.  I will put it in size."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 518.0,
+            "end": 527.0,
+            "text": " Here I will put 25%.  So this is my x train x test.  My train is my test.  Perfect.  Now we have done it."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 527.0,
+            "end": 549.0,
+            "text": " Now remember, the test data is used for validation.  Models will predict and find out what are the things.  We can see how accuracy is.  So we will use our x train and the y train.  And we will do cross validation and different things."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 549.0,
+            "end": 578.0,
+            "text": " Now remember, if I look at the scale of logistic regression.  Now if I look at the scale in model,  here you can see many parameters.  We saw L1, L2, normalization, elastic net, normalization.  I have already explained all the things in my machine learning playlist."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 578.0,
+            "end": 590.0,
+            "text": " So many parameters are here.  But the most important parameter is your penalty.  And then your C value.  C value is an important hyper parameter.  I have discussed it again."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 590.0,
+            "end": 602.0,
+            "text": " C value.  We will see the value of the other two.  And you can play with all the parameters.  But today I will show you a format.  How you can tune with all the parameters."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 602.0,
+            "end": 622.0,
+            "text": " And we will use grid sir cv.  And we will see the accuracy with all the combinations.  First of all, I will import from scale.linear model.  And here I will import logistic regression.  This is my logistic regression."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 622.0,
+            "end": 636.0,
+            "text": " Then I will do regression.  This is equal to logistic regression.  And I will put here this regression.  This regression is basically my model.  And I will give it a name classifier."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 636.0,
+            "end": 652.0,
+            "text": " Classifier is good because logistic regression is basically classification.  Now let's use a great sir cv and hyper parameter.  Let's see that by default, I have selected all the parameters.  Penalty L2, dual E, C, C value, etc.  But you can play with all these parameters."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 652.0,
+            "end": 663.0,
+            "text": " Okay.  I will show you two parameters.  But after watching these two parameters,  you will understand all the parameters easily.  So I will do from scale.model selection."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 663.0,
+            "end": 680.0,
+            "text": " And first I will import grid sir cv.  So finally grid sir cv, I have imported.  And here I will define parameters.  What I write in parameters is that I will always have to write in dictionary.  Now to write something in the parameter, I have to raise the keyword."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 680.0,
+            "end": 691.0,
+            "text": " As I am saying, I will play with penality.  So I will copy the penality.  Okay, here you see.  I have copied the penality.  And as I have done in this, I have to specify the dictionary."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 691.0,
+            "end": 701.0,
+            "text": " Okay.  We will also keep the penalty in string.  Because this will play with all the parameters.  Now the penalty parameter of L2 is not L2,  it is many penalty parameters."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 701.0,
+            "end": 714.0,
+            "text": " Like L1, I will put all the lists in it.  So this is L1.  What I will do?  I will do L1, L2, and the last parameter we use,  we call it elastic."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 714.0,
+            "end": 726.0,
+            "text": " Okay.  So all these parameters are mine.  Now the next thing, the next parameter I will play with is my  C value, capital C.  So here what I will see is capital C."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 726.0,
+            "end": 743.0,
+            "text": " Now I can put different values in capital C.  So what I will do is, I will put this in dictionary.  And here I select different values.  Like I will start.  Let's say 1, 2, 3, 4, 5, 6, 8, sorry."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 743.0,
+            "end": 759.0,
+            "text": " Come on.  Let's say 10, 20, 30, 40, 50.  So we can take many parameters.  So what I will do is, check all the parameters and tell you  which combination is best."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 759.0,
+            "end": 771.0,
+            "text": " Now I am taking these two.  Because I will tell you.  The second parameter is, if you want to play with the max iteration,  let's say I have taken max iteration.  And here I have taken max iteration."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 771.0,
+            "end": 786.0,
+            "text": " So I will come here and put it here.  Now in this max iteration,  I will take different values in this column.  Like 100, 200, 300.  Okay."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 786.0,
+            "end": 800.0,
+            "text": " Let's say I want to check these three combinations.  So all these parameters have defined me.  And I will execute this.  I mean I am using this all these parameters with hyper parameter.  After that, I will put grid search CV."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 800.0,
+            "end": 812.0,
+            "text": " Now here I see grid search CV when I assign it.  So which parameter do I take?  Now I have to play with all these parameters.  So first thing is estimator.  estimator is always remember that what model is there."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 812.0,
+            "end": 820.0,
+            "text": " So what I will write here?  Classifier.  Okay.  Now the second parameter that will be specifically here is,  Param Grid."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 820.0,
+            "end": 830.0,
+            "text": " Okay.  Now what happens in Param Grid?  Param Grid will be our parameter.  So I will write here Parameter.  Okay."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 830.0,
+            "end": 840.0,
+            "text": " Parameter.  Parameter.  I have defined this parameter here.  So this parameter will play with all these parameters.  Now after that, there is another parameter which we call scoring."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 840.0,
+            "end": 852.0,
+            "text": " Scoring is always remember that the accuracy of classification is the problem.  If I talk about regression,  it is called negative means.  You can search in the parameters of scoring.  So all of you will know."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 852.0,
+            "end": 870.0,
+            "text": " But in the classification case, we should focus on accuracy.  And the other parameter that is used is cross validation.  Cross validation is very important.  So our training data set is internally divided in different ways.  And this will apply all the parameters and find out that it is the best choice."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 870.0,
+            "end": 885.0,
+            "text": " So this is my grid search CV.  So I will write here classifier underscore regressor.  This is my model name.  And I have executed it.  Classifier."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 885.0,
+            "end": 899.0,
+            "text": " Okay.  Here my spelling mistake was not there.  If you want to come, you will know how you are performing.  Now classifier underscore regressor will add fit on extrane.  Paramawight train."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 900.0,
+            "end": 914.0,
+            "text": " When I fit these two,  you will see that all the parameters are played with.  There are some warnings, there is no problem.  But this combination is basically used.  And finally my grid search CV is complete trained."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 914.0,
+            "end": 928.0,
+            "text": " Now I have to find out what parameter is selected after training.  Which parameter is selected?  So what can I do? I will print.  And I will write here classifier regressor dot best param.  Best param."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 928.0,
+            "end": 941.0,
+            "text": " So if I execute, see the value of C is selected.  The value of max iteration is selected 100.  And the value of penalty is selected L2.  So many parameters.  I have found the best combination and output in this."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 941.0,
+            "end": 954.0,
+            "text": " Okay? Very easy.  If I want to print,  what was the score with this combination?  What was the accuracy score?  I will write here dot best underscore."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 954.0,
+            "end": 969.0,
+            "text": " So here I see 97% accuracy.  When I do a lot of combinations in training dataset.  Finally, I will take this model and prediction.  So here I will put in prediction.  And in prediction, I will put all these things in prediction."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 969.0,
+            "end": 984.0,
+            "text": " What will I do in prediction?  I will write here classifier dot regressor dot predict.  And here I will write here x test.  So here all my predictions are coming.  We will save these."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 984.0,
+            "end": 1002.0,
+            "text": " Y underscore predict.  And this is my Y prediction.  Now finally, I calculate my accuracy score.  And this is always my text data.  So first of all, I import libraries from metrics."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 1002.0,
+            "end": 1014.0,
+            "text": " Import.  So what I am going to import is accuracy score.  And classification matrix.  Classification report.  And precision recall will be in classification report."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 1014.0,
+            "end": 1028.0,
+            "text": " So I will do these two things.  And here I will write score.  And here my accuracy score.  And here the Y-Pred and Y-Tesh.  So here we will see how much accuracy is there."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 1028.0,
+            "end": 1040.0,
+            "text": " And here I will print score.  Okay?  So here we see 92% accuracy.  Which is very very good.  So you definitely see how much accuracy is there."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 1040.0,
+            "end": 1054.0,
+            "text": " And here I will play with other parameters.  Apart from that, you can use the classification report.  So you can use the classification report.  And here I will write Y-Pred and Y-Tesh.  So what will you get from this?"
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 1054.0,
+            "end": 1066.0,
+            "text": " You will get precision recall.  So I will print it.  So that is the format proper.  And here my...  Overall, 92% is coming with good precision recall and F1 score."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 1066.0,
+            "end": 1078.0,
+            "text": " So this is a very good model that we have made.  Now this is the whole process.  If you say that you did some EDA, what was the idea?  You can do all the EDAs.  You can select the features."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 1078.0,
+            "end": 1090.0,
+            "text": " Now you can do EDA.  I will give you an example of doing EDA.  So what I will do here is EDA.  If I want to do EDA, I will write SnH.Pairplot.  And here I will put DF."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 1090.0,
+            "end": 1098.0,
+            "text": " And I will put DF, X-Train.  X-Train.  Okay?  And there is a whole parameter.  So if we want to add it,"
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 1098.0,
+            "end": 1108.0,
+            "text": " Y-Train.  So if I execute it,  then there is a lot of error.  So the truth value of a series is fine.  There is no problem."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 1108.0,
+            "end": 1118.0,
+            "text": " We can do this here.  Instead of writing like this,  I will take it from DF.  We can capture it from data frame.  The whole information."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 1118.0,
+            "end": 1128.0,
+            "text": " Because we will find out from that.  Basically, we have categories in the same parameter.  So I will write it in the species.  So I will show you how much data is shown here.  And here you can see the total diagram."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 1128.0,
+            "end": 1138.0,
+            "text": " And here you can see the total diagram of the petal and the cellulite.  The cellulite is the total diagram of the petal and the cellulite.  All the highly correlated.  If you want to see the correlation directly,  then write it like this."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 1138.0,
+            "end": 1148.0,
+            "text": " DF.Core.  So here you have the correct correlation.  Here you can see the positive correlation here.  If all this correlation is very good,  then accuracy usually is high."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 1148.0,
+            "end": 1158.0,
+            "text": " So you can definitely do this type of idea.  But our main focus is on how to do this.  So how to do this hyper-pandentatuning?  So I hope you liked the video.  Please if you liked it,"
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 1158.0,
+            "end": 1170.0,
+            "text": " make sure to subscribe to the channel.  Click the bell notification icon.  Press the bell icon.  And I will be sharing all the videos of this type of video.  Thank you, all friends."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 1170.0,
+            "end": 1180.0,
+            "text": " I will see you all in the next video.  Have a great day.  Thank you one doll.  And when we practice a little bit,  we will go to the next one."
+        },
+        {
+            "title": "Logistic Regression Practical Implementation In Python",
+            "start": 1180.0,
+            "end": 1190.0,
+            "text": " And I will show you the complex dataset.  And I will show you.  So this was it from my side. Have a great day.  Thank you one doll.  Bye."
+        }
+    ],
+    "text": " Hello all my name is Krishna and welcome to my youtube channel. So guys we will continue the playlist of Machine Learning and today's video will be about the logistic regression practical implementation. Now keep in mind one thing that is the best practices like hyperparameter tuning, you should focus more on it, you would have to implement some algorithm. So in this video I will cover all the points, please make sure to do it till the end. Subscribe to the channel, press bell notification icon and share more with people. Because I am making the Hindi videos of Updata Science. So let me share screen here. I will write the whole line by line code and explain how we implement it. Guys I am not taking a big dataset now because we will see in the future that if you want to do a feature engineering, you have to do it. So it is a very long process. So here I will focus on the logistic regression. So how do we do hyperparameter tuning? And that tuning process is very important and you should do it in every algorithm. So let's start without wasting any time. First step we should do is import all the libraries. So first I will import C-Born, which is a visualization library. Then I will import Pandas, which we will use for data frames. And for any transformation we will use the specific things for the library. Then we will use Nampai. So here I have executed. Just to start with, I will take a basic problem statement. Then you can sign with any problem statement. So this is my data frame and the dataset we are going to take. There are many famous datasets. We will call them as Iris dataset. So they are going to take. If you want to load them, then this library is available. SNS is the C-Born library. So I will write C-Born.load dataset. So here I will write load dataset. And here I will write Iris. Okay. And we will put this in Df.head. So this is my dataset. Here there are a lot of simple datasets. You have features. You have independent features. You have Zeppelin, Zeppelwitz, Petalwitz and Petalwitz. We will predict these features by using the specific column. Now how many types of species are there? So if I show you. You have to see. So what will you do? Here we will write species. Dot unique. When you write this, then basically you have unique categories. You have setter, saw, varsikolor and varsiknika. Now the output of the species is either one of these three. Okay. So you have to remember this. Now we have to focus on this. You can also remember. Let's take some dataset. First, no null values. Now what can you do to find out what null values are? Basically, df.isnull. It can call it dot sum. And you can call it null. Whether any missing values are there or not. We will see in the next problem statement. If we will see missing values, then how we solve them. There are many different ways. But we will keep on doing this. And we will understand it better. Now the second thing is that when we solve the logistic regression problem statement. So logistic regression uses it in binary classification. But here our number of outputs is three categories. So three categories are multi-class classification. We will focus on binary classification. So what I do is that I give the dataset a set of outputs. Okay. So if I have to remove the category of set of outputs from the dataset. Then I will write it in a very simple way. df of species. Which is my species category. Is not equal to set of. So if I write this set of outputs, then I will have to write it. So if I write this, then you will get false or true value. False or true value basically means that where your set of outputs are not. All your outputs will be true. And where they will be your false. If I have to remove this, then I can write it like this. Okay. So if there is a true, then basically you will give the category of set of outputs. But here I have to focus on the set of outputs. I will do other doves from the category. That is the versical and the vergi. Now I have to remove all the data points from this. Now I am just knowing about some fake column. So if I write this df, where my true column will be the same. So in short, you will see a versical and a vergi. Other columns, no. Other rows and where species are set, then you will not see that. Okay. So this is my dataset. And since I am solving binary classification, then I will use it. So if I go to df.head, then I will get all these things. Now the next step will be a lot of important. Okay. And in the next step, we will try one thing. First of all, these are versical and vergi. There are two categories. We cannot give it this model. We have to convert it into a numerical format. We can assign labels like 0 and 1. So to do this, you have a lot of different ways. I will tell you a simple way. We call it map. So here I will write df of species.map. And here I will write in the map, what is the versical and what is vergi. So here I will write versical, colon, zero. I am saying, versical, where you are going, you will assign 0 to the label. And where is vergi. You will assign it to one. Okay. So I hope you all are understanding. And keep this in the numerical format, you will not be able to keep it in 0 and 1. Otherwise, you will not see anything. Now when I execute this, you will see the df of species, the first versical and vergi, it was 0 and 1. Okay. Now we will assign this in df of species. So this is my step. It is a very good step. We have to give it an invalid syntax because I have given it a pipe. Now if I see df.head, you will basically be 0 and 1. So this is my whole 0 value. Now what will be the next step? We will divide it into independent and dependent features. So here in split, I will do independent split my data set into independent and dependent features. Okay. So I hope you all are understanding this. Now for this, the independent features, like the separate length, separate width, petal length, petal width, are independent features. I will put all this in a variable. So for that I will use iLoc. So here I will write df.iLoc. And here I will write colon, comma colon minus 1. Okay. This means just leave all the columns and leave the last column. And in y, I will put dependent features. Depending on the output feature. So here I will write colon, comma minus 1. Minus 1 means only the last feature. Okay. And here is my x and y. Now we have to step into the next step. So this is my x and this is my y. So you have to see here 0 and 1. Okay. Now in the next step, we will basically use train test split. Now for train test split, we will remember how to do it. Now just search for the SK learn train test. You will get it here. And you will also find out where this specific model is. And from which library is this model. So from SK learn.model selection, I will import 10 train test split. Okay. So here I will write from SK learn.model selection. Import train test split. Okay. This is it. Now for the next train test, you can write code here. So this is my train test split code. So here I have copied it. Here I have got dot dot dot. I will put it in size. Here I will put 25%. So this is my x train x test. My train is my test. Perfect. Now we have done it. Now remember, the test data is used for validation. Models will predict and find out what are the things. We can see how accuracy is. So we will use our x train and the y train. And we will do cross validation and different things. Now remember, if I look at the scale of logistic regression. Now if I look at the scale in model, here you can see many parameters. We saw L1, L2, normalization, elastic net, normalization. I have already explained all the things in my machine learning playlist. So many parameters are here. But the most important parameter is your penalty. And then your C value. C value is an important hyper parameter. I have discussed it again. C value. We will see the value of the other two. And you can play with all the parameters. But today I will show you a format. How you can tune with all the parameters. And we will use grid sir cv. And we will see the accuracy with all the combinations. First of all, I will import from scale.linear model. And here I will import logistic regression. This is my logistic regression. Then I will do regression. This is equal to logistic regression. And I will put here this regression. This regression is basically my model. And I will give it a name classifier. Classifier is good because logistic regression is basically classification. Now let's use a great sir cv and hyper parameter. Let's see that by default, I have selected all the parameters. Penalty L2, dual E, C, C value, etc. But you can play with all these parameters. Okay. I will show you two parameters. But after watching these two parameters, you will understand all the parameters easily. So I will do from scale.model selection. And first I will import grid sir cv. So finally grid sir cv, I have imported. And here I will define parameters. What I write in parameters is that I will always have to write in dictionary. Now to write something in the parameter, I have to raise the keyword. As I am saying, I will play with penality. So I will copy the penality. Okay, here you see. I have copied the penality. And as I have done in this, I have to specify the dictionary. Okay. We will also keep the penalty in string. Because this will play with all the parameters. Now the penalty parameter of L2 is not L2, it is many penalty parameters. Like L1, I will put all the lists in it. So this is L1. What I will do? I will do L1, L2, and the last parameter we use, we call it elastic. Okay. So all these parameters are mine. Now the next thing, the next parameter I will play with is my C value, capital C. So here what I will see is capital C. Now I can put different values in capital C. So what I will do is, I will put this in dictionary. And here I select different values. Like I will start. Let's say 1, 2, 3, 4, 5, 6, 8, sorry. Come on. Let's say 10, 20, 30, 40, 50. So we can take many parameters. So what I will do is, check all the parameters and tell you which combination is best. Now I am taking these two. Because I will tell you. The second parameter is, if you want to play with the max iteration, let's say I have taken max iteration. And here I have taken max iteration. So I will come here and put it here. Now in this max iteration, I will take different values in this column. Like 100, 200, 300. Okay. Let's say I want to check these three combinations. So all these parameters have defined me. And I will execute this. I mean I am using this all these parameters with hyper parameter. After that, I will put grid search CV. Now here I see grid search CV when I assign it. So which parameter do I take? Now I have to play with all these parameters. So first thing is estimator. estimator is always remember that what model is there. So what I will write here? Classifier. Okay. Now the second parameter that will be specifically here is, Param Grid. Okay. Now what happens in Param Grid? Param Grid will be our parameter. So I will write here Parameter. Okay. Parameter. Parameter. I have defined this parameter here. So this parameter will play with all these parameters. Now after that, there is another parameter which we call scoring. Scoring is always remember that the accuracy of classification is the problem. If I talk about regression, it is called negative means. You can search in the parameters of scoring. So all of you will know. But in the classification case, we should focus on accuracy. And the other parameter that is used is cross validation. Cross validation is very important. So our training data set is internally divided in different ways. And this will apply all the parameters and find out that it is the best choice. So this is my grid search CV. So I will write here classifier underscore regressor. This is my model name. And I have executed it. Classifier. Okay. Here my spelling mistake was not there. If you want to come, you will know how you are performing. Now classifier underscore regressor will add fit on extrane. Paramawight train. When I fit these two, you will see that all the parameters are played with. There are some warnings, there is no problem. But this combination is basically used. And finally my grid search CV is complete trained. Now I have to find out what parameter is selected after training. Which parameter is selected? So what can I do? I will print. And I will write here classifier regressor dot best param. Best param. So if I execute, see the value of C is selected. The value of max iteration is selected 100. And the value of penalty is selected L2. So many parameters. I have found the best combination and output in this. Okay? Very easy. If I want to print, what was the score with this combination? What was the accuracy score? I will write here dot best underscore. So here I see 97% accuracy. When I do a lot of combinations in training dataset. Finally, I will take this model and prediction. So here I will put in prediction. And in prediction, I will put all these things in prediction. What will I do in prediction? I will write here classifier dot regressor dot predict. And here I will write here x test. So here all my predictions are coming. We will save these. Y underscore predict. And this is my Y prediction. Now finally, I calculate my accuracy score. And this is always my text data. So first of all, I import libraries from metrics. Import. So what I am going to import is accuracy score. And classification matrix. Classification report. And precision recall will be in classification report. So I will do these two things. And here I will write score. And here my accuracy score. And here the Y-Pred and Y-Tesh. So here we will see how much accuracy is there. And here I will print score. Okay? So here we see 92% accuracy. Which is very very good. So you definitely see how much accuracy is there. And here I will play with other parameters. Apart from that, you can use the classification report. So you can use the classification report. And here I will write Y-Pred and Y-Tesh. So what will you get from this? You will get precision recall. So I will print it. So that is the format proper. And here my... Overall, 92% is coming with good precision recall and F1 score. So this is a very good model that we have made. Now this is the whole process. If you say that you did some EDA, what was the idea? You can do all the EDAs. You can select the features. Now you can do EDA. I will give you an example of doing EDA. So what I will do here is EDA. If I want to do EDA, I will write SnH.Pairplot. And here I will put DF. And I will put DF, X-Train. X-Train. Okay? And there is a whole parameter. So if we want to add it, Y-Train. So if I execute it, then there is a lot of error. So the truth value of a series is fine. There is no problem. We can do this here. Instead of writing like this, I will take it from DF. We can capture it from data frame. The whole information. Because we will find out from that. Basically, we have categories in the same parameter. So I will write it in the species. So I will show you how much data is shown here. And here you can see the total diagram. And here you can see the total diagram of the petal and the cellulite. The cellulite is the total diagram of the petal and the cellulite. All the highly correlated. If you want to see the correlation directly, then write it like this. DF.Core. So here you have the correct correlation. Here you can see the positive correlation here. If all this correlation is very good, then accuracy usually is high. So you can definitely do this type of idea. But our main focus is on how to do this. So how to do this hyper-pandentatuning? So I hope you liked the video. Please if you liked it, make sure to subscribe to the channel. Click the bell notification icon. Press the bell icon. And I will be sharing all the videos of this type of video. Thank you, all friends. I will see you all in the next video. Have a great day. Thank you one doll. And when we practice a little bit, we will go to the next one. And I will show you the complex dataset. And I will show you. So this was it from my side. Have a great day. Thank you one doll. Bye."
+}

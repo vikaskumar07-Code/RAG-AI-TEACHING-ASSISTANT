@@ -1,0 +1,539 @@
+{
+    "chunks": [
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 0.0,
+            "end": 18.6,
+            "text": " Hello all, my name is Krishna, and welcome to my youtube channel.  So guys, in today's video, we are going to see an amazing machine learning algorithm,  which we call Ridge and Lassore Gration.  Now, this is a very important machine learning algorithm.  We saw in previous session that we read about linear regression,"
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 18.6,
+            "end": 41.0,
+            "text": " we read complete in-depth math, intuition, and what is the cost function of the system  and what is the actual goal of linear regression.  So, today's video, we will see what is Ridge and Lassore Gration.  And in linear regression, there is a problem, which we call overfitting.  How does that overfitting prevent the region and Lassore Gration?"
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 41.0,
+            "end": 58.8,
+            "text": " So guys, let's take a simple problem, which you have already seen,  in the discussion about linear regression.  Let's say that I have two points.  I have two points, in my data set,  I will tell you the data set, I will tell you the training data set."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 58.8,
+            "end": 73.2,
+            "text": " So, this is my training set.  This is your x1, this is your x value, x feature,  and the y feature of the x feature is your output.  This is basically output, this is input.  So, you have understood this much."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 73.2,
+            "end": 84.39999999999999,
+            "text": " And from the x, I have data sets.  Let's say that my data set is x,  and this is y.  I have two specific points.  Let's say that this is 1,"
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 84.39999999999999,
+            "end": 95.39999999999999,
+            "text": " this is 2,  and this is probably 4,  this is 3.  Now, I have these two data points.  So, 1, 2, 4, 3."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 95.39999999999999,
+            "end": 108.0,
+            "text": " So, this is data points.  I am like this, this is data points.  Now, you can see here, definitely,  I have plotted this here.  So, if I want to use linear regression,"
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 108.0,
+            "end": 119.8,
+            "text": " this problem should be solved.  What problem should we solve?  In linear regression,  whenever I give my model x value,  then the y value of y is your predictor."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 119.8,
+            "end": 129.2,
+            "text": " Okay?  This is our basic problem statement.  So, what can we do with linear regression?  We will make the best fit line.  Which will pass from both lines."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 129.2,
+            "end": 141.20000000000002,
+            "text": " So, if I talk about the new predicted point,  then I can clearly put this here.  This is my first predicted point.  The overlap here,  with real point and actual value,"
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 141.20000000000002,
+            "end": 148.4,
+            "text": " here is the overlap here,  real value and actual value.  So, the difference,  the actual value,  the green color,"
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 148.4,
+            "end": 153.8,
+            "text": " and the predicted value,  the blue color,  if I look at the difference between them,  it is very zero.  Okay?"
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 153.8,
+            "end": 162.20000000000002,
+            "text": " Now, let's see a new point tomorrow.  Okay?  A new point.  I have taken a new test data,  this is the point."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 162.20000000000002,
+            "end": 169.39999999999998,
+            "text": " Now, the test data should be the output of this.  You should come here.  Okay?  You should come here and output.  But real,"
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 169.39999999999998,
+            "end": 179.79999999999998,
+            "text": " there is the output of this test data.  Okay?  But based on this line,  which is overfitting,  based on this line,"
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 179.79999999999998,
+            "end": 189.6,
+            "text": " which is overfitting,  so here, you can see that the difference will be huge.  Okay?  The difference is very huge.  Now, why is this possible?"
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 189.6,
+            "end": 204.2,
+            "text": " Because here you can see  that your training error is very zero.  and perfectly overfit the condition.  So what is the overfitting?  Usually we apply the algorithm of machine learning."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 204.2,
+            "end": 222.2,
+            "text": " We give data set, train data set and test data set.  Okay.  When we give data set,  if my model gives accuracy very high with training data set.  So I will write here, train accuracy."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 222.2,
+            "end": 233.2,
+            "text": " Train accuracy is very high.  I will also add a number.  So that you understand.  I will drop these two.  Let's say that my data set has been trained."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 233.2,
+            "end": 242.2,
+            "text": " Okay.  Regression model will be trained.  If my training accuracy is out of 100,  let's say 90%.  Okay."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 242.2,
+            "end": 257.2,
+            "text": " And I am talking about overfitting.  Okay. Overfitting.  After that, if my test accuracy is shown here.  If my test accuracy is about 70%.  Now what is in this particular case?"
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 257.2,
+            "end": 272.2,
+            "text": " That my model, which I have made, probably the linear regression model.  It is very well trained by training data set.  But whenever we give it a new type of data,  which we will specifically test data,  in this particular case,"
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 272.2,
+            "end": 281.2,
+            "text": " you see that your training accuracy is less.  Okay.  And your output is less.  The value of the predicted output is less.  So we will say this scenario overfitting condition."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 281.2,
+            "end": 289.2,
+            "text": " Okay.  We will say this scenario overfitting condition.  Now there is another thing,  which we will say underfitting.  Now what is underfitting?"
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 289.2,
+            "end": 301.2,
+            "text": " What is usually in underfitting?  The accuracy of your training.  The accuracy of your training.  This is less than before for trained data.  Okay."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 301.2,
+            "end": 310.2,
+            "text": " When I say in the accuracy of the training,  the model with respect to trained data.  So your training accuracy will be the same.  It will be less than before.  Let's say 60%."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 310.2,
+            "end": 320.2,
+            "text": " And here, the accuracy of the test data will be the same.  It will be very less.  Let's say 62%, 60%.  Okay.  Now in both cases,"
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 320.2,
+            "end": 332.2,
+            "text": " the performance of the accuracy is bad.  Okay.  The training data is not able to give the accuracy of the output.  The test data is not able to give the accuracy.  So we will say this particular scenario underfitting."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 332.2,
+            "end": 345.2,
+            "text": " Always remember in overfitting.  Here you see that the accuracy of the training is high.  So we will say this low bias.  And the accuracy of the test is less.  Okay."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 345.2,
+            "end": 356.2,
+            "text": " So we will say this high variance.  So usually in overfitting,  there is a very important interview question.  In overfitting, you always remember that this low bias and low variance are the same.  Here both the accuracy is less."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 356.2,
+            "end": 375.2,
+            "text": " So here we will write high bias and high variance.  The model we will say is a generalized model.  Okay.  Generalized model means that the training data is trained once.  There is no data here."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 375.2,
+            "end": 392.2,
+            "text": " It should also give a good accuracy.  Okay.  So the generalized model has a quality that they should have low bias and low variance.  Okay.  High bias and high variance."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 392.2,
+            "end": 399.2,
+            "text": " You should have written a variance.  I have written a bias.  Sorry.  High variance.  Okay."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 399.2,
+            "end": 408.2,
+            "text": " Now in this particular scenario,  your training accuracy is very good.  Let's say 90%.  Test accuracy is very good.  Let's say 89%."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 408.2,
+            "end": 418.2,
+            "text": " So when this scenario is done,  then your generalized model is a generalized model.  And this is a target.  This is our target.  We will say that this model is trained for this model."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 418.2,
+            "end": 433.2,
+            "text": " Now you can see that both the points are made in straight line,  so definitely it will be a more fitting condition.  Because the training accuracy will obviously be high.  But the test accuracy when you explore new data points and see how to output it.  Okay."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 433.2,
+            "end": 443.2,
+            "text": " Now how to prevent it?  To prevent this,  we use the original regression to prevent the overfitting.  This is the problem in linear regression.  The overfitting will be the same."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 443.2,
+            "end": 452.2,
+            "text": " If you have such a type of scenarios,  then how to solve the regression?  This is the thing.  Let's make a graph again.  Okay."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 452.2,
+            "end": 461.2,
+            "text": " This is my 2 point.  This is my 2 point.  And here I am making a line,  which is our best fit line.  Okay."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 461.2,
+            "end": 473.2,
+            "text": " Okay.  You understand that I am definitely training accuracy.  It is high, but when you see new points in test accuracy,  then it will definitely be a prediction.  I will not tell you that it will be a very rare rate."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 473.2,
+            "end": 485.2,
+            "text": " And you know in linear regression,  we use small optimizer and cost function.  What we use in cost function is linear regression.  It is a very simple cost function.  And we basically say this cost function."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 485.2,
+            "end": 495.2,
+            "text": " I write formula.  Okay.  Let's say 1 by 2M.  Submission of i is equal to 1 to M.  Y minus."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 495.2,
+            "end": 512.2,
+            "text": " H theta of x of i minus y of i.  You think where I got this equation from?  I have discussed in previous session.  H theta of x is basically your predicted point.  Let's say this is your predicted point."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 512.2,
+            "end": 524.2,
+            "text": " And your y of i is your white point.  So between the two of them, we have to minimize the cost function.  Okay.  So basically what happens?  This is your error in mega."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 524.2,
+            "end": 532.2,
+            "text": " This is your residual error.  We can also call it residual error.  Okay.  The residual error.  Okay."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 532.2,
+            "end": 544.2,
+            "text": " So you understand that this is basically the difference between the actual point and the predicted point.  We focus only on this point.  Okay.  Let's say we focus on this equation.  Okay."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 544.2,
+            "end": 553.2,
+            "text": " 1 by 2M and all these things we will not do.  Now we focus only on this.  Okay.  We focus on this.  H theta of x of i."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 554.2,
+            "end": 568.2,
+            "text": " And y of i is equal to square.  Okay.  Now usually if we look at this equation and make this line from linear regression.  Okay.  So here obviously we will see that you will see that this value will be zero."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 568.2,
+            "end": 577.2,
+            "text": " If this value will be zero, then the value of theta will not change.  And then we will not be able to minimize it.  Zero is the last.  Right.  It will not be the first."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 577.2,
+            "end": 587.2,
+            "text": " This error should be zero.  Different sub-com should be less.  But now in this case, if you get zero, then how is this overfitting?  Why overfitting?  How can I tell you that?"
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 587.2,
+            "end": 598.2,
+            "text": " Let me show you.  Now our aim is to give this to zero.  Okay.  We have to give it a little upward from zero.  If zero is zero, then the goal is overfitting."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 598.2,
+            "end": 613.2,
+            "text": " Because if I make points here, then the case of overfitting is the case.  So if you are happy that you will train this model and say that my 100% accuracy is here.  That will be the manager of the model.  Your overfitting data.  If you have a training data set, then it should not be overfitting."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 613.2,
+            "end": 627.2,
+            "text": " Okay.  Now we have zero.  Obviously, in this case, we will not update the line and say that the same best fit line.  Now what is added in the regression?  This equation is added with this equation."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 627.2,
+            "end": 638.2,
+            "text": " Sorry, the rich regression.  The last one is added two things.  First of all, we will talk about the regression.  We will call it L2 regularization.  Okay."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 638.2,
+            "end": 651.2,
+            "text": " We will call it L2 regularization.  I hope L2 regularization.  This has two variables.  One is lambda value.  And one is value, which we call as slope square."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 651.2,
+            "end": 667.2,
+            "text": " Loap square.  Okay.  These two values specifically add to the regression.  Along with this equation, this cost function.  Now see, when this best fit line is formed, you have zero."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 667.2,
+            "end": 685.2,
+            "text": " Plus, let us add.  Why do we add this? We will discuss more.  Now plus, the value of lambda, let us say that I will take the value of lambda for this moment.  I will tell you how to use lambda value and how to find out this.  Now, the value of lambda is 1."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 685.2,
+            "end": 701.2,
+            "text": " Now understand, this slope, this line slope.  If I have to find the slope of the line, how will I start?  Derivative of this particular line.  If it is not, I will find the slope as well.  Now, with respect to unit movement index, unit movement of y."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 701.2,
+            "end": 711.2,
+            "text": " So, here I will get the slope.  Let us consider that this line is my slope 2.  I am taking examples.  Don't be serious.  It is a crash-cume 2."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 711.2,
+            "end": 718.2,
+            "text": " I am taking examples.  So, here I have the slope value.  So, how much is the square 2 square?  4.  So, this is my 4."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 718.2,
+            "end": 735.2,
+            "text": " Now see, even though this line is straight, passes through both the actual points.  But your value is not 0 or 4.  And in our main target, we have to reduce this thing in cost function.  So, what we will do to reduce this.  We will make a new line with new theta 1 value."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 735.2,
+            "end": 751.2,
+            "text": " Now, your new line becomes something like this.  Now, I will make some new lines like this.  I will give the second line.  Now, the new line is made like this.  Now, obviously, both the points are not passing through."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 751.2,
+            "end": 765.2,
+            "text": " So, there will be an error rate here.  But this error is still a small value.  So, if I look again,  h theta of x or minus y of i whole square,  this will also have a small value."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 765.2,
+            "end": 776.2,
+            "text": " It will not be a big value.  It will not be a very big value.  It will be some value.  Look, it will be a some value.  I can also say small value."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 776.2,
+            "end": 787.2,
+            "text": " It will be a small value.  So, it will not be a big difference.  Just by this slider movement.  Now, we will add this to alpha.  Alpha is obviously 1."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 787.2,
+            "end": 800.2,
+            "text": " Now, the first slope.  The first slope was steep.  Now, this steepness has come.  So, what will be the decrease of slope value?  You will see that, now, the unit of x of movement"
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 800.2,
+            "end": 814.2,
+            "text": " has a wide range of movement.  If you want to see, your slope value will be less.  So, here, let's say that, first, 2 was 2.  Now, 1.3 whole square will be here.  Now, if I add this to a small value plus 1.96,"
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 814.2,
+            "end": 827.2,
+            "text": " approximately, your 2.05 has become something.  But what is going on here?  Your value is getting reduced.  Now, see this.  When you see this best fit line,"
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 827.2,
+            "end": 838.2,
+            "text": " you were overfit.  Now, when you see this line,  you will cover most of the data points.  Net edge data is here, here, here, here, here.  Better than this particular line,"
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 838.2,
+            "end": 847.2,
+            "text": " this line will perform.  Because, its steepness is also less.  And it is also a little below.  So, in this way,  you can see that, what is going on here?"
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 847.2,
+            "end": 861.2,
+            "text": " The main thing is,  one thing is overfitting is removed.  Right?  Overfitting definitely will not happen.  Because, we will call this a penalizing parameter."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 861.2,
+            "end": 872.2,
+            "text": " This slope square, we are penalizing basically  this entire equation.  This is very important to understand.  This is your understanding of rigid regression.  Okay?"
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 872.2,
+            "end": 883.2,
+            "text": " If I talk about the loss,  talk about loss regression.  Here, there is only one change in the equation,  which is your cost function.  h theta of x of i minus y of i,"
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 883.2,
+            "end": 895.2,
+            "text": " whole square, which gives you this error rate.  Okay?  Plus, lambda, here, will also be lambda.  But, here, will be mod of slope square.  Okay?"
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 895.2,
+            "end": 908.2,
+            "text": " Sorry, not mod of slope square.  Just mod of slope.  Now, what happens with mod of slope?  The last regression is two things prevent.  One is overfitting prevent."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 908.2,
+            "end": 921.2,
+            "text": " Overfitting prevent.  And second thing is,  this helps you in future selection.  It helps in future selection.  Now, how do we help these two things?"
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 921.2,
+            "end": 933.2,
+            "text": " We always remember that,  when you are doing this,  what is slope?  If I show you this equation,  y is equal to mx plus c,"
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 933.2,
+            "end": 943.2,
+            "text": " then here, the slope is your m.  So, if I write this,  lambda multiplied by m square.  That's how it will be.  Now, in this case, what will be slope?"
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 943.2,
+            "end": 958.2,
+            "text": " lambda multiplied by m.  Now, I have many equations.  I write, theta 0 plus theta 1x1 plus theta 2x2 plus theta 3x3.  Then, there are many slope.  Theta 1 theta 2 theta 3 is all slope."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 958.2,
+            "end": 969.2,
+            "text": " Okay?  So, in this particular case,  I will basically,  I will use what I will do.  So, I will square this and use it."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 969.2,
+            "end": 983.2,
+            "text": " In this case, lambda will be,  m1 plus m2 plus m3 plus mn.  Okay?  And here, you can see that,  whenever we do linear regression,"
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 983.2,
+            "end": 995.2,
+            "text": " multi-linear regression,  there are some values of theta,  which are the slope values of theta.  They are neglected many times.  They are very small values."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 995.2,
+            "end": 1007.2,
+            "text": " It will be a very small value.  When they are small values,  basically, these features are almost neglected.  So, in this case,  the values of theta and values of theta"
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 1007.2,
+            "end": 1020.2,
+            "text": " are not able to create the best fit line,  what they do is,  they are neglected by this particular equation.  So, through this,  our condition is complete."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 1020.2,
+            "end": 1028.2,
+            "text": " One is overfitting prevention  and one is feature selection.  So, these two features definitely,  it will be possible.  Okay?"
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 1028.2,
+            "end": 1038.2,
+            "text": " If you think of the point of view,  that it is very simple question,  what is the difference between  region and last regression?  You just need to remember the equation."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 1038.2,
+            "end": 1050.2,
+            "text": " The other one is,  one point of the equation,  last regression will actually help you to do the feature selection.  And we call it L1,  regularization or norm."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 1050.2,
+            "end": 1058.2,
+            "text": " Okay?  So, we call it L1.  So, I hope you all understood,  and I will see you in the next video.  Thank you and all."
+        },
+        {
+            "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+            "start": 1058.2,
+            "end": 1059.2,
+            "text": " Bye."
+        }
+    ],
+    "text": " Hello all, my name is Krishna, and welcome to my youtube channel. So guys, in today's video, we are going to see an amazing machine learning algorithm, which we call Ridge and Lassore Gration. Now, this is a very important machine learning algorithm. We saw in previous session that we read about linear regression, we read complete in-depth math, intuition, and what is the cost function of the system and what is the actual goal of linear regression. So, today's video, we will see what is Ridge and Lassore Gration. And in linear regression, there is a problem, which we call overfitting. How does that overfitting prevent the region and Lassore Gration? So guys, let's take a simple problem, which you have already seen, in the discussion about linear regression. Let's say that I have two points. I have two points, in my data set, I will tell you the data set, I will tell you the training data set. So, this is my training set. This is your x1, this is your x value, x feature, and the y feature of the x feature is your output. This is basically output, this is input. So, you have understood this much. And from the x, I have data sets. Let's say that my data set is x, and this is y. I have two specific points. Let's say that this is 1, this is 2, and this is probably 4, this is 3. Now, I have these two data points. So, 1, 2, 4, 3. So, this is data points. I am like this, this is data points. Now, you can see here, definitely, I have plotted this here. So, if I want to use linear regression, this problem should be solved. What problem should we solve? In linear regression, whenever I give my model x value, then the y value of y is your predictor. Okay? This is our basic problem statement. So, what can we do with linear regression? We will make the best fit line. Which will pass from both lines. So, if I talk about the new predicted point, then I can clearly put this here. This is my first predicted point. The overlap here, with real point and actual value, here is the overlap here, real value and actual value. So, the difference, the actual value, the green color, and the predicted value, the blue color, if I look at the difference between them, it is very zero. Okay? Now, let's see a new point tomorrow. Okay? A new point. I have taken a new test data, this is the point. Now, the test data should be the output of this. You should come here. Okay? You should come here and output. But real, there is the output of this test data. Okay? But based on this line, which is overfitting, based on this line, which is overfitting, so here, you can see that the difference will be huge. Okay? The difference is very huge. Now, why is this possible? Because here you can see that your training error is very zero. and perfectly overfit the condition. So what is the overfitting? Usually we apply the algorithm of machine learning. We give data set, train data set and test data set. Okay. When we give data set, if my model gives accuracy very high with training data set. So I will write here, train accuracy. Train accuracy is very high. I will also add a number. So that you understand. I will drop these two. Let's say that my data set has been trained. Okay. Regression model will be trained. If my training accuracy is out of 100, let's say 90%. Okay. And I am talking about overfitting. Okay. Overfitting. After that, if my test accuracy is shown here. If my test accuracy is about 70%. Now what is in this particular case? That my model, which I have made, probably the linear regression model. It is very well trained by training data set. But whenever we give it a new type of data, which we will specifically test data, in this particular case, you see that your training accuracy is less. Okay. And your output is less. The value of the predicted output is less. So we will say this scenario overfitting condition. Okay. We will say this scenario overfitting condition. Now there is another thing, which we will say underfitting. Now what is underfitting? What is usually in underfitting? The accuracy of your training. The accuracy of your training. This is less than before for trained data. Okay. When I say in the accuracy of the training, the model with respect to trained data. So your training accuracy will be the same. It will be less than before. Let's say 60%. And here, the accuracy of the test data will be the same. It will be very less. Let's say 62%, 60%. Okay. Now in both cases, the performance of the accuracy is bad. Okay. The training data is not able to give the accuracy of the output. The test data is not able to give the accuracy. So we will say this particular scenario underfitting. Always remember in overfitting. Here you see that the accuracy of the training is high. So we will say this low bias. And the accuracy of the test is less. Okay. So we will say this high variance. So usually in overfitting, there is a very important interview question. In overfitting, you always remember that this low bias and low variance are the same. Here both the accuracy is less. So here we will write high bias and high variance. The model we will say is a generalized model. Okay. Generalized model means that the training data is trained once. There is no data here. It should also give a good accuracy. Okay. So the generalized model has a quality that they should have low bias and low variance. Okay. High bias and high variance. You should have written a variance. I have written a bias. Sorry. High variance. Okay. Now in this particular scenario, your training accuracy is very good. Let's say 90%. Test accuracy is very good. Let's say 89%. So when this scenario is done, then your generalized model is a generalized model. And this is a target. This is our target. We will say that this model is trained for this model. Now you can see that both the points are made in straight line, so definitely it will be a more fitting condition. Because the training accuracy will obviously be high. But the test accuracy when you explore new data points and see how to output it. Okay. Now how to prevent it? To prevent this, we use the original regression to prevent the overfitting. This is the problem in linear regression. The overfitting will be the same. If you have such a type of scenarios, then how to solve the regression? This is the thing. Let's make a graph again. Okay. This is my 2 point. This is my 2 point. And here I am making a line, which is our best fit line. Okay. Okay. You understand that I am definitely training accuracy. It is high, but when you see new points in test accuracy, then it will definitely be a prediction. I will not tell you that it will be a very rare rate. And you know in linear regression, we use small optimizer and cost function. What we use in cost function is linear regression. It is a very simple cost function. And we basically say this cost function. I write formula. Okay. Let's say 1 by 2M. Submission of i is equal to 1 to M. Y minus. H theta of x of i minus y of i. You think where I got this equation from? I have discussed in previous session. H theta of x is basically your predicted point. Let's say this is your predicted point. And your y of i is your white point. So between the two of them, we have to minimize the cost function. Okay. So basically what happens? This is your error in mega. This is your residual error. We can also call it residual error. Okay. The residual error. Okay. So you understand that this is basically the difference between the actual point and the predicted point. We focus only on this point. Okay. Let's say we focus on this equation. Okay. 1 by 2M and all these things we will not do. Now we focus only on this. Okay. We focus on this. H theta of x of i. And y of i is equal to square. Okay. Now usually if we look at this equation and make this line from linear regression. Okay. So here obviously we will see that you will see that this value will be zero. If this value will be zero, then the value of theta will not change. And then we will not be able to minimize it. Zero is the last. Right. It will not be the first. This error should be zero. Different sub-com should be less. But now in this case, if you get zero, then how is this overfitting? Why overfitting? How can I tell you that? Let me show you. Now our aim is to give this to zero. Okay. We have to give it a little upward from zero. If zero is zero, then the goal is overfitting. Because if I make points here, then the case of overfitting is the case. So if you are happy that you will train this model and say that my 100% accuracy is here. That will be the manager of the model. Your overfitting data. If you have a training data set, then it should not be overfitting. Okay. Now we have zero. Obviously, in this case, we will not update the line and say that the same best fit line. Now what is added in the regression? This equation is added with this equation. Sorry, the rich regression. The last one is added two things. First of all, we will talk about the regression. We will call it L2 regularization. Okay. We will call it L2 regularization. I hope L2 regularization. This has two variables. One is lambda value. And one is value, which we call as slope square. Loap square. Okay. These two values specifically add to the regression. Along with this equation, this cost function. Now see, when this best fit line is formed, you have zero. Plus, let us add. Why do we add this? We will discuss more. Now plus, the value of lambda, let us say that I will take the value of lambda for this moment. I will tell you how to use lambda value and how to find out this. Now, the value of lambda is 1. Now understand, this slope, this line slope. If I have to find the slope of the line, how will I start? Derivative of this particular line. If it is not, I will find the slope as well. Now, with respect to unit movement index, unit movement of y. So, here I will get the slope. Let us consider that this line is my slope 2. I am taking examples. Don't be serious. It is a crash-cume 2. I am taking examples. So, here I have the slope value. So, how much is the square 2 square? 4. So, this is my 4. Now see, even though this line is straight, passes through both the actual points. But your value is not 0 or 4. And in our main target, we have to reduce this thing in cost function. So, what we will do to reduce this. We will make a new line with new theta 1 value. Now, your new line becomes something like this. Now, I will make some new lines like this. I will give the second line. Now, the new line is made like this. Now, obviously, both the points are not passing through. So, there will be an error rate here. But this error is still a small value. So, if I look again, h theta of x or minus y of i whole square, this will also have a small value. It will not be a big value. It will not be a very big value. It will be some value. Look, it will be a some value. I can also say small value. It will be a small value. So, it will not be a big difference. Just by this slider movement. Now, we will add this to alpha. Alpha is obviously 1. Now, the first slope. The first slope was steep. Now, this steepness has come. So, what will be the decrease of slope value? You will see that, now, the unit of x of movement has a wide range of movement. If you want to see, your slope value will be less. So, here, let's say that, first, 2 was 2. Now, 1.3 whole square will be here. Now, if I add this to a small value plus 1.96, approximately, your 2.05 has become something. But what is going on here? Your value is getting reduced. Now, see this. When you see this best fit line, you were overfit. Now, when you see this line, you will cover most of the data points. Net edge data is here, here, here, here, here. Better than this particular line, this line will perform. Because, its steepness is also less. And it is also a little below. So, in this way, you can see that, what is going on here? The main thing is, one thing is overfitting is removed. Right? Overfitting definitely will not happen. Because, we will call this a penalizing parameter. This slope square, we are penalizing basically this entire equation. This is very important to understand. This is your understanding of rigid regression. Okay? If I talk about the loss, talk about loss regression. Here, there is only one change in the equation, which is your cost function. h theta of x of i minus y of i, whole square, which gives you this error rate. Okay? Plus, lambda, here, will also be lambda. But, here, will be mod of slope square. Okay? Sorry, not mod of slope square. Just mod of slope. Now, what happens with mod of slope? The last regression is two things prevent. One is overfitting prevent. Overfitting prevent. And second thing is, this helps you in future selection. It helps in future selection. Now, how do we help these two things? We always remember that, when you are doing this, what is slope? If I show you this equation, y is equal to mx plus c, then here, the slope is your m. So, if I write this, lambda multiplied by m square. That's how it will be. Now, in this case, what will be slope? lambda multiplied by m. Now, I have many equations. I write, theta 0 plus theta 1x1 plus theta 2x2 plus theta 3x3. Then, there are many slope. Theta 1 theta 2 theta 3 is all slope. Okay? So, in this particular case, I will basically, I will use what I will do. So, I will square this and use it. In this case, lambda will be, m1 plus m2 plus m3 plus mn. Okay? And here, you can see that, whenever we do linear regression, multi-linear regression, there are some values of theta, which are the slope values of theta. They are neglected many times. They are very small values. It will be a very small value. When they are small values, basically, these features are almost neglected. So, in this case, the values of theta and values of theta are not able to create the best fit line, what they do is, they are neglected by this particular equation. So, through this, our condition is complete. One is overfitting prevention and one is feature selection. So, these two features definitely, it will be possible. Okay? If you think of the point of view, that it is very simple question, what is the difference between region and last regression? You just need to remember the equation. The other one is, one point of the equation, last regression will actually help you to do the feature selection. And we call it L1, regularization or norm. Okay? So, we call it L1. So, I hope you all understood, and I will see you in the next video. Thank you and all. Bye."
+}

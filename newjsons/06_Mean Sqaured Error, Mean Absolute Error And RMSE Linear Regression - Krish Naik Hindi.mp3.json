@@ -1,0 +1,323 @@
+{
+    "chunks": [
+        {
+            "title": "Mean Sqaured Error, Mean Absolute Error And RMSE Linear Regression",
+            "start": 0.0,
+            "end": 30.0,
+            "text": " Hello all my name is Krishnaak and welcome to Krishnaak Hindi YouTube channel.  So guys, we have started a lot of playlists and it is a machine learning starts, NLP.  Now I will try to complete all the playlist completely with practical implementation.  Please make sure that you will follow all the playlist and I will continue to upload the video.  Today's video we are going to discuss the differences between mean squared error, mean absolute error and root mean squared error."
+        },
+        {
+            "title": "Mean Sqaured Error, Mean Absolute Error And RMSE Linear Regression",
+            "start": 30.0,
+            "end": 58.0,
+            "text": " We have already seen the linear regression in linear regression.  Now this mean squared error, mean absolute error, RMSC, cost functions are different type of the linear regression.  Please make sure that this video will be very important because this video is very important.  I am going to ask questions in interview questions.  Here I have an example."
+        },
+        {
+            "title": "Mean Sqaured Error, Mean Absolute Error And RMSE Linear Regression",
+            "start": 58.0,
+            "end": 79.0,
+            "text": " Let's say that we have an experience and an output feature.  What is our main name in linear regression?  We have to create a best fit line so that the differences between the actual point and the predicted point should be less.  You can see here that the best fit line and the difference between the two are the same.  And if I am to make a summation of all these, it is a minimal distance."
+        },
+        {
+            "title": "Mean Sqaured Error, Mean Absolute Error And RMSE Linear Regression",
+            "start": 79.0,
+            "end": 95.0,
+            "text": " Now let's talk about the best fit line.  Now what we do in this case is cost functions.  I have taken an example of a cost function called mean squared error.  Now this mean squared error is formula 1 by N summation of i is equal to 1 to N.  y of i minus y of i hat is whole squared."
+        },
+        {
+            "title": "Mean Sqaured Error, Mean Absolute Error And RMSE Linear Regression",
+            "start": 95.0,
+            "end": 113.0,
+            "text": " What is this? This is basically error.  Now we are going to square the error.  Then we will make a summation of this and then we will make a mean squared error.  Now the cost function we have seen in previous explanation is basically gradient descent actually created.  What happens in gradient descent?"
+        },
+        {
+            "title": "Mean Sqaured Error, Mean Absolute Error And RMSE Linear Regression",
+            "start": 113.0,
+            "end": 125.0,
+            "text": " It is a global minima.  We have to come here in a global minima.  When we are updating the coefficient, it is a coefficient theta.  If only my theta value is here.  And my cost function is not here."
+        },
+        {
+            "title": "Mean Sqaured Error, Mean Absolute Error And RMSE Linear Regression",
+            "start": 125.0,
+            "end": 143.0,
+            "text": " So I have to make sure that I have to come to the post of this global minima.  Because if we look for the slope of this global minima, it is 0.  So in that case, the coefficient will not be updated.  Similarly, if my point is here, then we make sure that we will update the global minima.  So that we are at the global minima."
+        },
+        {
+            "title": "Mean Sqaured Error, Mean Absolute Error And RMSE Linear Regression",
+            "start": 143.0,
+            "end": 158.0,
+            "text": " We have already seen this in simple linear regression.  If you have not seen it, then please make sure that the whole description will be linked.  I will see.  Now, what is the only mean squared error?  And the mean squared error is an advantageous disadvantage."
+        },
+        {
+            "title": "Mean Sqaured Error, Mean Absolute Error And RMSE Linear Regression",
+            "start": 158.0,
+            "end": 170.0,
+            "text": " The reason for this is the absolute error.  What is the root mean squared error cost function?  We will explain all the things.  So let's talk about the mean squared error first.  So our mean squared error will be first."
+        },
+        {
+            "title": "Mean Sqaured Error, Mean Absolute Error And RMSE Linear Regression",
+            "start": 172.0,
+            "end": 192.0,
+            "text": " Now what is the specific advantageous of the mean squared error?  And what is the disadvantageous of this?  You have to know that how researchers bring new things in interviews.  When there are some disadvantages, then they will bring new things.  So first advantage, if I talk about the mean squared error,"
+        },
+        {
+            "title": "Mean Sqaured Error, Mean Absolute Error And RMSE Linear Regression",
+            "start": 192.0,
+            "end": 205.0,
+            "text": " it is differentiable.  When we say it is differentiable,  then this means the gradient descent of this type.  We call it a gradient descent.  What is the cost function?"
+        },
+        {
+            "title": "Mean Sqaured Error, Mean Absolute Error And RMSE Linear Regression",
+            "start": 205.0,
+            "end": 225.0,
+            "text": " It is a gradient descent.  And in every gradient descent, we find the derivative.  Derivative is slope.  When we say derivative, it is differentiable.  That means we find the slope of the derivative in any point."
+        },
+        {
+            "title": "Mean Sqaured Error, Mean Absolute Error And RMSE Linear Regression",
+            "start": 225.0,
+            "end": 243.0,
+            "text": " And this is super important.  Why it should be differentiable?  Why this equation should be differentiable?  Because we have to update the coefficient of this.  So if you know that coefficient of updation formula,"
+        },
+        {
+            "title": "Mean Sqaured Error, Mean Absolute Error And RMSE Linear Regression",
+            "start": 243.0,
+            "end": 260.0,
+            "text": " where we use learning rate.  If you know that simple linear regression.  So for that, we need to use any equation that is cost function.  Second point,  we see that it should have,"
+        },
+        {
+            "title": "Mean Sqaured Error, Mean Absolute Error And RMSE Linear Regression",
+            "start": 260.0,
+            "end": 274.0,
+            "text": " and it has only one,  local minima and global minima.  This is also a super important point.  Without it, what is the global minima?  Whenever a gradient descent is created,"
+        },
+        {
+            "title": "Mean Sqaured Error, Mean Absolute Error And RMSE Linear Regression",
+            "start": 274.0,
+            "end": 287.0,
+            "text": " I will say here, this point is global minima.  Because we have to stop here.  If I find derivative, this value of this value is 0.  So if this value is 0,  then your data will not be updated."
+        },
+        {
+            "title": "Mean Sqaured Error, Mean Absolute Error And RMSE Linear Regression",
+            "start": 287.0,
+            "end": 298.0,
+            "text": " It will be stopped there.  Because we will not know that data is needed in positive, negative,  we will have to subtract it or plus it.  So the slope is 0.  So the learning rate multiplied by that slope is also 0."
+        },
+        {
+            "title": "Mean Sqaured Error, Mean Absolute Error And RMSE Linear Regression",
+            "start": 298.0,
+            "end": 312.0,
+            "text": " So the data will be equal to the older weight of theta.  So you have to understand that it should have,  this equation has one local minima and one global minima.  If you use another equation,  then you also get curves of such a type."
+        },
+        {
+            "title": "Mean Sqaured Error, Mean Absolute Error And RMSE Linear Regression",
+            "start": 312.0,
+            "end": 327.0,
+            "text": " This is our local minima and this is our global minima.  Very important point.  Now let's talk about the disadvantage.  The first disadvantage,  the most important is that it is not robust to outliers."
+        },
+        {
+            "title": "Mean Sqaured Error, Mean Absolute Error And RMSE Linear Regression",
+            "start": 327.0,
+            "end": 340.0,
+            "text": " This is a very important point.  It is not robust to outliers.  This means that I have a data point.  This is the case.  Now I will make this specific data point such as a best fit line."
+        },
+        {
+            "title": "Mean Sqaured Error, Mean Absolute Error And RMSE Linear Regression",
+            "start": 341.0,
+            "end": 351.0,
+            "text": " Now let's say that I have some outliers.  So what will happen?  Now we know in the cost function,  what we are basically doing in the cost function.  If we see here in the cost function,"
+        },
+        {
+            "title": "Mean Sqaured Error, Mean Absolute Error And RMSE Linear Regression",
+            "start": 351.0,
+            "end": 363.0,
+            "text": " this is the error square.  This is the formula of the mean squared error.  See the formula of the mean squared error is,  1 by n summation of i is equal to 1, 2, n, y of i,  minus y of i,"
+        },
+        {
+            "title": "Mean Sqaured Error, Mean Absolute Error And RMSE Linear Regression",
+            "start": 363.0,
+            "end": 374.0,
+            "text": " full square, y of i is actual point, y of i is a predicted point.  Now here is the specific error.  And the error square is the same.  Now, when my best fit line was,  let's say that I have some outliers."
+        },
+        {
+            "title": "Mean Sqaured Error, Mean Absolute Error And RMSE Linear Regression",
+            "start": 374.0,
+            "end": 382.0,
+            "text": " So what will happen?  The error will increase.  So when the error increases,  then what will happen?  This line's movement will be much more."
+        },
+        {
+            "title": "Mean Sqaured Error, Mean Absolute Error And RMSE Linear Regression",
+            "start": 382.0,
+            "end": 393.0,
+            "text": " So instead, what will happen?  This line's movement will also be fit in the outliers.  So here,  it is a drastic movement because of the outliers.  This is the outcome of the outliers."
+        },
+        {
+            "title": "Mean Sqaured Error, Mean Absolute Error And RMSE Linear Regression",
+            "start": 393.0,
+            "end": 403.0,
+            "text": " If our movement was minimal,  then we say,  it is not robust outliers.  But here is a maximum movement.  Because we have the formula of the outliers."
+        },
+        {
+            "title": "Mean Sqaured Error, Mean Absolute Error And RMSE Linear Regression",
+            "start": 403.0,
+            "end": 417.0,
+            "text": " We are square the error.  So this first disadvantage is not robust outliers.  And second point,  it changes its units.  Let me tell you an example."
+        },
+        {
+            "title": "Mean Sqaured Error, Mean Absolute Error And RMSE Linear Regression",
+            "start": 417.0,
+            "end": 431.0,
+            "text": " This is y of i minus y of i hat.  Let's say, my y of i is a salary.  Now what is the salary unit?  When I am doing a whole square,  salary is going to be square."
+        },
+        {
+            "title": "Mean Sqaured Error, Mean Absolute Error And RMSE Linear Regression",
+            "start": 431.0,
+            "end": 442.0,
+            "text": " So the unit is changing here.  So let's go to this.  There is a major disadvantage.  Because the output variable is changing.  With respect to the cost function."
+        },
+        {
+            "title": "Mean Sqaured Error, Mean Absolute Error And RMSE Linear Regression",
+            "start": 442.0,
+            "end": 454.0,
+            "text": " So let's come to the second type.  I hope you guys have the idea.  We will talk about the second type of the error.  Mean absolute error.  Mean absolute error."
+        },
+        {
+            "title": "Mean Sqaured Error, Mean Absolute Error And RMSE Linear Regression",
+            "start": 455.0,
+            "end": 466.0,
+            "text": " What is the mean absolute error?  We call this as m.  Mean absolute error.  Obviously, it is a disadvantage in the mean squared error.  So the first advantage."
+        },
+        {
+            "title": "Mean Sqaured Error, Mean Absolute Error And RMSE Linear Regression",
+            "start": 466.0,
+            "end": 476.0,
+            "text": " Let's see the formula of the cost function.  Mean absolute error.  It is very simple.  1 by n.  Summation of i is equal to 1 to n."
+        },
+        {
+            "title": "Mean Sqaured Error, Mean Absolute Error And RMSE Linear Regression",
+            "start": 476.0,
+            "end": 489.0,
+            "text": " Mode of y of i.  Y of i hat.  We are not doing square here.  Obviously, the advantage of the first advantage.  It is robust to outliers."
+        },
+        {
+            "title": "Mean Sqaured Error, Mean Absolute Error And RMSE Linear Regression",
+            "start": 489.0,
+            "end": 502.0,
+            "text": " So I will write here.  It is robust to outliers.  What does this mean?  Let's say, if I have data points.  Okay?"
+        },
+        {
+            "title": "Mean Sqaured Error, Mean Absolute Error And RMSE Linear Regression",
+            "start": 502.0,
+            "end": 516.0,
+            "text": " There are some data points.  And I am creating a best fit line here.  If I have outliers,  then the moment of this line will be very minimal.  Because I am not doing square."
+        },
+        {
+            "title": "Mean Sqaured Error, Mean Absolute Error And RMSE Linear Regression",
+            "start": 516.0,
+            "end": 526.0,
+            "text": " Okay?  It will be a little more effective.  So it is robust to outliers.  It is a very important point.  We will have to go to the mean absolute error."
+        },
+        {
+            "title": "Mean Sqaured Error, Mean Absolute Error And RMSE Linear Regression",
+            "start": 526.0,
+            "end": 531.0,
+            "text": " Is the unit changing?  No.  The unit is changing.  So it will be in the same unit.  So the second point."
+        },
+        {
+            "title": "Mean Sqaured Error, Mean Absolute Error And RMSE Linear Regression",
+            "start": 531.0,
+            "end": 544.0,
+            "text": " Let's write here.  It will be in the same unit.  Same unit.  Let's talk about the disadvantage.  Now, in the case of the disadvantage,"
+        },
+        {
+            "title": "Mean Sqaured Error, Mean Absolute Error And RMSE Linear Regression",
+            "start": 544.0,
+            "end": 560.0,
+            "text": " the first thing is that  convergence  usually takes more time.  Now, why is this happening?  Why is convergence taking time?"
+        },
+        {
+            "title": "Mean Sqaured Error, Mean Absolute Error And RMSE Linear Regression",
+            "start": 560.0,
+            "end": 568.0,
+            "text": " Okay?  You will understand this.  We are using this equation specifically.  If I talk about this,  how will the gradient descent be?"
+        },
+        {
+            "title": "Mean Sqaured Error, Mean Absolute Error And RMSE Linear Regression",
+            "start": 568.0,
+            "end": 577.0,
+            "text": " So this is something like this.  This is a parabolic curve.  This is the gradient descent.  Okay?  This is a parabolic function curve."
+        },
+        {
+            "title": "Mean Sqaured Error, Mean Absolute Error And RMSE Linear Regression",
+            "start": 577.0,
+            "end": 585.0,
+            "text": " Instead, this is something like this.  Now, in this scenario,  you will know that the derivative of zero  cannot calculate.  So, what is this specifically?"
+        },
+        {
+            "title": "Mean Sqaured Error, Mean Absolute Error And RMSE Linear Regression",
+            "start": 585.0,
+            "end": 598.0,
+            "text": " Use the concept of sub-gradient and find the derivative.  So, guys, convergence usually takes more time.  Because this is the sub-gradient's run.  You can understand that the derivative of zero  is not calculated."
+        },
+        {
+            "title": "Mean Sqaured Error, Mean Absolute Error And RMSE Linear Regression",
+            "start": 598.0,
+            "end": 611.0,
+            "text": " They divide the part by part  and find the derivative of the part.  The second point that is important to understand  is optimization.  Now, in this case, optimization process is also very complex."
+        },
+        {
+            "title": "Mean Sqaured Error, Mean Absolute Error And RMSE Linear Regression",
+            "start": 611.0,
+            "end": 622.0,
+            "text": " So, let me write here.  Optimization is a complex process.  Okay?  Now, this is the advantageous disadvantage.  Let's go to the next third one."
+        },
+        {
+            "title": "Mean Sqaured Error, Mean Absolute Error And RMSE Linear Regression",
+            "start": 622.0,
+            "end": 633.0,
+            "text": " The main advantage of the main absolute error is  it is obviously an amazing advantage.  Because the error we were calculating  in the mean squared error is not square.  Here, it is absolutely in the top."
+        },
+        {
+            "title": "Mean Sqaured Error, Mean Absolute Error And RMSE Linear Regression",
+            "start": 633.0,
+            "end": 642.0,
+            "text": " Now, the third important thing is  that is specifically RMSC.  Okay?  Now, RMSC has been in formula.  It is very simple."
+        },
+        {
+            "title": "Mean Sqaured Error, Mean Absolute Error And RMSE Linear Regression",
+            "start": 642.0,
+            "end": 651.0,
+            "text": " RMSC is nothing but root of MSC.  Okay?  Now, I definitely want to give you an assignment.  Please make sure to write a comment.  Okay?"
+        },
+        {
+            "title": "Mean Sqaured Error, Mean Absolute Error And RMSE Linear Regression",
+            "start": 651.0,
+            "end": 664.0,
+            "text": " What is the advantageous disadvantage of RMSC?  Okay?  I will always bring this in every video.  I will give you some assignment  so that you understand based on the equation."
+        },
+        {
+            "title": "Mean Sqaured Error, Mean Absolute Error And RMSE Linear Regression",
+            "start": 664.0,
+            "end": 677.0,
+            "text": " Now, what will happen in root of MSC?  Now, when I am taking root,  will it be impacted from the outline?  Will it be possible to get a parabola curve?  Will it be a single global minimum,"
+        },
+        {
+            "title": "Mean Sqaured Error, Mean Absolute Error And RMSE Linear Regression",
+            "start": 677.0,
+            "end": 686.0,
+            "text": " or will it be a local minimum?  I have all the things that I have thought about.  And you will write in the comment section.  Now, I will also make sure that I will give you all the materials  in the data."
+        },
+        {
+            "title": "Mean Sqaured Error, Mean Absolute Error And RMSE Linear Regression",
+            "start": 686.0,
+            "end": 695.0,
+            "text": " So that you can refer them.  So, all the information, all the playlist,  you will see in the description.  So, I hope you liked this video.  This is the mean squared error,"
+        },
+        {
+            "title": "Mean Sqaured Error, Mean Absolute Error And RMSE Linear Regression",
+            "start": 695.0,
+            "end": 701.0,
+            "text": " mean absolute error and root mean squared error.  I will meet you in the next video.  Thank you and all.  Take care.  Bye."
+        }
+    ],
+    "text": " Hello all my name is Krishnaak and welcome to Krishnaak Hindi YouTube channel. So guys, we have started a lot of playlists and it is a machine learning starts, NLP. Now I will try to complete all the playlist completely with practical implementation. Please make sure that you will follow all the playlist and I will continue to upload the video. Today's video we are going to discuss the differences between mean squared error, mean absolute error and root mean squared error. We have already seen the linear regression in linear regression. Now this mean squared error, mean absolute error, RMSC, cost functions are different type of the linear regression. Please make sure that this video will be very important because this video is very important. I am going to ask questions in interview questions. Here I have an example. Let's say that we have an experience and an output feature. What is our main name in linear regression? We have to create a best fit line so that the differences between the actual point and the predicted point should be less. You can see here that the best fit line and the difference between the two are the same. And if I am to make a summation of all these, it is a minimal distance. Now let's talk about the best fit line. Now what we do in this case is cost functions. I have taken an example of a cost function called mean squared error. Now this mean squared error is formula 1 by N summation of i is equal to 1 to N. y of i minus y of i hat is whole squared. What is this? This is basically error. Now we are going to square the error. Then we will make a summation of this and then we will make a mean squared error. Now the cost function we have seen in previous explanation is basically gradient descent actually created. What happens in gradient descent? It is a global minima. We have to come here in a global minima. When we are updating the coefficient, it is a coefficient theta. If only my theta value is here. And my cost function is not here. So I have to make sure that I have to come to the post of this global minima. Because if we look for the slope of this global minima, it is 0. So in that case, the coefficient will not be updated. Similarly, if my point is here, then we make sure that we will update the global minima. So that we are at the global minima. We have already seen this in simple linear regression. If you have not seen it, then please make sure that the whole description will be linked. I will see. Now, what is the only mean squared error? And the mean squared error is an advantageous disadvantage. The reason for this is the absolute error. What is the root mean squared error cost function? We will explain all the things. So let's talk about the mean squared error first. So our mean squared error will be first. Now what is the specific advantageous of the mean squared error? And what is the disadvantageous of this? You have to know that how researchers bring new things in interviews. When there are some disadvantages, then they will bring new things. So first advantage, if I talk about the mean squared error, it is differentiable. When we say it is differentiable, then this means the gradient descent of this type. We call it a gradient descent. What is the cost function? It is a gradient descent. And in every gradient descent, we find the derivative. Derivative is slope. When we say derivative, it is differentiable. That means we find the slope of the derivative in any point. And this is super important. Why it should be differentiable? Why this equation should be differentiable? Because we have to update the coefficient of this. So if you know that coefficient of updation formula, where we use learning rate. If you know that simple linear regression. So for that, we need to use any equation that is cost function. Second point, we see that it should have, and it has only one, local minima and global minima. This is also a super important point. Without it, what is the global minima? Whenever a gradient descent is created, I will say here, this point is global minima. Because we have to stop here. If I find derivative, this value of this value is 0. So if this value is 0, then your data will not be updated. It will be stopped there. Because we will not know that data is needed in positive, negative, we will have to subtract it or plus it. So the slope is 0. So the learning rate multiplied by that slope is also 0. So the data will be equal to the older weight of theta. So you have to understand that it should have, this equation has one local minima and one global minima. If you use another equation, then you also get curves of such a type. This is our local minima and this is our global minima. Very important point. Now let's talk about the disadvantage. The first disadvantage, the most important is that it is not robust to outliers. This is a very important point. It is not robust to outliers. This means that I have a data point. This is the case. Now I will make this specific data point such as a best fit line. Now let's say that I have some outliers. So what will happen? Now we know in the cost function, what we are basically doing in the cost function. If we see here in the cost function, this is the error square. This is the formula of the mean squared error. See the formula of the mean squared error is, 1 by n summation of i is equal to 1, 2, n, y of i, minus y of i, full square, y of i is actual point, y of i is a predicted point. Now here is the specific error. And the error square is the same. Now, when my best fit line was, let's say that I have some outliers. So what will happen? The error will increase. So when the error increases, then what will happen? This line's movement will be much more. So instead, what will happen? This line's movement will also be fit in the outliers. So here, it is a drastic movement because of the outliers. This is the outcome of the outliers. If our movement was minimal, then we say, it is not robust outliers. But here is a maximum movement. Because we have the formula of the outliers. We are square the error. So this first disadvantage is not robust outliers. And second point, it changes its units. Let me tell you an example. This is y of i minus y of i hat. Let's say, my y of i is a salary. Now what is the salary unit? When I am doing a whole square, salary is going to be square. So the unit is changing here. So let's go to this. There is a major disadvantage. Because the output variable is changing. With respect to the cost function. So let's come to the second type. I hope you guys have the idea. We will talk about the second type of the error. Mean absolute error. Mean absolute error. What is the mean absolute error? We call this as m. Mean absolute error. Obviously, it is a disadvantage in the mean squared error. So the first advantage. Let's see the formula of the cost function. Mean absolute error. It is very simple. 1 by n. Summation of i is equal to 1 to n. Mode of y of i. Y of i hat. We are not doing square here. Obviously, the advantage of the first advantage. It is robust to outliers. So I will write here. It is robust to outliers. What does this mean? Let's say, if I have data points. Okay? There are some data points. And I am creating a best fit line here. If I have outliers, then the moment of this line will be very minimal. Because I am not doing square. Okay? It will be a little more effective. So it is robust to outliers. It is a very important point. We will have to go to the mean absolute error. Is the unit changing? No. The unit is changing. So it will be in the same unit. So the second point. Let's write here. It will be in the same unit. Same unit. Let's talk about the disadvantage. Now, in the case of the disadvantage, the first thing is that convergence usually takes more time. Now, why is this happening? Why is convergence taking time? Okay? You will understand this. We are using this equation specifically. If I talk about this, how will the gradient descent be? So this is something like this. This is a parabolic curve. This is the gradient descent. Okay? This is a parabolic function curve. Instead, this is something like this. Now, in this scenario, you will know that the derivative of zero cannot calculate. So, what is this specifically? Use the concept of sub-gradient and find the derivative. So, guys, convergence usually takes more time. Because this is the sub-gradient's run. You can understand that the derivative of zero is not calculated. They divide the part by part and find the derivative of the part. The second point that is important to understand is optimization. Now, in this case, optimization process is also very complex. So, let me write here. Optimization is a complex process. Okay? Now, this is the advantageous disadvantage. Let's go to the next third one. The main advantage of the main absolute error is it is obviously an amazing advantage. Because the error we were calculating in the mean squared error is not square. Here, it is absolutely in the top. Now, the third important thing is that is specifically RMSC. Okay? Now, RMSC has been in formula. It is very simple. RMSC is nothing but root of MSC. Okay? Now, I definitely want to give you an assignment. Please make sure to write a comment. Okay? What is the advantageous disadvantage of RMSC? Okay? I will always bring this in every video. I will give you some assignment so that you understand based on the equation. Now, what will happen in root of MSC? Now, when I am taking root, will it be impacted from the outline? Will it be possible to get a parabola curve? Will it be a single global minimum, or will it be a local minimum? I have all the things that I have thought about. And you will write in the comment section. Now, I will also make sure that I will give you all the materials in the data. So that you can refer them. So, all the information, all the playlist, you will see in the description. So, I hope you liked this video. This is the mean squared error, mean absolute error and root mean squared error. I will meet you in the next video. Thank you and all. Take care. Bye."
+}

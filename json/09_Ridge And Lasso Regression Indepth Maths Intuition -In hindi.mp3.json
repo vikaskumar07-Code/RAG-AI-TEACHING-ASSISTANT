@@ -1,0 +1,2651 @@
+{
+  "chunks": [
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 0.0,
+      "end": 3.36,
+      "text": " Hello all, my name is Krishna, and welcome to my youtube channel."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 3.36,
+      "end": 8.4,
+      "text": " So guys, in today's video, we are going to see an amazing machine learning algorithm,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 8.4,
+      "end": 11.0,
+      "text": " which we call Ridge and Lassore Gration."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 11.0,
+      "end": 14.6,
+      "text": " Now, this is a very important machine learning algorithm."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 14.6,
+      "end": 18.6,
+      "text": " We saw in previous session that we read about linear regression,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 18.6,
+      "end": 23.8,
+      "text": " we read complete in-depth math, intuition, and what is the cost function of the system"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 23.8,
+      "end": 26.6,
+      "text": " and what is the actual goal of linear regression."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 27.200000000000003,
+      "end": 31.0,
+      "text": " So, today's video, we will see what is Ridge and Lassore Gration."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 31.0,
+      "end": 36.400000000000006,
+      "text": " And in linear regression, there is a problem, which we call overfitting."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 36.400000000000006,
+      "end": 41.0,
+      "text": " How does that overfitting prevent the region and Lassore Gration?"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 41.0,
+      "end": 45.400000000000006,
+      "text": " So guys, let's take a simple problem, which you have already seen,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 45.400000000000006,
+      "end": 48.2,
+      "text": " in the discussion about linear regression."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 48.2,
+      "end": 51.400000000000006,
+      "text": " Let's say that I have two points."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 51.8,
+      "end": 54.8,
+      "text": " I have two points, in my data set,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 54.8,
+      "end": 58.8,
+      "text": " I will tell you the data set, I will tell you the training data set."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 58.8,
+      "end": 60.8,
+      "text": " So, this is my training set."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 60.8,
+      "end": 65.2,
+      "text": " This is your x1, this is your x value, x feature,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 65.2,
+      "end": 68.2,
+      "text": " and the y feature of the x feature is your output."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 68.2,
+      "end": 71.2,
+      "text": " This is basically output, this is input."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 71.2,
+      "end": 73.2,
+      "text": " So, you have understood this much."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 73.2,
+      "end": 76.0,
+      "text": " And from the x, I have data sets."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 76.0,
+      "end": 79.2,
+      "text": " Let's say that my data set is x,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 79.2,
+      "end": 80.6,
+      "text": " and this is y."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 80.6,
+      "end": 82.39999999999999,
+      "text": " I have two specific points."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 82.39999999999999,
+      "end": 84.39999999999999,
+      "text": " Let's say that this is 1,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 84.39999999999999,
+      "end": 86.39999999999999,
+      "text": " this is 2,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 86.39999999999999,
+      "end": 88.89999999999999,
+      "text": " and this is probably 4,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 88.89999999999999,
+      "end": 90.39999999999999,
+      "text": " this is 3."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 90.39999999999999,
+      "end": 92.39999999999999,
+      "text": " Now, I have these two data points."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 92.39999999999999,
+      "end": 95.39999999999999,
+      "text": " So, 1, 2, 4, 3."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 95.39999999999999,
+      "end": 97.39999999999999,
+      "text": " So, this is data points."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 97.39999999999999,
+      "end": 100.39999999999999,
+      "text": " I am like this, this is data points."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 100.39999999999999,
+      "end": 103.0,
+      "text": " Now, you can see here, definitely,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 103.0,
+      "end": 105.0,
+      "text": " I have plotted this here."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 105.0,
+      "end": 108.0,
+      "text": " So, if I want to use linear regression,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 108.0,
+      "end": 110.0,
+      "text": " this problem should be solved."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 110.0,
+      "end": 111.8,
+      "text": " What problem should we solve?"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 111.8,
+      "end": 112.8,
+      "text": " In linear regression,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 112.8,
+      "end": 115.8,
+      "text": " whenever I give my model x value,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 115.8,
+      "end": 119.8,
+      "text": " then the y value of y is your predictor."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 119.8,
+      "end": 120.8,
+      "text": " Okay?"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 120.8,
+      "end": 123.2,
+      "text": " This is our basic problem statement."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 123.2,
+      "end": 125.2,
+      "text": " So, what can we do with linear regression?"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 125.2,
+      "end": 127.2,
+      "text": " We will make the best fit line."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 127.2,
+      "end": 129.2,
+      "text": " Which will pass from both lines."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 129.2,
+      "end": 133.4,
+      "text": " So, if I talk about the new predicted point,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 133.4,
+      "end": 135.8,
+      "text": " then I can clearly put this here."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 135.8,
+      "end": 137.8,
+      "text": " This is my first predicted point."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 137.8,
+      "end": 139.20000000000002,
+      "text": " The overlap here,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 139.20000000000002,
+      "end": 141.20000000000002,
+      "text": " with real point and actual value,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 141.20000000000002,
+      "end": 142.60000000000002,
+      "text": " here is the overlap here,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 142.60000000000002,
+      "end": 144.20000000000002,
+      "text": " real value and actual value."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 144.20000000000002,
+      "end": 146.0,
+      "text": " So, the difference,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 146.0,
+      "end": 147.20000000000002,
+      "text": " the actual value,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 147.20000000000002,
+      "end": 148.4,
+      "text": " the green color,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 148.4,
+      "end": 149.4,
+      "text": " and the predicted value,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 149.4,
+      "end": 150.4,
+      "text": " the blue color,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 150.4,
+      "end": 151.60000000000002,
+      "text": " if I look at the difference between them,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 151.60000000000002,
+      "end": 153.0,
+      "text": " it is very zero."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 153.0,
+      "end": 153.8,
+      "text": " Okay?"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 153.8,
+      "end": 155.8,
+      "text": " Now, let's see a new point tomorrow."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 155.8,
+      "end": 156.20000000000002,
+      "text": " Okay?"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 156.20000000000002,
+      "end": 157.60000000000002,
+      "text": " A new point."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 157.60000000000002,
+      "end": 160.60000000000002,
+      "text": " I have taken a new test data,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 160.60000000000002,
+      "end": 162.20000000000002,
+      "text": " this is the point."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 162.20000000000002,
+      "end": 164.4,
+      "text": " Now, the test data should be the output of this."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 164.4,
+      "end": 165.4,
+      "text": " You should come here."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 165.4,
+      "end": 166.20000000000002,
+      "text": " Okay?"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 166.39999999999998,
+      "end": 168.0,
+      "text": " You should come here and output."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 168.0,
+      "end": 169.39999999999998,
+      "text": " But real,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 169.39999999999998,
+      "end": 173.39999999999998,
+      "text": " there is the output of this test data."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 173.39999999999998,
+      "end": 174.6,
+      "text": " Okay?"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 174.6,
+      "end": 176.39999999999998,
+      "text": " But based on this line,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 176.39999999999998,
+      "end": 178.39999999999998,
+      "text": " which is overfitting,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 178.39999999999998,
+      "end": 179.79999999999998,
+      "text": " based on this line,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 179.79999999999998,
+      "end": 181.6,
+      "text": " which is overfitting,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 181.6,
+      "end": 185.2,
+      "text": " so here, you can see that the difference will be huge."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 185.2,
+      "end": 185.6,
+      "text": " Okay?"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 185.6,
+      "end": 187.6,
+      "text": " The difference is very huge."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 187.6,
+      "end": 189.6,
+      "text": " Now, why is this possible?"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 189.6,
+      "end": 191.6,
+      "text": " Because here you can see"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 191.6,
+      "end": 195.2,
+      "text": " that your training error is very zero."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 195.2,
+      "end": 198.2,
+      "text": " and perfectly overfit the condition."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 198.2,
+      "end": 201.2,
+      "text": " So what is the overfitting?"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 201.2,
+      "end": 204.2,
+      "text": " Usually we apply the algorithm of machine learning."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 204.2,
+      "end": 209.2,
+      "text": " We give data set, train data set and test data set."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 210.2,
+      "end": 211.2,
+      "text": " Okay."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 211.2,
+      "end": 214.2,
+      "text": " When we give data set,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 214.2,
+      "end": 219.2,
+      "text": " if my model gives accuracy very high with training data set."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 219.2,
+      "end": 222.2,
+      "text": " So I will write here, train accuracy."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 222.2,
+      "end": 224.2,
+      "text": " Train accuracy is very high."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 224.2,
+      "end": 226.2,
+      "text": " I will also add a number."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 226.2,
+      "end": 228.2,
+      "text": " So that you understand."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 228.2,
+      "end": 229.2,
+      "text": " I will drop these two."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 229.2,
+      "end": 233.2,
+      "text": " Let's say that my data set has been trained."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 233.2,
+      "end": 234.2,
+      "text": " Okay."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 234.2,
+      "end": 236.2,
+      "text": " Regression model will be trained."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 236.2,
+      "end": 239.2,
+      "text": " If my training accuracy is out of 100,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 239.2,
+      "end": 241.2,
+      "text": " let's say 90%."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 241.2,
+      "end": 242.2,
+      "text": " Okay."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 242.2,
+      "end": 246.2,
+      "text": " And I am talking about overfitting."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 246.2,
+      "end": 247.2,
+      "text": " Okay. Overfitting."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 247.2,
+      "end": 251.2,
+      "text": " After that, if my test accuracy is shown here."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 251.2,
+      "end": 255.2,
+      "text": " If my test accuracy is about 70%."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 255.2,
+      "end": 257.2,
+      "text": " Now what is in this particular case?"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 257.2,
+      "end": 261.2,
+      "text": " That my model, which I have made, probably the linear regression model."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 261.2,
+      "end": 266.2,
+      "text": " It is very well trained by training data set."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 266.2,
+      "end": 269.2,
+      "text": " But whenever we give it a new type of data,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 269.2,
+      "end": 271.2,
+      "text": " which we will specifically test data,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 271.2,
+      "end": 272.2,
+      "text": " in this particular case,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 272.2,
+      "end": 274.2,
+      "text": " you see that your training accuracy is less."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 274.2,
+      "end": 275.2,
+      "text": " Okay."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 275.2,
+      "end": 276.2,
+      "text": " And your output is less."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 276.2,
+      "end": 278.2,
+      "text": " The value of the predicted output is less."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 278.2,
+      "end": 281.2,
+      "text": " So we will say this scenario overfitting condition."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 281.2,
+      "end": 282.2,
+      "text": " Okay."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 282.2,
+      "end": 284.2,
+      "text": " We will say this scenario overfitting condition."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 284.2,
+      "end": 286.2,
+      "text": " Now there is another thing,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 286.2,
+      "end": 287.2,
+      "text": " which we will say underfitting."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 287.2,
+      "end": 289.2,
+      "text": " Now what is underfitting?"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 289.2,
+      "end": 291.2,
+      "text": " What is usually in underfitting?"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 291.2,
+      "end": 294.2,
+      "text": " The accuracy of your training."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 294.2,
+      "end": 297.2,
+      "text": " The accuracy of your training."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 297.2,
+      "end": 300.2,
+      "text": " This is less than before for trained data."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 300.2,
+      "end": 301.2,
+      "text": " Okay."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 301.2,
+      "end": 303.2,
+      "text": " When I say in the accuracy of the training,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 303.2,
+      "end": 305.2,
+      "text": " the model with respect to trained data."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 305.2,
+      "end": 307.2,
+      "text": " So your training accuracy will be the same."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 307.2,
+      "end": 308.2,
+      "text": " It will be less than before."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 308.2,
+      "end": 310.2,
+      "text": " Let's say 60%."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 310.2,
+      "end": 313.2,
+      "text": " And here, the accuracy of the test data will be the same."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 313.2,
+      "end": 314.2,
+      "text": " It will be very less."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 314.2,
+      "end": 317.2,
+      "text": " Let's say 62%, 60%."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 317.2,
+      "end": 318.2,
+      "text": " Okay."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 318.2,
+      "end": 320.2,
+      "text": " Now in both cases,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 320.2,
+      "end": 322.2,
+      "text": " the performance of the accuracy is bad."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 322.2,
+      "end": 323.2,
+      "text": " Okay."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 323.2,
+      "end": 327.2,
+      "text": " The training data is not able to give the accuracy of the output."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 327.2,
+      "end": 329.2,
+      "text": " The test data is not able to give the accuracy."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 329.2,
+      "end": 332.2,
+      "text": " So we will say this particular scenario underfitting."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 332.2,
+      "end": 334.2,
+      "text": " Always remember in overfitting."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 335.2,
+      "end": 338.2,
+      "text": " Here you see that the accuracy of the training is high."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 338.2,
+      "end": 340.2,
+      "text": " So we will say this low bias."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 341.2,
+      "end": 344.2,
+      "text": " And the accuracy of the test is less."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 344.2,
+      "end": 345.2,
+      "text": " Okay."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 345.2,
+      "end": 346.2,
+      "text": " So we will say this high variance."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 346.2,
+      "end": 348.2,
+      "text": " So usually in overfitting,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 348.2,
+      "end": 350.2,
+      "text": " there is a very important interview question."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 350.2,
+      "end": 354.2,
+      "text": " In overfitting, you always remember that this low bias and low variance are the same."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 354.2,
+      "end": 356.2,
+      "text": " Here both the accuracy is less."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 356.2,
+      "end": 360.2,
+      "text": " So here we will write high bias and high variance."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 360.2,
+      "end": 367.2,
+      "text": " The model we will say is a generalized model."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 367.2,
+      "end": 369.2,
+      "text": " Okay."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 369.2,
+      "end": 373.2,
+      "text": " Generalized model means that the training data is trained once."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 373.2,
+      "end": 375.2,
+      "text": " There is no data here."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 375.2,
+      "end": 378.2,
+      "text": " It should also give a good accuracy."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 378.2,
+      "end": 379.2,
+      "text": " Okay."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 379.2,
+      "end": 386.2,
+      "text": " So the generalized model has a quality that they should have low bias and low variance."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 386.2,
+      "end": 388.2,
+      "text": " Okay."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 389.2,
+      "end": 392.2,
+      "text": " High bias and high variance."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 392.2,
+      "end": 394.2,
+      "text": " You should have written a variance."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 394.2,
+      "end": 395.2,
+      "text": " I have written a bias."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 395.2,
+      "end": 396.2,
+      "text": " Sorry."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 397.2,
+      "end": 398.2,
+      "text": " High variance."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 398.2,
+      "end": 399.2,
+      "text": " Okay."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 399.2,
+      "end": 401.2,
+      "text": " Now in this particular scenario,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 401.2,
+      "end": 403.2,
+      "text": " your training accuracy is very good."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 403.2,
+      "end": 405.2,
+      "text": " Let's say 90%."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 405.2,
+      "end": 407.2,
+      "text": " Test accuracy is very good."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 407.2,
+      "end": 408.2,
+      "text": " Let's say 89%."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 408.2,
+      "end": 410.2,
+      "text": " So when this scenario is done,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 410.2,
+      "end": 412.2,
+      "text": " then your generalized model is a generalized model."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 412.2,
+      "end": 414.2,
+      "text": " And this is a target."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 414.2,
+      "end": 416.2,
+      "text": " This is our target."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 416.2,
+      "end": 418.2,
+      "text": " We will say that this model is trained for this model."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 418.2,
+      "end": 422.2,
+      "text": " Now you can see that both the points are made in straight line,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 422.2,
+      "end": 424.2,
+      "text": " so definitely it will be a more fitting condition."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 424.2,
+      "end": 426.2,
+      "text": " Because the training accuracy will obviously be high."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 426.2,
+      "end": 432.2,
+      "text": " But the test accuracy when you explore new data points and see how to output it."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 432.2,
+      "end": 433.2,
+      "text": " Okay."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 433.2,
+      "end": 435.2,
+      "text": " Now how to prevent it?"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 435.2,
+      "end": 436.2,
+      "text": " To prevent this,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 436.2,
+      "end": 439.2,
+      "text": " we use the original regression to prevent the overfitting."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 439.2,
+      "end": 441.2,
+      "text": " This is the problem in linear regression."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 441.2,
+      "end": 443.2,
+      "text": " The overfitting will be the same."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 443.2,
+      "end": 445.2,
+      "text": " If you have such a type of scenarios,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 445.2,
+      "end": 447.2,
+      "text": " then how to solve the regression?"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 447.2,
+      "end": 449.2,
+      "text": " This is the thing."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 449.2,
+      "end": 451.2,
+      "text": " Let's make a graph again."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 451.2,
+      "end": 452.2,
+      "text": " Okay."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 452.2,
+      "end": 454.2,
+      "text": " This is my 2 point."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 454.2,
+      "end": 456.2,
+      "text": " This is my 2 point."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 456.2,
+      "end": 458.2,
+      "text": " And here I am making a line,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 458.2,
+      "end": 460.2,
+      "text": " which is our best fit line."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 460.2,
+      "end": 461.2,
+      "text": " Okay."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 461.2,
+      "end": 462.2,
+      "text": " Okay."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 462.2,
+      "end": 465.2,
+      "text": " You understand that I am definitely training accuracy."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 465.2,
+      "end": 468.2,
+      "text": " It is high, but when you see new points in test accuracy,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 468.2,
+      "end": 470.2,
+      "text": " then it will definitely be a prediction."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 470.2,
+      "end": 473.2,
+      "text": " I will not tell you that it will be a very rare rate."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 473.2,
+      "end": 475.2,
+      "text": " And you know in linear regression,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 475.2,
+      "end": 478.2,
+      "text": " we use small optimizer and cost function."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 478.2,
+      "end": 480.2,
+      "text": " What we use in cost function is linear regression."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 480.2,
+      "end": 483.2,
+      "text": " It is a very simple cost function."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 483.2,
+      "end": 485.2,
+      "text": " And we basically say this cost function."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 485.2,
+      "end": 487.2,
+      "text": " I write formula."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 487.2,
+      "end": 488.2,
+      "text": " Okay."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 488.2,
+      "end": 490.2,
+      "text": " Let's say 1 by 2M."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 490.2,
+      "end": 493.2,
+      "text": " Submission of i is equal to 1 to M."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 493.2,
+      "end": 495.2,
+      "text": " Y minus."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 495.2,
+      "end": 501.2,
+      "text": " H theta of x of i minus y of i."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 502.2,
+      "end": 504.2,
+      "text": " You think where I got this equation from?"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 504.2,
+      "end": 507.2,
+      "text": " I have discussed in previous session."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 507.2,
+      "end": 510.2,
+      "text": " H theta of x is basically your predicted point."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 510.2,
+      "end": 512.2,
+      "text": " Let's say this is your predicted point."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 512.2,
+      "end": 515.2,
+      "text": " And your y of i is your white point."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 515.2,
+      "end": 519.2,
+      "text": " So between the two of them, we have to minimize the cost function."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 519.2,
+      "end": 520.2,
+      "text": " Okay."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 520.2,
+      "end": 522.2,
+      "text": " So basically what happens?"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 522.2,
+      "end": 524.2,
+      "text": " This is your error in mega."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 524.2,
+      "end": 526.2,
+      "text": " This is your residual error."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 526.2,
+      "end": 529.2,
+      "text": " We can also call it residual error."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 529.2,
+      "end": 530.2,
+      "text": " Okay."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 530.2,
+      "end": 531.2,
+      "text": " The residual error."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 531.2,
+      "end": 532.2,
+      "text": " Okay."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 532.2,
+      "end": 537.2,
+      "text": " So you understand that this is basically the difference between the actual point and the predicted point."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 537.2,
+      "end": 539.2,
+      "text": " We focus only on this point."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 539.2,
+      "end": 540.2,
+      "text": " Okay."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 540.2,
+      "end": 543.2,
+      "text": " Let's say we focus on this equation."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 543.2,
+      "end": 544.2,
+      "text": " Okay."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 544.2,
+      "end": 547.2,
+      "text": " 1 by 2M and all these things we will not do."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 547.2,
+      "end": 549.2,
+      "text": " Now we focus only on this."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 549.2,
+      "end": 550.2,
+      "text": " Okay."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 550.2,
+      "end": 551.2,
+      "text": " We focus on this."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 551.2,
+      "end": 553.2,
+      "text": " H theta of x of i."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 554.2,
+      "end": 557.2,
+      "text": " And y of i is equal to square."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 557.2,
+      "end": 558.2,
+      "text": " Okay."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 558.2,
+      "end": 564.2,
+      "text": " Now usually if we look at this equation and make this line from linear regression."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 564.2,
+      "end": 565.2,
+      "text": " Okay."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 565.2,
+      "end": 568.2,
+      "text": " So here obviously we will see that you will see that this value will be zero."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 568.2,
+      "end": 572.2,
+      "text": " If this value will be zero, then the value of theta will not change."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 572.2,
+      "end": 574.2,
+      "text": " And then we will not be able to minimize it."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 574.2,
+      "end": 575.2,
+      "text": " Zero is the last."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 575.2,
+      "end": 576.2,
+      "text": " Right."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 576.2,
+      "end": 577.2,
+      "text": " It will not be the first."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 577.2,
+      "end": 579.2,
+      "text": " This error should be zero."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 579.2,
+      "end": 581.2,
+      "text": " Different sub-com should be less."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 581.2,
+      "end": 585.2,
+      "text": " But now in this case, if you get zero, then how is this overfitting?"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 585.2,
+      "end": 586.2,
+      "text": " Why overfitting?"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 586.2,
+      "end": 587.2,
+      "text": " How can I tell you that?"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 587.2,
+      "end": 588.2,
+      "text": " Let me show you."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 588.2,
+      "end": 593.2,
+      "text": " Now our aim is to give this to zero."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 593.2,
+      "end": 594.2,
+      "text": " Okay."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 594.2,
+      "end": 596.2,
+      "text": " We have to give it a little upward from zero."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 596.2,
+      "end": 598.2,
+      "text": " If zero is zero, then the goal is overfitting."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 598.2,
+      "end": 601.2,
+      "text": " Because if I make points here, then the case of overfitting is the case."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 601.2,
+      "end": 606.2,
+      "text": " So if you are happy that you will train this model and say that my 100% accuracy is here."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 606.2,
+      "end": 608.2,
+      "text": " That will be the manager of the model."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 608.2,
+      "end": 610.2,
+      "text": " Your overfitting data."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 610.2,
+      "end": 613.2,
+      "text": " If you have a training data set, then it should not be overfitting."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 613.2,
+      "end": 614.2,
+      "text": " Okay."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 614.2,
+      "end": 616.2,
+      "text": " Now we have zero."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 616.2,
+      "end": 621.2,
+      "text": " Obviously, in this case, we will not update the line and say that the same best fit line."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 621.2,
+      "end": 623.2,
+      "text": " Now what is added in the regression?"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 623.2,
+      "end": 627.2,
+      "text": " This equation is added with this equation."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 627.2,
+      "end": 628.2,
+      "text": " Sorry, the rich regression."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 628.2,
+      "end": 631.2,
+      "text": " The last one is added two things."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 631.2,
+      "end": 633.2,
+      "text": " First of all, we will talk about the regression."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 633.2,
+      "end": 636.2,
+      "text": " We will call it L2 regularization."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 636.2,
+      "end": 638.2,
+      "text": " Okay."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 638.2,
+      "end": 640.2,
+      "text": " We will call it L2 regularization."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 640.2,
+      "end": 641.2,
+      "text": " I hope L2 regularization."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 641.2,
+      "end": 644.2,
+      "text": " This has two variables."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 644.2,
+      "end": 646.2,
+      "text": " One is lambda value."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 646.2,
+      "end": 651.2,
+      "text": " And one is value, which we call as slope square."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 651.2,
+      "end": 654.2,
+      "text": " Loap square."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 654.2,
+      "end": 655.2,
+      "text": " Okay."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 655.2,
+      "end": 659.2,
+      "text": " These two values specifically add to the regression."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 659.2,
+      "end": 662.2,
+      "text": " Along with this equation, this cost function."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 662.2,
+      "end": 667.2,
+      "text": " Now see, when this best fit line is formed, you have zero."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 667.2,
+      "end": 670.2,
+      "text": " Plus, let us add."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 670.2,
+      "end": 672.2,
+      "text": " Why do we add this? We will discuss more."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 672.2,
+      "end": 678.2,
+      "text": " Now plus, the value of lambda, let us say that I will take the value of lambda for this moment."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 678.2,
+      "end": 683.2,
+      "text": " I will tell you how to use lambda value and how to find out this."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 683.2,
+      "end": 685.2,
+      "text": " Now, the value of lambda is 1."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 685.2,
+      "end": 689.2,
+      "text": " Now understand, this slope, this line slope."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 689.2,
+      "end": 692.2,
+      "text": " If I have to find the slope of the line, how will I start?"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 692.2,
+      "end": 694.2,
+      "text": " Derivative of this particular line."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 694.2,
+      "end": 697.2,
+      "text": " If it is not, I will find the slope as well."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 697.2,
+      "end": 701.2,
+      "text": " Now, with respect to unit movement index, unit movement of y."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 701.2,
+      "end": 703.2,
+      "text": " So, here I will get the slope."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 703.2,
+      "end": 706.2,
+      "text": " Let us consider that this line is my slope 2."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 706.2,
+      "end": 708.2,
+      "text": " I am taking examples."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 708.2,
+      "end": 709.2,
+      "text": " Don't be serious."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 709.2,
+      "end": 711.2,
+      "text": " It is a crash-cume 2."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 711.2,
+      "end": 712.2,
+      "text": " I am taking examples."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 712.2,
+      "end": 714.2,
+      "text": " So, here I have the slope value."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 714.2,
+      "end": 716.2,
+      "text": " So, how much is the square 2 square?"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 716.2,
+      "end": 717.2,
+      "text": " 4."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 717.2,
+      "end": 718.2,
+      "text": " So, this is my 4."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 718.2,
+      "end": 723.2,
+      "text": " Now see, even though this line is straight, passes through both the actual points."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 723.2,
+      "end": 725.2,
+      "text": " But your value is not 0 or 4."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 725.2,
+      "end": 730.2,
+      "text": " And in our main target, we have to reduce this thing in cost function."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 730.2,
+      "end": 732.2,
+      "text": " So, what we will do to reduce this."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 732.2,
+      "end": 735.2,
+      "text": " We will make a new line with new theta 1 value."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 735.2,
+      "end": 738.2,
+      "text": " Now, your new line becomes something like this."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 738.2,
+      "end": 742.2,
+      "text": " Now, I will make some new lines like this."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 742.2,
+      "end": 745.2,
+      "text": " I will give the second line."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 745.2,
+      "end": 748.2,
+      "text": " Now, the new line is made like this."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 748.2,
+      "end": 751.2,
+      "text": " Now, obviously, both the points are not passing through."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 751.2,
+      "end": 754.2,
+      "text": " So, there will be an error rate here."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 754.2,
+      "end": 757.2,
+      "text": " But this error is still a small value."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 757.2,
+      "end": 759.2,
+      "text": " So, if I look again,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 759.2,
+      "end": 763.2,
+      "text": " h theta of x or minus y of i whole square,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 763.2,
+      "end": 765.2,
+      "text": " this will also have a small value."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 765.2,
+      "end": 767.2,
+      "text": " It will not be a big value."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 767.2,
+      "end": 769.2,
+      "text": " It will not be a very big value."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 769.2,
+      "end": 771.2,
+      "text": " It will be some value."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 771.2,
+      "end": 774.2,
+      "text": " Look, it will be a some value."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 774.2,
+      "end": 776.2,
+      "text": " I can also say small value."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 776.2,
+      "end": 778.2,
+      "text": " It will be a small value."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 778.2,
+      "end": 780.2,
+      "text": " So, it will not be a big difference."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 780.2,
+      "end": 782.2,
+      "text": " Just by this slider movement."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 782.2,
+      "end": 785.2,
+      "text": " Now, we will add this to alpha."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 785.2,
+      "end": 787.2,
+      "text": " Alpha is obviously 1."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 787.2,
+      "end": 789.2,
+      "text": " Now, the first slope."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 789.2,
+      "end": 792.2,
+      "text": " The first slope was steep."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 792.2,
+      "end": 795.2,
+      "text": " Now, this steepness has come."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 795.2,
+      "end": 797.2,
+      "text": " So, what will be the decrease of slope value?"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 797.2,
+      "end": 800.2,
+      "text": " You will see that, now, the unit of x of movement"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 800.2,
+      "end": 802.2,
+      "text": " has a wide range of movement."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 802.2,
+      "end": 805.2,
+      "text": " If you want to see, your slope value will be less."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 805.2,
+      "end": 808.2,
+      "text": " So, here, let's say that, first, 2 was 2."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 808.2,
+      "end": 810.2,
+      "text": " Now, 1.3 whole square will be here."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 810.2,
+      "end": 814.2,
+      "text": " Now, if I add this to a small value plus 1.96,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 814.2,
+      "end": 819.2,
+      "text": " approximately, your 2.05 has become something."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 819.2,
+      "end": 821.2,
+      "text": " But what is going on here?"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 821.2,
+      "end": 823.2,
+      "text": " Your value is getting reduced."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 823.2,
+      "end": 825.2,
+      "text": " Now, see this."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 825.2,
+      "end": 827.2,
+      "text": " When you see this best fit line,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 827.2,
+      "end": 828.2,
+      "text": " you were overfit."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 828.2,
+      "end": 830.2,
+      "text": " Now, when you see this line,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 830.2,
+      "end": 832.2,
+      "text": " you will cover most of the data points."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 832.2,
+      "end": 835.2,
+      "text": " Net edge data is here, here, here, here, here."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 835.2,
+      "end": 838.2,
+      "text": " Better than this particular line,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 838.2,
+      "end": 839.2,
+      "text": " this line will perform."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 839.2,
+      "end": 841.2,
+      "text": " Because, its steepness is also less."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 841.2,
+      "end": 843.2,
+      "text": " And it is also a little below."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 843.2,
+      "end": 845.2,
+      "text": " So, in this way,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 845.2,
+      "end": 847.2,
+      "text": " you can see that, what is going on here?"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 847.2,
+      "end": 848.2,
+      "text": " The main thing is,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 848.2,
+      "end": 854.2,
+      "text": " one thing is overfitting is removed."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 854.2,
+      "end": 855.2,
+      "text": " Right?"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 855.2,
+      "end": 857.2,
+      "text": " Overfitting definitely will not happen."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 857.2,
+      "end": 861.2,
+      "text": " Because, we will call this a penalizing parameter."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 861.2,
+      "end": 864.2,
+      "text": " This slope square, we are penalizing basically"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 864.2,
+      "end": 865.2,
+      "text": " this entire equation."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 865.2,
+      "end": 868.2,
+      "text": " This is very important to understand."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 868.2,
+      "end": 871.2,
+      "text": " This is your understanding of rigid regression."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 871.2,
+      "end": 872.2,
+      "text": " Okay?"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 872.2,
+      "end": 874.2,
+      "text": " If I talk about the loss,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 874.2,
+      "end": 876.2,
+      "text": " talk about loss regression."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 876.2,
+      "end": 879.2,
+      "text": " Here, there is only one change in the equation,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 879.2,
+      "end": 880.2,
+      "text": " which is your cost function."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 880.2,
+      "end": 883.2,
+      "text": " h theta of x of i minus y of i,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 883.2,
+      "end": 886.2,
+      "text": " whole square, which gives you this error rate."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 886.2,
+      "end": 887.2,
+      "text": " Okay?"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 887.2,
+      "end": 889.2,
+      "text": " Plus, lambda, here, will also be lambda."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 889.2,
+      "end": 892.2,
+      "text": " But, here, will be mod of slope square."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 892.2,
+      "end": 895.2,
+      "text": " Okay?"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 895.2,
+      "end": 898.2,
+      "text": " Sorry, not mod of slope square."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 898.2,
+      "end": 900.2,
+      "text": " Just mod of slope."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 900.2,
+      "end": 902.2,
+      "text": " Now, what happens with mod of slope?"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 902.2,
+      "end": 905.2,
+      "text": " The last regression is two things prevent."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 905.2,
+      "end": 908.2,
+      "text": " One is overfitting prevent."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 908.2,
+      "end": 910.2,
+      "text": " Overfitting prevent."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 910.2,
+      "end": 912.2,
+      "text": " And second thing is,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 912.2,
+      "end": 915.2,
+      "text": " this helps you in future selection."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 915.2,
+      "end": 918.2,
+      "text": " It helps in future selection."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 918.2,
+      "end": 921.2,
+      "text": " Now, how do we help these two things?"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 921.2,
+      "end": 924.2,
+      "text": " We always remember that,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 924.2,
+      "end": 927.2,
+      "text": " when you are doing this,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 927.2,
+      "end": 929.2,
+      "text": " what is slope?"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 929.2,
+      "end": 931.2,
+      "text": " If I show you this equation,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 931.2,
+      "end": 933.2,
+      "text": " y is equal to mx plus c,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 933.2,
+      "end": 936.2,
+      "text": " then here, the slope is your m."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 936.2,
+      "end": 937.2,
+      "text": " So, if I write this,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 937.2,
+      "end": 939.2,
+      "text": " lambda multiplied by m square."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 939.2,
+      "end": 941.2,
+      "text": " That's how it will be."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 941.2,
+      "end": 943.2,
+      "text": " Now, in this case, what will be slope?"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 943.2,
+      "end": 945.2,
+      "text": " lambda multiplied by m."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 945.2,
+      "end": 948.2,
+      "text": " Now, I have many equations."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 948.2,
+      "end": 954.2,
+      "text": " I write, theta 0 plus theta 1x1 plus theta 2x2 plus theta 3x3."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 954.2,
+      "end": 956.2,
+      "text": " Then, there are many slope."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 956.2,
+      "end": 958.2,
+      "text": " Theta 1 theta 2 theta 3 is all slope."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 958.2,
+      "end": 960.2,
+      "text": " Okay?"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 960.2,
+      "end": 962.2,
+      "text": " So, in this particular case,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 962.2,
+      "end": 964.2,
+      "text": " I will basically,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 964.2,
+      "end": 966.2,
+      "text": " I will use what I will do."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 966.2,
+      "end": 969.2,
+      "text": " So, I will square this and use it."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 969.2,
+      "end": 972.2,
+      "text": " In this case, lambda will be,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 972.2,
+      "end": 976.2,
+      "text": " m1 plus m2 plus m3 plus mn."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 976.2,
+      "end": 978.2,
+      "text": " Okay?"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 978.2,
+      "end": 980.2,
+      "text": " And here, you can see that,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 980.2,
+      "end": 983.2,
+      "text": " whenever we do linear regression,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 983.2,
+      "end": 985.2,
+      "text": " multi-linear regression,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 985.2,
+      "end": 987.2,
+      "text": " there are some values of theta,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 987.2,
+      "end": 990.2,
+      "text": " which are the slope values of theta."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 990.2,
+      "end": 993.2,
+      "text": " They are neglected many times."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 993.2,
+      "end": 995.2,
+      "text": " They are very small values."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 995.2,
+      "end": 997.2,
+      "text": " It will be a very small value."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 997.2,
+      "end": 999.2,
+      "text": " When they are small values,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 999.2,
+      "end": 1002.2,
+      "text": " basically, these features are almost neglected."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 1002.2,
+      "end": 1004.2,
+      "text": " So, in this case,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 1004.2,
+      "end": 1007.2,
+      "text": " the values of theta and values of theta"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 1007.2,
+      "end": 1011.2,
+      "text": " are not able to create the best fit line,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 1011.2,
+      "end": 1013.2,
+      "text": " what they do is,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 1013.2,
+      "end": 1017.2,
+      "text": " they are neglected by this particular equation."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 1017.2,
+      "end": 1018.2,
+      "text": " So, through this,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 1018.2,
+      "end": 1020.2,
+      "text": " our condition is complete."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 1020.2,
+      "end": 1022.2,
+      "text": " One is overfitting prevention"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 1022.2,
+      "end": 1023.2,
+      "text": " and one is feature selection."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 1023.2,
+      "end": 1025.2,
+      "text": " So, these two features definitely,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 1025.2,
+      "end": 1027.2,
+      "text": " it will be possible."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 1027.2,
+      "end": 1028.2,
+      "text": " Okay?"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 1028.2,
+      "end": 1030.2,
+      "text": " If you think of the point of view,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 1030.2,
+      "end": 1032.2,
+      "text": " that it is very simple question,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 1032.2,
+      "end": 1034.2,
+      "text": " what is the difference between"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 1034.2,
+      "end": 1036.2,
+      "text": " region and last regression?"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 1036.2,
+      "end": 1038.2,
+      "text": " You just need to remember the equation."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 1038.2,
+      "end": 1040.2,
+      "text": " The other one is,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 1040.2,
+      "end": 1042.2,
+      "text": " one point of the equation,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 1042.2,
+      "end": 1045.2,
+      "text": " last regression will actually help you to do the feature selection."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 1045.2,
+      "end": 1048.2,
+      "text": " And we call it L1,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 1048.2,
+      "end": 1050.2,
+      "text": " regularization or norm."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 1050.2,
+      "end": 1051.2,
+      "text": " Okay?"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 1051.2,
+      "end": 1053.2,
+      "text": " So, we call it L1."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 1053.2,
+      "end": 1055.2,
+      "text": " So, I hope you all understood,"
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 1055.2,
+      "end": 1057.2,
+      "text": " and I will see you in the next video."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 1057.2,
+      "end": 1058.2,
+      "text": " Thank you and all."
+    },
+    {
+      "title": "Ridge And Lasso Regression Indepth Maths Intuition",
+      "start": 1058.2,
+      "end": 1059.2,
+      "text": " Bye."
+    }
+  ],
+  "text": " Hello all, my name is Krishna, and welcome to my youtube channel. So guys, in today's video, we are going to see an amazing machine learning algorithm, which we call Ridge and Lassore Gration. Now, this is a very important machine learning algorithm. We saw in previous session that we read about linear regression, we read complete in-depth math, intuition, and what is the cost function of the system and what is the actual goal of linear regression. So, today's video, we will see what is Ridge and Lassore Gration. And in linear regression, there is a problem, which we call overfitting. How does that overfitting prevent the region and Lassore Gration? So guys, let's take a simple problem, which you have already seen, in the discussion about linear regression. Let's say that I have two points. I have two points, in my data set, I will tell you the data set, I will tell you the training data set. So, this is my training set. This is your x1, this is your x value, x feature, and the y feature of the x feature is your output. This is basically output, this is input. So, you have understood this much. And from the x, I have data sets. Let's say that my data set is x, and this is y. I have two specific points. Let's say that this is 1, this is 2, and this is probably 4, this is 3. Now, I have these two data points. So, 1, 2, 4, 3. So, this is data points. I am like this, this is data points. Now, you can see here, definitely, I have plotted this here. So, if I want to use linear regression, this problem should be solved. What problem should we solve? In linear regression, whenever I give my model x value, then the y value of y is your predictor. Okay? This is our basic problem statement. So, what can we do with linear regression? We will make the best fit line. Which will pass from both lines. So, if I talk about the new predicted point, then I can clearly put this here. This is my first predicted point. The overlap here, with real point and actual value, here is the overlap here, real value and actual value. So, the difference, the actual value, the green color, and the predicted value, the blue color, if I look at the difference between them, it is very zero. Okay? Now, let's see a new point tomorrow. Okay? A new point. I have taken a new test data, this is the point. Now, the test data should be the output of this. You should come here. Okay? You should come here and output. But real, there is the output of this test data. Okay? But based on this line, which is overfitting, based on this line, which is overfitting, so here, you can see that the difference will be huge. Okay? The difference is very huge. Now, why is this possible? Because here you can see that your training error is very zero. and perfectly overfit the condition. So what is the overfitting? Usually we apply the algorithm of machine learning. We give data set, train data set and test data set. Okay. When we give data set, if my model gives accuracy very high with training data set. So I will write here, train accuracy. Train accuracy is very high. I will also add a number. So that you understand. I will drop these two. Let's say that my data set has been trained. Okay. Regression model will be trained. If my training accuracy is out of 100, let's say 90%. Okay. And I am talking about overfitting. Okay. Overfitting. After that, if my test accuracy is shown here. If my test accuracy is about 70%. Now what is in this particular case? That my model, which I have made, probably the linear regression model. It is very well trained by training data set. But whenever we give it a new type of data, which we will specifically test data, in this particular case, you see that your training accuracy is less. Okay. And your output is less. The value of the predicted output is less. So we will say this scenario overfitting condition. Okay. We will say this scenario overfitting condition. Now there is another thing, which we will say underfitting. Now what is underfitting? What is usually in underfitting? The accuracy of your training. The accuracy of your training. This is less than before for trained data. Okay. When I say in the accuracy of the training, the model with respect to trained data. So your training accuracy will be the same. It will be less than before. Let's say 60%. And here, the accuracy of the test data will be the same. It will be very less. Let's say 62%, 60%. Okay. Now in both cases, the performance of the accuracy is bad. Okay. The training data is not able to give the accuracy of the output. The test data is not able to give the accuracy. So we will say this particular scenario underfitting. Always remember in overfitting. Here you see that the accuracy of the training is high. So we will say this low bias. And the accuracy of the test is less. Okay. So we will say this high variance. So usually in overfitting, there is a very important interview question. In overfitting, you always remember that this low bias and low variance are the same. Here both the accuracy is less. So here we will write high bias and high variance. The model we will say is a generalized model. Okay. Generalized model means that the training data is trained once. There is no data here. It should also give a good accuracy. Okay. So the generalized model has a quality that they should have low bias and low variance. Okay. High bias and high variance. You should have written a variance. I have written a bias. Sorry. High variance. Okay. Now in this particular scenario, your training accuracy is very good. Let's say 90%. Test accuracy is very good. Let's say 89%. So when this scenario is done, then your generalized model is a generalized model. And this is a target. This is our target. We will say that this model is trained for this model. Now you can see that both the points are made in straight line, so definitely it will be a more fitting condition. Because the training accuracy will obviously be high. But the test accuracy when you explore new data points and see how to output it. Okay. Now how to prevent it? To prevent this, we use the original regression to prevent the overfitting. This is the problem in linear regression. The overfitting will be the same. If you have such a type of scenarios, then how to solve the regression? This is the thing. Let's make a graph again. Okay. This is my 2 point. This is my 2 point. And here I am making a line, which is our best fit line. Okay. Okay. You understand that I am definitely training accuracy. It is high, but when you see new points in test accuracy, then it will definitely be a prediction. I will not tell you that it will be a very rare rate. And you know in linear regression, we use small optimizer and cost function. What we use in cost function is linear regression. It is a very simple cost function. And we basically say this cost function. I write formula. Okay. Let's say 1 by 2M. Submission of i is equal to 1 to M. Y minus. H theta of x of i minus y of i. You think where I got this equation from? I have discussed in previous session. H theta of x is basically your predicted point. Let's say this is your predicted point. And your y of i is your white point. So between the two of them, we have to minimize the cost function. Okay. So basically what happens? This is your error in mega. This is your residual error. We can also call it residual error. Okay. The residual error. Okay. So you understand that this is basically the difference between the actual point and the predicted point. We focus only on this point. Okay. Let's say we focus on this equation. Okay. 1 by 2M and all these things we will not do. Now we focus only on this. Okay. We focus on this. H theta of x of i. And y of i is equal to square. Okay. Now usually if we look at this equation and make this line from linear regression. Okay. So here obviously we will see that you will see that this value will be zero. If this value will be zero, then the value of theta will not change. And then we will not be able to minimize it. Zero is the last. Right. It will not be the first. This error should be zero. Different sub-com should be less. But now in this case, if you get zero, then how is this overfitting? Why overfitting? How can I tell you that? Let me show you. Now our aim is to give this to zero. Okay. We have to give it a little upward from zero. If zero is zero, then the goal is overfitting. Because if I make points here, then the case of overfitting is the case. So if you are happy that you will train this model and say that my 100% accuracy is here. That will be the manager of the model. Your overfitting data. If you have a training data set, then it should not be overfitting. Okay. Now we have zero. Obviously, in this case, we will not update the line and say that the same best fit line. Now what is added in the regression? This equation is added with this equation. Sorry, the rich regression. The last one is added two things. First of all, we will talk about the regression. We will call it L2 regularization. Okay. We will call it L2 regularization. I hope L2 regularization. This has two variables. One is lambda value. And one is value, which we call as slope square. Loap square. Okay. These two values specifically add to the regression. Along with this equation, this cost function. Now see, when this best fit line is formed, you have zero. Plus, let us add. Why do we add this? We will discuss more. Now plus, the value of lambda, let us say that I will take the value of lambda for this moment. I will tell you how to use lambda value and how to find out this. Now, the value of lambda is 1. Now understand, this slope, this line slope. If I have to find the slope of the line, how will I start? Derivative of this particular line. If it is not, I will find the slope as well. Now, with respect to unit movement index, unit movement of y. So, here I will get the slope. Let us consider that this line is my slope 2. I am taking examples. Don't be serious. It is a crash-cume 2. I am taking examples. So, here I have the slope value. So, how much is the square 2 square? 4. So, this is my 4. Now see, even though this line is straight, passes through both the actual points. But your value is not 0 or 4. And in our main target, we have to reduce this thing in cost function. So, what we will do to reduce this. We will make a new line with new theta 1 value. Now, your new line becomes something like this. Now, I will make some new lines like this. I will give the second line. Now, the new line is made like this. Now, obviously, both the points are not passing through. So, there will be an error rate here. But this error is still a small value. So, if I look again, h theta of x or minus y of i whole square, this will also have a small value. It will not be a big value. It will not be a very big value. It will be some value. Look, it will be a some value. I can also say small value. It will be a small value. So, it will not be a big difference. Just by this slider movement. Now, we will add this to alpha. Alpha is obviously 1. Now, the first slope. The first slope was steep. Now, this steepness has come. So, what will be the decrease of slope value? You will see that, now, the unit of x of movement has a wide range of movement. If you want to see, your slope value will be less. So, here, let's say that, first, 2 was 2. Now, 1.3 whole square will be here. Now, if I add this to a small value plus 1.96, approximately, your 2.05 has become something. But what is going on here? Your value is getting reduced. Now, see this. When you see this best fit line, you were overfit. Now, when you see this line, you will cover most of the data points. Net edge data is here, here, here, here, here. Better than this particular line, this line will perform. Because, its steepness is also less. And it is also a little below. So, in this way, you can see that, what is going on here? The main thing is, one thing is overfitting is removed. Right? Overfitting definitely will not happen. Because, we will call this a penalizing parameter. This slope square, we are penalizing basically this entire equation. This is very important to understand. This is your understanding of rigid regression. Okay? If I talk about the loss, talk about loss regression. Here, there is only one change in the equation, which is your cost function. h theta of x of i minus y of i, whole square, which gives you this error rate. Okay? Plus, lambda, here, will also be lambda. But, here, will be mod of slope square. Okay? Sorry, not mod of slope square. Just mod of slope. Now, what happens with mod of slope? The last regression is two things prevent. One is overfitting prevent. Overfitting prevent. And second thing is, this helps you in future selection. It helps in future selection. Now, how do we help these two things? We always remember that, when you are doing this, what is slope? If I show you this equation, y is equal to mx plus c, then here, the slope is your m. So, if I write this, lambda multiplied by m square. That's how it will be. Now, in this case, what will be slope? lambda multiplied by m. Now, I have many equations. I write, theta 0 plus theta 1x1 plus theta 2x2 plus theta 3x3. Then, there are many slope. Theta 1 theta 2 theta 3 is all slope. Okay? So, in this particular case, I will basically, I will use what I will do. So, I will square this and use it. In this case, lambda will be, m1 plus m2 plus m3 plus mn. Okay? And here, you can see that, whenever we do linear regression, multi-linear regression, there are some values of theta, which are the slope values of theta. They are neglected many times. They are very small values. It will be a very small value. When they are small values, basically, these features are almost neglected. So, in this case, the values of theta and values of theta are not able to create the best fit line, what they do is, they are neglected by this particular equation. So, through this, our condition is complete. One is overfitting prevention and one is feature selection. So, these two features definitely, it will be possible. Okay? If you think of the point of view, that it is very simple question, what is the difference between region and last regression? You just need to remember the equation. The other one is, one point of the equation, last regression will actually help you to do the feature selection. And we call it L1, regularization or norm. Okay? So, we call it L1. So, I hope you all understood, and I will see you in the next video. Thank you and all. Bye."
+}

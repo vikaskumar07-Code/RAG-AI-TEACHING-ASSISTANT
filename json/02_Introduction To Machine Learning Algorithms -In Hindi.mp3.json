@@ -1,0 +1,3167 @@
+{
+  "chunks": [
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 0.0,
+      "end": 2.6,
+      "text": " Hello all my name is Krishna and welcome to my channel."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 2.6,
+      "end": 6.6000000000000005,
+      "text": " So guys, in today's video we are going to look at the introduction to machine learning algorithms."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 6.6000000000000005,
+      "end": 11.4,
+      "text": " So now I am going to make a playlist about machine learning algorithms."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 11.4,
+      "end": 15.8,
+      "text": " I will try to explain all the machine learning algorithms"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 15.8,
+      "end": 17.8,
+      "text": " very theoretically and practical."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 17.8,
+      "end": 22.2,
+      "text": " I have started the Python playlist around 6 to 7 videos."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 22.2,
+      "end": 23.8,
+      "text": " So you can see that too."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 23.8,
+      "end": 27.8,
+      "text": " And here we start the machine learning algorithms."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 27.8,
+      "end": 32.2,
+      "text": " So today's idea is that we will first understand the first thing."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 32.2,
+      "end": 37.2,
+      "text": " What is the difference between AI versus ML versus DL versus data science?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 37.2,
+      "end": 37.8,
+      "text": " Okay."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 37.8,
+      "end": 43.2,
+      "text": " So these things we will understand after that, we will understand how many types of machine learning algorithms are there."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 43.2,
+      "end": 49.0,
+      "text": " And who are the different types of machine learning algorithms that we need to solve in business use."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 49.0,
+      "end": 51.2,
+      "text": " So let's discuss the first topic."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 51.2,
+      "end": 54.400000000000006,
+      "text": " And what is the difference between AI versus ML versus data science?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 54.4,
+      "end": 60.6,
+      "text": " Let's first ask a universe and I want to give this universe in the name of AI."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 60.6,
+      "end": 62.599999999999994,
+      "text": " So this universe will be mine."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 62.599999999999994,
+      "end": 65.6,
+      "text": " So I want to give the whole of this name of AI."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 65.6,
+      "end": 67.0,
+      "text": " So this is AI."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 67.0,
+      "end": 73.2,
+      "text": " AI, add the end of the day, you learn machine learning, you learn deep learning, you learn data science,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 73.2,
+      "end": 77.0,
+      "text": " add the end of the day, you are making an AI application."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 77.0,
+      "end": 79.6,
+      "text": " Okay, an artificial intelligence application is making."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 79.6,
+      "end": 85.39999999999999,
+      "text": " Always remember, the end goal of the guys will always be the AI application."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 85.39999999999999,
+      "end": 89.6,
+      "text": " Okay, if I talk about what is an AI application, I can say it's very simple."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 89.6,
+      "end": 95.39999999999999,
+      "text": " In the language, that AI application is an application which can do its task without any human intervention."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 95.39999999999999,
+      "end": 97.19999999999999,
+      "text": " So I will write here."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 97.19999999999999,
+      "end": 106.19999999999999,
+      "text": " It can do its task without any human intervention."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 106.2,
+      "end": 110.0,
+      "text": " Okay, here no human intervention should be done here."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 110.0,
+      "end": 117.4,
+      "text": " And this is your smartly, smart way to use data."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 117.4,
+      "end": 120.4,
+      "text": " You can take decision by using smartly."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 120.4,
+      "end": 122.4,
+      "text": " Let me show you some examples."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 122.4,
+      "end": 123.80000000000001,
+      "text": " First example is Netflix."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 123.80000000000001,
+      "end": 126.4,
+      "text": " I hope you all have Netflix."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 126.4,
+      "end": 128.4,
+      "text": " So you watch all the movies."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 128.4,
+      "end": 130.0,
+      "text": " Netflix has a feature."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 130.0,
+      "end": 133.6,
+      "text": " Whenever you watch an action movie, okay."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 133.6,
+      "end": 138.2,
+      "text": " So if you watch the action movie, then continuously watch the action movie."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 138.2,
+      "end": 143.0,
+      "text": " At some point, the action movie also gives you the action movie recommendation."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 143.0,
+      "end": 148.4,
+      "text": " Okay, then you change your taste and you watch comedy movies."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 148.4,
+      "end": 150.2,
+      "text": " So after a while, what will happen?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 150.2,
+      "end": 153.2,
+      "text": " Start this type of comedy movies."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 153.2,
+      "end": 154.2,
+      "text": " Right."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 154.2,
+      "end": 160.0,
+      "text": " So here, how a task, AI application will be a small module in Netflix,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 160.0,
+      "end": 163.6,
+      "text": " which specifically does this task, that is recommendation."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 163.6,
+      "end": 166.2,
+      "text": " And this is without any human intervention."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 166.2,
+      "end": 170.0,
+      "text": " Human is doing his app, you are using it, you are watching movies, you are doing everything."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 170.0,
+      "end": 173.8,
+      "text": " But this added additional functionality, which is an AI functionality,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 173.8,
+      "end": 176.6,
+      "text": " which is recommended in front of all the movies."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 176.6,
+      "end": 177.6,
+      "text": " Okay."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 177.6,
+      "end": 178.6,
+      "text": " So this is a very important point."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 178.6,
+      "end": 180.6,
+      "text": " Let's take a second example."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 180.6,
+      "end": 183.0,
+      "text": " We can write self-driving cars."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 183.0,
+      "end": 184.6,
+      "text": " What is self driving cars?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 184.6,
+      "end": 187.2,
+      "text": " There, the passenger is sitting there."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 187.2,
+      "end": 189.0,
+      "text": " So what does your car do?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 189.0,
+      "end": 192.4,
+      "text": " Self, their task is self-driving."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 192.4,
+      "end": 195.6,
+      "text": " So this application basically, in these cars,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 195.6,
+      "end": 199.2,
+      "text": " if it is like this, the road that detects objects,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 199.2,
+      "end": 202.0,
+      "text": " and you will move the car."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 202.0,
+      "end": 204.6,
+      "text": " And in such a way, that is not possible."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 204.6,
+      "end": 205.6,
+      "text": " Okay."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 205.6,
+      "end": 207.8,
+      "text": " So this one is also an AI application."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 207.8,
+      "end": 210.8,
+      "text": " And if we take a third example,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 210.8,
+      "end": 213.4,
+      "text": " we will take Amazon.in website."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 213.4,
+      "end": 215.6,
+      "text": " If you see in Amazon.in,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 215.6,
+      "end": 218.1,
+      "text": " if you are supposed to take an iPhone,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 218.2,
+      "end": 223.2,
+      "text": " then you will recommend your headphones with your iPhone."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 223.2,
+      "end": 223.7,
+      "text": " Right?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 223.7,
+      "end": 225.4,
+      "text": " Headphones recommend."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 225.4,
+      "end": 229.29999999999998,
+      "text": " So this type of recommendation is also an AI application."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 229.29999999999998,
+      "end": 230.1,
+      "text": " Okay."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 230.1,
+      "end": 232.9,
+      "text": " Now we need a lot of things to implement it."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 232.9,
+      "end": 234.7,
+      "text": " For that, we need data, for that,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 234.7,
+      "end": 236.79999999999998,
+      "text": " you applied the machine learning algorithm."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 236.79999999999998,
+      "end": 238.29999999999998,
+      "text": " This is the system of the recommendation system."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 238.29999999999998,
+      "end": 240.0,
+      "text": " You applied the algorithm."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 240.0,
+      "end": 241.79999999999998,
+      "text": " This is a deep learning technique."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 241.79999999999998,
+      "end": 243.0,
+      "text": " Anything can happen."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 243.0,
+      "end": 245.0,
+      "text": " Now in the next one, we are going to,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 245.0,
+      "end": 246.2,
+      "text": " we have discussed this."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 246.2,
+      "end": 247.1,
+      "text": " What is AI?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 247.1,
+      "end": 249.0,
+      "text": " Now let's go to the machine learning."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 249.0,
+      "end": 251.7,
+      "text": " So where does the machine learning come from?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 251.7,
+      "end": 253.4,
+      "text": " So we will talk about the machine learning."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 253.4,
+      "end": 256.4,
+      "text": " It is a subset of AI."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 256.4,
+      "end": 257.7,
+      "text": " It is a subset of AI."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 257.7,
+      "end": 260.2,
+      "text": " And what you provide is that you provide that."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 260.2,
+      "end": 262.1,
+      "text": " Start tools."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 262.1,
+      "end": 264.1,
+      "text": " Startstools."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 264.1,
+      "end": 268.0,
+      "text": " To analyze data."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 268.0,
+      "end": 271.7,
+      "text": " Visualize data."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 271.7,
+      "end": 276.2,
+      "text": " And further, you use this start tool."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 276.3,
+      "end": 278.59999999999997,
+      "text": " You will be able to focus it."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 278.59999999999997,
+      "end": 280.59999999999997,
+      "text": " You will help in focusing."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 280.59999999999997,
+      "end": 282.59999999999997,
+      "text": " You will help for predictions."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 282.59999999999997,
+      "end": 283.59999999999997,
+      "text": " Okay."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 283.59999999999997,
+      "end": 285.59999999999997,
+      "text": " So here you will have machine learning."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 285.59999999999997,
+      "end": 287.0,
+      "text": " If I talk about machine learning,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 287.0,
+      "end": 288.8,
+      "text": " This is specifically machine learning."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 288.8,
+      "end": 291.0,
+      "text": " I will write here."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 291.0,
+      "end": 292.5,
+      "text": " This is ML."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 292.5,
+      "end": 293.8,
+      "text": " And machine learning provides you."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 293.8,
+      "end": 295.4,
+      "text": " Startstools through analyze the data."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 295.4,
+      "end": 297.3,
+      "text": " Visualize the data to focus the data."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 297.3,
+      "end": 299.9,
+      "text": " To do some prediction of the new data."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 299.9,
+      "end": 300.59999999999997,
+      "text": " Okay."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 300.59999999999997,
+      "end": 302.0,
+      "text": " So this is all a task."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 302.0,
+      "end": 304.9,
+      "text": " This actually provides from this machine learning."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 305.0,
+      "end": 306.7,
+      "text": " It is a subset of AI."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 306.7,
+      "end": 308.79999999999995,
+      "text": " We call it a subset of AI."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 308.79999999999995,
+      "end": 309.29999999999995,
+      "text": " Okay."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 309.29999999999995,
+      "end": 310.79999999999995,
+      "text": " So this is the definition."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 310.79999999999995,
+      "end": 312.09999999999997,
+      "text": " Very simple."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 312.09999999999997,
+      "end": 314.29999999999995,
+      "text": " Now next term we will talk about."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 314.29999999999995,
+      "end": 316.4,
+      "text": " Deep learning."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 316.4,
+      "end": 319.29999999999995,
+      "text": " Deep learning is a subset of machine learning."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 319.29999999999995,
+      "end": 321.59999999999997,
+      "text": " Now I will tell you why deep learning came."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 321.59999999999997,
+      "end": 322.59999999999997,
+      "text": " Okay."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 322.59999999999997,
+      "end": 324.59999999999997,
+      "text": " So this is in 1950s."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 324.59999999999997,
+      "end": 327.09999999999997,
+      "text": " In 1960s, I have researched a lot."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 327.09999999999997,
+      "end": 330.59999999999997,
+      "text": " And the researchers have tried."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 330.59999999999997,
+      "end": 334.29999999999995,
+      "text": " What do we learn?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 334.3,
+      "end": 336.2,
+      "text": " We learn about the outside experience."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 336.2,
+      "end": 338.5,
+      "text": " We are learning about the learning process."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 338.5,
+      "end": 342.1,
+      "text": " How can we teach machine learning?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 342.1,
+      "end": 346.3,
+      "text": " So here main aim was to mimic."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 346.3,
+      "end": 348.40000000000003,
+      "text": " To mimic human brain."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 348.40000000000003,
+      "end": 350.6,
+      "text": " This is the most important point."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 350.6,
+      "end": 352.6,
+      "text": " So to mimic this."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 352.6,
+      "end": 353.8,
+      "text": " To mimic this."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 353.8,
+      "end": 355.5,
+      "text": " We basically do this."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 355.5,
+      "end": 358.3,
+      "text": " We do this for deep learning."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 358.3,
+      "end": 363.0,
+      "text": " Here we use specifically neural networks."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 363.1,
+      "end": 366.9,
+      "text": " And here we will talk about multi-layered neural networks."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 366.9,
+      "end": 368.9,
+      "text": " Multi-layered neural networks."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 368.9,
+      "end": 370.9,
+      "text": " What is this multi-layered neural network?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 370.9,
+      "end": 374.5,
+      "text": " We train our human brain."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 374.5,
+      "end": 378.2,
+      "text": " We train all the machines and applications."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 378.2,
+      "end": 380.6,
+      "text": " So this main is deep learning."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 380.6,
+      "end": 383.9,
+      "text": " So this part I am talking about is deep learning."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 383.9,
+      "end": 386.4,
+      "text": " Where we use specifically DL."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 386.4,
+      "end": 389.9,
+      "text": " Now see, there are many tools."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 390.0,
+      "end": 392.79999999999995,
+      "text": " In maths, there are many tools."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 392.79999999999995,
+      "end": 395.79999999999995,
+      "text": " There are many tools."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 395.79999999999995,
+      "end": 398.79999999999995,
+      "text": " There are many tools."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 398.79999999999995,
+      "end": 401.29999999999995,
+      "text": " There are many tools."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 401.29999999999995,
+      "end": 404.29999999999995,
+      "text": " Differentiation and integration tools."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 404.29999999999995,
+      "end": 407.29999999999995,
+      "text": " Where we need to implement the tools."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 407.29999999999995,
+      "end": 408.79999999999995,
+      "text": " That will definitely be used."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 408.79999999999995,
+      "end": 412.29999999999995,
+      "text": " So where will we find the next point?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 412.29999999999995,
+      "end": 414.59999999999997,
+      "text": " Because you have seen many tools."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 414.59999999999997,
+      "end": 416.59999999999997,
+      "text": " Machine learning engineers, deep learning engineers."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 416.59999999999997,
+      "end": 419.59999999999997,
+      "text": " AI engineers."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 419.70000000000005,
+      "end": 420.6,
+      "text": " I have seen all these."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 420.6,
+      "end": 425.0,
+      "text": " But data scientists are also very amazing job profiles."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 425.0,
+      "end": 426.0,
+      "text": " Why do I say?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 426.0,
+      "end": 428.0,
+      "text": " Where will data scientists come?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 428.0,
+      "end": 431.5,
+      "text": " So if I want to include data scientists."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 431.5,
+      "end": 434.5,
+      "text": " Data scientists can be part of anything."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 434.5,
+      "end": 435.5,
+      "text": " Okay?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 435.5,
+      "end": 437.8,
+      "text": " I will write here."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 437.8,
+      "end": 440.3,
+      "text": " Green color, sub-color."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 440.3,
+      "end": 442.5,
+      "text": " I will write in blue."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 442.5,
+      "end": 444.5,
+      "text": " So I am talking about data scientists."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 444.5,
+      "end": 447.5,
+      "text": " It is a part of everything."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 448.4,
+      "end": 450.4,
+      "text": " Why am I saying this?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 450.4,
+      "end": 452.4,
+      "text": " Now I will explain."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 452.4,
+      "end": 454.4,
+      "text": " This is my data scientist."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 454.4,
+      "end": 455.4,
+      "text": " Data science."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 455.4,
+      "end": 458.4,
+      "text": " And it can be the part of anything."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 458.4,
+      "end": 461.4,
+      "text": " As a data scientist,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 461.4,
+      "end": 463.4,
+      "text": " I will always remember."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 463.4,
+      "end": 467.4,
+      "text": " You will have to make a machine learning application tomorrow."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 467.4,
+      "end": 469.4,
+      "text": " So when you will be a data scientist,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 469.4,
+      "end": 470.9,
+      "text": " I will make it."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 470.9,
+      "end": 471.9,
+      "text": " Okay?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 471.9,
+      "end": 473.4,
+      "text": " You do not have any option."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 473.4,
+      "end": 476.4,
+      "text": " Because a data scientist specifically focuses on domain."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 476.5,
+      "end": 480.79999999999995,
+      "text": " And it focuses on the domain business use."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 480.79999999999995,
+      "end": 483.79999999999995,
+      "text": " For that, if you use machine learning,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 483.79999999999995,
+      "end": 484.79999999999995,
+      "text": " then you will use machine learning."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 484.79999999999995,
+      "end": 487.0,
+      "text": " If you use deep learning, then you will use deep learning."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 487.0,
+      "end": 488.79999999999995,
+      "text": " Starts to use it."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 488.79999999999995,
+      "end": 490.79999999999995,
+      "text": " When you use linear, you will not be able to use it."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 490.79999999999995,
+      "end": 492.79999999999995,
+      "text": " So, all the things you need to use,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 492.79999999999995,
+      "end": 495.79999999999995,
+      "text": " some parts you need to use,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 495.79999999999995,
+      "end": 498.59999999999997,
+      "text": " but their end goal finally,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 498.59999999999997,
+      "end": 500.79999999999995,
+      "text": " AI application is to be made."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 500.79999999999995,
+      "end": 501.79999999999995,
+      "text": " Okay?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 501.79999999999995,
+      "end": 503.79999999999995,
+      "text": " So this is a data scientist."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 504.2,
+      "end": 508.0,
+      "text": " I have a full experience in the data science industry."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 508.0,
+      "end": 509.0,
+      "text": " Around 7 years."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 509.0,
+      "end": 510.0,
+      "text": " Okay?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 510.0,
+      "end": 514.0,
+      "text": " And I have seen that I have worked in many different domains."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 514.0,
+      "end": 515.0,
+      "text": " Okay?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 515.0,
+      "end": 516.0,
+      "text": " Different data sets have been seen."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 516.0,
+      "end": 517.5,
+      "text": " Life data set has been seen."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 517.5,
+      "end": 519.5,
+      "text": " IOT type data sets have been seen."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 519.5,
+      "end": 522.5,
+      "text": " And I have, as a data scientist,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 522.5,
+      "end": 523.5,
+      "text": " there is no option."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 523.5,
+      "end": 524.5,
+      "text": " You will say,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 524.5,
+      "end": 527.2,
+      "text": " we will work in the machine learning algorithm."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 527.2,
+      "end": 529.5,
+      "text": " If you call your data scientist,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 529.5,
+      "end": 531.7,
+      "text": " that basically means you have no task."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 531.7,
+      "end": 533.5,
+      "text": " You have to include it."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 533.5,
+      "end": 534.9,
+      "text": " And at the end of the day,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 534.9,
+      "end": 536.9,
+      "text": " you have to create an AI application."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 536.9,
+      "end": 537.4,
+      "text": " Okay?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 537.4,
+      "end": 540.4,
+      "text": " So this is a very important thing."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 540.4,
+      "end": 540.9,
+      "text": " Okay?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 540.9,
+      "end": 542.7,
+      "text": " This is very important."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 542.7,
+      "end": 545.2,
+      "text": " So, if you become a data scientist,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 545.2,
+      "end": 546.2,
+      "text": " in the industry,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 546.2,
+      "end": 547.9,
+      "text": " you will not have any option"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 547.9,
+      "end": 551.7,
+      "text": " to work in a vision project."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 551.7,
+      "end": 553.6,
+      "text": " You have to work in deep learning,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 553.6,
+      "end": 555.7,
+      "text": " in the machine learning,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 555.7,
+      "end": 556.9,
+      "text": " you have to work in the machine learning."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 556.9,
+      "end": 559.5,
+      "text": " That is the true role of a data scientist."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 559.5,
+      "end": 559.9,
+      "text": " Okay?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 559.9,
+      "end": 560.9,
+      "text": " I have seen many people,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 560.9,
+      "end": 562.2,
+      "text": " I have seen my juniors."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 562.3000000000001,
+      "end": 565.1,
+      "text": " When I come to Panasonic,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 565.1,
+      "end": 566.1,
+      "text": " people say,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 566.1,
+      "end": 568.2,
+      "text": " I am good at machine learning."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 568.2,
+      "end": 570.3000000000001,
+      "text": " But I want to call myself as a data scientist."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 570.3000000000001,
+      "end": 571.3000000000001,
+      "text": " So, I said,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 571.3000000000001,
+      "end": 573.0,
+      "text": " you are not a data scientist."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 573.0,
+      "end": 574.8000000000001,
+      "text": " You have to play a role specifically."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 574.8000000000001,
+      "end": 575.5,
+      "text": " Okay?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 575.5,
+      "end": 577.7,
+      "text": " So, this was a very good,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 577.7,
+      "end": 579.4000000000001,
+      "text": " I have explained to you in the last few years,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 579.4000000000001,
+      "end": 580.6,
+      "text": " what is the difference between"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 580.6,
+      "end": 582.9000000000001,
+      "text": " AI versus machine learning versus deep learning."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 582.9000000000001,
+      "end": 584.9000000000001,
+      "text": " Now, let's take the next topic."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 584.9000000000001,
+      "end": 586.6,
+      "text": " Machine learning and deep learning."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 586.6,
+      "end": 588.1,
+      "text": " Okay?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 588.1,
+      "end": 589.9000000000001,
+      "text": " So, machine learning"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 589.9000000000001,
+      "end": 592.1,
+      "text": " and deep learning about it."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 593.1,
+      "end": 594.1,
+      "text": " Okay?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 594.1,
+      "end": 594.6,
+      "text": " Okay."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 594.6,
+      "end": 597.0,
+      "text": " When I talk about machine learning and deep learning,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 597.0,
+      "end": 598.5,
+      "text": " now you will know that"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 598.5,
+      "end": 600.1,
+      "text": " there are so many different types of algorithms."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 600.1,
+      "end": 602.3000000000001,
+      "text": " Whenever we solve any problems,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 602.3000000000001,
+      "end": 603.3000000000001,
+      "text": " usually, here,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 603.3000000000001,
+      "end": 605.0,
+      "text": " there are two types of problems."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 605.0,
+      "end": 605.4,
+      "text": " That is,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 605.4,
+      "end": 606.6,
+      "text": " supervised machine learning,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 606.6,
+      "end": 608.0,
+      "text": " supervised machine learning,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 608.0,
+      "end": 609.3000000000001,
+      "text": " unsupervised machine learning."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 613.3000000000001,
+      "end": 614.9,
+      "text": " So, let's discuss"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 614.9,
+      "end": 617.5,
+      "text": " what is the difference between supervised machine learning and algorithms."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 617.5,
+      "end": 618.5,
+      "text": " Okay, guys."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 618.5,
+      "end": 621.9,
+      "text": " Whenever we talk about this supervised machine learning algorithm,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 622.0,
+      "end": 625.1,
+      "text": " we always take examples of data set."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 625.1,
+      "end": 626.1,
+      "text": " In data set,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 626.1,
+      "end": 627.5,
+      "text": " there are two important things."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 627.5,
+      "end": 629.8,
+      "text": " One is independent features."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 631.0,
+      "end": 632.8,
+      "text": " One is dependent features."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 632.8,
+      "end": 633.8,
+      "text": " Okay?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 634.3,
+      "end": 637.3,
+      "text": " Now, let's take an example of independent or dependent features."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 637.3,
+      "end": 641.9,
+      "text": " Let's take two simple features."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 641.9,
+      "end": 643.3,
+      "text": " One is age."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 643.3,
+      "end": 644.8,
+      "text": " One is weight."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 646.1999999999999,
+      "end": 647.6,
+      "text": " Now, I will say this."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 647.6,
+      "end": 649.1999999999999,
+      "text": " Independent feature is my age."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 649.1999999999999,
+      "end": 650.8,
+      "text": " Independent feature is my weight."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 650.9,
+      "end": 652.0999999999999,
+      "text": " That basically means"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 652.0999999999999,
+      "end": 653.6999999999999,
+      "text": " what we are trying to do here"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 653.6999999999999,
+      "end": 656.0,
+      "text": " based on this age values."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 656.0,
+      "end": 657.4,
+      "text": " I want to predict."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 657.4,
+      "end": 659.5,
+      "text": " I want to predict what is the weight."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 659.5,
+      "end": 660.5,
+      "text": " Okay?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 660.5,
+      "end": 663.0,
+      "text": " So, in this case, I am talking about this independently."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 663.0,
+      "end": 664.5,
+      "text": " Because when this value changes,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 664.5,
+      "end": 666.1999999999999,
+      "text": " then the value of weight will also change."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 666.1999999999999,
+      "end": 667.0999999999999,
+      "text": " Okay?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 667.0999999999999,
+      "end": 668.0,
+      "text": " So, here,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 668.0,
+      "end": 671.8,
+      "text": " you know that I know my output feature."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 673.3,
+      "end": 674.0999999999999,
+      "text": " Okay?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 674.0999999999999,
+      "end": 675.9,
+      "text": " I know my output feature."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 676.3,
+      "end": 676.8,
+      "text": " Okay?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 676.8,
+      "end": 678.8,
+      "text": " I know my output feature."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 678.8,
+      "end": 680.1999999999999,
+      "text": " So, what I will do with this"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 680.3000000000001,
+      "end": 683.0,
+      "text": " is I will train an algorithm of machine learning."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 683.0,
+      "end": 684.0,
+      "text": " Joe"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 684.5,
+      "end": 686.3000000000001,
+      "text": " Joe in the future"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 686.8000000000001,
+      "end": 688.8000000000001,
+      "text": " New age value"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 689.5,
+      "end": 690.8000000000001,
+      "text": " my weight or"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 690.8000000000001,
+      "end": 693.1,
+      "text": " or any other weight predicts."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 693.1,
+      "end": 694.9000000000001,
+      "text": " So, this is our prediction."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 694.9000000000001,
+      "end": 696.9000000000001,
+      "text": " And we will talk about hypothesis."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 696.9000000000001,
+      "end": 698.4000000000001,
+      "text": " Hypothesis is also a hypothesis."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 698.4000000000001,
+      "end": 699.1,
+      "text": " Okay?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 699.1,
+      "end": 700.1,
+      "text": " So, basically, what happens?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 700.1,
+      "end": 703.1,
+      "text": " I will train this whole data set."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 703.1,
+      "end": 704.1,
+      "text": " And after that,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 704.1,
+      "end": 705.1,
+      "text": " if I give new age,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 705.1,
+      "end": 706.4000000000001,
+      "text": " then I should do my prediction."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 706.4000000000001,
+      "end": 707.3000000000001,
+      "text": " So, in Superwise,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 707.3000000000001,
+      "end": 708.6,
+      "text": " you always remember"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 708.7,
+      "end": 710.7,
+      "text": " your output feature."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 710.7,
+      "end": 711.4,
+      "text": " Okay?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 711.4,
+      "end": 713.4,
+      "text": " You specifically said that"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 713.4,
+      "end": 715.2,
+      "text": " this is the dependent feature"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 715.2,
+      "end": 718.0,
+      "text": " and you basically want to compute all these things."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 718.0,
+      "end": 718.5,
+      "text": " Okay?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 718.5,
+      "end": 720.5,
+      "text": " So, I hope you all understand."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 720.5,
+      "end": 721.3000000000001,
+      "text": " Now,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 721.3000000000001,
+      "end": 725.2,
+      "text": " let's solve two types of problems in Superwise machine learning."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 725.2,
+      "end": 727.0,
+      "text": " So, I will give you a look here."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 727.0,
+      "end": 728.5,
+      "text": " Superwise"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 729.5,
+      "end": 731.0,
+      "text": " in machine learning algorithms,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 731.0,
+      "end": 732.8000000000001,
+      "text": " we solve two types of problems."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 732.8000000000001,
+      "end": 734.9,
+      "text": " And this deep learning also applies."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 734.9,
+      "end": 735.7,
+      "text": " Okay?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 735.8000000000001,
+      "end": 738.6,
+      "text": " One is your classification problem."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 739.5,
+      "end": 741.6,
+      "text": " What is the classification problem?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 741.6,
+      "end": 743.6,
+      "text": " And regression problem."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 744.6,
+      "end": 744.9000000000001,
+      "text": " Okay?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 744.9000000000001,
+      "end": 747.9000000000001,
+      "text": " I will give you an example of the examples of these two."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 747.9000000000001,
+      "end": 750.4000000000001,
+      "text": " So, this is the first thing."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 750.4000000000001,
+      "end": 752.1,
+      "text": " Now, I have written here,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 752.1,
+      "end": 753.1,
+      "text": " classification."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 754.4000000000001,
+      "end": 754.6,
+      "text": " Okay?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 754.6,
+      "end": 756.6,
+      "text": " Classification is a data set."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 757.6,
+      "end": 759.6,
+      "text": " Now, I have three features."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 759.6,
+      "end": 760.6,
+      "text": " Number of"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 761.6,
+      "end": 762.8000000000001,
+      "text": " Study hours."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 762.9,
+      "end": 765.9,
+      "text": " Number of"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 766.9,
+      "end": 767.9,
+      "text": " Play hours."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 769.9,
+      "end": 770.9,
+      "text": " Number of"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 771.9,
+      "end": 772.9,
+      "text": " Sleep hours."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 774.4,
+      "end": 774.9,
+      "text": " Okay?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 775.4,
+      "end": 776.6999999999999,
+      "text": " Now, you have three features."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 776.6999999999999,
+      "end": 778.9,
+      "text": " And I have given an output."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 778.9,
+      "end": 781.6999999999999,
+      "text": " Whether the person is passing or failing."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 782.5,
+      "end": 782.9,
+      "text": " Okay?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 782.9,
+      "end": 784.5,
+      "text": " Person passed or failed?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 784.5,
+      "end": 785.9,
+      "text": " So, if I see this,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 785.9,
+      "end": 786.9,
+      "text": " this"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 787.9,
+      "end": 790.1999999999999,
+      "text": " This is the three features."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 790.1999999999999,
+      "end": 791.9,
+      "text": " This is my independent feature."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 792.3,
+      "end": 795.1,
+      "text": " This is my dependent feature."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 795.1,
+      "end": 796.4,
+      "text": " This independent is dependent."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 796.4,
+      "end": 797.9,
+      "text": " So, I will give you an example."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 797.9,
+      "end": 799.1999999999999,
+      "text": " Independent feature."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 800.3,
+      "end": 801.6,
+      "text": " Or this dependent."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 801.9,
+      "end": 803.1999999999999,
+      "text": " Now, in dependent feature,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 803.1999999999999,
+      "end": 806.9,
+      "text": " when we solve the classification problem,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 806.9,
+      "end": 808.6999999999999,
+      "text": " your output"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 808.6999999999999,
+      "end": 810.4,
+      "text": " will be categorical value."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 810.4,
+      "end": 811.4,
+      "text": " Fix number will be there."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 811.4,
+      "end": 813.0,
+      "text": " Like here, there are two outputs."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 813.0,
+      "end": 815.6,
+      "text": " Either pass or fail."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 815.6,
+      "end": 816.1,
+      "text": " Okay?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 816.1,
+      "end": 819.3,
+      "text": " So, we will call this a binary classification problem."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 819.3,
+      "end": 819.8,
+      "text": " Okay?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 819.8,
+      "end": 821.5,
+      "text": " Binary classification problem."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 821.6,
+      "end": 824.0,
+      "text": " If we have multiple options here,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 824.0,
+      "end": 825.7,
+      "text": " but fixed number of options,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 825.7,
+      "end": 828.2,
+      "text": " then we will call it a multi-class classification problem."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 828.2,
+      "end": 830.5,
+      "text": " So, this is an example of regression problem."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 830.5,
+      "end": 832.2,
+      "text": " Sorry, classification problem."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 832.2,
+      "end": 834.5,
+      "text": " Now, let's see the second one."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 834.5,
+      "end": 835.6,
+      "text": " Example,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 835.6,
+      "end": 837.7,
+      "text": " which we will call as regression problem."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 839.7,
+      "end": 840.6,
+      "text": " Regression problem."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 840.6,
+      "end": 841.6,
+      "text": " In regression problem,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 841.6,
+      "end": 843.6,
+      "text": " I take a very simple feature."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 843.6,
+      "end": 846.0,
+      "text": " I have a feature house size."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 848.1,
+      "end": 849.4,
+      "text": " And this house price."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 851.9,
+      "end": 853.6,
+      "text": " And I take another example."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 853.6,
+      "end": 854.9,
+      "text": " Another feature example."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 854.9,
+      "end": 855.7,
+      "text": " Location."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 855.7,
+      "end": 857.5,
+      "text": " So, these two independent features."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 857.5,
+      "end": 859.2,
+      "text": " These are my dependent features."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 859.2,
+      "end": 859.5,
+      "text": " Okay?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 859.5,
+      "end": 861.2,
+      "text": " The output feature."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 861.2,
+      "end": 863.7,
+      "text": " Now, here, my value is increasing"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 863.7,
+      "end": 866.0,
+      "text": " from this point here."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 866.0,
+      "end": 866.6,
+      "text": " Okay?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 866.6,
+      "end": 870.2,
+      "text": " So, here, you see all the values of output."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 870.2,
+      "end": 871.8,
+      "text": " This is a continuous value."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 871.8,
+      "end": 873.3,
+      "text": " Anything can come."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 873.3,
+      "end": 874.0,
+      "text": " Right?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 874.0,
+      "end": 877.4,
+      "text": " Anything comes based on these independent features."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 877.4,
+      "end": 881.4,
+      "text": " So, we will call this a regression problem statement."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 881.5,
+      "end": 883.6999999999999,
+      "text": " Whenever your output value is continuous."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 883.6999999999999,
+      "end": 884.6999999999999,
+      "text": " So, what will happen?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 884.6999999999999,
+      "end": 886.1,
+      "text": " Your graph will be."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 886.1,
+      "end": 886.9,
+      "text": " Okay?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 886.9,
+      "end": 888.6999999999999,
+      "text": " So, this is your data point."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 888.6999999999999,
+      "end": 889.1999999999999,
+      "text": " Okay?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 889.1999999999999,
+      "end": 890.0,
+      "text": " Data points."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 890.0,
+      "end": 891.9,
+      "text": " And this is your size."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 891.9,
+      "end": 892.5,
+      "text": " Price."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 892.5,
+      "end": 894.1,
+      "text": " Suppose, we are taking two features."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 894.1,
+      "end": 895.3,
+      "text": " Example."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 895.3,
+      "end": 896.9,
+      "text": " So, I will make a straight line"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 896.9,
+      "end": 898.8,
+      "text": " and start this regression problem."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 898.8,
+      "end": 900.8,
+      "text": " So, this line is basically"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 900.8,
+      "end": 902.8,
+      "text": " from the regression algorithm."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 902.8,
+      "end": 903.8,
+      "text": " And specifically,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 903.8,
+      "end": 906.3,
+      "text": " we talk about what regression we call it,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 906.3,
+      "end": 907.6,
+      "text": " linear regression."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 907.6,
+      "end": 908.1,
+      "text": " Okay?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 908.1,
+      "end": 910.8,
+      "text": " Non-linear regression is also a different problem statement."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 911.0,
+      "end": 913.5,
+      "text": " But, I am showing you an example"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 913.5,
+      "end": 916.5,
+      "text": " of how to make a regression in a classification and regression."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 916.5,
+      "end": 917.3,
+      "text": " Okay?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 917.3,
+      "end": 919.6999999999999,
+      "text": " And this classification and regression problem"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 919.6999999999999,
+      "end": 921.3,
+      "text": " can be solved by deep learning."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 921.3,
+      "end": 922.5,
+      "text": " So, let us see"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 922.5,
+      "end": 925.9,
+      "text": " what is the machine learning algorithms and deep learning algorithms."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 925.9,
+      "end": 927.9,
+      "text": " So, I am going to write here."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 927.9,
+      "end": 929.4,
+      "text": " MLL."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 930.4,
+      "end": 931.9,
+      "text": " Okay?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 931.9,
+      "end": 933.0999999999999,
+      "text": " And deep learning algorithms."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 933.0999999999999,
+      "end": 933.4,
+      "text": " Okay?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 933.4,
+      "end": 936.0999999999999,
+      "text": " So, MLL, I am in MLL as well."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 936.0999999999999,
+      "end": 938.0999999999999,
+      "text": " Deep learning is a subset of machine learning."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 938.2,
+      "end": 941.5,
+      "text": " So, here, if I am in regression"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 941.5,
+      "end": 943.5,
+      "text": " and the classification,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 943.5,
+      "end": 945.9,
+      "text": " I will divide it."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 945.9,
+      "end": 947.7,
+      "text": " So, which algorithm are you going to use?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 947.7,
+      "end": 948.5,
+      "text": " See."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 948.5,
+      "end": 950.6,
+      "text": " So, here, our first one will be"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 950.6,
+      "end": 955.0,
+      "text": " something called a linear regression."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 955.0,
+      "end": 956.3000000000001,
+      "text": " Second, I will say,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 956.3000000000001,
+      "end": 958.8000000000001,
+      "text": " lasso and ridge."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 958.8000000000001,
+      "end": 960.9,
+      "text": " Lasso and ridge."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 960.9,
+      "end": 961.9,
+      "text": " Third, I will say,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 961.9,
+      "end": 964.7,
+      "text": " decision tree."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 964.7,
+      "end": 966.1,
+      "text": " Lots of algorithms."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 966.1,
+      "end": 968.9,
+      "text": " And I am doing this in playlist."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 968.9,
+      "end": 970.5,
+      "text": " All the algorithms will be uploaded."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 970.5,
+      "end": 972.5,
+      "text": " I will do that in 2 months."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 972.5,
+      "end": 977.3000000000001,
+      "text": " Decision tree regression."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 977.3000000000001,
+      "end": 981.5,
+      "text": " So, now, 4 random forest regression."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 986.7,
+      "end": 988.7,
+      "text": " Your next algorithm"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 988.7,
+      "end": 991.0,
+      "text": " will be your XZ boost."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 991.0,
+      "end": 992.0,
+      "text": " Regression."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 992.0,
+      "end": 992.5,
+      "text": " Okay?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 992.5,
+      "end": 994.0,
+      "text": " So, all the algorithms are like this."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 994.0,
+      "end": 996.1,
+      "text": " If I talk about deep learning,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 996.1,
+      "end": 998.4,
+      "text": " in regression, we use ANN."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 998.4,
+      "end": 1000.6,
+      "text": " In 7th, we use one more."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1000.6,
+      "end": 1001.6,
+      "text": " We call it RNN."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1001.6,
+      "end": 1003.8,
+      "text": " We also ask for regression problems."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1003.8,
+      "end": 1006.2,
+      "text": " Because we will use the performance metrics."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1006.2,
+      "end": 1007.9,
+      "text": " I will understand you."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1007.9,
+      "end": 1009.6,
+      "text": " So, if I talk here,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1009.6,
+      "end": 1010.6,
+      "text": " classification."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1010.6,
+      "end": 1011.4,
+      "text": " In classification,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1011.4,
+      "end": 1012.8,
+      "text": " which algorithm we use?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1012.8,
+      "end": 1014.8,
+      "text": " Logistic."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1014.8,
+      "end": 1015.8,
+      "text": " Okay?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1015.8,
+      "end": 1016.8,
+      "text": " Second one."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1016.8,
+      "end": 1018.0,
+      "text": " The thing is,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1018.0,
+      "end": 1019.7,
+      "text": " the thing that is the algorithm,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1019.7,
+      "end": 1021.5,
+      "text": " we will only write the classification"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1021.6,
+      "end": 1023.8,
+      "text": " in the next classification."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1023.8,
+      "end": 1025.9,
+      "text": " Decision tree classification."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1025.9,
+      "end": 1027.7,
+      "text": " Decision random forest classification,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1027.7,
+      "end": 1028.7,
+      "text": " XZ boost."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1028.7,
+      "end": 1029.2,
+      "text": " And now, boost."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1029.2,
+      "end": 1030.0,
+      "text": " All this."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1030.0,
+      "end": 1033.7,
+      "text": " We also use ANN to solve the classification problem."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1033.7,
+      "end": 1035.1,
+      "text": " We use CNN."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1035.1,
+      "end": 1038.2,
+      "text": " We solve the image classification."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1038.2,
+      "end": 1041.2,
+      "text": " So, this is a little example with respect to MLL."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1041.2,
+      "end": 1043.1,
+      "text": " For instance, DLL algorithms."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1043.1,
+      "end": 1045.7,
+      "text": " Now, let's discuss the unsupervised ML."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1045.7,
+      "end": 1048.3,
+      "text": " Here, we specifically solve the problem."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1048.3,
+      "end": 1050.8,
+      "text": " It is a clustering problem."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1050.8999999999999,
+      "end": 1051.3999999999999,
+      "text": " Clustering."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1051.3999999999999,
+      "end": 1053.5,
+      "text": " Look, what happens in the unsupervised ML?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1053.5,
+      "end": 1055.3999999999999,
+      "text": " There is no output."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1055.3999999999999,
+      "end": 1056.6,
+      "text": " No output."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1056.6,
+      "end": 1057.3999999999999,
+      "text": " Okay?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1057.3999999999999,
+      "end": 1058.3999999999999,
+      "text": " Do you understand?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1058.3999999999999,
+      "end": 1061.3999999999999,
+      "text": " Your salary is your age."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1061.3999999999999,
+      "end": 1061.8999999999999,
+      "text": " Okay?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1061.8999999999999,
+      "end": 1062.8999999999999,
+      "text": " So, these are the two data sets."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1062.8999999999999,
+      "end": 1064.2,
+      "text": " There are some values."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1064.2,
+      "end": 1065.0,
+      "text": " Okay?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1065.0,
+      "end": 1067.0,
+      "text": " You have added many values here."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1067.0,
+      "end": 1068.6,
+      "text": " So, what will you do?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1068.6,
+      "end": 1071.2,
+      "text": " By using unsupervised machine algorithm."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1071.2,
+      "end": 1073.5,
+      "text": " You will become their groups."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1073.5,
+      "end": 1076.1,
+      "text": " So, when you plot it,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1076.1,
+      "end": 1079.0,
+      "text": " using unsupervised machine algorithm."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1079.1,
+      "end": 1081.1,
+      "text": " You will become their groups."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1081.1,
+      "end": 1084.1,
+      "text": " Let's say that this group's salary is the highest."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1084.1,
+      "end": 1086.7,
+      "text": " This group's salary is less."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1086.7,
+      "end": 1089.2,
+      "text": " This group's salary is less."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1089.2,
+      "end": 1090.9,
+      "text": " This is a cluster's salary."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1090.9,
+      "end": 1092.7,
+      "text": " It is a little less."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1092.7,
+      "end": 1095.7,
+      "text": " So, you can make different examples of groups."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1095.7,
+      "end": 1096.9,
+      "text": " Why does this work?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1096.9,
+      "end": 1100.1,
+      "text": " Because this is for our customer segmentation."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1100.1,
+      "end": 1101.5,
+      "text": " Because, according to that group,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1101.5,
+      "end": 1103.9,
+      "text": " we make different models."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1103.9,
+      "end": 1104.8,
+      "text": " Okay?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1104.8,
+      "end": 1106.7,
+      "text": " So, I hope you all got the idea."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1106.8,
+      "end": 1108.3,
+      "text": " In unsupervised machine learning,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1108.3,
+      "end": 1109.7,
+      "text": " we use a lot of algorithms like"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1109.7,
+      "end": 1111.1000000000001,
+      "text": " Hyrule clustering,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1111.1000000000001,
+      "end": 1112.7,
+      "text": " K-Mins clustering,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1112.7,
+      "end": 1114.5,
+      "text": " DB scan clustering."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1114.5,
+      "end": 1116.5,
+      "text": " So, all these clustering are different."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1116.5,
+      "end": 1118.1000000000001,
+      "text": " We use them."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1118.1000000000001,
+      "end": 1119.1000000000001,
+      "text": " Okay?"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1119.1000000000001,
+      "end": 1121.1000000000001,
+      "text": " So, I hope you all got the idea."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1121.1000000000001,
+      "end": 1124.2,
+      "text": " This is the first tutorial introduction to machine learning algorithm."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1124.2,
+      "end": 1127.1000000000001,
+      "text": " Please make sure that you watch the whole video."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1127.1000000000001,
+      "end": 1128.9,
+      "text": " Please revise it."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1128.9,
+      "end": 1132.0,
+      "text": " Because, when I start the first regression algorithm,"
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1132.0,
+      "end": 1133.7,
+      "text": " you will understand the understanding."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1133.7,
+      "end": 1135.5,
+      "text": " Now, you will be very good."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1135.6,
+      "end": 1137.3,
+      "text": " So, yes, I will see you all in the next video."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1137.3,
+      "end": 1137.9,
+      "text": " Have a great day."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1137.9,
+      "end": 1138.3,
+      "text": " Thank you."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1138.3,
+      "end": 1138.8,
+      "text": " And all."
+    },
+    {
+      "title": "Introduction To Machine Learning Algorithms",
+      "start": 1138.8,
+      "end": 1139.3,
+      "text": " Bye-bye."
+    }
+  ],
+  "text": " Hello all my name is Krishna and welcome to my channel. So guys, in today's video we are going to look at the introduction to machine learning algorithms. So now I am going to make a playlist about machine learning algorithms. I will try to explain all the machine learning algorithms very theoretically and practical. I have started the Python playlist around 6 to 7 videos. So you can see that too. And here we start the machine learning algorithms. So today's idea is that we will first understand the first thing. What is the difference between AI versus ML versus DL versus data science? Okay. So these things we will understand after that, we will understand how many types of machine learning algorithms are there. And who are the different types of machine learning algorithms that we need to solve in business use. So let's discuss the first topic. And what is the difference between AI versus ML versus data science? Let's first ask a universe and I want to give this universe in the name of AI. So this universe will be mine. So I want to give the whole of this name of AI. So this is AI. AI, add the end of the day, you learn machine learning, you learn deep learning, you learn data science, add the end of the day, you are making an AI application. Okay, an artificial intelligence application is making. Always remember, the end goal of the guys will always be the AI application. Okay, if I talk about what is an AI application, I can say it's very simple. In the language, that AI application is an application which can do its task without any human intervention. So I will write here. It can do its task without any human intervention. Okay, here no human intervention should be done here. And this is your smartly, smart way to use data. You can take decision by using smartly. Let me show you some examples. First example is Netflix. I hope you all have Netflix. So you watch all the movies. Netflix has a feature. Whenever you watch an action movie, okay. So if you watch the action movie, then continuously watch the action movie. At some point, the action movie also gives you the action movie recommendation. Okay, then you change your taste and you watch comedy movies. So after a while, what will happen? Start this type of comedy movies. Right. So here, how a task, AI application will be a small module in Netflix, which specifically does this task, that is recommendation. And this is without any human intervention. Human is doing his app, you are using it, you are watching movies, you are doing everything. But this added additional functionality, which is an AI functionality, which is recommended in front of all the movies. Okay. So this is a very important point. Let's take a second example. We can write self-driving cars. What is self driving cars? There, the passenger is sitting there. So what does your car do? Self, their task is self-driving. So this application basically, in these cars, if it is like this, the road that detects objects, and you will move the car. And in such a way, that is not possible. Okay. So this one is also an AI application. And if we take a third example, we will take Amazon.in website. If you see in Amazon.in, if you are supposed to take an iPhone, then you will recommend your headphones with your iPhone. Right? Headphones recommend. So this type of recommendation is also an AI application. Okay. Now we need a lot of things to implement it. For that, we need data, for that, you applied the machine learning algorithm. This is the system of the recommendation system. You applied the algorithm. This is a deep learning technique. Anything can happen. Now in the next one, we are going to, we have discussed this. What is AI? Now let's go to the machine learning. So where does the machine learning come from? So we will talk about the machine learning. It is a subset of AI. It is a subset of AI. And what you provide is that you provide that. Start tools. Startstools. To analyze data. Visualize data. And further, you use this start tool. You will be able to focus it. You will help in focusing. You will help for predictions. Okay. So here you will have machine learning. If I talk about machine learning, This is specifically machine learning. I will write here. This is ML. And machine learning provides you. Startstools through analyze the data. Visualize the data to focus the data. To do some prediction of the new data. Okay. So this is all a task. This actually provides from this machine learning. It is a subset of AI. We call it a subset of AI. Okay. So this is the definition. Very simple. Now next term we will talk about. Deep learning. Deep learning is a subset of machine learning. Now I will tell you why deep learning came. Okay. So this is in 1950s. In 1960s, I have researched a lot. And the researchers have tried. What do we learn? We learn about the outside experience. We are learning about the learning process. How can we teach machine learning? So here main aim was to mimic. To mimic human brain. This is the most important point. So to mimic this. To mimic this. We basically do this. We do this for deep learning. Here we use specifically neural networks. And here we will talk about multi-layered neural networks. Multi-layered neural networks. What is this multi-layered neural network? We train our human brain. We train all the machines and applications. So this main is deep learning. So this part I am talking about is deep learning. Where we use specifically DL. Now see, there are many tools. In maths, there are many tools. There are many tools. There are many tools. There are many tools. Differentiation and integration tools. Where we need to implement the tools. That will definitely be used. So where will we find the next point? Because you have seen many tools. Machine learning engineers, deep learning engineers. AI engineers. I have seen all these. But data scientists are also very amazing job profiles. Why do I say? Where will data scientists come? So if I want to include data scientists. Data scientists can be part of anything. Okay? I will write here. Green color, sub-color. I will write in blue. So I am talking about data scientists. It is a part of everything. Why am I saying this? Now I will explain. This is my data scientist. Data science. And it can be the part of anything. As a data scientist, I will always remember. You will have to make a machine learning application tomorrow. So when you will be a data scientist, I will make it. Okay? You do not have any option. Because a data scientist specifically focuses on domain. And it focuses on the domain business use. For that, if you use machine learning, then you will use machine learning. If you use deep learning, then you will use deep learning. Starts to use it. When you use linear, you will not be able to use it. So, all the things you need to use, some parts you need to use, but their end goal finally, AI application is to be made. Okay? So this is a data scientist. I have a full experience in the data science industry. Around 7 years. Okay? And I have seen that I have worked in many different domains. Okay? Different data sets have been seen. Life data set has been seen. IOT type data sets have been seen. And I have, as a data scientist, there is no option. You will say, we will work in the machine learning algorithm. If you call your data scientist, that basically means you have no task. You have to include it. And at the end of the day, you have to create an AI application. Okay? So this is a very important thing. Okay? This is very important. So, if you become a data scientist, in the industry, you will not have any option to work in a vision project. You have to work in deep learning, in the machine learning, you have to work in the machine learning. That is the true role of a data scientist. Okay? I have seen many people, I have seen my juniors. When I come to Panasonic, people say, I am good at machine learning. But I want to call myself as a data scientist. So, I said, you are not a data scientist. You have to play a role specifically. Okay? So, this was a very good, I have explained to you in the last few years, what is the difference between AI versus machine learning versus deep learning. Now, let's take the next topic. Machine learning and deep learning. Okay? So, machine learning and deep learning about it. Okay? Okay. When I talk about machine learning and deep learning, now you will know that there are so many different types of algorithms. Whenever we solve any problems, usually, here, there are two types of problems. That is, supervised machine learning, supervised machine learning, unsupervised machine learning. So, let's discuss what is the difference between supervised machine learning and algorithms. Okay, guys. Whenever we talk about this supervised machine learning algorithm, we always take examples of data set. In data set, there are two important things. One is independent features. One is dependent features. Okay? Now, let's take an example of independent or dependent features. Let's take two simple features. One is age. One is weight. Now, I will say this. Independent feature is my age. Independent feature is my weight. That basically means what we are trying to do here based on this age values. I want to predict. I want to predict what is the weight. Okay? So, in this case, I am talking about this independently. Because when this value changes, then the value of weight will also change. Okay? So, here, you know that I know my output feature. Okay? I know my output feature. Okay? I know my output feature. So, what I will do with this is I will train an algorithm of machine learning. Joe Joe in the future New age value my weight or or any other weight predicts. So, this is our prediction. And we will talk about hypothesis. Hypothesis is also a hypothesis. Okay? So, basically, what happens? I will train this whole data set. And after that, if I give new age, then I should do my prediction. So, in Superwise, you always remember your output feature. Okay? You specifically said that this is the dependent feature and you basically want to compute all these things. Okay? So, I hope you all understand. Now, let's solve two types of problems in Superwise machine learning. So, I will give you a look here. Superwise in machine learning algorithms, we solve two types of problems. And this deep learning also applies. Okay? One is your classification problem. What is the classification problem? And regression problem. Okay? I will give you an example of the examples of these two. So, this is the first thing. Now, I have written here, classification. Okay? Classification is a data set. Now, I have three features. Number of Study hours. Number of Play hours. Number of Sleep hours. Okay? Now, you have three features. And I have given an output. Whether the person is passing or failing. Okay? Person passed or failed? So, if I see this, this This is the three features. This is my independent feature. This is my dependent feature. This independent is dependent. So, I will give you an example. Independent feature. Or this dependent. Now, in dependent feature, when we solve the classification problem, your output will be categorical value. Fix number will be there. Like here, there are two outputs. Either pass or fail. Okay? So, we will call this a binary classification problem. Okay? Binary classification problem. If we have multiple options here, but fixed number of options, then we will call it a multi-class classification problem. So, this is an example of regression problem. Sorry, classification problem. Now, let's see the second one. Example, which we will call as regression problem. Regression problem. In regression problem, I take a very simple feature. I have a feature house size. And this house price. And I take another example. Another feature example. Location. So, these two independent features. These are my dependent features. Okay? The output feature. Now, here, my value is increasing from this point here. Okay? So, here, you see all the values of output. This is a continuous value. Anything can come. Right? Anything comes based on these independent features. So, we will call this a regression problem statement. Whenever your output value is continuous. So, what will happen? Your graph will be. Okay? So, this is your data point. Okay? Data points. And this is your size. Price. Suppose, we are taking two features. Example. So, I will make a straight line and start this regression problem. So, this line is basically from the regression algorithm. And specifically, we talk about what regression we call it, linear regression. Okay? Non-linear regression is also a different problem statement. But, I am showing you an example of how to make a regression in a classification and regression. Okay? And this classification and regression problem can be solved by deep learning. So, let us see what is the machine learning algorithms and deep learning algorithms. So, I am going to write here. MLL. Okay? And deep learning algorithms. Okay? So, MLL, I am in MLL as well. Deep learning is a subset of machine learning. So, here, if I am in regression and the classification, I will divide it. So, which algorithm are you going to use? See. So, here, our first one will be something called a linear regression. Second, I will say, lasso and ridge. Lasso and ridge. Third, I will say, decision tree. Lots of algorithms. And I am doing this in playlist. All the algorithms will be uploaded. I will do that in 2 months. Decision tree regression. So, now, 4 random forest regression. Your next algorithm will be your XZ boost. Regression. Okay? So, all the algorithms are like this. If I talk about deep learning, in regression, we use ANN. In 7th, we use one more. We call it RNN. We also ask for regression problems. Because we will use the performance metrics. I will understand you. So, if I talk here, classification. In classification, which algorithm we use? Logistic. Okay? Second one. The thing is, the thing that is the algorithm, we will only write the classification in the next classification. Decision tree classification. Decision random forest classification, XZ boost. And now, boost. All this. We also use ANN to solve the classification problem. We use CNN. We solve the image classification. So, this is a little example with respect to MLL. For instance, DLL algorithms. Now, let's discuss the unsupervised ML. Here, we specifically solve the problem. It is a clustering problem. Clustering. Look, what happens in the unsupervised ML? There is no output. No output. Okay? Do you understand? Your salary is your age. Okay? So, these are the two data sets. There are some values. Okay? You have added many values here. So, what will you do? By using unsupervised machine algorithm. You will become their groups. So, when you plot it, using unsupervised machine algorithm. You will become their groups. Let's say that this group's salary is the highest. This group's salary is less. This group's salary is less. This is a cluster's salary. It is a little less. So, you can make different examples of groups. Why does this work? Because this is for our customer segmentation. Because, according to that group, we make different models. Okay? So, I hope you all got the idea. In unsupervised machine learning, we use a lot of algorithms like Hyrule clustering, K-Mins clustering, DB scan clustering. So, all these clustering are different. We use them. Okay? So, I hope you all got the idea. This is the first tutorial introduction to machine learning algorithm. Please make sure that you watch the whole video. Please revise it. Because, when I start the first regression algorithm, you will understand the understanding. Now, you will be very good. So, yes, I will see you all in the next video. Have a great day. Thank you. And all. Bye-bye."
+}

@@ -1,0 +1,641 @@
+{
+    "chunks": [
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 0.0,
+            "end": 17.8,
+            "text": " Hello all my name is Krishna and welcome to my channel.  So guys, in today's video we are going to look at the introduction to machine learning algorithms.  So now I am going to make a playlist about machine learning algorithms.  I will try to explain all the machine learning algorithms  very theoretically and practical."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 17.8,
+            "end": 37.2,
+            "text": " I have started the Python playlist around 6 to 7 videos.  So you can see that too.  And here we start the machine learning algorithms.  So today's idea is that we will first understand the first thing.  What is the difference between AI versus ML versus DL versus data science?"
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 37.2,
+            "end": 54.400000000000006,
+            "text": " Okay.  So these things we will understand after that, we will understand how many types of machine learning algorithms are there.  And who are the different types of machine learning algorithms that we need to solve in business use.  So let's discuss the first topic.  And what is the difference between AI versus ML versus data science?"
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 54.4,
+            "end": 73.2,
+            "text": " Let's first ask a universe and I want to give this universe in the name of AI.  So this universe will be mine.  So I want to give the whole of this name of AI.  So this is AI.  AI, add the end of the day, you learn machine learning, you learn deep learning, you learn data science,"
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 73.2,
+            "end": 95.39999999999999,
+            "text": " add the end of the day, you are making an AI application.  Okay, an artificial intelligence application is making.  Always remember, the end goal of the guys will always be the AI application.  Okay, if I talk about what is an AI application, I can say it's very simple.  In the language, that AI application is an application which can do its task without any human intervention."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 95.39999999999999,
+            "end": 120.4,
+            "text": " So I will write here.  It can do its task without any human intervention.  Okay, here no human intervention should be done here.  And this is your smartly, smart way to use data.  You can take decision by using smartly."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 120.4,
+            "end": 130.0,
+            "text": " Let me show you some examples.  First example is Netflix.  I hope you all have Netflix.  So you watch all the movies.  Netflix has a feature."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 130.0,
+            "end": 150.2,
+            "text": " Whenever you watch an action movie, okay.  So if you watch the action movie, then continuously watch the action movie.  At some point, the action movie also gives you the action movie recommendation.  Okay, then you change your taste and you watch comedy movies.  So after a while, what will happen?"
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 150.2,
+            "end": 166.2,
+            "text": " Start this type of comedy movies.  Right.  So here, how a task, AI application will be a small module in Netflix,  which specifically does this task, that is recommendation.  And this is without any human intervention."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 166.2,
+            "end": 178.6,
+            "text": " Human is doing his app, you are using it, you are watching movies, you are doing everything.  But this added additional functionality, which is an AI functionality,  which is recommended in front of all the movies.  Okay.  So this is a very important point."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 178.6,
+            "end": 189.0,
+            "text": " Let's take a second example.  We can write self-driving cars.  What is self driving cars?  There, the passenger is sitting there.  So what does your car do?"
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 189.0,
+            "end": 204.6,
+            "text": " Self, their task is self-driving.  So this application basically, in these cars,  if it is like this, the road that detects objects,  and you will move the car.  And in such a way, that is not possible."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 204.6,
+            "end": 215.6,
+            "text": " Okay.  So this one is also an AI application.  And if we take a third example,  we will take Amazon.in website.  If you see in Amazon.in,"
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 215.6,
+            "end": 229.29999999999998,
+            "text": " if you are supposed to take an iPhone,  then you will recommend your headphones with your iPhone.  Right?  Headphones recommend.  So this type of recommendation is also an AI application."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 229.29999999999998,
+            "end": 238.29999999999998,
+            "text": " Okay.  Now we need a lot of things to implement it.  For that, we need data, for that,  you applied the machine learning algorithm.  This is the system of the recommendation system."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 238.29999999999998,
+            "end": 246.2,
+            "text": " You applied the algorithm.  This is a deep learning technique.  Anything can happen.  Now in the next one, we are going to,  we have discussed this."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 246.2,
+            "end": 256.4,
+            "text": " What is AI?  Now let's go to the machine learning.  So where does the machine learning come from?  So we will talk about the machine learning.  It is a subset of AI."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 256.4,
+            "end": 268.0,
+            "text": " It is a subset of AI.  And what you provide is that you provide that.  Start tools.  Startstools.  To analyze data."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 268.0,
+            "end": 282.59999999999997,
+            "text": " Visualize data.  And further, you use this start tool.  You will be able to focus it.  You will help in focusing.  You will help for predictions."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 282.59999999999997,
+            "end": 291.0,
+            "text": " Okay.  So here you will have machine learning.  If I talk about machine learning,  This is specifically machine learning.  I will write here."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 291.0,
+            "end": 299.9,
+            "text": " This is ML.  And machine learning provides you.  Startstools through analyze the data.  Visualize the data to focus the data.  To do some prediction of the new data."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 299.9,
+            "end": 308.79999999999995,
+            "text": " Okay.  So this is all a task.  This actually provides from this machine learning.  It is a subset of AI.  We call it a subset of AI."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 308.79999999999995,
+            "end": 316.4,
+            "text": " Okay.  So this is the definition.  Very simple.  Now next term we will talk about.  Deep learning."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 316.4,
+            "end": 327.09999999999997,
+            "text": " Deep learning is a subset of machine learning.  Now I will tell you why deep learning came.  Okay.  So this is in 1950s.  In 1960s, I have researched a lot."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 327.09999999999997,
+            "end": 342.1,
+            "text": " And the researchers have tried.  What do we learn?  We learn about the outside experience.  We are learning about the learning process.  How can we teach machine learning?"
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 342.1,
+            "end": 353.8,
+            "text": " So here main aim was to mimic.  To mimic human brain.  This is the most important point.  So to mimic this.  To mimic this."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 353.8,
+            "end": 368.9,
+            "text": " We basically do this.  We do this for deep learning.  Here we use specifically neural networks.  And here we will talk about multi-layered neural networks.  Multi-layered neural networks."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 368.9,
+            "end": 383.9,
+            "text": " What is this multi-layered neural network?  We train our human brain.  We train all the machines and applications.  So this main is deep learning.  So this part I am talking about is deep learning."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 383.9,
+            "end": 398.79999999999995,
+            "text": " Where we use specifically DL.  Now see, there are many tools.  In maths, there are many tools.  There are many tools.  There are many tools."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 398.79999999999995,
+            "end": 412.29999999999995,
+            "text": " There are many tools.  Differentiation and integration tools.  Where we need to implement the tools.  That will definitely be used.  So where will we find the next point?"
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 412.29999999999995,
+            "end": 425.0,
+            "text": " Because you have seen many tools.  Machine learning engineers, deep learning engineers.  AI engineers.  I have seen all these.  But data scientists are also very amazing job profiles."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 425.0,
+            "end": 435.5,
+            "text": " Why do I say?  Where will data scientists come?  So if I want to include data scientists.  Data scientists can be part of anything.  Okay?"
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 435.5,
+            "end": 447.5,
+            "text": " I will write here.  Green color, sub-color.  I will write in blue.  So I am talking about data scientists.  It is a part of everything."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 448.4,
+            "end": 458.4,
+            "text": " Why am I saying this?  Now I will explain.  This is my data scientist.  Data science.  And it can be the part of anything."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 458.4,
+            "end": 470.9,
+            "text": " As a data scientist,  I will always remember.  You will have to make a machine learning application tomorrow.  So when you will be a data scientist,  I will make it."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 470.9,
+            "end": 483.79999999999995,
+            "text": " Okay?  You do not have any option.  Because a data scientist specifically focuses on domain.  And it focuses on the domain business use.  For that, if you use machine learning,"
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 483.79999999999995,
+            "end": 492.79999999999995,
+            "text": " then you will use machine learning.  If you use deep learning, then you will use deep learning.  Starts to use it.  When you use linear, you will not be able to use it.  So, all the things you need to use,"
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 492.79999999999995,
+            "end": 503.79999999999995,
+            "text": " some parts you need to use,  but their end goal finally,  AI application is to be made.  Okay?  So this is a data scientist."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 504.2,
+            "end": 515.0,
+            "text": " I have a full experience in the data science industry.  Around 7 years.  Okay?  And I have seen that I have worked in many different domains.  Okay?"
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 515.0,
+            "end": 523.5,
+            "text": " Different data sets have been seen.  Life data set has been seen.  IOT type data sets have been seen.  And I have, as a data scientist,  there is no option."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 523.5,
+            "end": 533.5,
+            "text": " You will say,  we will work in the machine learning algorithm.  If you call your data scientist,  that basically means you have no task.  You have to include it."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 533.5,
+            "end": 540.9,
+            "text": " And at the end of the day,  you have to create an AI application.  Okay?  So this is a very important thing.  Okay?"
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 540.9,
+            "end": 551.7,
+            "text": " This is very important.  So, if you become a data scientist,  in the industry,  you will not have any option  to work in a vision project."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 551.7,
+            "end": 559.9,
+            "text": " You have to work in deep learning,  in the machine learning,  you have to work in the machine learning.  That is the true role of a data scientist.  Okay?"
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 559.9,
+            "end": 568.2,
+            "text": " I have seen many people,  I have seen my juniors.  When I come to Panasonic,  people say,  I am good at machine learning."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 568.2,
+            "end": 575.5,
+            "text": " But I want to call myself as a data scientist.  So, I said,  you are not a data scientist.  You have to play a role specifically.  Okay?"
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 575.5,
+            "end": 584.9000000000001,
+            "text": " So, this was a very good,  I have explained to you in the last few years,  what is the difference between  AI versus machine learning versus deep learning.  Now, let's take the next topic."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 584.9000000000001,
+            "end": 594.1,
+            "text": " Machine learning and deep learning.  Okay?  So, machine learning  and deep learning about it.  Okay?"
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 594.1,
+            "end": 602.3000000000001,
+            "text": " Okay.  When I talk about machine learning and deep learning,  now you will know that  there are so many different types of algorithms.  Whenever we solve any problems,"
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 602.3000000000001,
+            "end": 608.0,
+            "text": " usually, here,  there are two types of problems.  That is,  supervised machine learning,  supervised machine learning,"
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 608.0,
+            "end": 621.9,
+            "text": " unsupervised machine learning.  So, let's discuss  what is the difference between supervised machine learning and algorithms.  Okay, guys.  Whenever we talk about this supervised machine learning algorithm,"
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 622.0,
+            "end": 632.8,
+            "text": " we always take examples of data set.  In data set,  there are two important things.  One is independent features.  One is dependent features."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 632.8,
+            "end": 644.8,
+            "text": " Okay?  Now, let's take an example of independent or dependent features.  Let's take two simple features.  One is age.  One is weight."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 646.1999999999999,
+            "end": 653.6999999999999,
+            "text": " Now, I will say this.  Independent feature is my age.  Independent feature is my weight.  That basically means  what we are trying to do here"
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 653.6999999999999,
+            "end": 663.0,
+            "text": " based on this age values.  I want to predict.  I want to predict what is the weight.  Okay?  So, in this case, I am talking about this independently."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 663.0,
+            "end": 671.8,
+            "text": " Because when this value changes,  then the value of weight will also change.  Okay?  So, here,  you know that I know my output feature."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 673.3,
+            "end": 680.1999999999999,
+            "text": " Okay?  I know my output feature.  Okay?  I know my output feature.  So, what I will do with this"
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 680.3000000000001,
+            "end": 690.8000000000001,
+            "text": " is I will train an algorithm of machine learning.  Joe  Joe in the future  New age value  my weight or"
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 690.8000000000001,
+            "end": 699.1,
+            "text": " or any other weight predicts.  So, this is our prediction.  And we will talk about hypothesis.  Hypothesis is also a hypothesis.  Okay?"
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 699.1,
+            "end": 706.4000000000001,
+            "text": " So, basically, what happens?  I will train this whole data set.  And after that,  if I give new age,  then I should do my prediction."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 706.4000000000001,
+            "end": 713.4,
+            "text": " So, in Superwise,  you always remember  your output feature.  Okay?  You specifically said that"
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 713.4,
+            "end": 721.3000000000001,
+            "text": " this is the dependent feature  and you basically want to compute all these things.  Okay?  So, I hope you all understand.  Now,"
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 721.3000000000001,
+            "end": 732.8000000000001,
+            "text": " let's solve two types of problems in Superwise machine learning.  So, I will give you a look here.  Superwise  in machine learning algorithms,  we solve two types of problems."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 732.8000000000001,
+            "end": 743.6,
+            "text": " And this deep learning also applies.  Okay?  One is your classification problem.  What is the classification problem?  And regression problem."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 744.6,
+            "end": 753.1,
+            "text": " Okay?  I will give you an example of the examples of these two.  So, this is the first thing.  Now, I have written here,  classification."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 754.4000000000001,
+            "end": 762.8000000000001,
+            "text": " Okay?  Classification is a data set.  Now, I have three features.  Number of  Study hours."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 762.9,
+            "end": 774.9,
+            "text": " Number of  Play hours.  Number of  Sleep hours.  Okay?"
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 775.4,
+            "end": 784.5,
+            "text": " Now, you have three features.  And I have given an output.  Whether the person is passing or failing.  Okay?  Person passed or failed?"
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 784.5,
+            "end": 795.1,
+            "text": " So, if I see this,  this  This is the three features.  This is my independent feature.  This is my dependent feature."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 795.1,
+            "end": 803.1999999999999,
+            "text": " This independent is dependent.  So, I will give you an example.  Independent feature.  Or this dependent.  Now, in dependent feature,"
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 803.1999999999999,
+            "end": 813.0,
+            "text": " when we solve the classification problem,  your output  will be categorical value.  Fix number will be there.  Like here, there are two outputs."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 813.0,
+            "end": 821.5,
+            "text": " Either pass or fail.  Okay?  So, we will call this a binary classification problem.  Okay?  Binary classification problem."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 821.6,
+            "end": 832.2,
+            "text": " If we have multiple options here,  but fixed number of options,  then we will call it a multi-class classification problem.  So, this is an example of regression problem.  Sorry, classification problem."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 832.2,
+            "end": 841.6,
+            "text": " Now, let's see the second one.  Example,  which we will call as regression problem.  Regression problem.  In regression problem,"
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 841.6,
+            "end": 854.9,
+            "text": " I take a very simple feature.  I have a feature house size.  And this house price.  And I take another example.  Another feature example."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 854.9,
+            "end": 861.2,
+            "text": " Location.  So, these two independent features.  These are my dependent features.  Okay?  The output feature."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 861.2,
+            "end": 871.8,
+            "text": " Now, here, my value is increasing  from this point here.  Okay?  So, here, you see all the values of output.  This is a continuous value."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 871.8,
+            "end": 883.6999999999999,
+            "text": " Anything can come.  Right?  Anything comes based on these independent features.  So, we will call this a regression problem statement.  Whenever your output value is continuous."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 883.6999999999999,
+            "end": 889.1999999999999,
+            "text": " So, what will happen?  Your graph will be.  Okay?  So, this is your data point.  Okay?"
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 889.1999999999999,
+            "end": 895.3,
+            "text": " Data points.  And this is your size.  Price.  Suppose, we are taking two features.  Example."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 895.3,
+            "end": 903.8,
+            "text": " So, I will make a straight line  and start this regression problem.  So, this line is basically  from the regression algorithm.  And specifically,"
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 903.8,
+            "end": 913.5,
+            "text": " we talk about what regression we call it,  linear regression.  Okay?  Non-linear regression is also a different problem statement.  But, I am showing you an example"
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 913.5,
+            "end": 922.5,
+            "text": " of how to make a regression in a classification and regression.  Okay?  And this classification and regression problem  can be solved by deep learning.  So, let us see"
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 922.5,
+            "end": 933.0999999999999,
+            "text": " what is the machine learning algorithms and deep learning algorithms.  So, I am going to write here.  MLL.  Okay?  And deep learning algorithms."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 933.0999999999999,
+            "end": 943.5,
+            "text": " Okay?  So, MLL, I am in MLL as well.  Deep learning is a subset of machine learning.  So, here, if I am in regression  and the classification,"
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 943.5,
+            "end": 955.0,
+            "text": " I will divide it.  So, which algorithm are you going to use?  See.  So, here, our first one will be  something called a linear regression."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 955.0,
+            "end": 964.7,
+            "text": " Second, I will say,  lasso and ridge.  Lasso and ridge.  Third, I will say,  decision tree."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 964.7,
+            "end": 977.3000000000001,
+            "text": " Lots of algorithms.  And I am doing this in playlist.  All the algorithms will be uploaded.  I will do that in 2 months.  Decision tree regression."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 977.3000000000001,
+            "end": 992.5,
+            "text": " So, now, 4 random forest regression.  Your next algorithm  will be your XZ boost.  Regression.  Okay?"
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 992.5,
+            "end": 1001.6,
+            "text": " So, all the algorithms are like this.  If I talk about deep learning,  in regression, we use ANN.  In 7th, we use one more.  We call it RNN."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 1001.6,
+            "end": 1010.6,
+            "text": " We also ask for regression problems.  Because we will use the performance metrics.  I will understand you.  So, if I talk here,  classification."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 1010.6,
+            "end": 1016.8,
+            "text": " In classification,  which algorithm we use?  Logistic.  Okay?  Second one."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 1016.8,
+            "end": 1025.9,
+            "text": " The thing is,  the thing that is the algorithm,  we will only write the classification  in the next classification.  Decision tree classification."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 1025.9,
+            "end": 1033.7,
+            "text": " Decision random forest classification,  XZ boost.  And now, boost.  All this.  We also use ANN to solve the classification problem."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 1033.7,
+            "end": 1045.7,
+            "text": " We use CNN.  We solve the image classification.  So, this is a little example with respect to MLL.  For instance, DLL algorithms.  Now, let's discuss the unsupervised ML."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 1045.7,
+            "end": 1055.3999999999999,
+            "text": " Here, we specifically solve the problem.  It is a clustering problem.  Clustering.  Look, what happens in the unsupervised ML?  There is no output."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 1055.3999999999999,
+            "end": 1061.8999999999999,
+            "text": " No output.  Okay?  Do you understand?  Your salary is your age.  Okay?"
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 1061.8999999999999,
+            "end": 1068.6,
+            "text": " So, these are the two data sets.  There are some values.  Okay?  You have added many values here.  So, what will you do?"
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 1068.6,
+            "end": 1081.1,
+            "text": " By using unsupervised machine algorithm.  You will become their groups.  So, when you plot it,  using unsupervised machine algorithm.  You will become their groups."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 1081.1,
+            "end": 1092.7,
+            "text": " Let's say that this group's salary is the highest.  This group's salary is less.  This group's salary is less.  This is a cluster's salary.  It is a little less."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 1092.7,
+            "end": 1103.9,
+            "text": " So, you can make different examples of groups.  Why does this work?  Because this is for our customer segmentation.  Because, according to that group,  we make different models."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 1103.9,
+            "end": 1111.1000000000001,
+            "text": " Okay?  So, I hope you all got the idea.  In unsupervised machine learning,  we use a lot of algorithms like  Hyrule clustering,"
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 1111.1000000000001,
+            "end": 1119.1000000000001,
+            "text": " K-Mins clustering,  DB scan clustering.  So, all these clustering are different.  We use them.  Okay?"
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 1119.1000000000001,
+            "end": 1132.0,
+            "text": " So, I hope you all got the idea.  This is the first tutorial introduction to machine learning algorithm.  Please make sure that you watch the whole video.  Please revise it.  Because, when I start the first regression algorithm,"
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 1132.0,
+            "end": 1138.3,
+            "text": " you will understand the understanding.  Now, you will be very good.  So, yes, I will see you all in the next video.  Have a great day.  Thank you."
+        },
+        {
+            "title": "Introduction To Machine Learning Algorithms",
+            "start": 1138.3,
+            "end": 1139.3,
+            "text": " And all.  Bye-bye."
+        }
+    ],
+    "text": " Hello all my name is Krishna and welcome to my channel. So guys, in today's video we are going to look at the introduction to machine learning algorithms. So now I am going to make a playlist about machine learning algorithms. I will try to explain all the machine learning algorithms very theoretically and practical. I have started the Python playlist around 6 to 7 videos. So you can see that too. And here we start the machine learning algorithms. So today's idea is that we will first understand the first thing. What is the difference between AI versus ML versus DL versus data science? Okay. So these things we will understand after that, we will understand how many types of machine learning algorithms are there. And who are the different types of machine learning algorithms that we need to solve in business use. So let's discuss the first topic. And what is the difference between AI versus ML versus data science? Let's first ask a universe and I want to give this universe in the name of AI. So this universe will be mine. So I want to give the whole of this name of AI. So this is AI. AI, add the end of the day, you learn machine learning, you learn deep learning, you learn data science, add the end of the day, you are making an AI application. Okay, an artificial intelligence application is making. Always remember, the end goal of the guys will always be the AI application. Okay, if I talk about what is an AI application, I can say it's very simple. In the language, that AI application is an application which can do its task without any human intervention. So I will write here. It can do its task without any human intervention. Okay, here no human intervention should be done here. And this is your smartly, smart way to use data. You can take decision by using smartly. Let me show you some examples. First example is Netflix. I hope you all have Netflix. So you watch all the movies. Netflix has a feature. Whenever you watch an action movie, okay. So if you watch the action movie, then continuously watch the action movie. At some point, the action movie also gives you the action movie recommendation. Okay, then you change your taste and you watch comedy movies. So after a while, what will happen? Start this type of comedy movies. Right. So here, how a task, AI application will be a small module in Netflix, which specifically does this task, that is recommendation. And this is without any human intervention. Human is doing his app, you are using it, you are watching movies, you are doing everything. But this added additional functionality, which is an AI functionality, which is recommended in front of all the movies. Okay. So this is a very important point. Let's take a second example. We can write self-driving cars. What is self driving cars? There, the passenger is sitting there. So what does your car do? Self, their task is self-driving. So this application basically, in these cars, if it is like this, the road that detects objects, and you will move the car. And in such a way, that is not possible. Okay. So this one is also an AI application. And if we take a third example, we will take Amazon.in website. If you see in Amazon.in, if you are supposed to take an iPhone, then you will recommend your headphones with your iPhone. Right? Headphones recommend. So this type of recommendation is also an AI application. Okay. Now we need a lot of things to implement it. For that, we need data, for that, you applied the machine learning algorithm. This is the system of the recommendation system. You applied the algorithm. This is a deep learning technique. Anything can happen. Now in the next one, we are going to, we have discussed this. What is AI? Now let's go to the machine learning. So where does the machine learning come from? So we will talk about the machine learning. It is a subset of AI. It is a subset of AI. And what you provide is that you provide that. Start tools. Startstools. To analyze data. Visualize data. And further, you use this start tool. You will be able to focus it. You will help in focusing. You will help for predictions. Okay. So here you will have machine learning. If I talk about machine learning, This is specifically machine learning. I will write here. This is ML. And machine learning provides you. Startstools through analyze the data. Visualize the data to focus the data. To do some prediction of the new data. Okay. So this is all a task. This actually provides from this machine learning. It is a subset of AI. We call it a subset of AI. Okay. So this is the definition. Very simple. Now next term we will talk about. Deep learning. Deep learning is a subset of machine learning. Now I will tell you why deep learning came. Okay. So this is in 1950s. In 1960s, I have researched a lot. And the researchers have tried. What do we learn? We learn about the outside experience. We are learning about the learning process. How can we teach machine learning? So here main aim was to mimic. To mimic human brain. This is the most important point. So to mimic this. To mimic this. We basically do this. We do this for deep learning. Here we use specifically neural networks. And here we will talk about multi-layered neural networks. Multi-layered neural networks. What is this multi-layered neural network? We train our human brain. We train all the machines and applications. So this main is deep learning. So this part I am talking about is deep learning. Where we use specifically DL. Now see, there are many tools. In maths, there are many tools. There are many tools. There are many tools. There are many tools. Differentiation and integration tools. Where we need to implement the tools. That will definitely be used. So where will we find the next point? Because you have seen many tools. Machine learning engineers, deep learning engineers. AI engineers. I have seen all these. But data scientists are also very amazing job profiles. Why do I say? Where will data scientists come? So if I want to include data scientists. Data scientists can be part of anything. Okay? I will write here. Green color, sub-color. I will write in blue. So I am talking about data scientists. It is a part of everything. Why am I saying this? Now I will explain. This is my data scientist. Data science. And it can be the part of anything. As a data scientist, I will always remember. You will have to make a machine learning application tomorrow. So when you will be a data scientist, I will make it. Okay? You do not have any option. Because a data scientist specifically focuses on domain. And it focuses on the domain business use. For that, if you use machine learning, then you will use machine learning. If you use deep learning, then you will use deep learning. Starts to use it. When you use linear, you will not be able to use it. So, all the things you need to use, some parts you need to use, but their end goal finally, AI application is to be made. Okay? So this is a data scientist. I have a full experience in the data science industry. Around 7 years. Okay? And I have seen that I have worked in many different domains. Okay? Different data sets have been seen. Life data set has been seen. IOT type data sets have been seen. And I have, as a data scientist, there is no option. You will say, we will work in the machine learning algorithm. If you call your data scientist, that basically means you have no task. You have to include it. And at the end of the day, you have to create an AI application. Okay? So this is a very important thing. Okay? This is very important. So, if you become a data scientist, in the industry, you will not have any option to work in a vision project. You have to work in deep learning, in the machine learning, you have to work in the machine learning. That is the true role of a data scientist. Okay? I have seen many people, I have seen my juniors. When I come to Panasonic, people say, I am good at machine learning. But I want to call myself as a data scientist. So, I said, you are not a data scientist. You have to play a role specifically. Okay? So, this was a very good, I have explained to you in the last few years, what is the difference between AI versus machine learning versus deep learning. Now, let's take the next topic. Machine learning and deep learning. Okay? So, machine learning and deep learning about it. Okay? Okay. When I talk about machine learning and deep learning, now you will know that there are so many different types of algorithms. Whenever we solve any problems, usually, here, there are two types of problems. That is, supervised machine learning, supervised machine learning, unsupervised machine learning. So, let's discuss what is the difference between supervised machine learning and algorithms. Okay, guys. Whenever we talk about this supervised machine learning algorithm, we always take examples of data set. In data set, there are two important things. One is independent features. One is dependent features. Okay? Now, let's take an example of independent or dependent features. Let's take two simple features. One is age. One is weight. Now, I will say this. Independent feature is my age. Independent feature is my weight. That basically means what we are trying to do here based on this age values. I want to predict. I want to predict what is the weight. Okay? So, in this case, I am talking about this independently. Because when this value changes, then the value of weight will also change. Okay? So, here, you know that I know my output feature. Okay? I know my output feature. Okay? I know my output feature. So, what I will do with this is I will train an algorithm of machine learning. Joe Joe in the future New age value my weight or or any other weight predicts. So, this is our prediction. And we will talk about hypothesis. Hypothesis is also a hypothesis. Okay? So, basically, what happens? I will train this whole data set. And after that, if I give new age, then I should do my prediction. So, in Superwise, you always remember your output feature. Okay? You specifically said that this is the dependent feature and you basically want to compute all these things. Okay? So, I hope you all understand. Now, let's solve two types of problems in Superwise machine learning. So, I will give you a look here. Superwise in machine learning algorithms, we solve two types of problems. And this deep learning also applies. Okay? One is your classification problem. What is the classification problem? And regression problem. Okay? I will give you an example of the examples of these two. So, this is the first thing. Now, I have written here, classification. Okay? Classification is a data set. Now, I have three features. Number of Study hours. Number of Play hours. Number of Sleep hours. Okay? Now, you have three features. And I have given an output. Whether the person is passing or failing. Okay? Person passed or failed? So, if I see this, this This is the three features. This is my independent feature. This is my dependent feature. This independent is dependent. So, I will give you an example. Independent feature. Or this dependent. Now, in dependent feature, when we solve the classification problem, your output will be categorical value. Fix number will be there. Like here, there are two outputs. Either pass or fail. Okay? So, we will call this a binary classification problem. Okay? Binary classification problem. If we have multiple options here, but fixed number of options, then we will call it a multi-class classification problem. So, this is an example of regression problem. Sorry, classification problem. Now, let's see the second one. Example, which we will call as regression problem. Regression problem. In regression problem, I take a very simple feature. I have a feature house size. And this house price. And I take another example. Another feature example. Location. So, these two independent features. These are my dependent features. Okay? The output feature. Now, here, my value is increasing from this point here. Okay? So, here, you see all the values of output. This is a continuous value. Anything can come. Right? Anything comes based on these independent features. So, we will call this a regression problem statement. Whenever your output value is continuous. So, what will happen? Your graph will be. Okay? So, this is your data point. Okay? Data points. And this is your size. Price. Suppose, we are taking two features. Example. So, I will make a straight line and start this regression problem. So, this line is basically from the regression algorithm. And specifically, we talk about what regression we call it, linear regression. Okay? Non-linear regression is also a different problem statement. But, I am showing you an example of how to make a regression in a classification and regression. Okay? And this classification and regression problem can be solved by deep learning. So, let us see what is the machine learning algorithms and deep learning algorithms. So, I am going to write here. MLL. Okay? And deep learning algorithms. Okay? So, MLL, I am in MLL as well. Deep learning is a subset of machine learning. So, here, if I am in regression and the classification, I will divide it. So, which algorithm are you going to use? See. So, here, our first one will be something called a linear regression. Second, I will say, lasso and ridge. Lasso and ridge. Third, I will say, decision tree. Lots of algorithms. And I am doing this in playlist. All the algorithms will be uploaded. I will do that in 2 months. Decision tree regression. So, now, 4 random forest regression. Your next algorithm will be your XZ boost. Regression. Okay? So, all the algorithms are like this. If I talk about deep learning, in regression, we use ANN. In 7th, we use one more. We call it RNN. We also ask for regression problems. Because we will use the performance metrics. I will understand you. So, if I talk here, classification. In classification, which algorithm we use? Logistic. Okay? Second one. The thing is, the thing that is the algorithm, we will only write the classification in the next classification. Decision tree classification. Decision random forest classification, XZ boost. And now, boost. All this. We also use ANN to solve the classification problem. We use CNN. We solve the image classification. So, this is a little example with respect to MLL. For instance, DLL algorithms. Now, let's discuss the unsupervised ML. Here, we specifically solve the problem. It is a clustering problem. Clustering. Look, what happens in the unsupervised ML? There is no output. No output. Okay? Do you understand? Your salary is your age. Okay? So, these are the two data sets. There are some values. Okay? You have added many values here. So, what will you do? By using unsupervised machine algorithm. You will become their groups. So, when you plot it, using unsupervised machine algorithm. You will become their groups. Let's say that this group's salary is the highest. This group's salary is less. This group's salary is less. This is a cluster's salary. It is a little less. So, you can make different examples of groups. Why does this work? Because this is for our customer segmentation. Because, according to that group, we make different models. Okay? So, I hope you all got the idea. In unsupervised machine learning, we use a lot of algorithms like Hyrule clustering, K-Mins clustering, DB scan clustering. So, all these clustering are different. We use them. Okay? So, I hope you all got the idea. This is the first tutorial introduction to machine learning algorithm. Please make sure that you watch the whole video. Please revise it. Because, when I start the first regression algorithm, you will understand the understanding. Now, you will be very good. So, yes, I will see you all in the next video. Have a great day. Thank you. And all. Bye-bye."
+}
