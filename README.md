@@ -86,12 +86,14 @@ embeddings.joblib # Vector embedding store
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
+```
+
 ---
 
 ## Future Improvements
 
 Multi-playlist support
 Lecture timestamp navigation
-OPEN AI API model 
+Replace the LLAMA3.2 MODEL TO  OPEN AI API MODEL -LATEST MODEL FOR BETTER ACCURACY
 
 VIKAS KUMAR
