@@ -3,4 +3,3 @@ audios/
 *.mp3
 *.mp4
 __pycache__/
-embeddings.joblib
