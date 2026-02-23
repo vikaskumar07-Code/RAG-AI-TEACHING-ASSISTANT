@@ -1,0 +1,5 @@
+The linear regression has been taught in the first episode of the playlist titled "Ridge And Lasso Practical Implementation" with timestamps:
+[{"title":"Ridge And Lasso Practical Implementation","start":"00:16","end":"00:38","text":" In today's video we will take the next algorithm and will take practical implementation.  And today's algorithm will be Rich Regression.  You can see here that this is my complete machine learning playlist."}]
+
+The linear regression has been taught in this episode with timestamps:
+[{"title":"Ridge And Lasso Practical Implementation","start":"00:16","end":"00:38","text":" In today's video we will take the next algorithm and will take practical implementation.  And today's algorithm will be Rich Regression."}]
