@@ -93,7 +93,9 @@ streamlit run app.py
 ## Future Improvements
 
 Multi-playlist support
+
 Lecture timestamp navigation
+
 Replace the LLAMA3.2 MODEL TO  OPEN AI API MODEL -LATEST MODEL FOR BETTER ACCURACY
 
-VIKAS KUMAR
+## VIKAS KUMAR
