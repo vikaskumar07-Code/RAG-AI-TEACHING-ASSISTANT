@@ -1,5 +1,12 @@
 import streamlit as st
 from process_incoming import ask_question
+from dotenv import load_dotenv
+load_dotenv()
+
+from config import GROQ_API_KEY
+print("API KEY:", GROQ_API_KEY)
+
+
 
 st.set_page_config(page_title="ML Teaching Assistant", page_icon="🤖", layout="wide")
 
